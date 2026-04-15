@@ -1,0 +1,25 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9e10f8789341eb640a395972843a7b34, type: 3}
+  m_Name: PlayerFsmGraph
+  m_EditorClassIdentifier: Assembly-CSharp::FenShen.PlayerFSM.FsmGraphSO
+  initialState: {fileID: 11400000, guid: 30513ed1022285348b8369ac2ec2e546, type: 2}
+  states:
+  - {fileID: 11400000, guid: 30513ed1022285348b8369ac2ec2e546, type: 2}
+  - {fileID: 11400000, guid: 662753c282257154abd820f7d80e8e10, type: 2}
+  - {fileID: 11400000, guid: 0013a141f73c6414187eac9eb297616f, type: 2}
+  transitions:
+  - {fileID: 11400000, guid: 2ff31090e7b45bb4992666e2f4ec7f65, type: 2}
+  - {fileID: 11400000, guid: afd6a2451fe07524e871dcfa3d2933f7, type: 2}
+  - {fileID: 11400000, guid: 5cd56729bd5f9ae479b5ae70238d035b, type: 2}
+  - {fileID: 11400000, guid: 2b912c2ef3099da47b07a44e8b072f83, type: 2}
+  - {fileID: 11400000, guid: 9df372030ddab1943b8f0e919c99b977, type: 2}
