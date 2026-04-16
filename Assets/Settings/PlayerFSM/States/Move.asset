@@ -13,7 +13,7 @@ MonoBehaviour:
   m_Name: Move
   m_EditorClassIdentifier: Assembly-CSharp::FenShen.PlayerFSM.MoveStateSO
   displayName: Move
-  editorPosition: {x: 601.33325, y: 308.66663}
+  editorPosition: {x: 650.00006, y: 143.33334}
   animStateName: Walk
   animLayer: 0
   crossFade: 1

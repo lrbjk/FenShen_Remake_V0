@@ -510,8 +510,44 @@ namespace FenShen.PlayerFSM
             edge.input.Connect(edge);
             edge.RefreshLabel();
             edge.OnEdgeSelected = selectedTransition => _owner.InspectObject(selectedTransition);
+            edge.HasReverseEdge = () => HasReverseTransition(transition);
+            edge.GetParallelSign = () => GetParallelSign(transition);
             AddElement(edge);
             _edges[transition] = edge;
+        }
+
+        private bool HasReverseTransition(TransitionLinkSO transition)
+        {
+            for (int i = 0; i < _owner.CurrentGraph.transitions.Count; i++)
+            {
+                TransitionLinkSO other = _owner.CurrentGraph.transitions[i];
+                if (other == null || other == transition)
+                {
+                    continue;
+                }
+
+                if (other.from == transition.to && other.to == transition.from)
+                {
+                    return true;
+                }
+            }
+
+            return false;
+        }
+
+        private float GetParallelSign(TransitionLinkSO transition)
+        {
+            string fromName = transition.from != null ? transition.from.DisplayName : string.Empty;
+            string toName = transition.to != null ? transition.to.DisplayName : string.Empty;
+            int compare = string.CompareOrdinal(fromName, toName);
+            if (compare == 0)
+            {
+                int fromId = transition.from != null ? transition.from.GetInstanceID() : 0;
+                int toId = transition.to != null ? transition.to.GetInstanceID() : 0;
+                compare = fromId.CompareTo(toId);
+            }
+
+            return compare <= 0 ? -1f : 1f;
         }
 
         private void RemoveTransition(TransitionLinkSO transition)

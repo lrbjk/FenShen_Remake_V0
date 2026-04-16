@@ -13,7 +13,7 @@ MonoBehaviour:
   m_Name: Attack
   m_EditorClassIdentifier: Assembly-CSharp::FenShen.PlayerFSM.AttackStateSO
   displayName: Attack
-  editorPosition: {x: 763.19104, y: 111.62493}
+  editorPosition: {x: 774.18665, y: -54}
   animStateName: Attack
   animLayer: 0
   crossFade: 1
