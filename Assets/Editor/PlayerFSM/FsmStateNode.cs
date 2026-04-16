@@ -75,25 +75,18 @@ namespace FenShen.PlayerFSM
             Transition = transition;
             userData = transition;
 
-            if (edgeControl != null)
-            {
-                edgeControl.style.opacity = 0f;
-                edgeControl.drawFromCap = false;
-                edgeControl.drawToCap = false;
-                edgeControl.pickingMode = PickingMode.Position;
-                edgeControl.interceptWidth = 28f;
-            }
-
             _lineLayer = new VisualElement
             {
-                pickingMode = PickingMode.Ignore
+                pickingMode = PickingMode.Position
             };
             _lineLayer.style.position = Position.Absolute;
             _lineLayer.style.left = 0f;
             _lineLayer.style.top = 0f;
             _lineLayer.style.right = 0f;
             _lineLayer.style.bottom = 0f;
+            _lineLayer.style.backgroundColor = new Color(0f, 0f, 0f, 0f);
             _lineLayer.generateVisualContent += OnGenerateStraightLine;
+            _lineLayer.RegisterCallback<MouseDownEvent>(_ => SelectThisEdge());
             Insert(0, _lineLayer);
 
             _label = new Label
@@ -113,6 +106,7 @@ namespace FenShen.PlayerFSM
             Add(_label);
 
             RegisterCallback<GeometryChangedEvent>(_ => RefreshVisuals());
+            RegisterCallback<AttachToPanelEvent>(_ => HideDefaultEdgeControl());
             schedule.Execute(RefreshVisuals).Every(16);
         }
 
@@ -142,8 +136,22 @@ namespace FenShen.PlayerFSM
 
         private void RefreshVisuals()
         {
+            HideDefaultEdgeControl();
             UpdateLabelPosition();
             _lineLayer.MarkDirtyRepaint();
+        }
+
+        private void HideDefaultEdgeControl()
+        {
+            if (edgeControl == null)
+            {
+                return;
+            }
+
+            edgeControl.style.opacity = 0f;
+            edgeControl.drawFromCap = false;
+            edgeControl.drawToCap = false;
+            edgeControl.pickingMode = PickingMode.Ignore;
         }
 
         private void UpdateLabelPosition()

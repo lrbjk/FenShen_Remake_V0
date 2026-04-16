@@ -30,9 +30,13 @@ namespace FenShen.PlayerFSM
         private InputAction _move;
         private InputAction _attack;
         private InputAction _sprint;
+        private float _sprintHeldTime;
+        private float _lastSprintPressDuration;
+        private bool _sprintReleasedThisFrame;
 
         public Vector2 CurrentMoveInput { get; private set; }
         public bool IsSprinting { get { return _sprint != null && _sprint.IsPressed(); } }
+        public float SprintHeldTime { get { return _sprintHeldTime; } }
 
         void Awake()
         {
@@ -63,6 +67,7 @@ namespace FenShen.PlayerFSM
         {
             CurrentMoveInput = _move != null ? _move.ReadValue<Vector2>() : Vector2.zero;
             float dt = Time.deltaTime;
+            UpdateSprintInputState(dt);
             if (_current != null) _current.OnUpdate(this, dt);
             EvaluateTransitions(dt);
         }
@@ -98,10 +103,65 @@ namespace FenShen.PlayerFSM
         public StateSO CurrentState { get { return _current; } }
         public ICombatSkillSystem CombatSystem { get { return _combat; } }
         public bool AttackPressedThisFrame() { return _attack != null && _attack.WasPressedThisFrame(); }
+        public bool AttackIsHeld() { return _attack != null && _attack.IsPressed(); }
+        public bool MoveIsHeld(float threshold = 0.1f) { return CurrentMoveInput.sqrMagnitude >= (threshold * threshold); }
+        public bool SprintPressedThisFrame() { return _sprint != null && _sprint.WasPressedThisFrame(); }
+        public bool SprintReleasedThisFrame() { return _sprintReleasedThisFrame; }
+        public bool SprintHeldFor(float duration) { return IsSprinting && _sprintHeldTime >= duration; }
+        public bool SprintTapReleasedThisFrame(float maxHoldDuration) { return _sprintReleasedThisFrame && _lastSprintPressDuration <= maxHoldDuration; }
+        public bool IsMoveDirectionHeld(Vector2 direction, float threshold = 0.5f)
+        {
+            if (direction.sqrMagnitude < 0.0001f)
+            {
+                return false;
+            }
+
+            if (CurrentMoveInput.sqrMagnitude < (threshold * threshold))
+            {
+                return false;
+            }
+
+            Vector2 normalizedInput = CurrentMoveInput.normalized;
+            Vector2 normalizedDirection = direction.normalized;
+            return Vector2.Dot(normalizedInput, normalizedDirection) >= 0.7071f;
+        }
 
         private void RefreshCombatSystemReference()
         {
             _combat = CombatSystemBehaviour as ICombatSkillSystem;
+        }
+
+        private void UpdateSprintInputState(float dt)
+        {
+            _sprintReleasedThisFrame = false;
+
+            if (_sprint == null)
+            {
+                _sprintHeldTime = 0f;
+                _lastSprintPressDuration = 0f;
+                return;
+            }
+
+            if (_sprint.WasReleasedThisFrame())
+            {
+                _sprintReleasedThisFrame = true;
+                _lastSprintPressDuration = _sprintHeldTime;
+                _sprintHeldTime = 0f;
+                return;
+            }
+
+            if (_sprint.IsPressed())
+            {
+                if (_sprint.WasPressedThisFrame())
+                {
+                    _sprintHeldTime = 0f;
+                }
+
+                _sprintHeldTime += dt;
+                return;
+            }
+
+            _sprintHeldTime = 0f;
         }
     }
 }

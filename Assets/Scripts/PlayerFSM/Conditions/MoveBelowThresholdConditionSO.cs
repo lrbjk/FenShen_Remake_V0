@@ -8,7 +8,7 @@ namespace FenShen.PlayerFSM
         public override bool Evaluate(PlayerFsm fsm)
         {
             if (fsm == null) return false;
-            return fsm.CurrentMoveInput.sqrMagnitude < (moveThreshold * moveThreshold);
+            return fsm.CurrentMoveInput.sqrMagnitude < (moveThreshold);
         }
     }
 }

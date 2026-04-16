@@ -425,10 +425,18 @@ namespace FenShen.PlayerFSM
                         continue;
                     }
 
-                    TransitionLinkSO transition = PlayerFsmAssetUtility.CreateTransitionAsset(_owner.CurrentGraph, fromNode.State, toNode.State);
-                    transition.from = fromNode.State;
-                    transition.to = toNode.State;
-                    _owner.CurrentGraph.transitions.Add(transition);
+                    TransitionLinkSO transition = PlayerFsmAssetUtility.FindTransition(_owner.CurrentGraph, fromNode.State, toNode.State);
+                    if (transition == null)
+                    {
+                        transition = PlayerFsmAssetUtility.CreateTransitionAsset(_owner.CurrentGraph, fromNode.State, toNode.State);
+                        transition.from = fromNode.State;
+                        transition.to = toNode.State;
+                    }
+
+                    if (!_owner.CurrentGraph.transitions.Contains(transition))
+                    {
+                        _owner.CurrentGraph.transitions.Add(transition);
+                    }
 
                     var edge = new FsmTransitionEdge(transition)
                     {
@@ -439,6 +447,8 @@ namespace FenShen.PlayerFSM
                     edge.input.Connect(edge);
                     edge.RefreshLabel();
                     edge.OnEdgeSelected = selectedTransition => _owner.InspectObject(selectedTransition);
+                    edge.HasReverseEdge = () => HasReverseTransition(transition);
+                    edge.GetParallelSign = () => GetParallelSign(transition);
                     _edges[transition] = edge;
                     change.edgesToCreate[i] = edge;
 
@@ -555,6 +565,7 @@ namespace FenShen.PlayerFSM
             if (_owner.CurrentGraph.transitions.Remove(transition))
             {
                 _edges.Remove(transition);
+                PlayerFsmAssetUtility.DeleteUnusedConditions(_owner.CurrentGraph, transition);
                 string assetPath = AssetDatabase.GetAssetPath(transition);
                 if (!string.IsNullOrEmpty(assetPath))
                 {
@@ -595,6 +606,31 @@ namespace FenShen.PlayerFSM
 
     internal static class PlayerFsmAssetUtility
     {
+        public static TransitionLinkSO FindTransition(FsmGraphSO graph, StateSO from, StateSO to)
+        {
+            for (int i = 0; i < graph.transitions.Count; i++)
+            {
+                TransitionLinkSO transition = graph.transitions[i];
+                if (transition != null && transition.from == from && transition.to == to)
+                {
+                    return transition;
+                }
+            }
+
+            string[] guids = AssetDatabase.FindAssets("t:TransitionLinkSO", new[] { GetTransitionsFolder(graph) });
+            for (int i = 0; i < guids.Length; i++)
+            {
+                string path = AssetDatabase.GUIDToAssetPath(guids[i]);
+                TransitionLinkSO transition = AssetDatabase.LoadAssetAtPath<TransitionLinkSO>(path);
+                if (transition != null && transition.from == from && transition.to == to)
+                {
+                    return transition;
+                }
+            }
+
+            return null;
+        }
+
         public static StateSO CreateStateAsset(FsmGraphSO graph, Type stateType, Vector2 editorPosition)
         {
             EnsureFolders(graph);
@@ -624,6 +660,84 @@ namespace FenShen.PlayerFSM
             string assetPath = AssetDatabase.GenerateUniqueAssetPath(GetConditionsFolder(graph) + "/" + label + ".asset");
             AssetDatabase.CreateAsset(condition, assetPath);
             return condition;
+        }
+
+        public static void DeleteUnusedConditions(FsmGraphSO graph, TransitionLinkSO removedTransition)
+        {
+            if (removedTransition == null || removedTransition.conditions == null)
+            {
+                return;
+            }
+
+            for (int i = 0; i < removedTransition.conditions.Count; i++)
+            {
+                ConditionSO condition = removedTransition.conditions[i];
+                if (condition == null || IsConditionReferenced(graph, condition, removedTransition))
+                {
+                    continue;
+                }
+
+                string conditionPath = AssetDatabase.GetAssetPath(condition);
+                if (!string.IsNullOrEmpty(conditionPath) && conditionPath.StartsWith(GetConditionsFolder(graph), StringComparison.OrdinalIgnoreCase))
+                {
+                    AssetDatabase.DeleteAsset(conditionPath);
+                }
+            }
+        }
+
+        public static void CleanupOrphanAssets(FsmGraphSO graph)
+        {
+            if (graph == null)
+            {
+                return;
+            }
+
+            graph.transitions.RemoveAll(t => t == null);
+            graph.states.RemoveAll(s => s == null);
+
+            string[] transitionGuids = AssetDatabase.FindAssets("t:TransitionLinkSO", new[] { GetTransitionsFolder(graph) });
+            for (int i = 0; i < transitionGuids.Length; i++)
+            {
+                string path = AssetDatabase.GUIDToAssetPath(transitionGuids[i]);
+                TransitionLinkSO transition = AssetDatabase.LoadAssetAtPath<TransitionLinkSO>(path);
+                if (transition == null || !graph.transitions.Contains(transition))
+                {
+                    AssetDatabase.DeleteAsset(path);
+                }
+            }
+
+            string[] conditionGuids = AssetDatabase.FindAssets("t:ConditionSO", new[] { GetConditionsFolder(graph) });
+            for (int i = 0; i < conditionGuids.Length; i++)
+            {
+                string path = AssetDatabase.GUIDToAssetPath(conditionGuids[i]);
+                ConditionSO condition = AssetDatabase.LoadAssetAtPath<ConditionSO>(path);
+                if (condition == null || !IsConditionReferenced(graph, condition, null))
+                {
+                    AssetDatabase.DeleteAsset(path);
+                }
+            }
+
+            EditorUtility.SetDirty(graph);
+            AssetDatabase.SaveAssets();
+        }
+
+        private static bool IsConditionReferenced(FsmGraphSO graph, ConditionSO condition, TransitionLinkSO excludeTransition)
+        {
+            for (int i = 0; i < graph.transitions.Count; i++)
+            {
+                TransitionLinkSO transition = graph.transitions[i];
+                if (transition == null || transition == excludeTransition || transition.conditions == null)
+                {
+                    continue;
+                }
+
+                if (transition.conditions.Contains(condition))
+                {
+                    return true;
+                }
+            }
+
+            return false;
         }
 
         private static void EnsureFolders(FsmGraphSO graph)

@@ -10,6 +10,6 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 91e4b58d680df2f4ab328f20cda89d79, type: 3}
-  m_Name: MoveBelowThreshold
+  m_Name: MoveBelowThreshold 1
   m_EditorClassIdentifier: Assembly-CSharp::FenShen.PlayerFSM.MoveBelowThresholdConditionSO
-  moveThreshold: 1.5
+  moveThreshold: 0.01

@@ -13,7 +13,7 @@ MonoBehaviour:
   m_Name: Idle
   m_EditorClassIdentifier: Assembly-CSharp::FenShen.PlayerFSM.IdleStateSO
   displayName: Idle
-  editorPosition: {x: 457.3333, y: -62.799988}
+  editorPosition: {x: 400, y: 163.33333}
   animStateName: Idle
   animLayer: 0
   crossFade: 1

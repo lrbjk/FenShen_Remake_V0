@@ -9,7 +9,8 @@ MonoBehaviour:
   m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 91e4b58d680df2f4ab328f20cda89d79, type: 3}
-  m_Name: MoveBelowThreshold
-  m_EditorClassIdentifier: Assembly-CSharp::FenShen.PlayerFSM.MoveBelowThresholdConditionSO
-  moveThreshold: 1.5
+  m_Script: {fileID: 11500000, guid: 17fa528cea4fd9949852e8f0f3716f28, type: 3}
+  m_Name: DodgeTap
+  m_EditorClassIdentifier: Assembly-CSharp::FenShen.PlayerFSM.InputTapReleaseConditionSO
+  binding: 2
+  maxHoldDuration: 0.2

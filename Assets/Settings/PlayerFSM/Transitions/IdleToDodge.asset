@@ -10,10 +10,10 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 403eb4e984da3d747be1cd6b294f3571, type: 3}
-  m_Name: MoveToIdle
+  m_Name: IdleToDodge
   m_EditorClassIdentifier: Assembly-CSharp::FenShen.PlayerFSM.TransitionLinkSO
-  from: {fileID: 11400000, guid: 662753c282257154abd820f7d80e8e10, type: 2}
-  to: {fileID: 11400000, guid: 30513ed1022285348b8369ac2ec2e546, type: 2}
+  from: {fileID: 11400000, guid: 30513ed1022285348b8369ac2ec2e546, type: 2}
+  to: {fileID: 11400000, guid: 463e2cf4cd0c4cdd8f4ce8c65994f3b4, type: 2}
   logic: 0
   conditions:
-  - {fileID: 11400000, guid: d4b0bde29be17d54a8e3a68cc39890d1, type: 2}
+  - {fileID: 11400000, guid: 1ea0908f50fb45a3bf31e7ce77c73255, type: 2}
