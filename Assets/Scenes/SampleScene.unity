@@ -353,6 +353,7 @@ GameObject:
   - component: {fileID: 2126761132}
   - component: {fileID: 2126761131}
   - component: {fileID: 2126761130}
+  - component: {fileID: 2126761135}
   m_Layer: 0
   m_Name: Player
   m_TagString: Untagged
@@ -395,6 +396,7 @@ MonoBehaviour:
   attackActionName: Player/Attack
   sprintActionName: Player/Sprint
   CombatSystemBehaviour: {fileID: 2126761130}
+  AbilityController: {fileID: 2126761135}
 --- !u!212 &2126761132
 SpriteRenderer:
   serializedVersion: 2
@@ -491,6 +493,20 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &2126761135
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2126761129}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a5377df296b2db84ca209ffdded085da, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::FenShen.PlayerFSM.PlayerAbilityController
+  defaultLoadout: {fileID: 11400000, guid: 3f03c4f1decdabf469aaa7f6a0cecf69, type: 2}
+  runtimeStates: []
 --- !u!1660057539 &9223372036854775807
 SceneRoots:
   m_ObjectHideFlags: 0

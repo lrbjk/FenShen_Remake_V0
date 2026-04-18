@@ -14,5 +14,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::FenShen.PlayerFSM.InputPressedConditionSO
   binding: 1
   moveThreshold: 0.1
-  requirePressedThisFrame: 0
+  requirePressedThisFrame: 1
   invertResult: 0
+  minHoldDuration: 0

@@ -13,12 +13,13 @@ MonoBehaviour:
   m_Name: Dodge
   m_EditorClassIdentifier: Assembly-CSharp::FenShen.PlayerFSM.DodgeStateSO
   displayName: Dodge
-  editorPosition: {x: 507, y: 527}
+  editorPosition: {x: 512.6666, y: 442.6667}
   animStateName: Dodge
   animLayer: 0
   crossFade: 1
-  transitionDuration: 0.05
-  dodgeDistance: 2.2
+  transitionDuration: 0
+  dodgeDistance: 1.5
+  dodgeCooldown: 0.5
   useAnimatorCurve: 1
   displacementCurveParameter: DodgeDisplacement
   fallbackDisplacementCurve:

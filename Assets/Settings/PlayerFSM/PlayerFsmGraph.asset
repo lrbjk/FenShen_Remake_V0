@@ -15,16 +15,11 @@ MonoBehaviour:
   initialState: {fileID: 11400000, guid: 30513ed1022285348b8369ac2ec2e546, type: 2}
   states:
   - {fileID: 11400000, guid: 30513ed1022285348b8369ac2ec2e546, type: 2}
-  - {fileID: 11400000, guid: 708c232d1fb5de845b772d3788f5e1d4, type: 2}
   - {fileID: 11400000, guid: 35e4956465c6a984282680f573f9c8c4, type: 2}
   - {fileID: 11400000, guid: 463e2cf4cd0c4cdd8f4ce8c65994f3b4, type: 2}
   transitions:
   - {fileID: 11400000, guid: 98c6327461ae462f8e04e69f9e013e10, type: 2}
-  - {fileID: 11400000, guid: 65ba00fcb9f14d56a16ce8e060a9a4d1, type: 2}
-  - {fileID: 11400000, guid: c6d15994d9244276b5dc0ddbb2e0efce, type: 2}
-  - {fileID: 11400000, guid: 268224ebe879cb64e84f57281343403b, type: 2}
   - {fileID: 11400000, guid: ee7294d55b0648a8ab8f305c8a70a1c0, type: 2}
-  - {fileID: 11400000, guid: fdd6dc260b50c1b4db86038f462998ee, type: 2}
-  - {fileID: 11400000, guid: c95e15dabf804d28af4427d58ac1b6d1, type: 2}
   - {fileID: 11400000, guid: e4a0ddb8f54f40589d929f22cc6ef911, type: 2}
   - {fileID: 11400000, guid: 7ef2091a06fb4b0480da6a36d435ad7f, type: 2}
+  - {fileID: 11400000, guid: e87b29acd6330f94fab61fb3255a3952, type: 2}

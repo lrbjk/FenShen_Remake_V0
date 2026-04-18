@@ -128,7 +128,7 @@ public class RaySample : MonoBehaviour {
             if (firstHit.point.z > hits[i].point.z)
                 firstHit = hits[i];
         }
-        if (firstHit.collider.gameObject.layer != 8)
+        if (firstHit.collider.gameObject.layer != 5)
             return null;
         SampleInfo resInfo = new SampleInfo();
         resInfo.Normal = firstHit.normal;

@@ -13,7 +13,7 @@ MonoBehaviour:
   m_Name: Run 1
   m_EditorClassIdentifier: Assembly-CSharp::FenShen.PlayerFSM.RunStateSO
   displayName: Run
-  editorPosition: {x: 622.05334, y: 340}
+  editorPosition: {x: 699.57336, y: 220.66666}
   animStateName: Run
   animLayer: 0
   crossFade: 1

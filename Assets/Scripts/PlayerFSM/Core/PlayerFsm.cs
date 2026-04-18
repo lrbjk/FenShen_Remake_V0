@@ -1,4 +1,5 @@
 using System.Collections.Generic;
+using FenShen.GameData;
 using UnityEngine;
 using UnityEngine.InputSystem;
 
@@ -22,6 +23,10 @@ namespace FenShen.PlayerFSM
 
         [Header("Combat")]
         public MonoBehaviour CombatSystemBehaviour;
+        [Header("Abilities")]
+        public PlayerAbilityController AbilityController;
+        [Header("Runtime Stats")]
+        public PlayerRuntimeStatsComponent RuntimeStatsComponent;
         private ICombatSkillSystem _combat;
 
         private StateSO _current;
@@ -33,6 +38,7 @@ namespace FenShen.PlayerFSM
         private float _sprintHeldTime;
         private float _lastSprintPressDuration;
         private bool _sprintReleasedThisFrame;
+        private float _dodgeCooldownUntil;
 
         public Vector2 CurrentMoveInput { get; private set; }
         public bool IsSprinting { get { return _sprint != null && _sprint.IsPressed(); } }
@@ -41,6 +47,8 @@ namespace FenShen.PlayerFSM
         void Awake()
         {
             RefreshCombatSystemReference();
+            RefreshAbilityControllerReference();
+            RefreshRuntimeStatsReference();
         }
 
         void OnEnable()
@@ -87,6 +95,8 @@ namespace FenShen.PlayerFSM
         public void SetState(StateSO next)
         {
             if (next == null || _current == next) return;
+            DodgeStateSO dodgeState = next as DodgeStateSO;
+            if (dodgeState != null && !CanEnterDodge(dodgeState.dodgeCooldown)) return;
             if (_current != null)
             {
                 foreach (var t in graph.GetOutgoing(_current)) if (t != null) t.OnExit(this);
@@ -102,6 +112,8 @@ namespace FenShen.PlayerFSM
 
         public StateSO CurrentState { get { return _current; } }
         public ICombatSkillSystem CombatSystem { get { return _combat; } }
+        public PlayerAbilityController Abilities { get { return AbilityController; } }
+        public PlayerRuntimeStatsComponent RuntimeStats { get { return RuntimeStatsComponent; } }
         public bool AttackPressedThisFrame() { return _attack != null && _attack.WasPressedThisFrame(); }
         public bool AttackIsHeld() { return _attack != null && _attack.IsPressed(); }
         public bool MoveIsHeld(float threshold = 0.1f) { return CurrentMoveInput.sqrMagnitude >= (threshold * threshold); }
@@ -109,6 +121,42 @@ namespace FenShen.PlayerFSM
         public bool SprintReleasedThisFrame() { return _sprintReleasedThisFrame; }
         public bool SprintHeldFor(float duration) { return IsSprinting && _sprintHeldTime >= duration; }
         public bool SprintTapReleasedThisFrame(float maxHoldDuration) { return _sprintReleasedThisFrame && _lastSprintPressDuration <= maxHoldDuration; }
+        public bool IsDodgeOnCooldown { get { return Time.time < _dodgeCooldownUntil; } }
+        public float DodgeCooldownRemaining { get { return Mathf.Max(0f, _dodgeCooldownUntil - Time.time); } }
+        public bool HasAbility(AbilityId abilityId, int minLevel = 1)
+        {
+            return AbilityController != null && AbilityController.HasAbility(abilityId, minLevel);
+        }
+        public bool UnlockAbility(AbilityId abilityId, int level = 1)
+        {
+            return AbilityController != null && AbilityController.UnlockAbility(abilityId, level);
+        }
+        public bool LockAbility(AbilityId abilityId)
+        {
+            return AbilityController != null && AbilityController.LockAbility(abilityId);
+        }
+        public float GetStat(string statKey, float fallbackValue = 0f)
+        {
+            if (RuntimeStatsComponent == null || RuntimeStatsComponent.Stats == null)
+            {
+                return fallbackValue;
+            }
+
+            return RuntimeStatsComponent.GetStat(statKey);
+        }
+        public float GetDodgeCooldownDuration(float fallbackValue = 0f)
+        {
+            return Mathf.Max(0f, GetStat(StatKeys.DashCooldown, fallbackValue));
+        }
+        public bool CanEnterDodge(float fallbackCooldown = 0f)
+        {
+            return DodgeCooldownRemaining <= 0f && GetDodgeCooldownDuration(fallbackCooldown) >= 0f;
+        }
+        public void StartDodgeCooldown(float fallbackCooldown = 0f)
+        {
+            float duration = GetDodgeCooldownDuration(fallbackCooldown);
+            _dodgeCooldownUntil = duration > 0f ? Time.time + duration : 0f;
+        }
         public bool IsMoveDirectionHeld(Vector2 direction, float threshold = 0.5f)
         {
             if (direction.sqrMagnitude < 0.0001f)
@@ -129,6 +177,22 @@ namespace FenShen.PlayerFSM
         private void RefreshCombatSystemReference()
         {
             _combat = CombatSystemBehaviour as ICombatSkillSystem;
+        }
+
+        private void RefreshAbilityControllerReference()
+        {
+            if (AbilityController == null)
+            {
+                AbilityController = GetComponent<PlayerAbilityController>();
+            }
+        }
+
+        private void RefreshRuntimeStatsReference()
+        {
+            if (RuntimeStatsComponent == null)
+            {
+                RuntimeStatsComponent = GetComponent<PlayerRuntimeStatsComponent>();
+            }
         }
 
         private void UpdateSprintInputState(float dt)

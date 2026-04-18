@@ -1,4 +1,5 @@
 using UnityEngine;
+using FenShen.GameData;
 
 namespace FenShen.PlayerFSM
 {
@@ -7,6 +8,7 @@ namespace FenShen.PlayerFSM
     {
         [Header("Dodge")]
         public float dodgeDistance = 2.2f;
+        public float dodgeCooldown = 0.5f;
         public bool useAnimatorCurve = true;
         public string displacementCurveParameter = "DodgeDisplacement";
         public AnimationCurve fallbackDisplacementCurve = AnimationCurve.EaseInOut(0f, 0f, 1f, 1f);
@@ -20,6 +22,10 @@ namespace FenShen.PlayerFSM
 
             _directionSign = ResolveDirectionSign(fsm);
             _lastDisplacement01 = 0f;
+            if (fsm != null)
+            {
+                fsm.StartDodgeCooldown(dodgeCooldown);
+            }
 
             if (fsm != null && fsm.Character != null)
             {
@@ -45,7 +51,8 @@ namespace FenShen.PlayerFSM
                 return;
             }
 
-            Vector3 delta = Vector3.right * (_directionSign * dodgeDistance * delta01);
+            float resolvedDodgeDistance = fsm.GetStat(StatKeys.DashDistance, dodgeDistance);
+            Vector3 delta = Vector3.right * (_directionSign * resolvedDodgeDistance * delta01);
             fsm.Character.Translate(delta, Space.World);
         }
 

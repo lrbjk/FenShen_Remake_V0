@@ -1,4 +1,5 @@
 using UnityEngine;
+using FenShen.GameData;
 
 namespace FenShen.PlayerFSM
 {
@@ -23,7 +24,8 @@ namespace FenShen.PlayerFSM
             {
                 dir.Normalize();
                 float curveMul = ResolveCurveMultiplier(fsm);
-                float speed = baseSpeed * movementMultiplier * curveMul;
+                float resolvedBaseSpeed = fsm.GetStat(StatKeys.MoveSpeed, baseSpeed);
+                float speed = resolvedBaseSpeed * movementMultiplier * curveMul;
 
                 if (dir.x < 0)
                 {
