@@ -15,16 +15,20 @@ namespace FenShen.PlayerFSM
         public InputActionReference MoveAction;
         public InputActionReference AttackAction;
         public InputActionReference SprintAction;
+        public InputActionReference JumpAction;
         [Tooltip("Optional: If not using the Reference fields, assign asset and action names.")]
         public InputActionAsset inputActions;
         public string moveActionName = "Player/Move";
         public string attackActionName = "Player/Attack";
         public string sprintActionName = "Player/Sprint";
+        public string jumpActionName = "Player/Jump";
 
         [Header("Combat")]
         public MonoBehaviour CombatSystemBehaviour;
         [Header("Abilities")]
         public PlayerAbilityController AbilityController;
+        [Header("Detection")]
+        public PlayerDetection PlayerDetection;
         [Header("Runtime Stats")]
         public PlayerRuntimeStatsComponent RuntimeStatsComponent;
         private ICombatSkillSystem _combat;
@@ -35,10 +39,14 @@ namespace FenShen.PlayerFSM
         private InputAction _move;
         private InputAction _attack;
         private InputAction _sprint;
+        private InputAction _jump;
         private float _sprintHeldTime;
         private float _lastSprintPressDuration;
         private bool _sprintReleasedThisFrame;
         private float _dodgeCooldownUntil;
+        private float _lastJumpPressedTime = float.NegativeInfinity;
+        private float _lastGroundedTime = float.NegativeInfinity;
+        private bool _jumpBufferedConsumed;
 
         public Vector2 CurrentMoveInput { get; private set; }
         public bool IsSprinting { get { return _sprint != null && _sprint.IsPressed(); } }
@@ -48,26 +56,35 @@ namespace FenShen.PlayerFSM
         {
             RefreshCombatSystemReference();
             RefreshAbilityControllerReference();
+            RefreshPlayerDetectionReference();
             RefreshRuntimeStatsReference();
         }
 
         void OnEnable()
         {
-            _move = (MoveAction != null) ? MoveAction.action : (inputActions != null ? inputActions.FindAction(moveActionName, true) : null);
-            _attack = (AttackAction != null) ? AttackAction.action : (inputActions != null ? inputActions.FindAction(attackActionName, true) : null);
-            _sprint = (SprintAction != null) ? SprintAction.action : (inputActions != null ? inputActions.FindAction(sprintActionName, true) : null);
+            _move = (MoveAction != null) ? MoveAction.action : FindOptionalAction(moveActionName);
+            _attack = (AttackAction != null) ? AttackAction.action : FindOptionalAction(attackActionName);
+            _sprint = (SprintAction != null) ? SprintAction.action : FindOptionalAction(sprintActionName);
+            _jump = (JumpAction != null) ? JumpAction.action : FindOptionalAction(jumpActionName);
             if (_move != null) _move.Enable();
             if (_attack != null) _attack.Enable();
             if (_sprint != null) _sprint.Enable();
+            if (_jump != null) _jump.Enable();
         }
         void OnDisable()
         {
             if (_move != null) _move.Disable();
             if (_attack != null) _attack.Disable();
             if (_sprint != null) _sprint.Disable();
+            if (_jump != null) _jump.Disable();
         }
         void Start()
         {
+            if (CheckGround())
+            {
+                _lastGroundedTime = Time.time;
+            }
+
             SetState(graph != null ? graph.initialState : null);
         }
 
@@ -75,6 +92,7 @@ namespace FenShen.PlayerFSM
         {
             CurrentMoveInput = _move != null ? _move.ReadValue<Vector2>() : Vector2.zero;
             float dt = Time.deltaTime;
+            UpdateJumpStateTracking();
             UpdateSprintInputState(dt);
             if (_current != null) _current.OnUpdate(this, dt);
             EvaluateTransitions(dt);
@@ -113,10 +131,35 @@ namespace FenShen.PlayerFSM
         public StateSO CurrentState { get { return _current; } }
         public ICombatSkillSystem CombatSystem { get { return _combat; } }
         public PlayerAbilityController Abilities { get { return AbilityController; } }
+        public PlayerDetection Detection { get { return PlayerDetection; } }
         public PlayerRuntimeStatsComponent RuntimeStats { get { return RuntimeStatsComponent; } }
         public bool AttackPressedThisFrame() { return _attack != null && _attack.WasPressedThisFrame(); }
         public bool AttackIsHeld() { return _attack != null && _attack.IsPressed(); }
         public bool MoveIsHeld(float threshold = 0.1f) { return CurrentMoveInput.sqrMagnitude >= (threshold * threshold); }
+        public bool CheckGround() { return PlayerDetection != null && PlayerDetection.CheckGround(); }
+        public bool CheckWall() { return PlayerDetection != null && PlayerDetection.CheckWall(); }
+        public bool JumpPressedThisFrame() { return _jump != null && _jump.WasPressedThisFrame(); }
+        public bool JumpReleasedThisFrame() { return _jump != null && _jump.WasReleasedThisFrame(); }
+        public bool JumpIsHeld() { return _jump != null && _jump.IsPressed(); }
+        public bool IsWithinJumpBuffer
+        {
+            get
+            {
+                return !_jumpBufferedConsumed && Time.time - _lastJumpPressedTime <= GetJumpBufferDuration();
+            }
+        }
+        public bool IsWithinCoyoteTime
+        {
+            get
+            {
+                if (CheckGround())
+                {
+                    return true;
+                }
+
+                return Time.time - _lastGroundedTime <= GetCoyoteTimeDuration();
+            }
+        }
         public bool SprintPressedThisFrame() { return _sprint != null && _sprint.WasPressedThisFrame(); }
         public bool SprintReleasedThisFrame() { return _sprintReleasedThisFrame; }
         public bool SprintHeldFor(float duration) { return IsSprinting && _sprintHeldTime >= duration; }
@@ -147,6 +190,44 @@ namespace FenShen.PlayerFSM
         public float GetDodgeCooldownDuration(float fallbackValue = 0f)
         {
             return Mathf.Max(0f, GetStat(StatKeys.DashCooldown, fallbackValue));
+        }
+        public float GetJumpBufferDuration(float fallbackValue = 0.12f)
+        {
+            return Mathf.Max(0f, GetStat(StatKeys.InputBuffer, fallbackValue));
+        }
+        public float GetCoyoteTimeDuration(float fallbackValue = 0.1f)
+        {
+            return Mathf.Max(0f, GetStat(StatKeys.CoyoteTime, fallbackValue));
+        }
+        public bool HasBufferedJump()
+        {
+            return IsWithinJumpBuffer;
+        }
+        public bool CanUseCoyoteJump()
+        {
+            return IsWithinCoyoteTime;
+        }
+        public bool CanStartJump()
+        {
+            return HasBufferedJump() && CanUseCoyoteJump();
+        }
+        public bool ConsumeBufferedJump()
+        {
+            if (!HasBufferedJump())
+            {
+                return false;
+            }
+
+            _jumpBufferedConsumed = true;
+            return true;
+        }
+        public void ResetJumpBuffer()
+        {
+            _jumpBufferedConsumed = true;
+        }
+        public void ClearGroundedHistory()
+        {
+            _lastGroundedTime = float.NegativeInfinity;
         }
         public bool CanEnterDodge(float fallbackCooldown = 0f)
         {
@@ -184,6 +265,14 @@ namespace FenShen.PlayerFSM
             if (AbilityController == null)
             {
                 AbilityController = GetComponent<PlayerAbilityController>();
+            }
+        }
+
+        private void RefreshPlayerDetectionReference()
+        {
+            if (PlayerDetection == null)
+            {
+                PlayerDetection = GetComponent<PlayerDetection>();
             }
         }
 
@@ -226,6 +315,37 @@ namespace FenShen.PlayerFSM
             }
 
             _sprintHeldTime = 0f;
+        }
+
+        private void UpdateJumpStateTracking()
+        {
+            if (_jump != null && _jump.WasPressedThisFrame())
+            {
+                _lastJumpPressedTime = Time.time;
+                _jumpBufferedConsumed = false;
+            }
+
+            bool isGrounded = CheckGround();
+            if (isGrounded)
+            {
+                _lastGroundedTime = Time.time;
+            }
+        }
+
+        private InputAction FindOptionalAction(string actionName)
+        {
+            if (inputActions == null || string.IsNullOrWhiteSpace(actionName))
+            {
+                return null;
+            }
+
+            InputAction action = inputActions.FindAction(actionName, false);
+            if (action == null)
+            {
+                Debug.LogWarning($"PlayerFsm could not find input action '{actionName}' in '{inputActions.name}'.", this);
+            }
+
+            return action;
         }
     }
 }

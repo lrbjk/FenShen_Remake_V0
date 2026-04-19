@@ -1,0 +1,30 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c50381819860dde438e1c051d6506cae, type: 3}
+  m_Name: Buff1001
+  m_EditorClassIdentifier: Assembly-CSharp::FenShen.GameData.BuffSO
+  version: 1
+  buffId: 1001
+  buffName: Poisn
+  category: 1
+  duration: 5
+  tickInterval: 0
+  stackRule: 1
+  refreshDurationOnReapply: 1
+  stackable: 0
+  maxStacks: 1
+  customRuntimeTypeName: 
+  modifiers: []
+  periodicDamage: 1
+  periodicHeal: 0
+  periodicDamageType: 4
+  controlFlags: 0

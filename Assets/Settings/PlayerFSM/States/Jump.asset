@@ -1,0 +1,39 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 810bb6a49bf5e2d4099827b9c7e6a88f, type: 3}
+  m_Name: Jump
+  m_EditorClassIdentifier: Assembly-CSharp::FenShen.PlayerFSM.JumpStateSO
+  displayName: Jump
+  editorPosition: {x: 623.5668, y: 4.833316}
+  animStateName: Jump
+  animLayer: 0
+  crossFade: 1
+  transitionDuration: 0
+  jumpAnimStateName: Jump
+  fallAnimStateName: JumpToFall
+  landingAnimStateName: Landing
+  jumpForce: 8
+  gravity: 25
+  maxFallSpeed: 18
+  earlyReleaseGravityMultiplier: 1.8
+  fallGravityMultiplier: 1.15
+  fallAnimationThreshold: -0.1
+  moveSpeed: 4.5
+  groundedTakeoffMomentumMultiplier: 1
+  stationaryTakeoffMomentumMultiplier: 0
+  airAcceleration: 24
+  airDeceleration: 16
+  maxAirSpeedMultiplier: 1
+  landingDuration: 0.12
+  landingMoveDamping: 10
+  groundedIdleState: {fileID: 11400000, guid: 30513ed1022285348b8369ac2ec2e546, type: 2}
+  groundedMoveState: {fileID: 11400000, guid: 35e4956465c6a984282680f573f9c8c4, type: 2}

@@ -29,14 +29,14 @@ MonoBehaviour:
   movement:
     moveSpeed: 3.5
     jumpForce: 8
-    dashDistance: 1.5
+    dashDistance: 3
     dashCooldown: 0.5
     airJumpCount: 0
     gravityScale: 1
   feel:
     invincibleTime: 0.2
     hitPause: 0.05
-    inputBuffer: 0.1
+    inputBuffer: 0.12
     coyoteTime: 0.1
     turnSpeed: 720
   growth:

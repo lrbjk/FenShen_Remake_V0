@@ -28,6 +28,29 @@ namespace FenShen.GameData
         Debuff = 1
     }
 
+    public enum BuffStackRule
+    {
+        Refresh = 0,
+        Stack = 1,
+        Replace = 2,
+        Ignore = 3
+    }
+
+    [Flags]
+    public enum BuffControlFlag
+    {
+        None = 0,
+        DisableMove = 1 << 0,
+        DisableJump = 1 << 1,
+        DisableAttack = 1 << 2,
+        DisableSkill = 1 << 3,
+        DisableInput = 1 << 4,
+        Invulnerable = 1 << 5,
+        Silence = 1 << 6,
+        Root = 1 << 7,
+        Stun = 1 << 8,
+    }
+
     public enum ModifierOperation
     {
         Add = 0,

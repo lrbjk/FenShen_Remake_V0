@@ -2,7 +2,7 @@ using UnityEngine;
 
 namespace FenShen.PlayerFSM
 {
-    public enum InputBindingType { Attack, Move, Sprint }
+    public enum InputBindingType { Attack, Move, Sprint, Jump }
 
     [CreateAssetMenu(fileName = "InputPressedCondition", menuName = "PlayerFSM / Conditions / InputPressed")]
     public class InputPressedConditionSO : ConditionSO
@@ -29,6 +29,9 @@ namespace FenShen.PlayerFSM
                     result = requirePressedThisFrame
                         ? fsm.SprintPressedThisFrame()
                         : (minHoldDuration > 0f ? fsm.SprintHeldFor(minHoldDuration) : fsm.IsSprinting);
+                    break;
+                case InputBindingType.Jump:
+                    result = requirePressedThisFrame ? fsm.JumpPressedThisFrame() : fsm.JumpIsHeld();
                     break;
                 default:
                     result = false;
