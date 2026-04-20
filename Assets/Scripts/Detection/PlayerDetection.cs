@@ -2,47 +2,111 @@ using UnityEngine;
 
 public class PlayerDetection : MonoBehaviour
 {
-    [Header("µØÃæ¼ì²â")]
+    [Header("Ground Check")]
     public Transform groundCheckPoint;
     public Vector2 size;
     public LayerMask groundLayer;
-    [Header("Ç½Ãæ¼ì²â")]
+
+    [Header("Lose Ground Grace")]
+    [Min(0)]
+    public int loseGroundGraceFrames = 3;
+    [Min(0f)]
+    public float loseGroundGraceTime = 0.05f;
+
+    [Header("Wall Check")]
     public Transform wallCheckPoint;
     public Vector2 wallSize;
     public LayerMask wallLayer;
-    // Start is called once before the first execution of Update after the MonoBehaviour is created
+
+    private bool _isGrounded;
+    private int _consecutiveUngroundedFrames;
+    private float _lastGroundedTime = float.NegativeInfinity;
+    private int _lastGroundEvalFrame = -1;
+    private bool _lastGroundEvalResult;
+
     void Start()
     {
-        
+        bool groundedNow = CheckGroundRaw();
+        _isGrounded = groundedNow;
+        _lastGroundEvalResult = groundedNow;
+
+        if (groundedNow)
+        {
+            _lastGroundedTime = Time.time;
+        }
     }
 
-    // Update is called once per frame
     void Update()
     {
-        
     }
+
     public bool CheckGround()
     {
-        Collider2D[] colliders = Physics2D.OverlapBoxAll(groundCheckPoint.position, size, 0f, groundLayer);
-        if(colliders.Length > 0)
+        if (_lastGroundEvalFrame == Time.frameCount)
         {
+            return _lastGroundEvalResult;
+        }
+
+        _lastGroundEvalFrame = Time.frameCount;
+
+        bool groundedNow = CheckGroundRaw();
+        if (groundedNow)
+        {
+            _isGrounded = true;
+            _consecutiveUngroundedFrames = 0;
+            _lastGroundedTime = Time.time;
+            _lastGroundEvalResult = true;
             return true;
         }
-        return false;
+
+        _consecutiveUngroundedFrames++;
+
+        bool exceededFrameGrace = loseGroundGraceFrames <= 0 || _consecutiveUngroundedFrames > loseGroundGraceFrames;
+        bool exceededTimeGrace = loseGroundGraceTime <= 0f || Time.time - _lastGroundedTime > loseGroundGraceTime;
+
+        if (exceededFrameGrace && exceededTimeGrace)
+        {
+            _isGrounded = false;
+        }
+
+        _lastGroundEvalResult = _isGrounded;
+        return _isGrounded;
     }
+
     public bool CheckWall()
     {
-        Collider2D[] colliders = Physics2D.OverlapBoxAll(wallCheckPoint.position, wallSize, 0f, wallLayer);
-        if (colliders.Length > 0)
+        if (wallCheckPoint == null)
         {
-            return true;
+            return false;
         }
-        return false;
+
+        Collider2D[] colliders = Physics2D.OverlapBoxAll(wallCheckPoint.position, wallSize, 0f, wallLayer);
+        return colliders.Length > 0;
     }
+
     private void OnDrawGizmos()
     {
         Gizmos.color = Color.red;
-        Gizmos.DrawWireCube(groundCheckPoint.position,size);
-        Gizmos.DrawWireCube(wallCheckPoint.position, wallSize);
+
+        if (groundCheckPoint != null)
+        {
+            Gizmos.DrawWireCube(groundCheckPoint.position, size);
+        }
+
+        if (wallCheckPoint != null)
+        {
+            Gizmos.DrawWireCube(wallCheckPoint.position, wallSize);
+        }
+    }
+
+    private bool CheckGroundRaw()
+    {
+        if (groundCheckPoint == null)
+        {
+            return false;
+        }
+
+        Collider2D[] colliders = Physics2D.OverlapBoxAll(groundCheckPoint.position, size, 0f, groundLayer);
+        return colliders.Length > 0;
     }
 }

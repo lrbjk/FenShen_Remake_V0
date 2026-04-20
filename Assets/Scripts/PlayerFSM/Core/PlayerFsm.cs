@@ -31,10 +31,16 @@ namespace FenShen.PlayerFSM
         public PlayerDetection PlayerDetection;
         [Header("Runtime Stats")]
         public PlayerRuntimeStatsComponent RuntimeStatsComponent;
+        [Header("Debug UI")]
+        public bool showDebugOverlay = true;
+        public Vector2 debugOverlayPosition = new Vector2(16f, 16f);
+        public Vector2 debugOverlaySize = new Vector2(360f, 140f);
         private ICombatSkillSystem _combat;
 
         private StateSO _current;
         private readonly List<TransitionLinkSO> _buffer = new List<TransitionLinkSO>();
+        private TransitionLinkSO _currentTriggeredTransition;
+        private string _lastTransitionLabel = "None";
 
         private InputAction _move;
         private InputAction _attack;
@@ -49,6 +55,9 @@ namespace FenShen.PlayerFSM
         private bool _jumpBufferedConsumed;
 
         public Vector2 CurrentMoveInput { get; private set; }
+        public float AirborneVerticalVelocity { get; set; }
+        public float AirborneHorizontalVelocity { get; set; }
+        public float GroundedHorizontalVelocity { get; set; }
         public bool IsSprinting { get { return _sprint != null && _sprint.IsPressed(); } }
         public float SprintHeldTime { get { return _sprintHeldTime; } }
 
@@ -102,12 +111,25 @@ namespace FenShen.PlayerFSM
         {
             if (graph == null || _current == null) return;
             _buffer.Clear();
+            _currentTriggeredTransition = null;
             foreach (var t in graph.GetOutgoing(_current))
             {
                 if (t == null || t.to == null) continue;
-                if (t.Evaluate(this, dt)) _buffer.Add(t);
+                if (t.Evaluate(this, dt))
+                {
+                    _buffer.Add(t);
+                    if (_currentTriggeredTransition == null)
+                    {
+                        _currentTriggeredTransition = t;
+                    }
+                }
             }
-            if (_buffer.Count > 0) SetState(_buffer[0].to);
+            if (_buffer.Count > 0)
+            {
+                TransitionLinkSO chosenTransition = _buffer[0];
+                _lastTransitionLabel = BuildTransitionLabel(chosenTransition);
+                SetState(chosenTransition.to);
+            }
         }
 
         public void SetState(StateSO next)
@@ -346,6 +368,34 @@ namespace FenShen.PlayerFSM
             }
 
             return action;
+        }
+
+        private void OnGUI()
+        {
+            if (!showDebugOverlay)
+            {
+                return;
+            }
+
+            Rect rect = new Rect(debugOverlayPosition.x, debugOverlayPosition.y, debugOverlaySize.x, debugOverlaySize.y);
+            GUI.Box(rect, "Player FSM Debug");
+
+            GUILayout.BeginArea(new Rect(rect.x + 12f, rect.y + 28f, rect.width - 24f, rect.height - 40f));
+            GUILayout.Label($"Current State: {(_current != null ? _current.DisplayName : "None")}");
+            GUILayout.Label($"Current Transition: {BuildTransitionLabel(_currentTriggeredTransition)}");
+            GUILayout.Label($"Last Transition: {_lastTransitionLabel}");
+            GUILayout.Label($"Grounded: {CheckGround()}");
+            GUILayout.EndArea();
+        }
+
+        private string BuildTransitionLabel(TransitionLinkSO transition)
+        {
+            if (transition == null)
+            {
+                return "None";
+            }
+
+            return $"{transition.DisplayName} [{transition.ConditionSummary}]";
         }
     }
 }

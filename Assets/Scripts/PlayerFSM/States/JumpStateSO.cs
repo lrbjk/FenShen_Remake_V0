@@ -6,24 +6,15 @@ namespace FenShen.PlayerFSM
     [CreateAssetMenu(fileName = "JumpState", menuName = "PlayerFSM / States / Jump")]
     public class JumpStateSO : StateSO
     {
-        private enum JumpPhase
-        {
-            Rising,
-            Falling,
-            Landing
-        }
-
         [Header("Animation")]
         public string jumpAnimStateName = "jump";
-        public string fallAnimStateName = "jumptofall";
-        public string landingAnimStateName = "landing";
+        public StateSO fallState;
 
-        [Header("Jump Motion")]
+        [Header("Air Motion")]
         public float jumpForce = 8f;
         public float gravity = 25f;
-        public float maxFallSpeed = 18f;
+        public float maxRiseSpeed = 18f;
         public float earlyReleaseGravityMultiplier = 1.8f;
-        public float fallGravityMultiplier = 1.15f;
         public float fallAnimationThreshold = -0.1f;
 
         [Header("Horizontal Feel")]
@@ -33,32 +24,23 @@ namespace FenShen.PlayerFSM
         public float airAcceleration = 24f;
         public float airDeceleration = 16f;
         public float maxAirSpeedMultiplier = 1f;
-
-        [Header("Landing")]
-        public float landingDuration = 0.12f;
-        public float landingMoveDamping = 10f;
-        public StateSO groundedIdleState;
-        public StateSO groundedMoveState;
-
-        private JumpPhase _phase;
-        private float _verticalVelocity;
-        private float _horizontalVelocity;
-        private float _landingTimer;
+        [Min(0f)]
+        public float facingInputDeadzone = 0.2f;
 
         public override void OnEnter(PlayerFsm fsm)
         {
             base.OnEnter(fsm);
 
-            if (fsm != null)
+            if (fsm == null)
             {
-                fsm.ConsumeBufferedJump();
-                fsm.ClearGroundedHistory();
+                return;
             }
 
-            _phase = JumpPhase.Rising;
-            _landingTimer = 0f;
-            _verticalVelocity = Mathf.Max(0f, fsm != null ? fsm.GetStat(StatKeys.JumpForce, jumpForce) : jumpForce);
-            _horizontalVelocity = ResolveTakeoffHorizontalVelocity(fsm);
+            fsm.ConsumeBufferedJump();
+            fsm.ClearGroundedHistory();
+
+            fsm.AirborneVerticalVelocity = Mathf.Max(0f, fsm.GetStat(StatKeys.JumpForce, jumpForce));
+            fsm.AirborneHorizontalVelocity = ResolveTakeoffHorizontalVelocity(fsm);
             PlayAnimation(fsm, ResolveAnimationName(jumpAnimStateName, animStateName), true);
         }
 
@@ -69,17 +51,7 @@ namespace FenShen.PlayerFSM
                 return;
             }
 
-            switch (_phase)
-            {
-                case JumpPhase.Rising:
-                case JumpPhase.Falling:
-                    UpdateAirborne(fsm, deltaTime);
-                    break;
-
-                case JumpPhase.Landing:
-                    UpdateLanding(fsm, deltaTime);
-                    break;
-            }
+            UpdateAirborne(fsm, deltaTime);
         }
 
         private void UpdateAirborne(PlayerFsm fsm, float deltaTime)
@@ -87,48 +59,21 @@ namespace FenShen.PlayerFSM
             float gravityScale = Mathf.Max(0.01f, fsm.GetStat(StatKeys.GravityScale, 1f));
             float resolvedGravity = gravity * gravityScale;
 
-            if (_verticalVelocity > 0f && !fsm.JumpIsHeld())
+            if (fsm.AirborneVerticalVelocity > 0f && !fsm.JumpIsHeld())
             {
                 resolvedGravity *= earlyReleaseGravityMultiplier;
             }
-            else if (_verticalVelocity <= 0f)
-            {
-                resolvedGravity *= fallGravityMultiplier;
-            }
 
-            _verticalVelocity = Mathf.Max(-maxFallSpeed, _verticalVelocity - resolvedGravity * deltaTime);
+            fsm.AirborneVerticalVelocity = Mathf.Max(-maxRiseSpeed, fsm.AirborneVerticalVelocity - resolvedGravity * deltaTime);
             UpdateHorizontalVelocity(fsm, deltaTime);
 
-            Vector3 delta = new Vector3(_horizontalVelocity * deltaTime, _verticalVelocity * deltaTime, 0f);
+            Vector3 delta = new Vector3(fsm.AirborneHorizontalVelocity * deltaTime, fsm.AirborneVerticalVelocity * deltaTime, 0f);
             fsm.Character.Translate(delta, Space.World);
-            UpdateFacing(fsm, _horizontalVelocity);
+            UpdateFacing(fsm);
 
-            if (_phase == JumpPhase.Rising && _verticalVelocity <= fallAnimationThreshold)
+            if (fsm.AirborneVerticalVelocity <= fallAnimationThreshold && fallState != null)
             {
-                _phase = JumpPhase.Falling;
-                PlayAnimation(fsm, ResolveAnimationName(fallAnimStateName, jumpAnimStateName), true);
-            }
-
-            if (_verticalVelocity <= 0f && fsm.CheckGround())
-            {
-                StartLanding(fsm);
-            }
-        }
-
-        private void UpdateLanding(PlayerFsm fsm, float deltaTime)
-        {
-            _landingTimer += deltaTime;
-            _horizontalVelocity = Mathf.MoveTowards(_horizontalVelocity, 0f, landingMoveDamping * deltaTime);
-
-            if (Mathf.Abs(_horizontalVelocity) > 0.001f)
-            {
-                fsm.Character.Translate(new Vector3(_horizontalVelocity * deltaTime, 0f, 0f), Space.World);
-                UpdateFacing(fsm, _horizontalVelocity);
-            }
-
-            if (_landingTimer >= landingDuration)
-            {
-                ExitToGroundedState(fsm);
+                fsm.SetState(fallState);
             }
         }
 
@@ -138,7 +83,7 @@ namespace FenShen.PlayerFSM
             float maxAirSpeed = fsm.GetStat(StatKeys.MoveSpeed, moveSpeed) * maxAirSpeedMultiplier;
             float targetVelocity = inputX * maxAirSpeed;
             float acceleration = Mathf.Abs(targetVelocity) > 0.01f ? airAcceleration : airDeceleration;
-            _horizontalVelocity = Mathf.MoveTowards(_horizontalVelocity, targetVelocity, acceleration * deltaTime);
+            fsm.AirborneHorizontalVelocity = Mathf.MoveTowards(fsm.AirborneHorizontalVelocity, targetVelocity, acceleration * deltaTime);
         }
 
         private float ResolveTakeoffHorizontalVelocity(PlayerFsm fsm)
@@ -158,40 +103,21 @@ namespace FenShen.PlayerFSM
             return inputX * resolvedMoveSpeed * groundedTakeoffMomentumMultiplier;
         }
 
-        private void StartLanding(PlayerFsm fsm)
+        private void UpdateFacing(PlayerFsm fsm)
         {
-            _phase = JumpPhase.Landing;
-            _verticalVelocity = 0f;
-            _landingTimer = 0f;
-            PlayAnimation(fsm, ResolveAnimationName(landingAnimStateName, fallAnimStateName), true);
-        }
-
-        private void ExitToGroundedState(PlayerFsm fsm)
-        {
-            if (fsm == null)
+            if (fsm == null || fsm.Character == null)
             {
                 return;
             }
 
-            StateSO next = fsm.MoveIsHeld()
-                ? (groundedMoveState != null ? groundedMoveState : groundedIdleState)
-                : (groundedIdleState != null ? groundedIdleState : groundedMoveState);
-
-            if (next != null)
-            {
-                fsm.SetState(next);
-            }
-        }
-
-        private void UpdateFacing(PlayerFsm fsm, float velocityX)
-        {
-            if (fsm == null || fsm.Character == null || Mathf.Abs(velocityX) <= 0.001f)
+            float inputX = fsm.CurrentMoveInput.x;
+            if (Mathf.Abs(inputX) < facingInputDeadzone)
             {
                 return;
             }
 
             Vector3 scale = fsm.Character.localScale;
-            scale.x = Mathf.Abs(scale.x) * Mathf.Sign(velocityX);
+            scale.x = Mathf.Abs(scale.x) * Mathf.Sign(inputX);
             fsm.Character.localScale = scale;
         }
 

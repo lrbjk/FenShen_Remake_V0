@@ -19,13 +19,11 @@ MonoBehaviour:
   crossFade: 1
   transitionDuration: 0
   jumpAnimStateName: Jump
-  fallAnimStateName: JumpToFall
-  landingAnimStateName: Landing
+  fallState: {fileID: 11400000, guid: f301abe62521f6a44a762f4fd264d11a, type: 2}
   jumpForce: 8
   gravity: 25
-  maxFallSpeed: 18
+  maxRiseSpeed: 18
   earlyReleaseGravityMultiplier: 1.8
-  fallGravityMultiplier: 1.15
   fallAnimationThreshold: -0.1
   moveSpeed: 4.5
   groundedTakeoffMomentumMultiplier: 1
@@ -33,7 +31,4 @@ MonoBehaviour:
   airAcceleration: 24
   airDeceleration: 16
   maxAirSpeedMultiplier: 1
-  landingDuration: 0.12
-  landingMoveDamping: 10
-  groundedIdleState: {fileID: 11400000, guid: 30513ed1022285348b8369ac2ec2e546, type: 2}
-  groundedMoveState: {fileID: 11400000, guid: 35e4956465c6a984282680f573f9c8c4, type: 2}
+  facingInputDeadzone: 0.2

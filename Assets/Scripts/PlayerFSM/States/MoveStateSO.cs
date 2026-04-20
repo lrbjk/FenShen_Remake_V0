@@ -26,6 +26,9 @@ namespace FenShen.PlayerFSM
                 float curveMul = ResolveCurveMultiplier(fsm);
                 float resolvedBaseSpeed = fsm.GetStat(StatKeys.MoveSpeed, baseSpeed);
                 float speed = resolvedBaseSpeed * movementMultiplier * curveMul;
+                float signedSpeed = dir.x * speed;
+                fsm.GroundedHorizontalVelocity = signedSpeed;
+                fsm.AirborneHorizontalVelocity = signedSpeed;
 
                 if (dir.x < 0)
                 {
