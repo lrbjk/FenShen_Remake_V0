@@ -14,10 +14,20 @@ namespace FenShen.PlayerFSM
         {
             base.OnEnter(fsm);
             _fired = false;
+
+            if (fsm != null && fsm.TryStartCombatAttack(skillId))
+            {
+                _fired = true;
+            }
         }
 
         public override void OnUpdate(PlayerFsm fsm, float dt)
         {
+            if (fsm != null && fsm.IsSuspendedByCombat)
+            {
+                return;
+            }
+
             float nt = GetNormalizedTime(fsm);
             if (!_fired && nt >= triggerAtNormalizedTime)
             {

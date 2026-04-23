@@ -1,4 +1,5 @@
 using System.Collections.Generic;
+using FenShen.Combat;
 using FenShen.GameData;
 using UnityEngine;
 using UnityEngine.InputSystem;
@@ -25,6 +26,7 @@ namespace FenShen.PlayerFSM
 
         [Header("Combat")]
         public MonoBehaviour CombatSystemBehaviour;
+        public CombatCoordinator CombatCoordinator;
         [Header("Abilities")]
         public PlayerAbilityController AbilityController;
         [Header("Detection")]
@@ -41,6 +43,7 @@ namespace FenShen.PlayerFSM
         private readonly List<TransitionLinkSO> _buffer = new List<TransitionLinkSO>();
         private TransitionLinkSO _currentTriggeredTransition;
         private string _lastTransitionLabel = "None";
+        private bool _isSuspendedByCombat;
 
         private InputAction _move;
         private InputAction _attack;
@@ -60,10 +63,12 @@ namespace FenShen.PlayerFSM
         public float GroundedHorizontalVelocity { get; set; }
         public bool IsSprinting { get { return _sprint != null && _sprint.IsPressed(); } }
         public float SprintHeldTime { get { return _sprintHeldTime; } }
+        public bool IsSuspendedByCombat { get { return _isSuspendedByCombat; } }
 
         void Awake()
         {
             RefreshCombatSystemReference();
+            RefreshCombatCoordinatorReference();
             RefreshAbilityControllerReference();
             RefreshPlayerDetectionReference();
             RefreshRuntimeStatsReference();
@@ -103,6 +108,20 @@ namespace FenShen.PlayerFSM
             float dt = Time.deltaTime;
             UpdateJumpStateTracking();
             UpdateSprintInputState(dt);
+            if (CombatCoordinator != null)
+            {
+                CombatCoordinator.ManualUpdate(dt);
+                if (!_isSuspendedByCombat)
+                {
+                    CombatCoordinator.TryHandleAttackInput();
+                }
+            }
+
+            if (_isSuspendedByCombat)
+            {
+                return;
+            }
+
             if (_current != null) _current.OnUpdate(this, dt);
             EvaluateTransitions(dt);
         }
@@ -135,6 +154,32 @@ namespace FenShen.PlayerFSM
         public void SetState(StateSO next)
         {
             if (next == null || _current == next) return;
+            ChangeState(next, false);
+        }
+
+        public void ReenterState(StateSO state = null)
+        {
+            StateSO target = state != null ? state : _current;
+            if (target == null)
+            {
+                return;
+            }
+
+            ChangeState(target, true);
+        }
+
+        private void ChangeState(StateSO next, bool allowReenter)
+        {
+            if (next == null)
+            {
+                return;
+            }
+
+            if (!allowReenter && _current == next)
+            {
+                return;
+            }
+
             DodgeStateSO dodgeState = next as DodgeStateSO;
             if (dodgeState != null && !CanEnterDodge(dodgeState.dodgeCooldown)) return;
             if (_current != null)
@@ -152,6 +197,7 @@ namespace FenShen.PlayerFSM
 
         public StateSO CurrentState { get { return _current; } }
         public ICombatSkillSystem CombatSystem { get { return _combat; } }
+        public CombatCoordinator CombatController { get { return CombatCoordinator; } }
         public PlayerAbilityController Abilities { get { return AbilityController; } }
         public PlayerDetection Detection { get { return PlayerDetection; } }
         public PlayerRuntimeStatsComponent RuntimeStats { get { return RuntimeStatsComponent; } }
@@ -277,9 +323,101 @@ namespace FenShen.PlayerFSM
             return Vector2.Dot(normalizedInput, normalizedDirection) >= 0.7071f;
         }
 
+        public bool TryStartCombatAttack(string skillId)
+        {
+            return CombatCoordinator != null && CombatCoordinator.TryStartAttack(skillId);
+        }
+
+        public void SuspendByCombat()
+        {
+            _isSuspendedByCombat = true;
+        }
+
+        public void ResumeFromCombat(StateSO recoveryState = null)
+        {
+            _isSuspendedByCombat = false;
+
+            StateSO next = recoveryState != null ? recoveryState : ResolveDefaultLocomotionState();
+            if (next == null)
+            {
+                return;
+            }
+
+            if (_current == next)
+            {
+                ReenterState(next);
+                return;
+            }
+
+            SetState(next);
+        }
+
+        public StateSO ResolveDefaultLocomotionState()
+        {
+            if (!CheckGround())
+            {
+                return FindStateOfType<FallStateSO>();
+            }
+
+            if (MoveIsHeld())
+            {
+                StateSO moveState = FindPreferredGroundMoveState();
+                if (moveState != null)
+                {
+                    return moveState;
+                }
+            }
+
+            return FindStateOfType<IdleStateSO>();
+        }
+
+        public StateSO FindPreferredGroundMoveState()
+        {
+            StateSO moveState = FindStateOfType<RunStateSO>();
+            if (moveState != null)
+            {
+                return moveState;
+            }
+
+            moveState = FindStateOfType<WalkStateSO>();
+            if (moveState != null)
+            {
+                return moveState;
+            }
+
+            return FindStateOfType<MoveStateSO>();
+        }
+
+        public T FindStateOfType<T>() where T : StateSO
+        {
+            if (graph == null || graph.states == null)
+            {
+                return null;
+            }
+
+            for (int i = 0; i < graph.states.Count; i++)
+            {
+                T state = graph.states[i] as T;
+                if (state != null)
+                {
+                    return state;
+                }
+            }
+
+            return null;
+        }
+
         private void RefreshCombatSystemReference()
         {
             _combat = CombatSystemBehaviour as ICombatSkillSystem;
+        }
+
+        private void RefreshCombatCoordinatorReference()
+        {
+            if (CombatCoordinator == null)
+            {
+                CombatCoordinator = GetComponent<CombatCoordinator>();
+            }
         }
 
         private void RefreshAbilityControllerReference()

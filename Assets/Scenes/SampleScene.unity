@@ -751,6 +751,9 @@ GameObject:
   - component: {fileID: 2126761138}
   - component: {fileID: 2126761139}
   - component: {fileID: 2126761140}
+  - component: {fileID: 2126761141}
+  - component: {fileID: 2126761142}
+  - component: {fileID: 2126761143}
   m_Layer: 0
   m_Name: Player
   m_TagString: Untagged
@@ -770,6 +773,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 372f8d859e3a385478defa6a7647ab1e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::FenShen.PlayerFSM.SimpleCombatSkillSystem
+  combatCoordinator: {fileID: 0}
+  simulateHitConfirmOnExecute: 0
 --- !u!114 &2126761131
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -795,9 +800,13 @@ MonoBehaviour:
   sprintActionName: Player/Sprint
   jumpActionName: Player/Jump
   CombatSystemBehaviour: {fileID: 2126761130}
+  CombatCoordinator: {fileID: 0}
   AbilityController: {fileID: 2126761135}
   PlayerDetection: {fileID: 0}
   RuntimeStatsComponent: {fileID: 0}
+  showDebugOverlay: 1
+  debugOverlayPosition: {x: 16, y: 16}
+  debugOverlaySize: {x: 360, y: 140}
 --- !u!212 &2126761132
 SpriteRenderer:
   serializedVersion: 2
@@ -1037,6 +1046,66 @@ BoxCollider2D:
   m_AutoTiling: 0
   m_Size: {x: 0.33057302, y: 1.3146075}
   m_EdgeRadius: 0
+--- !u!114 &2126761141
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2126761129}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ac961e3ed5b63ba46896dfc346094ebf, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::FenShen.Combat.CombatCoordinator
+  playerFsm: {fileID: 2126761131}
+  weaponRuntime: {fileID: 2126761142}
+  handleAttackInputAutomatically: 1
+  defaultSkillId: Primary
+  defaultAttackDuration: 0.3
+  defaultAnimationStateName: 0
+  defaultAnimationLayer: 0
+  defaultCrossFade: 0
+  defaultTransitionDuration: 0
+  groundedRecoveryState: {fileID: 11400000, guid: 30513ed1022285348b8369ac2ec2e546, type: 2}
+  airborneRecoveryState: {fileID: 11400000, guid: f301abe62521f6a44a762f4fd264d11a, type: 2}
+  drawActiveHitGizmos: 1
+  drawGizmosWhenNotSelected: 1
+  activeHitGizmoColor: {r: 1, g: 0.25, b: 0.15, a: 0.35}
+  activeHitWireColor: {r: 1, g: 0.45, b: 0.2, a: 1}
+  activeMovementGizmoColor: {r: 0.2, g: 0.7, b: 1, a: 0.85}
+--- !u!114 &2126761142
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2126761129}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a0cd19e9fcebf53468e07360406cf08c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::FenShen.Combat.WeaponRuntimeController
+  playerFsm: {fileID: 2126761131}
+  currentWeapon: {fileID: 11400000, guid: cfba0aec1f25cb842bdae1e81e3619bc, type: 2}
+  resetComboOnWeaponSwap: 1
+  comboResetDelay: 0.9
+  useRuntimeComboWindowStat: 1
+  fallbackComboWindow: 0.2
+--- !u!114 &2126761143
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2126761129}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c4833e86d8f6d4d4f80c03c52dfb8c6c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::FenShen.Combat.CombatSkillPreviewAnchor
+  previewOrigin: {fileID: 2126761134}
+  mirrorByFacing: 1
 --- !u!1660057539 &9223372036854775807
 SceneRoots:
   m_ObjectHideFlags: 0

@@ -1,0 +1,37 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 46998226bd7544943af2e84b4094b2ee, type: 3}
+  m_Name: WeaponMoveSet
+  m_EditorClassIdentifier: Assembly-CSharp::FenShen.GameData.WeaponMoveSetSO
+  primaryAttackA1Skill: {fileID: 11400000, guid: 38b5acadcb7a8e348ab1fa4280664fbe, type: 2}
+  primaryAttackA1: 
+  primaryAttackA2Skill: {fileID: 0}
+  primaryAttackA2: 
+  primaryAttackA3Skill: {fileID: 0}
+  primaryAttackA3: 
+  primaryAttackA4Skill: {fileID: 0}
+  primaryAttackA4: 
+  aerialEntrySkillAsset: {fileID: 11400000, guid: f56ed4668476b9c4799cad66626160e6, type: 2}
+  aerialEntrySkill: 
+  aerialLoopSkillAsset: {fileID: 0}
+  aerialLoopSkill: 
+  aerialFinisherSkillAsset: {fileID: 0}
+  aerialFinisherSkill: 
+  launcherSkillAsset: {fileID: 0}
+  launcherSkill: 
+  slamSkillAsset: {fileID: 0}
+  slamSkill: 
+  landingChaseSkillAsset: {fileID: 0}
+  landingChaseSkill: 
+  entrySkills: []
+  comboBranches: []
+  specialWindows: []

@@ -1,0 +1,108 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0dd22fc87d42a7f4fabaf223f9883f33, type: 3}
+  m_Name: 91000_Timeline
+  m_EditorClassIdentifier: Assembly-CSharp::FenShen.Combat.SkillTimelineSO
+  length: 0.3
+  animationClips: []
+  movementClips:
+  - clipId: 
+    displayName: Movement 1
+    note: 
+    startTime: 0
+    duration: 0.3
+    enabled: 1
+    motionSource: 2
+    curveXName: MoveX
+    curveYName: MoveY
+    mirrorByFacing: 1
+    customCurveX:
+      serializedVersion: 2
+      m_Curve:
+      - serializedVersion: 3
+        time: 0
+        value: 0
+        inSlope: 2
+        outSlope: 2
+        tangentMode: 0
+        weightedMode: 0
+        inWeight: 0
+        outWeight: 0
+      - serializedVersion: 3
+        time: 0.8218541
+        value: 0.48634905
+        inSlope: 0.38890612
+        outSlope: 0.38890612
+        tangentMode: 0
+        weightedMode: 0
+        inWeight: 0.33333334
+        outWeight: 0.33333334
+      - serializedVersion: 3
+        time: 1
+        value: 0.5
+        inSlope: 0
+        outSlope: 0
+        tangentMode: 0
+        weightedMode: 0
+        inWeight: 0
+        outWeight: 0
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+      m_RotationOrder: 0
+    customCurveY:
+      serializedVersion: 2
+      m_Curve: []
+      m_PreInfinity: 0
+      m_PostInfinity: 0
+      m_RotationOrder: 0
+  hitClips:
+  - clipId: 
+    displayName: Hit 1
+    note: 
+    startTime: 0.071428575
+    duration: 0.06
+    enabled: 1
+    hitShape: 0
+    offset: {x: 0.91, y: -0.52, z: 0}
+    size: {x: 1.17, y: 1.07, z: 1}
+    targetLayers:
+      serializedVersion: 2
+      m_Bits: 0
+    followsCaster: 0
+    allowRepeatHitsOnSameTarget: 0
+    isContinuous: 0
+    tickInterval: 0
+    damageMultiplier: 0
+    poiseDamage: 0
+  projectileClips: []
+  vfxClips: []
+  sfxClips: []
+  cameraClips: []
+  cancelWindowClips:
+  - clipId: 
+    displayName: Cancel 1
+    note: 
+    startTime: 0.2142857
+    duration: 0.1
+    enabled: 1
+    cancelPermission: 4
+  derivationWindowClips:
+  - clipId: 
+    displayName: Derivation 1
+    note: 
+    startTime: 0
+    duration: 0.07
+    enabled: 1
+    nextSkills: []
+    requiresHitConfirm: 0
+    requiresGrounded: 0
+    requiresAerial: 0

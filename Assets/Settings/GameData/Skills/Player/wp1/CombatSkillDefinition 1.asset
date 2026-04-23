@@ -1,0 +1,94 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0019e0830aea5d04abf266563b1e7303, type: 3}
+  m_Name: CombatSkillDefinition 1
+  m_EditorClassIdentifier: Assembly-CSharp::FenShen.Combat.CombatSkillDefinitionSO
+  skillId: 91001
+  displayName: "\u6D6E\u7A7A\u666E\u653B2"
+  description: 
+  icon: {fileID: 0}
+  usageSide: 0
+  tags: []
+  animationStateName: AirAttack
+  animationLayer: 0
+  crossFade: 1
+  transitionDuration: 0
+  timeline: {fileID: 11400000, guid: efa6e8592cf2d1a46930c47c5d7d0142, type: 2}
+  motion:
+    motionSource: 1
+    mirrorByFacing: 1
+    curveXName: MoveX
+    curveYName: MoveY
+    customCurveX:
+      serializedVersion: 2
+      m_Curve:
+      - serializedVersion: 3
+        time: 0
+        value: 0
+        inSlope: 0
+        outSlope: 0
+        tangentMode: 0
+        weightedMode: 0
+        inWeight: 0
+        outWeight: 0
+      - serializedVersion: 3
+        time: 1
+        value: 0
+        inSlope: 0
+        outSlope: 0
+        tangentMode: 0
+        weightedMode: 0
+        inWeight: 0
+        outWeight: 0
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+      m_RotationOrder: 4
+    customCurveY:
+      serializedVersion: 2
+      m_Curve:
+      - serializedVersion: 3
+        time: 0
+        value: 0
+        inSlope: 0
+        outSlope: 0
+        tangentMode: 0
+        weightedMode: 0
+        inWeight: 0
+        outWeight: 0
+      - serializedVersion: 3
+        time: 1
+        value: 0
+        inSlope: 0
+        outSlope: 0
+        tangentMode: 0
+        weightedMode: 0
+        inWeight: 0
+        outWeight: 0
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+      m_RotationOrder: 4
+  duration: 0.3
+  startup: 0.1
+  active: 0.1
+  recovery: 0.1
+  cooldown: 0
+  damageMultiplier: 1
+  poiseDamage: 0
+  resourceCost: 0
+  groundedOnly: 0
+  aerialOnly: 1
+  requiredWeaponTraits: 0
+  enterConditions:
+    logic: 0
+    conditions: []
+  previousSkills: []
+  derivationRules: []
