@@ -69,6 +69,24 @@ namespace FenShen.GameData
                 {
                     return moveSetSkill;
                 }
+
+                if (slot == WeaponAttackSlot.PrimaryGround)
+                {
+                    FenShen.Combat.CombatSkillDefinitionSO groundStarter = moveSet.GetPrimaryComboSkillAsset(0, true);
+                    if (groundStarter != null)
+                    {
+                        return groundStarter;
+                    }
+                }
+
+                if (slot == WeaponAttackSlot.PrimaryAir)
+                {
+                    FenShen.Combat.CombatSkillDefinitionSO airStarter = moveSet.GetPrimaryComboSkillAsset(0, false);
+                    if (airStarter != null)
+                    {
+                        return airStarter;
+                    }
+                }
             }
 
             switch (slot)
@@ -98,6 +116,24 @@ namespace FenShen.GameData
                 if (!string.IsNullOrWhiteSpace(moveSetSkill))
                 {
                     return moveSetSkill;
+                }
+
+                if (slot == WeaponAttackSlot.PrimaryGround)
+                {
+                    string groundStarter = moveSet.GetPrimaryComboSkillId(0, true);
+                    if (!string.IsNullOrWhiteSpace(groundStarter))
+                    {
+                        return groundStarter;
+                    }
+                }
+
+                if (slot == WeaponAttackSlot.PrimaryAir)
+                {
+                    string airStarter = moveSet.GetPrimaryComboSkillId(0, false);
+                    if (!string.IsNullOrWhiteSpace(airStarter))
+                    {
+                        return airStarter;
+                    }
                 }
             }
 

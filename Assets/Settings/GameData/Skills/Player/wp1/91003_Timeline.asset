@@ -10,7 +10,7 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 0dd22fc87d42a7f4fabaf223f9883f33, type: 3}
-  m_Name: 91001_Timeline
+  m_Name: 91003_Timeline
   m_EditorClassIdentifier: Assembly-CSharp::FenShen.Combat.SkillTimelineSO
   length: 0.3
   animationClips: []
@@ -19,7 +19,7 @@ MonoBehaviour:
     displayName: Movement 1
     note: 
     startTime: 0
-    duration: 0.3
+    duration: 0.2
     enabled: 1
     motionSource: 2
     curveXName: MoveX
@@ -27,33 +27,33 @@ MonoBehaviour:
     mirrorByFacing: 1
     customCurveX:
       serializedVersion: 2
-      m_Curve:
-      - serializedVersion: 3
-        time: 0
-        value: 0
-        inSlope: 2
-        outSlope: 2
-        tangentMode: 0
-        weightedMode: 0
-        inWeight: 0
-        outWeight: 0
-      - serializedVersion: 3
-        time: 1
-        value: 1
-        inSlope: 0
-        outSlope: 0
-        tangentMode: 0
-        weightedMode: 0
-        inWeight: 0
-        outWeight: 0
-      m_PreInfinity: 2
-      m_PostInfinity: 2
-      m_RotationOrder: 0
-    customCurveY:
-      serializedVersion: 2
       m_Curve: []
       m_PreInfinity: 0
       m_PostInfinity: 0
+      m_RotationOrder: 0
+    customCurveY:
+      serializedVersion: 2
+      m_Curve:
+      - serializedVersion: 3
+        time: 0.06985474
+        value: -0.019924164
+        inSlope: -0.19879249
+        outSlope: -0.19879249
+        tangentMode: 34
+        weightedMode: 0
+        inWeight: 0
+        outWeight: 0.33333334
+      - serializedVersion: 3
+        time: 5
+        value: -1
+        inSlope: -0.19879249
+        outSlope: -0.19879249
+        tangentMode: 34
+        weightedMode: 0
+        inWeight: 0.33333334
+        outWeight: 0
+      m_PreInfinity: 2
+      m_PostInfinity: 2
       m_RotationOrder: 0
   hitClips:
   - clipId: 
@@ -63,8 +63,8 @@ MonoBehaviour:
     duration: 0.07
     enabled: 1
     hitShape: 0
-    offset: {x: 0.29, y: -0.5, z: 0}
-    size: {x: 2.4, y: 1, z: 1}
+    offset: {x: 0.13, y: 0.15, z: 0}
+    size: {x: 1.67, y: 2.12, z: 1}
     targetLayers:
       serializedVersion: 2
       m_Bits: 0
@@ -82,16 +82,16 @@ MonoBehaviour:
   - clipId: 
     displayName: Cancel 1
     note: 
-    startTime: 0.2142857
-    duration: 0.1
+    startTime: 0.14285715
+    duration: 0.2
     enabled: 1
-    cancelPermission: 4
+    cancelPermission: 3
   derivationWindowClips:
   - clipId: 
     displayName: Derivation 1
     note: 
-    startTime: 0.21428572
-    duration: 0.1
+    startTime: 0.14285715
+    duration: 0.2
     enabled: 1
     nextSkills: []
     requiresHitConfirm: 0

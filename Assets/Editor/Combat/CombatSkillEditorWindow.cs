@@ -136,6 +136,7 @@ public class CombatSkillEditorWindow : EditorWindow
         EditorGUILayout.PropertyField(skillObject.FindProperty("displayName"));
         EditorGUILayout.PropertyField(skillObject.FindProperty("description"));
         EditorGUILayout.PropertyField(skillObject.FindProperty("previewAnimationClip"));
+        DrawEntryGateEditor(skillObject);
         EditorGUILayout.PropertyField(skillObject.FindProperty("timeline"));
         DrawRecoveryRuleEditor(skillObject);
 
@@ -165,6 +166,36 @@ public class CombatSkillEditorWindow : EditorWindow
 
         skillObject.ApplyModifiedProperties();
         EditorGUILayout.EndScrollView();
+        EditorGUILayout.EndVertical();
+    }
+
+    private void DrawEntryGateEditor(SerializedObject skillObject)
+    {
+        EditorGUILayout.Space(8f);
+        EditorGUILayout.LabelField("Entry Gate", EditorStyles.boldLabel);
+
+        EditorGUILayout.BeginVertical("box");
+        EditorGUILayout.PropertyField(skillObject.FindProperty("groundedOnly"));
+        EditorGUILayout.PropertyField(skillObject.FindProperty("aerialOnly"));
+        EditorGUILayout.PropertyField(skillObject.FindProperty("requiredWeaponTraits"));
+        EditorGUILayout.PropertyField(skillObject.FindProperty("previousSkills"), true);
+
+        SerializedProperty enterConditionsProperty = skillObject.FindProperty("enterConditions");
+        if (enterConditionsProperty != null)
+        {
+            SerializedProperty logicProperty = enterConditionsProperty.FindPropertyRelative("logic");
+            SerializedProperty conditionsProperty = enterConditionsProperty.FindPropertyRelative("conditions");
+            if (logicProperty != null)
+            {
+                EditorGUILayout.PropertyField(logicProperty);
+            }
+
+            if (conditionsProperty != null)
+            {
+                EditorGUILayout.PropertyField(conditionsProperty, true);
+            }
+        }
+
         EditorGUILayout.EndVertical();
     }
 

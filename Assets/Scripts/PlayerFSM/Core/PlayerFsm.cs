@@ -49,6 +49,9 @@ namespace FenShen.PlayerFSM
         private InputAction _attack;
         private InputAction _sprint;
         private InputAction _jump;
+        private float _attackHeldTime;
+        private float _lastAttackPressDuration;
+        private bool _attackReleasedThisFrame;
         private float _sprintHeldTime;
         private float _lastSprintPressDuration;
         private bool _sprintReleasedThisFrame;
@@ -107,14 +110,12 @@ namespace FenShen.PlayerFSM
             CurrentMoveInput = _move != null ? _move.ReadValue<Vector2>() : Vector2.zero;
             float dt = Time.deltaTime;
             UpdateJumpStateTracking();
+            UpdateAttackInputState(dt);
             UpdateSprintInputState(dt);
             if (CombatCoordinator != null)
             {
+                CombatCoordinator.TryHandleAttackInput();
                 CombatCoordinator.ManualUpdate(dt);
-                if (!_isSuspendedByCombat)
-                {
-                    CombatCoordinator.TryHandleAttackInput();
-                }
             }
 
             if (_isSuspendedByCombat)
@@ -203,6 +204,10 @@ namespace FenShen.PlayerFSM
         public PlayerRuntimeStatsComponent RuntimeStats { get { return RuntimeStatsComponent; } }
         public bool AttackPressedThisFrame() { return _attack != null && _attack.WasPressedThisFrame(); }
         public bool AttackIsHeld() { return _attack != null && _attack.IsPressed(); }
+        public bool AttackReleasedThisFrame() { return _attackReleasedThisFrame; }
+        public bool AttackHeldFor(float duration) { return AttackIsHeld() && _attackHeldTime >= duration; }
+        public bool AttackTapReleasedThisFrame(float maxHoldDuration) { return _attackReleasedThisFrame && _lastAttackPressDuration <= maxHoldDuration; }
+        public bool AttackReleaseHeldFor(float minHoldDuration) { return _attackReleasedThisFrame && _lastAttackPressDuration >= minHoldDuration; }
         public bool MoveIsHeld(float threshold = 0.1f) { return CurrentMoveInput.sqrMagnitude >= (threshold * threshold); }
         public bool CheckGround() { return PlayerDetection != null && PlayerDetection.CheckGround(); }
         public bool CheckWall() { return PlayerDetection != null && PlayerDetection.CheckWall(); }
@@ -410,6 +415,34 @@ namespace FenShen.PlayerFSM
         private void RefreshCombatSystemReference()
         {
             _combat = CombatSystemBehaviour as ICombatSkillSystem;
+        }
+
+        private void UpdateAttackInputState(float dt)
+        {
+            _attackReleasedThisFrame = false;
+            if (_attack == null)
+            {
+                _attackHeldTime = 0f;
+                _lastAttackPressDuration = 0f;
+                return;
+            }
+
+            if (_attack.WasPressedThisFrame())
+            {
+                _attackHeldTime = 0f;
+            }
+
+            if (_attack.IsPressed())
+            {
+                _attackHeldTime += dt;
+            }
+
+            if (_attack.WasReleasedThisFrame())
+            {
+                _attackReleasedThisFrame = true;
+                _lastAttackPressDuration = _attackHeldTime;
+                _attackHeldTime = 0f;
+            }
         }
 
         private void RefreshCombatCoordinatorReference()

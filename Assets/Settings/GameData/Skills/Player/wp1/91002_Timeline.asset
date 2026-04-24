@@ -42,18 +42,19 @@ MonoBehaviour:
   - clipId: 
     displayName: Cancel 1
     note: 
-    startTime: 0.2142857
-    duration: 0.08
+    startTime: 0.14285715
+    duration: 0.2
     enabled: 1
     cancelPermission: 3
   derivationWindowClips:
   - clipId: 
     displayName: Derivation 1
     note: 
-    startTime: 0
-    duration: 0.07
+    startTime: 0.14285715
+    duration: 0.2
     enabled: 1
-    nextSkills: []
+    nextSkills:
+    - {fileID: 11400000, guid: f8247105ffcc702459a5c1a8d2a96cdc, type: 2}
     requiresHitConfirm: 0
     requiresGrounded: 0
     requiresAerial: 0

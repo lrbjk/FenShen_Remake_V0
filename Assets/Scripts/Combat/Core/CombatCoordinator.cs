@@ -41,6 +41,10 @@ namespace FenShen.Combat
         [SerializeField] private StateSO groundedRecoveryState;
         [SerializeField] private StateSO airborneRecoveryState;
 
+        [Header("Input Buffer")]
+        [SerializeField] private bool enableDerivationInputBuffer = true;
+        [SerializeField] private float derivationInputBufferDuration = 0.12f;
+
         [Header("Debug")]
         [SerializeField] private bool drawActiveHitGizmos = true;
         [SerializeField] private bool drawGizmosWhenNotSelected = true;
@@ -53,6 +57,7 @@ namespace FenShen.Combat
         private QueuedCombatSkill _queuedSkill;
         private CombatSkillDefinitionSO _lastCompletedSkill;
         private bool _lastCompletedHadHitConfirm;
+        private float _bufferedDerivationInputUntil = float.NegativeInfinity;
 
         public bool IsActive
         {
@@ -79,6 +84,8 @@ namespace FenShen.Combat
 
         public void ManualUpdate(float deltaTime)
         {
+            TryConsumeBufferedDerivationInput();
+
             if (_stateMachine.Tick(this, deltaTime))
             {
                 if (TryConsumeQueuedSkill())
@@ -109,7 +116,14 @@ namespace FenShen.Combat
 
             if (IsActive)
             {
-                return TryQueueDerivedAttack();
+                if (TryQueueDerivedAttack())
+                {
+                    ClearBufferedDerivationInput();
+                    return true;
+                }
+
+                BufferDerivationInput();
+                return false;
             }
 
             return TryStartAttack(string.Empty);
@@ -159,6 +173,7 @@ namespace FenShen.Combat
         public void ForceExitCombat()
         {
             _stateMachine.Exit(this);
+            ClearBufferedDerivationInput();
             ClearCompletedSkillContext();
             ReleaseToLocomotion();
         }
@@ -199,7 +214,20 @@ namespace FenShen.Combat
 
         public bool TickSkillExecution(float deltaTime)
         {
-            return _skillExecutor.Tick(this, deltaTime);
+            bool completed = _skillExecutor.Tick(this, deltaTime);
+            if (!completed)
+            {
+                return false;
+            }
+
+            CombatSkillDefinitionSO currentSkill = _skillExecutor.Skill;
+            if (HasBlockingRecoveryRules(currentSkill))
+            {
+                bool grounded = playerFsm != null && playerFsm.CheckGround();
+                return CanResolveRecoveryTransition(currentSkill, _skillExecutor.HasHitConfirm, grounded);
+            }
+
+            return true;
         }
 
         public void EndSkillExecution()
@@ -420,41 +448,61 @@ namespace FenShen.Combat
 
         private bool TryQueueDerivedAttack()
         {
-            bool grounded = playerFsm != null && playerFsm.CheckGround();
-            ResolvedCombatSkill resolvedSkill = ResolveAttackSkill(null, string.Empty, grounded);
-            if (resolvedSkill.SkillAsset == null)
+            List<CombatSkillDefinitionSO> derivations = GetCurrentDerivations();
+            if (derivations.Count == 0)
             {
                 return false;
             }
 
-            List<CombatSkillDefinitionSO> derivations = GetCurrentDerivations();
-            bool allowed = false;
-            for (int i = 0; i < derivations.Count; i++)
-            {
-                if (derivations[i] == resolvedSkill.SkillAsset)
-                {
-                    allowed = true;
-                    break;
-                }
-            }
-
-            if (!allowed)
+            bool grounded = playerFsm != null && playerFsm.CheckGround();
+            CombatSkillDefinitionSO requestedSkill = ResolveRequestedDerivedSkill(derivations, grounded);
+            if (requestedSkill == null)
             {
                 return false;
             }
 
             CombatSkillDefinitionSO previousSkill = weaponRuntime != null ? weaponRuntime.LastResolvedSkill : null;
-            if (!SkillGateEvaluator.CanEnterSkill(playerFsm, weaponRuntime, resolvedSkill.SkillAsset, previousSkill, out _))
+            if (!SkillGateEvaluator.CanEnterSkill(playerFsm, weaponRuntime, requestedSkill, previousSkill, out _))
             {
                 return false;
             }
 
             _queuedSkill = new QueuedCombatSkill
             {
-                SkillAsset = resolvedSkill.SkillAsset,
-                SkillId = resolvedSkill.SkillId
+                SkillAsset = requestedSkill,
+                SkillId = requestedSkill.ResolveSkillId()
             };
             return true;
+        }
+
+        private CombatSkillDefinitionSO ResolveRequestedDerivedSkill(List<CombatSkillDefinitionSO> derivations, bool grounded)
+        {
+            if (derivations == null || derivations.Count == 0)
+            {
+                return null;
+            }
+
+            if (derivations.Count == 1)
+            {
+                return derivations[0];
+            }
+
+            if (weaponRuntime != null)
+            {
+                CombatSkillDefinitionSO weaponEntrySkill = weaponRuntime.ResolvePrimaryAttackSkillAsset(grounded);
+                if (weaponEntrySkill != null)
+                {
+                    for (int i = 0; i < derivations.Count; i++)
+                    {
+                        if (derivations[i] == weaponEntrySkill)
+                        {
+                            return weaponEntrySkill;
+                        }
+                    }
+                }
+            }
+
+            return derivations[0];
         }
 
         private bool TryConsumeQueuedSkill()
@@ -466,37 +514,25 @@ namespace FenShen.Combat
 
             QueuedCombatSkill queuedSkill = _queuedSkill;
             ClearQueuedSkill();
+            bool grounded = playerFsm != null && playerFsm.CheckGround();
+            if (queuedSkill.SkillAsset != null)
+            {
+                return StartResolvedSkill(queuedSkill.SkillAsset, queuedSkill.SkillAsset.ResolveSkillId(), grounded);
+            }
+
             return TryStartAttack(queuedSkill.SkillId);
         }
 
         private bool TryConsumeRecoveryTransition()
         {
-            if (_lastCompletedSkill == null || _lastCompletedSkill.recoveryRules == null || playerFsm == null)
+            if (_lastCompletedSkill == null || playerFsm == null)
             {
                 return false;
             }
 
             bool grounded = playerFsm.CheckGround();
-            CombatSkillDefinitionSO previousSkill = _lastCompletedSkill;
-            for (int i = 0; i < _lastCompletedSkill.recoveryRules.Count; i++)
+            if (TryResolveRecoveryTransitionCandidate(_lastCompletedSkill, _lastCompletedHadHitConfirm, grounded, out CombatSkillDefinitionSO nextSkill))
             {
-                SkillRecoveryRule rule = _lastCompletedSkill.recoveryRules[i];
-                if (!IsRecoveryRuleSatisfied(rule, grounded))
-                {
-                    continue;
-                }
-
-                CombatSkillDefinitionSO nextSkill = rule.nextSkill;
-                if (nextSkill == null)
-                {
-                    continue;
-                }
-
-                if (!SkillGateEvaluator.CanEnterSkill(playerFsm, weaponRuntime, nextSkill, previousSkill, out _))
-                {
-                    continue;
-                }
-
                 ClearCompletedSkillContext();
                 return StartResolvedSkill(nextSkill, nextSkill.ResolveSkillId(), grounded);
             }
@@ -505,14 +541,57 @@ namespace FenShen.Combat
             return false;
         }
 
-        private bool IsRecoveryRuleSatisfied(SkillRecoveryRule rule, bool grounded)
+        private bool CanResolveRecoveryTransition(CombatSkillDefinitionSO skill, bool hasHitConfirm, bool grounded)
+        {
+            return TryResolveRecoveryTransitionCandidate(skill, hasHitConfirm, grounded, out _);
+        }
+
+        private bool TryResolveRecoveryTransitionCandidate(
+            CombatSkillDefinitionSO skill,
+            bool hasHitConfirm,
+            bool grounded,
+            out CombatSkillDefinitionSO nextSkill)
+        {
+            nextSkill = null;
+            if (skill == null || skill.recoveryRules == null || playerFsm == null)
+            {
+                return false;
+            }
+
+            CombatSkillDefinitionSO previousSkill = skill;
+            for (int i = 0; i < skill.recoveryRules.Count; i++)
+            {
+                SkillRecoveryRule rule = skill.recoveryRules[i];
+                if (!IsRecoveryRuleSatisfied(rule, hasHitConfirm, grounded))
+                {
+                    continue;
+                }
+
+                if (rule.nextSkill == null)
+                {
+                    continue;
+                }
+
+                if (!SkillGateEvaluator.CanEnterSkill(playerFsm, weaponRuntime, rule.nextSkill, previousSkill, out _))
+                {
+                    continue;
+                }
+
+                nextSkill = rule.nextSkill;
+                return true;
+            }
+
+            return false;
+        }
+
+        private bool IsRecoveryRuleSatisfied(SkillRecoveryRule rule, bool hasHitConfirm, bool grounded)
         {
             if (rule == null)
             {
                 return false;
             }
 
-            if (rule.requiresHitConfirm && !_lastCompletedHadHitConfirm)
+            if (rule.requiresHitConfirm && !hasHitConfirm)
             {
                 return false;
             }
@@ -602,6 +681,57 @@ namespace FenShen.Combat
         {
             _lastCompletedSkill = null;
             _lastCompletedHadHitConfirm = false;
+        }
+
+        private bool HasBlockingRecoveryRules(CombatSkillDefinitionSO skill)
+        {
+            return skill != null
+                && skill.recoveryRules != null
+                && skill.recoveryRules.Count > 0;
+        }
+
+        private void BufferDerivationInput()
+        {
+            if (!enableDerivationInputBuffer)
+            {
+                return;
+            }
+
+            _bufferedDerivationInputUntil = Time.time + Mathf.Max(0.01f, derivationInputBufferDuration);
+        }
+
+        private void ClearBufferedDerivationInput()
+        {
+            _bufferedDerivationInputUntil = float.NegativeInfinity;
+        }
+
+        private bool HasBufferedDerivationInput()
+        {
+            return enableDerivationInputBuffer && Time.time <= _bufferedDerivationInputUntil;
+        }
+
+        private void TryConsumeBufferedDerivationInput()
+        {
+            if (!IsActive || _queuedSkill.IsValid)
+            {
+                return;
+            }
+
+            if (!HasBufferedDerivationInput())
+            {
+                return;
+            }
+
+            if (TryQueueDerivedAttack())
+            {
+                ClearBufferedDerivationInput();
+                return;
+            }
+
+            if (Time.time > _bufferedDerivationInputUntil)
+            {
+                ClearBufferedDerivationInput();
+            }
         }
 
         private float SafeReadAnimatorFloat(string parameterName)

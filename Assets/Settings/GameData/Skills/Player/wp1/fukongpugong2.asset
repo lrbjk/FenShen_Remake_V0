@@ -10,9 +10,9 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 0019e0830aea5d04abf266563b1e7303, type: 3}
-  m_Name: CombatSkillDefinition 1
+  m_Name: fukongpugong2
   m_EditorClassIdentifier: Assembly-CSharp::FenShen.Combat.CombatSkillDefinitionSO
-  skillId: 91002
+  skillId: 91003
   displayName: "\u6D6E\u7A7A\u666E\u653B2"
   description: 
   icon: {fileID: 0}
@@ -22,8 +22,8 @@ MonoBehaviour:
   animationLayer: 0
   crossFade: 1
   transitionDuration: 0
-  previewAnimationClip: {fileID: 7400000, guid: b6f5c07c9b2a1cb4caf3c1f406257a4a, type: 2}
-  timeline: {fileID: 11400000, guid: 17272155e8937654b8a3c7b48dbc1903, type: 2}
+  previewAnimationClip: {fileID: 7400000, guid: 473d2b4eddae332429235c92f0c19a4d, type: 2}
+  timeline: {fileID: 11400000, guid: 52340c29c7bbe374b8e28d213d5e9e73, type: 2}
   motion:
     motionSource: 1
     mirrorByFacing: 1
@@ -90,6 +90,19 @@ MonoBehaviour:
   requiredWeaponTraits: 0
   enterConditions:
     logic: 0
-    conditions: []
-  previousSkills: []
+    conditions:
+    - {fileID: 11400000, guid: 14eb37d84fc850d4aba7483592b109e7, type: 2}
+  previousSkills:
+  - {fileID: 11400000, guid: f56ed4668476b9c4799cad66626160e6, type: 2}
   derivationRules: []
+  recoveryRules:
+  - ruleId: 
+    displayName: Recovery Rule 1
+    nextSkill: {fileID: 0}
+    description: 
+    requiresHitConfirm: 0
+    requiresGrounded: 0
+    requiresAerial: 0
+    conditions:
+      logic: 0
+      conditions: []
