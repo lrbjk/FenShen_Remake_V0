@@ -10,7 +10,7 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 0dd22fc87d42a7f4fabaf223f9883f33, type: 3}
-  m_Name: 91000_Timeline
+  m_Name: 91001_Timeline
   m_EditorClassIdentifier: Assembly-CSharp::FenShen.Combat.SkillTimelineSO
   length: 0.3
   animationClips: []
@@ -38,17 +38,8 @@ MonoBehaviour:
         inWeight: 0
         outWeight: 0
       - serializedVersion: 3
-        time: 0.8218541
-        value: 0.48634905
-        inSlope: 0.38890612
-        outSlope: 0.38890612
-        tangentMode: 0
-        weightedMode: 0
-        inWeight: 0.33333334
-        outWeight: 0.33333334
-      - serializedVersion: 3
         time: 1
-        value: 0.5
+        value: 1
         inSlope: 0
         outSlope: 0
         tangentMode: 0
@@ -72,8 +63,8 @@ MonoBehaviour:
     duration: 0.07
     enabled: 1
     hitShape: 0
-    offset: {x: 0.91, y: -0.52, z: 0}
-    size: {x: 1.17, y: 1.07, z: 1}
+    offset: {x: 0.29, y: -0.5, z: 0}
+    size: {x: 2.4, y: 1, z: 1}
     targetLayers:
       serializedVersion: 2
       m_Bits: 0
@@ -91,8 +82,8 @@ MonoBehaviour:
   - clipId: 
     displayName: Cancel 1
     note: 
-    startTime: 0.14285715
-    duration: 0.2
+    startTime: 0.2142857
+    duration: 0.07
     enabled: 1
     cancelPermission: 4
   derivationWindowClips:

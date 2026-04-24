@@ -14,7 +14,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::FenShen.GameData.WeaponMoveSetSO
   primaryAttackA1Skill: {fileID: 11400000, guid: 38b5acadcb7a8e348ab1fa4280664fbe, type: 2}
   primaryAttackA1: 
-  primaryAttackA2Skill: {fileID: 0}
+  primaryAttackA2Skill: {fileID: 11400000, guid: b577e8e3b6e3d654cbc285544b10554d, type: 2}
   primaryAttackA2: 
   primaryAttackA3Skill: {fileID: 0}
   primaryAttackA3: 

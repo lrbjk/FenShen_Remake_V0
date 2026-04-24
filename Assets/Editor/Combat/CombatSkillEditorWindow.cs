@@ -137,6 +137,7 @@ public class CombatSkillEditorWindow : EditorWindow
         EditorGUILayout.PropertyField(skillObject.FindProperty("description"));
         EditorGUILayout.PropertyField(skillObject.FindProperty("previewAnimationClip"));
         EditorGUILayout.PropertyField(skillObject.FindProperty("timeline"));
+        DrawRecoveryRuleEditor(skillObject);
 
         SerializedProperty timelineProperty = skillObject.FindProperty("timeline");
         SkillTimelineSO timeline = timelineProperty.objectReferenceValue as SkillTimelineSO;
@@ -165,6 +166,56 @@ public class CombatSkillEditorWindow : EditorWindow
         skillObject.ApplyModifiedProperties();
         EditorGUILayout.EndScrollView();
         EditorGUILayout.EndVertical();
+    }
+
+    private void DrawRecoveryRuleEditor(SerializedObject skillObject)
+    {
+        EditorGUILayout.Space(8f);
+        EditorGUILayout.LabelField("Recovery Rules", EditorStyles.boldLabel);
+
+        SerializedProperty recoveryRulesProperty = skillObject.FindProperty("recoveryRules");
+        for (int i = 0; i < recoveryRulesProperty.arraySize; i++)
+        {
+            SerializedProperty ruleProperty = recoveryRulesProperty.GetArrayElementAtIndex(i);
+            SerializedProperty displayNameProperty = ruleProperty.FindPropertyRelative("displayName");
+            string header = string.IsNullOrWhiteSpace(displayNameProperty.stringValue)
+                ? $"Recovery Rule {i + 1}"
+                : displayNameProperty.stringValue;
+
+            EditorGUILayout.BeginVertical("box");
+            EditorGUILayout.BeginHorizontal();
+            EditorGUILayout.LabelField(header, EditorStyles.boldLabel);
+            if (GUILayout.Button("X", GUILayout.Width(24f)))
+            {
+                recoveryRulesProperty.DeleteArrayElementAtIndex(i);
+                skillObject.ApplyModifiedProperties();
+                EditorUtility.SetDirty(_selectedSkill);
+                EditorGUILayout.EndHorizontal();
+                EditorGUILayout.EndVertical();
+                break;
+            }
+            EditorGUILayout.EndHorizontal();
+
+            EditorGUILayout.PropertyField(ruleProperty.FindPropertyRelative("displayName"));
+            EditorGUILayout.PropertyField(ruleProperty.FindPropertyRelative("nextSkill"));
+            EditorGUILayout.PropertyField(ruleProperty.FindPropertyRelative("description"));
+            EditorGUILayout.PropertyField(ruleProperty.FindPropertyRelative("requiresHitConfirm"));
+            EditorGUILayout.PropertyField(ruleProperty.FindPropertyRelative("requiresGrounded"));
+            EditorGUILayout.PropertyField(ruleProperty.FindPropertyRelative("requiresAerial"));
+            EditorGUILayout.PropertyField(ruleProperty.FindPropertyRelative("conditions"), true);
+            EditorGUILayout.EndVertical();
+        }
+
+        if (GUILayout.Button("Add Recovery Rule"))
+        {
+            int index = recoveryRulesProperty.arraySize;
+            recoveryRulesProperty.InsertArrayElementAtIndex(index);
+            SerializedProperty newRule = recoveryRulesProperty.GetArrayElementAtIndex(index);
+            newRule.FindPropertyRelative("displayName").stringValue = $"Recovery Rule {index + 1}";
+            newRule.FindPropertyRelative("requiresHitConfirm").boolValue = false;
+            newRule.FindPropertyRelative("requiresGrounded").boolValue = false;
+            newRule.FindPropertyRelative("requiresAerial").boolValue = false;
+        }
     }
 
     private void DrawPreviewControls(SkillTimelineSO timeline)

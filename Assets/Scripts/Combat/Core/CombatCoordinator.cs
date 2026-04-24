@@ -51,6 +51,8 @@ namespace FenShen.Combat
         private readonly CombatStateMachine _stateMachine = new CombatStateMachine();
         private readonly SkillExecutor _skillExecutor = new SkillExecutor();
         private QueuedCombatSkill _queuedSkill;
+        private CombatSkillDefinitionSO _lastCompletedSkill;
+        private bool _lastCompletedHadHitConfirm;
 
         public bool IsActive
         {
@@ -80,6 +82,11 @@ namespace FenShen.Combat
             if (_stateMachine.Tick(this, deltaTime))
             {
                 if (TryConsumeQueuedSkill())
+                {
+                    return;
+                }
+
+                if (TryConsumeRecoveryTransition())
                 {
                     return;
                 }
@@ -144,6 +151,7 @@ namespace FenShen.Combat
             {
                 weaponRuntime.NotifyAttackStarted(resolvedSkill.SkillAsset, resolvedSkill.SkillId, grounded);
             }
+            ClearCompletedSkillContext();
             ClearQueuedSkill();
             return true;
         }
@@ -151,6 +159,7 @@ namespace FenShen.Combat
         public void ForceExitCombat()
         {
             _stateMachine.Exit(this);
+            ClearCompletedSkillContext();
             ReleaseToLocomotion();
         }
 
@@ -195,6 +204,8 @@ namespace FenShen.Combat
 
         public void EndSkillExecution()
         {
+            _lastCompletedSkill = _skillExecutor.Skill;
+            _lastCompletedHadHitConfirm = _skillExecutor.HasHitConfirm;
             _skillExecutor.End();
         }
 
@@ -348,6 +359,8 @@ namespace FenShen.Combat
                 weaponRuntime.NotifyCombatFinished();
             }
 
+            ClearCompletedSkillContext();
+
             StateSO recoveryState = playerFsm.CheckGround()
                 ? (groundedRecoveryState != null ? groundedRecoveryState : playerFsm.ResolveDefaultLocomotionState())
                 : (airborneRecoveryState != null ? airborneRecoveryState : playerFsm.FindStateOfType<FallStateSO>());
@@ -456,9 +469,139 @@ namespace FenShen.Combat
             return TryStartAttack(queuedSkill.SkillId);
         }
 
+        private bool TryConsumeRecoveryTransition()
+        {
+            if (_lastCompletedSkill == null || _lastCompletedSkill.recoveryRules == null || playerFsm == null)
+            {
+                return false;
+            }
+
+            bool grounded = playerFsm.CheckGround();
+            CombatSkillDefinitionSO previousSkill = _lastCompletedSkill;
+            for (int i = 0; i < _lastCompletedSkill.recoveryRules.Count; i++)
+            {
+                SkillRecoveryRule rule = _lastCompletedSkill.recoveryRules[i];
+                if (!IsRecoveryRuleSatisfied(rule, grounded))
+                {
+                    continue;
+                }
+
+                CombatSkillDefinitionSO nextSkill = rule.nextSkill;
+                if (nextSkill == null)
+                {
+                    continue;
+                }
+
+                if (!SkillGateEvaluator.CanEnterSkill(playerFsm, weaponRuntime, nextSkill, previousSkill, out _))
+                {
+                    continue;
+                }
+
+                ClearCompletedSkillContext();
+                return StartResolvedSkill(nextSkill, nextSkill.ResolveSkillId(), grounded);
+            }
+
+            ClearCompletedSkillContext();
+            return false;
+        }
+
+        private bool IsRecoveryRuleSatisfied(SkillRecoveryRule rule, bool grounded)
+        {
+            if (rule == null)
+            {
+                return false;
+            }
+
+            if (rule.requiresHitConfirm && !_lastCompletedHadHitConfirm)
+            {
+                return false;
+            }
+
+            if (rule.requiresGrounded && !grounded)
+            {
+                return false;
+            }
+
+            if (rule.requiresAerial && grounded)
+            {
+                return false;
+            }
+
+            if (rule.conditions == null || rule.conditions.conditions == null || rule.conditions.conditions.Count == 0)
+            {
+                return true;
+            }
+
+            return EvaluateRecoveryConditions(rule.conditions);
+        }
+
+        private bool EvaluateRecoveryConditions(SkillConditionGroup conditionGroup)
+        {
+            if (playerFsm == null || conditionGroup == null || conditionGroup.conditions == null || conditionGroup.conditions.Count == 0)
+            {
+                return true;
+            }
+
+            bool anyMatched = false;
+            for (int i = 0; i < conditionGroup.conditions.Count; i++)
+            {
+                ConditionSO condition = conditionGroup.conditions[i];
+                if (condition == null)
+                {
+                    continue;
+                }
+
+                bool result = condition.Evaluate(playerFsm);
+                if (conditionGroup.logic == ConditionLogic.All && !result)
+                {
+                    return false;
+                }
+
+                if (conditionGroup.logic == ConditionLogic.Any && result)
+                {
+                    return true;
+                }
+
+                anyMatched |= result;
+            }
+
+            return conditionGroup.logic == ConditionLogic.All || anyMatched;
+        }
+
+        private bool StartResolvedSkill(CombatSkillDefinitionSO skill, string skillId, bool grounded)
+        {
+            if (playerFsm == null || skill == null)
+            {
+                return false;
+            }
+
+            playerFsm.SuspendByCombat();
+            _stateMachine.Enter(this, new SkillCombatState(
+                skill,
+                skillId,
+                defaultAttackDuration,
+                defaultAnimationStateName,
+                defaultAnimationLayer,
+                defaultCrossFade,
+                defaultTransitionDuration));
+
+            if (weaponRuntime != null)
+            {
+                weaponRuntime.NotifyAttackStarted(skill, skillId, grounded);
+            }
+
+            return true;
+        }
+
         private void ClearQueuedSkill()
         {
             _queuedSkill = default;
+        }
+
+        private void ClearCompletedSkillContext()
+        {
+            _lastCompletedSkill = null;
+            _lastCompletedHadHitConfirm = false;
         }
 
         private float SafeReadAnimatorFloat(string parameterName)

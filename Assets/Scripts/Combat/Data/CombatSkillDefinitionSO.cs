@@ -53,6 +53,19 @@ namespace FenShen.Combat
         public bool requiresGuardSuccess;
     }
 
+    [Serializable]
+    public class SkillRecoveryRule
+    {
+        public string ruleId;
+        public string displayName;
+        public CombatSkillDefinitionSO nextSkill;
+        [TextArea] public string description;
+        public bool requiresHitConfirm;
+        public bool requiresGrounded;
+        public bool requiresAerial;
+        public SkillConditionGroup conditions = new SkillConditionGroup();
+    }
+
     [CreateAssetMenu(fileName = "CombatSkillDefinition", menuName = "Game Data/Combat/Combat Skill Definition")]
     public class CombatSkillDefinitionSO : ScriptableObject
     {
@@ -96,6 +109,9 @@ namespace FenShen.Combat
 
         [Header("Derivation")]
         public List<SkillDerivationRule> derivationRules = new List<SkillDerivationRule>();
+
+        [Header("Recovery")]
+        public List<SkillRecoveryRule> recoveryRules = new List<SkillRecoveryRule>();
 
         public string DisplayName
         {
