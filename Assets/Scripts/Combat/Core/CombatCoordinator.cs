@@ -45,6 +45,10 @@ namespace FenShen.Combat
         [SerializeField] private bool enableDerivationInputBuffer = true;
         [SerializeField] private float derivationInputBufferDuration = 0.12f;
 
+        [Header("Runtime Spawn")]
+        [SerializeField] private Transform spawnRoot;
+        [SerializeField] private AudioSource audioSource;
+
         [Header("Debug")]
         [SerializeField] private bool drawActiveHitGizmos = true;
         [SerializeField] private bool drawGizmosWhenNotSelected = true;
@@ -79,6 +83,11 @@ namespace FenShen.Combat
             if (weaponRuntime == null)
             {
                 weaponRuntime = GetComponent<WeaponRuntimeController>();
+            }
+
+            if (audioSource == null)
+            {
+                audioSource = GetComponent<AudioSource>();
             }
         }
 
@@ -357,6 +366,78 @@ namespace FenShen.Combat
         public void NotifyRuntimeEvent(string message)
         {
             Debug.Log("[Combat Runtime] " + message, this);
+        }
+
+        public void SpawnProjectile(ProjectileSkillClip clip)
+        {
+            if (clip == null || clip.projectilePrefab == null)
+            {
+                return;
+            }
+
+            Vector3 position = ResolveSpawnPosition(clip.spawnOffset);
+            Vector3 direction = ResolveProjectileDirection(clip);
+            Quaternion rotation = Quaternion.identity;
+            if (direction.sqrMagnitude > 0.0001f)
+            {
+                float angle = Mathf.Atan2(direction.y, direction.x) * Mathf.Rad2Deg;
+                rotation = Quaternion.Euler(0f, 0f, angle);
+            }
+
+            PooledObject spawned = PooledObjectSpawner.Spawn(
+                clip.projectilePrefab,
+                position,
+                rotation,
+                Mathf.Max(0f, clip.lifetime),
+                spawnRoot);
+
+            if (spawned != null)
+            {
+                spawned.SendMessage("InitializeProjectile", new ProjectileRuntimeContext(this, clip, direction), SendMessageOptions.DontRequireReceiver);
+            }
+        }
+
+        public void SpawnVfx(VfxSkillClip clip)
+        {
+            if (clip == null || clip.effectPrefab == null)
+            {
+                return;
+            }
+
+            Transform parent = ResolveVfxParent(clip);
+            Vector3 position = ResolveVfxPosition(clip, parent);
+            PooledObjectSpawner.Spawn(
+                clip.effectPrefab,
+                position,
+                Quaternion.identity,
+                Mathf.Max(0f, clip.duration),
+                parent);
+        }
+
+        public void PlaySfx(SfxSkillClip clip)
+        {
+            if (clip == null || clip.audioClip == null)
+            {
+                return;
+            }
+
+            if (audioSource != null)
+            {
+                audioSource.PlayOneShot(clip.audioClip, clip.volume);
+                return;
+            }
+
+            AudioSource.PlayClipAtPoint(clip.audioClip, ResolveSpawnPosition(Vector3.zero), clip.volume);
+        }
+
+        public void TriggerCameraShake(CameraShakeSkillClip clip)
+        {
+            if (clip == null)
+            {
+                return;
+            }
+
+            SendMessage("OnCombatCameraShake", clip, SendMessageOptions.DontRequireReceiver);
         }
 
         public List<CombatSkillDefinitionSO> GetCurrentDerivations()
@@ -785,6 +866,108 @@ namespace FenShen.Combat
             }
 
             return playerFsm.Character.position + offset;
+        }
+
+        private Vector3 ResolveSpawnPosition(Vector3 localOffset)
+        {
+            if (playerFsm == null || playerFsm.Character == null)
+            {
+                return localOffset;
+            }
+
+            Vector3 offset = localOffset;
+            if (IsFacingLeft())
+            {
+                offset.x = -offset.x;
+            }
+
+            return playerFsm.Character.position + offset;
+        }
+
+        private Vector3 ResolveProjectileDirection(ProjectileSkillClip clip)
+        {
+            if (clip == null)
+            {
+                return IsFacingLeft() ? Vector3.left : Vector3.right;
+            }
+
+            Vector3 direction;
+            switch (clip.releaseMode)
+            {
+                case ProjectileReleaseMode.FixedDirection:
+                    direction = clip.fixedDirection;
+                    break;
+                default:
+                    direction = IsFacingLeft() ? Vector3.left : Vector3.right;
+                    break;
+            }
+
+            if (direction.sqrMagnitude < 0.0001f)
+            {
+                direction = IsFacingLeft() ? Vector3.left : Vector3.right;
+            }
+
+            return direction.normalized;
+        }
+
+        private Transform ResolveVfxParent(VfxSkillClip clip)
+        {
+            if (clip == null || playerFsm == null || playerFsm.Character == null)
+            {
+                return spawnRoot;
+            }
+
+            if (clip.spawnSpace == SkillVfxSpawnSpace.FollowCaster)
+            {
+                return playerFsm.Character;
+            }
+
+            if (clip.spawnSpace == SkillVfxSpawnSpace.Bone)
+            {
+                Transform socket = ResolveSocketTransform(clip.socketName);
+                return socket != null ? socket : playerFsm.Character;
+            }
+
+            return spawnRoot;
+        }
+
+        private Vector3 ResolveVfxPosition(VfxSkillClip clip, Transform parent)
+        {
+            if (clip == null)
+            {
+                return ResolveSpawnPosition(Vector3.zero);
+            }
+
+            if (clip.spawnSpace == SkillVfxSpawnSpace.World)
+            {
+                return ResolveSpawnPosition(clip.localOffset);
+            }
+
+            if (parent != null)
+            {
+                return parent.position + clip.localOffset;
+            }
+
+            return ResolveSpawnPosition(clip.localOffset);
+        }
+
+        private Transform ResolveSocketTransform(string socketName)
+        {
+            if (playerFsm == null || playerFsm.Character == null || string.IsNullOrWhiteSpace(socketName))
+            {
+                return null;
+            }
+
+            Transform[] children = playerFsm.Character.GetComponentsInChildren<Transform>(true);
+            for (int i = 0; i < children.Length; i++)
+            {
+                if (children[i].name == socketName)
+                {
+                    return children[i];
+                }
+            }
+
+            return null;
         }
 
         private float ResolveDamage(CombatSkillDefinitionSO skill, HitSkillClip clip)

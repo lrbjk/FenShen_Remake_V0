@@ -377,7 +377,7 @@ namespace FenShen.Combat
                 if (previousTime <= clip.startTime && _elapsed >= clip.startTime)
                 {
                     _triggeredProjectileClips.Add(i);
-                    coordinator.NotifyRuntimeEvent($"Projectile trigger: {clip.displayName}");
+                    coordinator.SpawnProjectile(clip);
                 }
             }
         }
@@ -401,7 +401,7 @@ namespace FenShen.Combat
                 if (previousTime <= clip.startTime && _elapsed >= clip.startTime)
                 {
                     _triggeredVfxClips.Add(i);
-                    coordinator.NotifyRuntimeEvent($"VFX trigger: {clip.displayName}");
+                    coordinator.SpawnVfx(clip);
                 }
             }
         }
@@ -425,7 +425,7 @@ namespace FenShen.Combat
                 if (previousTime <= clip.startTime && _elapsed >= clip.startTime)
                 {
                     _triggeredSfxClips.Add(i);
-                    coordinator.NotifyRuntimeEvent($"SFX trigger: {clip.displayName}");
+                    coordinator.PlaySfx(clip);
                 }
             }
         }
@@ -449,7 +449,7 @@ namespace FenShen.Combat
                 if (previousTime <= clip.startTime && _elapsed >= clip.startTime)
                 {
                     _triggeredCameraClips.Add(i);
-                    coordinator.NotifyRuntimeEvent($"Camera trigger: {clip.displayName}");
+                    coordinator.TriggerCameraShake(clip);
                 }
             }
         }

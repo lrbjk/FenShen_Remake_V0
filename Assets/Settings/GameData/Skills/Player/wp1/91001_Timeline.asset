@@ -86,14 +86,4 @@ MonoBehaviour:
     duration: 0.1
     enabled: 1
     cancelPermission: 4
-  derivationWindowClips:
-  - clipId: 
-    displayName: Derivation 1
-    note: 
-    startTime: 0.21428572
-    duration: 0.1
-    enabled: 1
-    nextSkills: []
-    requiresHitConfirm: 0
-    requiresGrounded: 0
-    requiresAerial: 0
+  derivationWindowClips: []

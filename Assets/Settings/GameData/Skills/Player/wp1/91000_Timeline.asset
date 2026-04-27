@@ -99,7 +99,7 @@ MonoBehaviour:
   - clipId: 
     displayName: Derivation 1
     note: 
-    startTime: 0.14285715
+    startTime: 0.071428575
     duration: 0.4
     enabled: 1
     nextSkills:

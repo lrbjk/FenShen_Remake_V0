@@ -19,7 +19,7 @@ MonoBehaviour:
     displayName: Movement 1
     note: 
     startTime: 0
-    duration: 0.2
+    duration: 0.4
     enabled: 1
     motionSource: 2
     curveXName: MoveX
@@ -37,17 +37,17 @@ MonoBehaviour:
       - serializedVersion: 3
         time: 0.06985474
         value: -0.019924164
-        inSlope: -0.19879249
-        outSlope: -0.19879249
+        inSlope: -4.0526342
+        outSlope: -4.0526342
         tangentMode: 34
         weightedMode: 0
         inWeight: 0
         outWeight: 0.33333334
       - serializedVersion: 3
         time: 5
-        value: -1
-        inSlope: -0.19879249
-        outSlope: -0.19879249
+        value: -20
+        inSlope: -4.0526342
+        outSlope: -4.0526342
         tangentMode: 34
         weightedMode: 0
         inWeight: 0.33333334
@@ -59,11 +59,11 @@ MonoBehaviour:
   - clipId: 
     displayName: Hit 1
     note: 
-    startTime: 0.071428575
-    duration: 0.07
+    startTime: 0.09090909
+    duration: 0.3
     enabled: 1
     hitShape: 0
-    offset: {x: 0.13, y: 0.15, z: 0}
+    offset: {x: -0.11, y: -0.41, z: 0}
     size: {x: 1.67, y: 2.12, z: 1}
     targetLayers:
       serializedVersion: 2
@@ -86,14 +86,4 @@ MonoBehaviour:
     duration: 0.2
     enabled: 1
     cancelPermission: 3
-  derivationWindowClips:
-  - clipId: 
-    displayName: Derivation 1
-    note: 
-    startTime: 0.14285715
-    duration: 0.2
-    enabled: 1
-    nextSkills: []
-    requiresHitConfirm: 0
-    requiresGrounded: 0
-    requiresAerial: 0
+  derivationWindowClips: []
