@@ -1,0 +1,1651 @@
+fileFormatVersion: 2
+guid: a659c9e96ba9b20478c485dd27892659
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: 5230122007622868066
+    second: SpAttack_atlas_n_0
+  - first:
+      213: -6233247254865240774
+    second: SpAttack_atlas_n_1
+  - first:
+      213: -8407925328508980154
+    second: SpAttack_atlas_n_2
+  - first:
+      213: -5863529337398697870
+    second: SpAttack_atlas_n_3
+  - first:
+      213: -6494506718402736716
+    second: SpAttack_atlas_n_4
+  - first:
+      213: -5015889973850182277
+    second: SpAttack_atlas_n_5
+  - first:
+      213: -7254276694976096442
+    second: SpAttack_atlas_n_6
+  - first:
+      213: 4478823343634324475
+    second: SpAttack_atlas_n_7
+  - first:
+      213: 1675440961352533371
+    second: SpAttack_atlas_n_8
+  - first:
+      213: 6351793554607479897
+    second: SpAttack_atlas_n_9
+  - first:
+      213: -4105189290516296650
+    second: SpAttack_atlas_n_10
+  - first:
+      213: -5650043864426211867
+    second: SpAttack_atlas_n_11
+  - first:
+      213: 3080727451415444174
+    second: SpAttack_atlas_n_12
+  - first:
+      213: -7300777424416766924
+    second: SpAttack_atlas_n_13
+  - first:
+      213: 7829595540355136711
+    second: SpAttack_atlas_n_14
+  - first:
+      213: 380435370236745418
+    second: SpAttack_atlas_n_15
+  - first:
+      213: -2539974140425353820
+    second: SpAttack_atlas_n_16
+  - first:
+      213: -2951143921621216048
+    second: SpAttack_atlas_n_17
+  - first:
+      213: 6033193134815703594
+    second: SpAttack_atlas_n_18
+  - first:
+      213: 3223827394973046019
+    second: SpAttack_atlas_n_19
+  - first:
+      213: -4796108219158474972
+    second: SpAttack_atlas_n_20
+  - first:
+      213: 127533769575286523
+    second: SpAttack_atlas_n_21
+  - first:
+      213: -2975268070807693007
+    second: SpAttack_atlas_n_22
+  - first:
+      213: -7918615044351379682
+    second: SpAttack_atlas_n_23
+  - first:
+      213: 6171651262957532834
+    second: SpAttack_atlas_n_24
+  - first:
+      213: 3773831643086095219
+    second: SpAttack_atlas_n_25
+  - first:
+      213: 3649678028630571335
+    second: SpAttack_atlas_n_26
+  - first:
+      213: 7455148825559996465
+    second: SpAttack_atlas_n_27
+  - first:
+      213: 682665550688659965
+    second: SpAttack_atlas_n_28
+  - first:
+      213: 3641866210996844201
+    second: SpAttack_atlas_n_29
+  - first:
+      213: -5449330792558900472
+    second: SpAttack_atlas_n_30
+  - first:
+      213: -7557882783647309275
+    second: SpAttack_atlas_n_31
+  - first:
+      213: -4100922609646184750
+    second: SpAttack_atlas_n_32
+  - first:
+      213: -651103694466751835
+    second: SpAttack_atlas_n_33
+  - first:
+      213: -7525629688541148774
+    second: SpAttack_atlas_n_34
+  - first:
+      213: -3160921853633810600
+    second: SpAttack_atlas_n_35
+  - first:
+      213: 4371730535196419450
+    second: SpAttack_atlas_n_36
+  - first:
+      213: 2545749958324859773
+    second: SpAttack_atlas_n_37
+  - first:
+      213: -6999264297254180818
+    second: SpAttack_atlas_n_38
+  - first:
+      213: 7271584996581896174
+    second: SpAttack_atlas_n_39
+  - first:
+      213: 4282602395255941531
+    second: SpAttack_atlas_n_40
+  - first:
+      213: -8824825459617109419
+    second: SpAttack_atlas_n_41
+  - first:
+      213: -5033523873133910285
+    second: SpAttack_atlas_n_42
+  - first:
+      213: -5166782918377373671
+    second: SpAttack_atlas_n_43
+  - first:
+      213: 2966335121627086163
+    second: SpAttack_atlas_n_44
+  - first:
+      213: 6650704133152421793
+    second: SpAttack_atlas_n_45
+  - first:
+      213: -4848525228894128696
+    second: SpAttack_atlas_n_46
+  - first:
+      213: -7863597397765381859
+    second: SpAttack_atlas_n_47
+  - first:
+      213: 3753298988154387201
+    second: SpAttack_atlas_n_48
+  - first:
+      213: -8523859668905974093
+    second: SpAttack_atlas_n_49
+  - first:
+      213: -9125043195680937178
+    second: SpAttack_atlas_n_50
+  - first:
+      213: 2310197791191929983
+    second: SpAttack_atlas_n_51
+  - first:
+      213: 4622641809347230571
+    second: SpAttack_atlas_n_52
+  - first:
+      213: 1178317968125886792
+    second: SpAttack_atlas_n_53
+  - first:
+      213: -8713014322991177005
+    second: SpAttack_atlas_n_54
+  - first:
+      213: -4615819274193894628
+    second: SpAttack_atlas_n_55
+  - first:
+      213: 1422634238404617946
+    second: SpAttack_atlas_n_56
+  - first:
+      213: -8240298873972371908
+    second: SpAttack_atlas_n_57
+  - first:
+      213: 4125326395034931209
+    second: SpAttack_atlas_n_58
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 1
+    sRGBTexture: 0
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 0
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 0
+  spriteTessellationDetail: -1
+  textureType: 1
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: SpAttack_atlas_n_0
+      rect:
+        serializedVersion: 2
+        x: 4
+        y: 713
+        width: 72
+        height: 60
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 26c505c6140259840800000000000000
+      internalID: 5230122007622868066
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SpAttack_atlas_n_1
+      rect:
+        serializedVersion: 2
+        x: 88
+        y: 713
+        width: 72
+        height: 61
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a3d149895ae0f79a0800000000000000
+      internalID: -6233247254865240774
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SpAttack_atlas_n_2
+      rect:
+        serializedVersion: 2
+        x: 173
+        y: 713
+        width: 51
+        height: 59
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6447638f57c015b80800000000000000
+      internalID: -8407925328508980154
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SpAttack_atlas_n_3
+      rect:
+        serializedVersion: 2
+        x: 268
+        y: 713
+        width: 43
+        height: 55
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 270e44a422f80aea0800000000000000
+      internalID: -5863529337398697870
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SpAttack_atlas_n_4
+      rect:
+        serializedVersion: 2
+        x: 351
+        y: 713
+        width: 47
+        height: 49
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4bd873a8c80eed5a0800000000000000
+      internalID: -6494506718402736716
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SpAttack_atlas_n_5
+      rect:
+        serializedVersion: 2
+        x: 437
+        y: 713
+        width: 47
+        height: 46
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b7d6734e4aaf36ab0800000000000000
+      internalID: -5015889973850182277
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SpAttack_atlas_n_6
+      rect:
+        serializedVersion: 2
+        x: 525
+        y: 713
+        width: 46
+        height: 45
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6471e8dd7c1a35b90800000000000000
+      internalID: -7254276694976096442
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SpAttack_atlas_n_7
+      rect:
+        serializedVersion: 2
+        x: 611
+        y: 713
+        width: 46
+        height: 45
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: bfb1d09e91af72e30800000000000000
+      internalID: 4478823343634324475
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SpAttack_atlas_n_8
+      rect:
+        serializedVersion: 2
+        x: 13
+        y: 611
+        width: 47
+        height: 45
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b758e8f6dac504710800000000000000
+      internalID: 1675440961352533371
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SpAttack_atlas_n_9
+      rect:
+        serializedVersion: 2
+        x: 95
+        y: 611
+        width: 47
+        height: 45
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 95c9efca59a162850800000000000000
+      internalID: 6351793554607479897
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SpAttack_atlas_n_10
+      rect:
+        serializedVersion: 2
+        x: 174
+        y: 611
+        width: 78
+        height: 47
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 63cc90b27107707c0800000000000000
+      internalID: -4105189290516296650
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SpAttack_atlas_n_11
+      rect:
+        serializedVersion: 2
+        x: 252
+        y: 611
+        width: 81
+        height: 46
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5e5108f5a030791b0800000000000000
+      internalID: -5650043864426211867
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SpAttack_atlas_n_12
+      rect:
+        serializedVersion: 2
+        x: 351
+        y: 611
+        width: 50
+        height: 45
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: eca796f6b41f0ca20800000000000000
+      internalID: 3080727451415444174
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SpAttack_atlas_n_13
+      rect:
+        serializedVersion: 2
+        x: 442
+        y: 611
+        width: 44
+        height: 44
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 43482791d9d6eaa90800000000000000
+      internalID: -7300777424416766924
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SpAttack_atlas_n_14
+      rect:
+        serializedVersion: 2
+        x: 527
+        y: 611
+        width: 44
+        height: 43
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7ccb9d539af48ac60800000000000000
+      internalID: 7829595540355136711
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SpAttack_atlas_n_15
+      rect:
+        serializedVersion: 2
+        x: 612
+        y: 611
+        width: 44
+        height: 44
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ac694fe14f3974500800000000000000
+      internalID: 380435370236745418
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SpAttack_atlas_n_16
+      rect:
+        serializedVersion: 2
+        x: 16
+        y: 539
+        width: 10
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4a5c4450af230ccd0800000000000000
+      internalID: -2539974140425353820
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SpAttack_atlas_n_17
+      rect:
+        serializedVersion: 2
+        x: 17
+        y: 509
+        width: 44
+        height: 44
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0d4d6b63d3e6b07d0800000000000000
+      internalID: -2951143921621216048
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SpAttack_atlas_n_18
+      rect:
+        serializedVersion: 2
+        x: 101
+        y: 509
+        width: 45
+        height: 45
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a22f30ed0353ab350800000000000000
+      internalID: 6033193134815703594
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SpAttack_atlas_n_19
+      rect:
+        serializedVersion: 2
+        x: 186
+        y: 509
+        width: 45
+        height: 45
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3059a866fe55dbc20800000000000000
+      internalID: 3223827394973046019
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SpAttack_atlas_n_20
+      rect:
+        serializedVersion: 2
+        x: 270
+        y: 509
+        width: 46
+        height: 45
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 42f4abc4cfcc07db0800000000000000
+      internalID: -4796108219158474972
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SpAttack_atlas_n_21
+      rect:
+        serializedVersion: 2
+        x: 354
+        y: 509
+        width: 47
+        height: 45
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: bf6c668a94715c100800000000000000
+      internalID: 127533769575286523
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SpAttack_atlas_n_22
+      rect:
+        serializedVersion: 2
+        x: 438
+        y: 509
+        width: 48
+        height: 45
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 13912f70479b5b6d0800000000000000
+      internalID: -2975268070807693007
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SpAttack_atlas_n_23
+      rect:
+        serializedVersion: 2
+        x: 523
+        y: 509
+        width: 48
+        height: 45
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e173f50629d6b1290800000000000000
+      internalID: -7918615044351379682
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SpAttack_atlas_n_24
+      rect:
+        serializedVersion: 2
+        x: 609
+        y: 509
+        width: 47
+        height: 45
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2a6bc26ff1c16a550800000000000000
+      internalID: 6171651262957532834
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SpAttack_atlas_n_25
+      rect:
+        serializedVersion: 2
+        x: 14
+        y: 407
+        width: 47
+        height: 45
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 373864082e75f5430800000000000000
+      internalID: 3773831643086095219
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SpAttack_atlas_n_26
+      rect:
+        serializedVersion: 2
+        x: 98
+        y: 407
+        width: 48
+        height: 45
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 749b21984d246a230800000000000000
+      internalID: 3649678028630571335
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SpAttack_atlas_n_27
+      rect:
+        serializedVersion: 2
+        x: 183
+        y: 407
+        width: 48
+        height: 45
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1389c279b52067760800000000000000
+      internalID: 7455148825559996465
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SpAttack_atlas_n_28
+      rect:
+        serializedVersion: 2
+        x: 267
+        y: 407
+        width: 49
+        height: 45
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: df9a13193b0597900800000000000000
+      internalID: 682665550688659965
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SpAttack_atlas_n_29
+      rect:
+        serializedVersion: 2
+        x: 353
+        y: 407
+        width: 48
+        height: 44
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9a6f6f106028a8230800000000000000
+      internalID: 3641866210996844201
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SpAttack_atlas_n_30
+      rect:
+        serializedVersion: 2
+        x: 436
+        y: 407
+        width: 50
+        height: 45
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 80bcde514861064b0800000000000000
+      internalID: -5449330792558900472
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SpAttack_atlas_n_31
+      rect:
+        serializedVersion: 2
+        x: 521
+        y: 407
+        width: 50
+        height: 45
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 52269a2d6a10d1790800000000000000
+      internalID: -7557882783647309275
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SpAttack_atlas_n_32
+      rect:
+        serializedVersion: 2
+        x: 604
+        y: 407
+        width: 52
+        height: 45
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2d6dba83d989617c0800000000000000
+      internalID: -4100922609646184750
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SpAttack_atlas_n_33
+      rect:
+        serializedVersion: 2
+        x: 8
+        y: 305
+        width: 52
+        height: 45
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5a26d5bb3a0d6f6f0800000000000000
+      internalID: -651103694466751835
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SpAttack_atlas_n_34
+      rect:
+        serializedVersion: 2
+        x: 92
+        y: 305
+        width: 52
+        height: 46
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a990f57bba79f8790800000000000000
+      internalID: -7525629688541148774
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SpAttack_atlas_n_35
+      rect:
+        serializedVersion: 2
+        x: 177
+        y: 305
+        width: 52
+        height: 46
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 85f236742562224d0800000000000000
+      internalID: -3160921853633810600
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SpAttack_atlas_n_36
+      rect:
+        serializedVersion: 2
+        x: 262
+        y: 305
+        width: 51
+        height: 47
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a756c1462c18bac30800000000000000
+      internalID: 4371730535196419450
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SpAttack_atlas_n_37
+      rect:
+        serializedVersion: 2
+        x: 348
+        y: 305
+        width: 49
+        height: 47
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d733be06912545320800000000000000
+      internalID: 2545749958324859773
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SpAttack_atlas_n_38
+      rect:
+        serializedVersion: 2
+        x: 434
+        y: 305
+        width: 47
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e282711943e9dde90800000000000000
+      internalID: -6999264297254180818
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SpAttack_atlas_n_39
+      rect:
+        serializedVersion: 2
+        x: 522
+        y: 305
+        width: 45
+        height: 49
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: eefe253270cd9e460800000000000000
+      internalID: 7271584996581896174
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SpAttack_atlas_n_40
+      rect:
+        serializedVersion: 2
+        x: 609
+        y: 305
+        width: 44
+        height: 50
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b99a773303cde6b30800000000000000
+      internalID: 4282602395255941531
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SpAttack_atlas_n_41
+      rect:
+        serializedVersion: 2
+        x: 17
+        y: 203
+        width: 42
+        height: 51
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 55ae2ba100ce78580800000000000000
+      internalID: -8824825459617109419
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SpAttack_atlas_n_42
+      rect:
+        serializedVersion: 2
+        x: 103
+        y: 203
+        width: 41
+        height: 51
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3f6a765c4b4552ab0800000000000000
+      internalID: -5033523873133910285
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SpAttack_atlas_n_43
+      rect:
+        serializedVersion: 2
+        x: 185
+        y: 203
+        width: 45
+        height: 52
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9108f8e7f46eb48b0800000000000000
+      internalID: -5166782918377373671
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SpAttack_atlas_n_44
+      rect:
+        serializedVersion: 2
+        x: 268
+        y: 203
+        width: 47
+        height: 53
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 35df859a31a8a2920800000000000000
+      internalID: 2966335121627086163
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SpAttack_atlas_n_45
+      rect:
+        serializedVersion: 2
+        x: 351
+        y: 203
+        width: 49
+        height: 54
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1a7b5c21c2c0c4c50800000000000000
+      internalID: 6650704133152421793
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SpAttack_atlas_n_46
+      rect:
+        serializedVersion: 2
+        x: 434
+        y: 203
+        width: 51
+        height: 55
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8c5fe3f2ef396bcb0800000000000000
+      internalID: -4848525228894128696
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SpAttack_atlas_n_47
+      rect:
+        serializedVersion: 2
+        x: 517
+        y: 203
+        width: 53
+        height: 56
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d11228174d3eed290800000000000000
+      internalID: -7863597397765381859
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SpAttack_atlas_n_48
+      rect:
+        serializedVersion: 2
+        x: 601
+        y: 203
+        width: 58
+        height: 56
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 10b76cc3b85661430800000000000000
+      internalID: 3753298988154387201
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SpAttack_atlas_n_49
+      rect:
+        serializedVersion: 2
+        x: 4
+        y: 101
+        width: 55
+        height: 57
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3b6a49fdaca25b980800000000000000
+      internalID: -8523859668905974093
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SpAttack_atlas_n_50
+      rect:
+        serializedVersion: 2
+        x: 58
+        y: 116
+        width: 11
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 62ba7516f855d5180800000000000000
+      internalID: -9125043195680937178
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SpAttack_atlas_n_51
+      rect:
+        serializedVersion: 2
+        x: 89
+        y: 101
+        width: 69
+        height: 58
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f7413e0b6a87f0020800000000000000
+      internalID: 2310197791191929983
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SpAttack_atlas_n_52
+      rect:
+        serializedVersion: 2
+        x: 173
+        y: 101
+        width: 72
+        height: 59
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b6bb20adb3ce62040800000000000000
+      internalID: 4622641809347230571
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SpAttack_atlas_n_53
+      rect:
+        serializedVersion: 2
+        x: 258
+        y: 101
+        width: 73
+        height: 59
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8418a92f2f93a5010800000000000000
+      internalID: 1178317968125886792
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SpAttack_atlas_n_54
+      rect:
+        serializedVersion: 2
+        x: 339
+        y: 0
+        width: 341
+        height: 161
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3d2683303a7251780800000000000000
+      internalID: -8713014322991177005
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SpAttack_atlas_n_55
+      rect:
+        serializedVersion: 2
+        x: 4
+        y: 0
+        width: 71
+        height: 60
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c13854663d051ffb0800000000000000
+      internalID: -4615819274193894628
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SpAttack_atlas_n_56
+      rect:
+        serializedVersion: 2
+        x: 89
+        y: 0
+        width: 71
+        height: 60
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ad66a696d463eb310800000000000000
+      internalID: 1422634238404617946
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SpAttack_atlas_n_57
+      rect:
+        serializedVersion: 2
+        x: 174
+        y: 0
+        width: 71
+        height: 60
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c3e43d545d394ad80800000000000000
+      internalID: -8240298873972371908
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SpAttack_atlas_n_58
+      rect:
+        serializedVersion: 2
+        x: 259
+        y: 0
+        width: 71
+        height: 60
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9009996df7a104930800000000000000
+      internalID: 4125326395034931209
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      SpAttack_atlas_n_0: 5230122007622868066
+      SpAttack_atlas_n_1: -6233247254865240774
+      SpAttack_atlas_n_10: -4105189290516296650
+      SpAttack_atlas_n_11: -5650043864426211867
+      SpAttack_atlas_n_12: 3080727451415444174
+      SpAttack_atlas_n_13: -7300777424416766924
+      SpAttack_atlas_n_14: 7829595540355136711
+      SpAttack_atlas_n_15: 380435370236745418
+      SpAttack_atlas_n_16: -2539974140425353820
+      SpAttack_atlas_n_17: -2951143921621216048
+      SpAttack_atlas_n_18: 6033193134815703594
+      SpAttack_atlas_n_19: 3223827394973046019
+      SpAttack_atlas_n_2: -8407925328508980154
+      SpAttack_atlas_n_20: -4796108219158474972
+      SpAttack_atlas_n_21: 127533769575286523
+      SpAttack_atlas_n_22: -2975268070807693007
+      SpAttack_atlas_n_23: -7918615044351379682
+      SpAttack_atlas_n_24: 6171651262957532834
+      SpAttack_atlas_n_25: 3773831643086095219
+      SpAttack_atlas_n_26: 3649678028630571335
+      SpAttack_atlas_n_27: 7455148825559996465
+      SpAttack_atlas_n_28: 682665550688659965
+      SpAttack_atlas_n_29: 3641866210996844201
+      SpAttack_atlas_n_3: -5863529337398697870
+      SpAttack_atlas_n_30: -5449330792558900472
+      SpAttack_atlas_n_31: -7557882783647309275
+      SpAttack_atlas_n_32: -4100922609646184750
+      SpAttack_atlas_n_33: -651103694466751835
+      SpAttack_atlas_n_34: -7525629688541148774
+      SpAttack_atlas_n_35: -3160921853633810600
+      SpAttack_atlas_n_36: 4371730535196419450
+      SpAttack_atlas_n_37: 2545749958324859773
+      SpAttack_atlas_n_38: -6999264297254180818
+      SpAttack_atlas_n_39: 7271584996581896174
+      SpAttack_atlas_n_4: -6494506718402736716
+      SpAttack_atlas_n_40: 4282602395255941531
+      SpAttack_atlas_n_41: -8824825459617109419
+      SpAttack_atlas_n_42: -5033523873133910285
+      SpAttack_atlas_n_43: -5166782918377373671
+      SpAttack_atlas_n_44: 2966335121627086163
+      SpAttack_atlas_n_45: 6650704133152421793
+      SpAttack_atlas_n_46: -4848525228894128696
+      SpAttack_atlas_n_47: -7863597397765381859
+      SpAttack_atlas_n_48: 3753298988154387201
+      SpAttack_atlas_n_49: -8523859668905974093
+      SpAttack_atlas_n_5: -5015889973850182277
+      SpAttack_atlas_n_50: -9125043195680937178
+      SpAttack_atlas_n_51: 2310197791191929983
+      SpAttack_atlas_n_52: 4622641809347230571
+      SpAttack_atlas_n_53: 1178317968125886792
+      SpAttack_atlas_n_54: -8713014322991177005
+      SpAttack_atlas_n_55: -4615819274193894628
+      SpAttack_atlas_n_56: 1422634238404617946
+      SpAttack_atlas_n_57: -8240298873972371908
+      SpAttack_atlas_n_58: 4125326395034931209
+      SpAttack_atlas_n_6: -7254276694976096442
+      SpAttack_atlas_n_7: 4478823343634324475
+      SpAttack_atlas_n_8: 1675440961352533371
+      SpAttack_atlas_n_9: 6351793554607479897
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

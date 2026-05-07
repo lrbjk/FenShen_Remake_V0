@@ -1,0 +1,1791 @@
+fileFormatVersion: 2
+guid: 52a021cab30ad9f429ceafa2acf2cd82
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: -2582681456482244922
+    second: DoubleJump_atlas_0
+  - first:
+      213: -5382297641106903478
+    second: DoubleJump_atlas_1
+  - first:
+      213: -9055783242345930026
+    second: DoubleJump_atlas_2
+  - first:
+      213: 493990559881379921
+    second: DoubleJump_atlas_3
+  - first:
+      213: -7829049936097396840
+    second: DoubleJump_atlas_4
+  - first:
+      213: 5377566263045110154
+    second: DoubleJump_atlas_5
+  - first:
+      213: -5878606198508401580
+    second: DoubleJump_atlas_6
+  - first:
+      213: -3132849756585269291
+    second: DoubleJump_atlas_7
+  - first:
+      213: 877385824769218055
+    second: DoubleJump_atlas_8
+  - first:
+      213: -5948880196860454663
+    second: DoubleJump_atlas_9
+  - first:
+      213: -2049569716537664339
+    second: DoubleJump_atlas_10
+  - first:
+      213: 8245527633925802694
+    second: DoubleJump_atlas_11
+  - first:
+      213: 2636857322350055258
+    second: DoubleJump_atlas_12
+  - first:
+      213: 5994588135856128363
+    second: DoubleJump_atlas_13
+  - first:
+      213: 4757941688643547406
+    second: DoubleJump_atlas_14
+  - first:
+      213: 2633720644408589816
+    second: DoubleJump_atlas_15
+  - first:
+      213: 4842995011635450772
+    second: DoubleJump_atlas_16
+  - first:
+      213: 2474132675540719911
+    second: DoubleJump_atlas_17
+  - first:
+      213: -2038137786931237854
+    second: DoubleJump_atlas_18
+  - first:
+      213: 6283384402289609192
+    second: DoubleJump_atlas_19
+  - first:
+      213: -3730207186130450516
+    second: DoubleJump_atlas_20
+  - first:
+      213: 3550323431611277403
+    second: DoubleJump_atlas_21
+  - first:
+      213: 7095516920430210721
+    second: DoubleJump_atlas_22
+  - first:
+      213: -3292168948379810020
+    second: DoubleJump_atlas_23
+  - first:
+      213: -5078181674634851163
+    second: DoubleJump_atlas_24
+  - first:
+      213: 5890336302477027138
+    second: DoubleJump_atlas_25
+  - first:
+      213: -6516104837733407425
+    second: DoubleJump_atlas_26
+  - first:
+      213: -5039272525886151237
+    second: DoubleJump_atlas_27
+  - first:
+      213: 5287955104285230661
+    second: DoubleJump_atlas_28
+  - first:
+      213: 7833631992883857138
+    second: DoubleJump_atlas_29
+  - first:
+      213: 7178104878534862561
+    second: DoubleJump_atlas_30
+  - first:
+      213: -5652633096686556785
+    second: DoubleJump_atlas_31
+  - first:
+      213: -1391771564385201191
+    second: DoubleJump_atlas_32
+  - first:
+      213: -7211686747727577143
+    second: DoubleJump_atlas_33
+  - first:
+      213: 1413663007001697902
+    second: DoubleJump_atlas_34
+  - first:
+      213: 7758222770852823326
+    second: DoubleJump_atlas_35
+  - first:
+      213: -6975607281169399893
+    second: DoubleJump_atlas_36
+  - first:
+      213: 4939159298628421724
+    second: DoubleJump_atlas_37
+  - first:
+      213: -6340270648256533806
+    second: DoubleJump_atlas_38
+  - first:
+      213: -409908877794825144
+    second: DoubleJump_atlas_39
+  - first:
+      213: 8861036288023869887
+    second: DoubleJump_atlas_40
+  - first:
+      213: -8123897762752897054
+    second: DoubleJump_atlas_41
+  - first:
+      213: -3482878808244799555
+    second: DoubleJump_atlas_42
+  - first:
+      213: -5516636699166102414
+    second: DoubleJump_atlas_43
+  - first:
+      213: 2392067366081783027
+    second: DoubleJump_atlas_44
+  - first:
+      213: 376156264768804413
+    second: DoubleJump_atlas_45
+  - first:
+      213: -5702547900252522508
+    second: DoubleJump_atlas_46
+  - first:
+      213: -3449286225402947319
+    second: DoubleJump_atlas_47
+  - first:
+      213: -1039256294685227863
+    second: DoubleJump_atlas_48
+  - first:
+      213: -915731919535722251
+    second: DoubleJump_atlas_49
+  - first:
+      213: -3966509793164363734
+    second: DoubleJump_atlas_50
+  - first:
+      213: 6780297364841144277
+    second: DoubleJump_atlas_51
+  - first:
+      213: -1135334403363401320
+    second: DoubleJump_atlas_52
+  - first:
+      213: 7856133423672063269
+    second: DoubleJump_atlas_53
+  - first:
+      213: 498072421158844873
+    second: DoubleJump_atlas_54
+  - first:
+      213: 3092047020591674156
+    second: DoubleJump_atlas_55
+  - first:
+      213: 4561308843518022912
+    second: DoubleJump_atlas_56
+  - first:
+      213: -8760692923869469949
+    second: DoubleJump_atlas_57
+  - first:
+      213: -6518620103318462557
+    second: DoubleJump_atlas_58
+  - first:
+      213: 7627846302307008550
+    second: DoubleJump_atlas_59
+  - first:
+      213: -4027079879736672038
+    second: DoubleJump_atlas_60
+  - first:
+      213: 8981336444863769472
+    second: DoubleJump_atlas_61
+  - first:
+      213: 5607061672829064751
+    second: DoubleJump_atlas_62
+  - first:
+      213: 5108252780701310090
+    second: DoubleJump_atlas_63
+  - first:
+      213: -315413269592304106
+    second: DoubleJump_atlas_64
+  - first:
+      213: -4658663497798865986
+    second: DoubleJump_atlas_65
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 0
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 64
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: DoubleJump_atlas_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 651
+        width: 85
+        height: 93
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6c6236226e8782cd0800000000000000
+      internalID: -2582681456482244922
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DoubleJump_atlas_1
+      rect:
+        serializedVersion: 2
+        x: 85
+        y: 651
+        width: 85
+        height: 93
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a4e6662efcc3e45b0800000000000000
+      internalID: -5382297641106903478
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DoubleJump_atlas_2
+      rect:
+        serializedVersion: 2
+        x: 170
+        y: 651
+        width: 85
+        height: 93
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6d22905ee15635280800000000000000
+      internalID: -9055783242345930026
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DoubleJump_atlas_3
+      rect:
+        serializedVersion: 2
+        x: 255
+        y: 651
+        width: 85
+        height: 93
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 15040240cc10bd600800000000000000
+      internalID: 493990559881379921
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DoubleJump_atlas_4
+      rect:
+        serializedVersion: 2
+        x: 340
+        y: 651
+        width: 85
+        height: 93
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 897be1e2090a95390800000000000000
+      internalID: -7829049936097396840
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DoubleJump_atlas_5
+      rect:
+        serializedVersion: 2
+        x: 425
+        y: 651
+        width: 85
+        height: 93
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a89bde05604f0aa40800000000000000
+      internalID: 5377566263045110154
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DoubleJump_atlas_6
+      rect:
+        serializedVersion: 2
+        x: 510
+        y: 651
+        width: 85
+        height: 93
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 45c4f730fcefa6ea0800000000000000
+      internalID: -5878606198508401580
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DoubleJump_atlas_7
+      rect:
+        serializedVersion: 2
+        x: 595
+        y: 651
+        width: 85
+        height: 93
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5d7e014beb1e584d0800000000000000
+      internalID: -3132849756585269291
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DoubleJump_atlas_8
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 558
+        width: 85
+        height: 93
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 706155052c91d2c00800000000000000
+      internalID: 877385824769218055
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DoubleJump_atlas_9
+      rect:
+        serializedVersion: 2
+        x: 85
+        y: 558
+        width: 85
+        height: 93
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9f8d6cebaf4517da0800000000000000
+      internalID: -5948880196860454663
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DoubleJump_atlas_10
+      rect:
+        serializedVersion: 2
+        x: 170
+        y: 558
+        width: 85
+        height: 93
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: dacdf5fa3377e83e0800000000000000
+      internalID: -2049569716537664339
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DoubleJump_atlas_11
+      rect:
+        serializedVersion: 2
+        x: 255
+        y: 558
+        width: 85
+        height: 93
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6ca80d542bffd6270800000000000000
+      internalID: 8245527633925802694
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DoubleJump_atlas_12
+      rect:
+        serializedVersion: 2
+        x: 340
+        y: 558
+        width: 85
+        height: 93
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a5f001693cff79420800000000000000
+      internalID: 2636857322350055258
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DoubleJump_atlas_13
+      rect:
+        serializedVersion: 2
+        x: 425
+        y: 558
+        width: 85
+        height: 93
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b61c97c162e013350800000000000000
+      internalID: 5994588135856128363
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DoubleJump_atlas_14
+      rect:
+        serializedVersion: 2
+        x: 510
+        y: 558
+        width: 85
+        height: 93
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e01fe95d1ca970240800000000000000
+      internalID: 4757941688643547406
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DoubleJump_atlas_15
+      rect:
+        serializedVersion: 2
+        x: 595
+        y: 558
+        width: 85
+        height: 93
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8fd3697d8fadc8420800000000000000
+      internalID: 2633720644408589816
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DoubleJump_atlas_16
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 465
+        width: 85
+        height: 93
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4931585cd46c53340800000000000000
+      internalID: 4842995011635450772
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DoubleJump_atlas_17
+      rect:
+        serializedVersion: 2
+        x: 85
+        y: 465
+        width: 85
+        height: 93
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7299ac45f82e55220800000000000000
+      internalID: 2474132675540719911
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DoubleJump_atlas_18
+      rect:
+        serializedVersion: 2
+        x: 170
+        y: 465
+        width: 85
+        height: 93
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 22ca9a63b7417b3e0800000000000000
+      internalID: -2038137786931237854
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DoubleJump_atlas_19
+      rect:
+        serializedVersion: 2
+        x: 255
+        y: 465
+        width: 85
+        height: 93
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8e9c3b5b2d0133750800000000000000
+      internalID: 6283384402289609192
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DoubleJump_atlas_20
+      rect:
+        serializedVersion: 2
+        x: 340
+        y: 465
+        width: 85
+        height: 93
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ca7c514e354ab3cc0800000000000000
+      internalID: -3730207186130450516
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DoubleJump_atlas_21
+      rect:
+        serializedVersion: 2
+        x: 425
+        y: 465
+        width: 85
+        height: 93
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b50afe2c958454130800000000000000
+      internalID: 3550323431611277403
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DoubleJump_atlas_22
+      rect:
+        serializedVersion: 2
+        x: 510
+        y: 465
+        width: 85
+        height: 93
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1ae2404ab07587260800000000000000
+      internalID: 7095516920430210721
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DoubleJump_atlas_23
+      rect:
+        serializedVersion: 2
+        x: 595
+        y: 465
+        width: 85
+        height: 93
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c17004bb8cddf42d0800000000000000
+      internalID: -3292168948379810020
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DoubleJump_atlas_24
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 372
+        width: 85
+        height: 93
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5accd7a1caca689b0800000000000000
+      internalID: -5078181674634851163
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DoubleJump_atlas_25
+      rect:
+        serializedVersion: 2
+        x: 85
+        y: 372
+        width: 85
+        height: 93
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2472bb4a8adaeb150800000000000000
+      internalID: 5890336302477027138
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DoubleJump_atlas_26
+      rect:
+        serializedVersion: 2
+        x: 170
+        y: 372
+        width: 85
+        height: 93
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f3522b38c252295a0800000000000000
+      internalID: -6516104837733407425
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DoubleJump_atlas_27
+      rect:
+        serializedVersion: 2
+        x: 255
+        y: 372
+        width: 85
+        height: 93
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: bb5ab204658e01ab0800000000000000
+      internalID: -5039272525886151237
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DoubleJump_atlas_28
+      rect:
+        serializedVersion: 2
+        x: 340
+        y: 372
+        width: 85
+        height: 93
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 546822b8627926940800000000000000
+      internalID: 5287955104285230661
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DoubleJump_atlas_29
+      rect:
+        serializedVersion: 2
+        x: 425
+        y: 372
+        width: 85
+        height: 93
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2f64afc0bc6a6bc60800000000000000
+      internalID: 7833631992883857138
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DoubleJump_atlas_30
+      rect:
+        serializedVersion: 2
+        x: 510
+        y: 372
+        width: 85
+        height: 93
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1e6a1951b50cd9360800000000000000
+      internalID: 7178104878534862561
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DoubleJump_atlas_31
+      rect:
+        serializedVersion: 2
+        x: 595
+        y: 372
+        width: 85
+        height: 93
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f89a162c520dd81b0800000000000000
+      internalID: -5652633096686556785
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DoubleJump_atlas_32
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 279
+        width: 85
+        height: 93
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9d39458d22f6face0800000000000000
+      internalID: -1391771564385201191
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DoubleJump_atlas_33
+      rect:
+        serializedVersion: 2
+        x: 85
+        y: 279
+        width: 85
+        height: 93
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9cf3e42bc11faeb90800000000000000
+      internalID: -7211686747727577143
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DoubleJump_atlas_34
+      rect:
+        serializedVersion: 2
+        x: 170
+        y: 279
+        width: 85
+        height: 93
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e6e5274d3075e9310800000000000000
+      internalID: 1413663007001697902
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DoubleJump_atlas_35
+      rect:
+        serializedVersion: 2
+        x: 255
+        y: 279
+        width: 85
+        height: 93
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e118709518ebaab60800000000000000
+      internalID: 7758222770852823326
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DoubleJump_atlas_36
+      rect:
+        serializedVersion: 2
+        x: 340
+        y: 279
+        width: 85
+        height: 93
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: baff449d22aa13f90800000000000000
+      internalID: -6975607281169399893
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DoubleJump_atlas_37
+      rect:
+        serializedVersion: 2
+        x: 425
+        y: 279
+        width: 85
+        height: 93
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c5880db963b6b8440800000000000000
+      internalID: 4939159298628421724
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DoubleJump_atlas_38
+      rect:
+        serializedVersion: 2
+        x: 510
+        y: 279
+        width: 85
+        height: 93
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2da65d60075d208a0800000000000000
+      internalID: -6340270648256533806
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DoubleJump_atlas_39
+      rect:
+        serializedVersion: 2
+        x: 595
+        y: 279
+        width: 85
+        height: 93
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 84ca2c42c06bf4af0800000000000000
+      internalID: -409908877794825144
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DoubleJump_atlas_40
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 186
+        width: 85
+        height: 93
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: fb932816e89b8fa70800000000000000
+      internalID: 8861036288023869887
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DoubleJump_atlas_41
+      rect:
+        serializedVersion: 2
+        x: 85
+        y: 186
+        width: 85
+        height: 93
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2efd58be60e124f80800000000000000
+      internalID: -8123897762752897054
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DoubleJump_atlas_42
+      rect:
+        serializedVersion: 2
+        x: 170
+        y: 186
+        width: 85
+        height: 93
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: db735de4d245aafc0800000000000000
+      internalID: -3482878808244799555
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DoubleJump_atlas_43
+      rect:
+        serializedVersion: 2
+        x: 255
+        y: 186
+        width: 85
+        height: 93
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 27c22578628f073b0800000000000000
+      internalID: -5516636699166102414
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DoubleJump_atlas_44
+      rect:
+        serializedVersion: 2
+        x: 340
+        y: 186
+        width: 85
+        height: 93
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3f4eb128894523120800000000000000
+      internalID: 2392067366081783027
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DoubleJump_atlas_45
+      rect:
+        serializedVersion: 2
+        x: 425
+        y: 186
+        width: 85
+        height: 93
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d36159d3120683500800000000000000
+      internalID: 376156264768804413
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DoubleJump_atlas_46
+      rect:
+        serializedVersion: 2
+        x: 510
+        y: 186
+        width: 85
+        height: 93
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4f77ccae5ea7cd0b0800000000000000
+      internalID: -5702547900252522508
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DoubleJump_atlas_47
+      rect:
+        serializedVersion: 2
+        x: 595
+        y: 186
+        width: 85
+        height: 93
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 909953ef37ca120d0800000000000000
+      internalID: -3449286225402947319
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DoubleJump_atlas_48
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 93
+        width: 85
+        height: 93
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9a4c2bcf7e1d391f0800000000000000
+      internalID: -1039256294685227863
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DoubleJump_atlas_49
+      rect:
+        serializedVersion: 2
+        x: 85
+        y: 93
+        width: 85
+        height: 93
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5f03692cbaaaa43f0800000000000000
+      internalID: -915731919535722251
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DoubleJump_atlas_50
+      rect:
+        serializedVersion: 2
+        x: 170
+        y: 93
+        width: 85
+        height: 93
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a28745ccb5024f8c0800000000000000
+      internalID: -3966509793164363734
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DoubleJump_atlas_51
+      rect:
+        serializedVersion: 2
+        x: 255
+        y: 93
+        width: 85
+        height: 93
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5df9fde9784781e50800000000000000
+      internalID: 6780297364841144277
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DoubleJump_atlas_52
+      rect:
+        serializedVersion: 2
+        x: 340
+        y: 93
+        width: 85
+        height: 93
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8919e3a106b7e30f0800000000000000
+      internalID: -1135334403363401320
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DoubleJump_atlas_53
+      rect:
+        serializedVersion: 2
+        x: 425
+        y: 93
+        width: 85
+        height: 93
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 525fb0aa9b7960d60800000000000000
+      internalID: 7856133423672063269
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DoubleJump_atlas_54
+      rect:
+        serializedVersion: 2
+        x: 510
+        y: 93
+        width: 85
+        height: 93
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9c977976a3289e600800000000000000
+      internalID: 498072421158844873
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DoubleJump_atlas_55
+      rect:
+        serializedVersion: 2
+        x: 595
+        y: 93
+        width: 85
+        height: 93
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c23fb23026829ea20800000000000000
+      internalID: 3092047020591674156
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DoubleJump_atlas_56
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 0
+        width: 85
+        height: 93
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0055db0f9360d4f30800000000000000
+      internalID: 4561308843518022912
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DoubleJump_atlas_57
+      rect:
+        serializedVersion: 2
+        x: 85
+        y: 0
+        width: 85
+        height: 93
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3036b7ea334cb6680800000000000000
+      internalID: -8760692923869469949
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DoubleJump_atlas_58
+      rect:
+        serializedVersion: 2
+        x: 170
+        y: 0
+        width: 85
+        height: 93
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3af9bfb9d853985a0800000000000000
+      internalID: -6518620103318462557
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DoubleJump_atlas_59
+      rect:
+        serializedVersion: 2
+        x: 255
+        y: 0
+        width: 85
+        height: 93
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 62049424ccd8bd960800000000000000
+      internalID: 7627846302307008550
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DoubleJump_atlas_60
+      rect:
+        serializedVersion: 2
+        x: 340
+        y: 0
+        width: 85
+        height: 93
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ad04c2e8f20fc18c0800000000000000
+      internalID: -4027079879736672038
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DoubleJump_atlas_61
+      rect:
+        serializedVersion: 2
+        x: 425
+        y: 0
+        width: 85
+        height: 93
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 08bef5459ed14ac70800000000000000
+      internalID: 8981336444863769472
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DoubleJump_atlas_62
+      rect:
+        serializedVersion: 2
+        x: 510
+        y: 0
+        width: 85
+        height: 93
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f261faa42e840dd40800000000000000
+      internalID: 5607061672829064751
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DoubleJump_atlas_63
+      rect:
+        serializedVersion: 2
+        x: 595
+        y: 0
+        width: 85
+        height: 93
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a8c5a90e6d824e640800000000000000
+      internalID: 5108252780701310090
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: a683ee0815af2354aab4547c0555f7cf
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures:
+    - texture: {fileID: 2800000, guid: f50152f6cbc8e6a44aa889f12c4df862, type: 3}
+      name: _NormalMap
+    spriteCustomMetadata:
+      entries:
+      - key: SpriteEditor.SliceSettings
+        value: '{"sliceOnImport":false,"gridCellCount":{"x":8.0,"y":8.0},"gridSpriteSize":{"x":85.0,"y":93.0},"gridSpriteOffset":{"x":0.0,"y":0.0},"gridSpritePadding":{"x":0.0,"y":0.0},"pivot":{"x":0.5,"y":0.5},"pivotPixels":{"x":0.0,"y":0.0},"autoSlicingMethod":0,"spriteAlignment":0,"pivotUnitMode":0,"slicingType":2,"keepEmptyRects":false,"isAlternate":false}'
+    nameFileIdTable:
+      DoubleJump_atlas_0: -2582681456482244922
+      DoubleJump_atlas_1: -5382297641106903478
+      DoubleJump_atlas_10: -2049569716537664339
+      DoubleJump_atlas_11: 8245527633925802694
+      DoubleJump_atlas_12: 2636857322350055258
+      DoubleJump_atlas_13: 5994588135856128363
+      DoubleJump_atlas_14: 4757941688643547406
+      DoubleJump_atlas_15: 2633720644408589816
+      DoubleJump_atlas_16: 4842995011635450772
+      DoubleJump_atlas_17: 2474132675540719911
+      DoubleJump_atlas_18: -2038137786931237854
+      DoubleJump_atlas_19: 6283384402289609192
+      DoubleJump_atlas_2: -9055783242345930026
+      DoubleJump_atlas_20: -3730207186130450516
+      DoubleJump_atlas_21: 3550323431611277403
+      DoubleJump_atlas_22: 7095516920430210721
+      DoubleJump_atlas_23: -3292168948379810020
+      DoubleJump_atlas_24: -5078181674634851163
+      DoubleJump_atlas_25: 5890336302477027138
+      DoubleJump_atlas_26: -6516104837733407425
+      DoubleJump_atlas_27: -5039272525886151237
+      DoubleJump_atlas_28: 5287955104285230661
+      DoubleJump_atlas_29: 7833631992883857138
+      DoubleJump_atlas_3: 493990559881379921
+      DoubleJump_atlas_30: 7178104878534862561
+      DoubleJump_atlas_31: -5652633096686556785
+      DoubleJump_atlas_32: -1391771564385201191
+      DoubleJump_atlas_33: -7211686747727577143
+      DoubleJump_atlas_34: 1413663007001697902
+      DoubleJump_atlas_35: 7758222770852823326
+      DoubleJump_atlas_36: -6975607281169399893
+      DoubleJump_atlas_37: 4939159298628421724
+      DoubleJump_atlas_38: -6340270648256533806
+      DoubleJump_atlas_39: -409908877794825144
+      DoubleJump_atlas_4: -7829049936097396840
+      DoubleJump_atlas_40: 8861036288023869887
+      DoubleJump_atlas_41: -8123897762752897054
+      DoubleJump_atlas_42: -3482878808244799555
+      DoubleJump_atlas_43: -5516636699166102414
+      DoubleJump_atlas_44: 2392067366081783027
+      DoubleJump_atlas_45: 376156264768804413
+      DoubleJump_atlas_46: -5702547900252522508
+      DoubleJump_atlas_47: -3449286225402947319
+      DoubleJump_atlas_48: -1039256294685227863
+      DoubleJump_atlas_49: -915731919535722251
+      DoubleJump_atlas_5: 5377566263045110154
+      DoubleJump_atlas_50: -3966509793164363734
+      DoubleJump_atlas_51: 6780297364841144277
+      DoubleJump_atlas_52: -1135334403363401320
+      DoubleJump_atlas_53: 7856133423672063269
+      DoubleJump_atlas_54: 498072421158844873
+      DoubleJump_atlas_55: 3092047020591674156
+      DoubleJump_atlas_56: 4561308843518022912
+      DoubleJump_atlas_57: -8760692923869469949
+      DoubleJump_atlas_58: -6518620103318462557
+      DoubleJump_atlas_59: 7627846302307008550
+      DoubleJump_atlas_6: -5878606198508401580
+      DoubleJump_atlas_60: -4027079879736672038
+      DoubleJump_atlas_61: 8981336444863769472
+      DoubleJump_atlas_62: 5607061672829064751
+      DoubleJump_atlas_63: 5108252780701310090
+      DoubleJump_atlas_7: -3132849756585269291
+      DoubleJump_atlas_8: 877385824769218055
+      DoubleJump_atlas_9: -5948880196860454663
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

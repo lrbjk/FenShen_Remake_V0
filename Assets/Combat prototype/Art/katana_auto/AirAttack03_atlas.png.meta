@@ -1,0 +1,1776 @@
+fileFormatVersion: 2
+guid: d8a368a3aa0ad1a44b1090c74158e2e7
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: 8610138797578972039
+    second: AirAttack03_atlas_0
+  - first:
+      213: -3584480287583909425
+    second: AirAttack03_atlas_1
+  - first:
+      213: -5437013895301924228
+    second: AirAttack03_atlas_2
+  - first:
+      213: 8034777685152889165
+    second: AirAttack03_atlas_3
+  - first:
+      213: -8679528696772363545
+    second: AirAttack03_atlas_4
+  - first:
+      213: -4770289294992721462
+    second: AirAttack03_atlas_5
+  - first:
+      213: 203459564108410395
+    second: AirAttack03_atlas_6
+  - first:
+      213: -632374796891206360
+    second: AirAttack03_atlas_7
+  - first:
+      213: -419326954108627332
+    second: AirAttack03_atlas_8
+  - first:
+      213: 6947666344826005724
+    second: AirAttack03_atlas_9
+  - first:
+      213: -7716462246778406130
+    second: AirAttack03_atlas_10
+  - first:
+      213: -7143532924515753086
+    second: AirAttack03_atlas_11
+  - first:
+      213: -1403922387119954190
+    second: AirAttack03_atlas_12
+  - first:
+      213: 6059831197115850522
+    second: AirAttack03_atlas_13
+  - first:
+      213: -6782136732611280189
+    second: AirAttack03_atlas_14
+  - first:
+      213: -6074123033527149255
+    second: AirAttack03_atlas_15
+  - first:
+      213: 1260794348542819229
+    second: AirAttack03_atlas_16
+  - first:
+      213: 7860284044323532419
+    second: AirAttack03_atlas_17
+  - first:
+      213: -7188927963161270209
+    second: AirAttack03_atlas_18
+  - first:
+      213: -717774237819628538
+    second: AirAttack03_atlas_19
+  - first:
+      213: -646647637873662962
+    second: AirAttack03_atlas_20
+  - first:
+      213: -7362444058803383865
+    second: AirAttack03_atlas_21
+  - first:
+      213: 4092937059700081783
+    second: AirAttack03_atlas_22
+  - first:
+      213: -3472179614211807688
+    second: AirAttack03_atlas_23
+  - first:
+      213: 845735112687763129
+    second: AirAttack03_atlas_24
+  - first:
+      213: 5936852369400708200
+    second: AirAttack03_atlas_25
+  - first:
+      213: 8739548106775987272
+    second: AirAttack03_atlas_26
+  - first:
+      213: -3932580421247147357
+    second: AirAttack03_atlas_27
+  - first:
+      213: 8657114648156916252
+    second: AirAttack03_atlas_28
+  - first:
+      213: -352481199318888211
+    second: AirAttack03_atlas_29
+  - first:
+      213: -36498509340352095
+    second: AirAttack03_atlas_30
+  - first:
+      213: -4794391714073999947
+    second: AirAttack03_atlas_31
+  - first:
+      213: -2188585951269622388
+    second: AirAttack03_atlas_32
+  - first:
+      213: 5199103058170041608
+    second: AirAttack03_atlas_33
+  - first:
+      213: 583245344992781021
+    second: AirAttack03_atlas_34
+  - first:
+      213: 4425008739938773413
+    second: AirAttack03_atlas_35
+  - first:
+      213: -2806414677011795379
+    second: AirAttack03_atlas_36
+  - first:
+      213: -8438100233515792266
+    second: AirAttack03_atlas_37
+  - first:
+      213: -2219241723369602794
+    second: AirAttack03_atlas_38
+  - first:
+      213: 2169423856162400083
+    second: AirAttack03_atlas_39
+  - first:
+      213: 5721151775464353250
+    second: AirAttack03_atlas_40
+  - first:
+      213: 2546153864273409208
+    second: AirAttack03_atlas_41
+  - first:
+      213: -2437959066137643021
+    second: AirAttack03_atlas_42
+  - first:
+      213: -339937332475128465
+    second: AirAttack03_atlas_43
+  - first:
+      213: 8786741479334375961
+    second: AirAttack03_atlas_44
+  - first:
+      213: -232220944857287858
+    second: AirAttack03_atlas_45
+  - first:
+      213: -8616040571084672926
+    second: AirAttack03_atlas_46
+  - first:
+      213: 7618891722789261263
+    second: AirAttack03_atlas_47
+  - first:
+      213: -3910511275480888683
+    second: AirAttack03_atlas_48
+  - first:
+      213: -5626386686804295773
+    second: AirAttack03_atlas_49
+  - first:
+      213: 6952177807740100154
+    second: AirAttack03_atlas_50
+  - first:
+      213: 3975522159737517811
+    second: AirAttack03_atlas_51
+  - first:
+      213: 489903171942455096
+    second: AirAttack03_atlas_52
+  - first:
+      213: 790494900666829697
+    second: AirAttack03_atlas_53
+  - first:
+      213: -7213051907755690848
+    second: AirAttack03_atlas_54
+  - first:
+      213: -6503859455967525436
+    second: AirAttack03_atlas_55
+  - first:
+      213: 3402353462338414345
+    second: AirAttack03_atlas_56
+  - first:
+      213: 8066139468261478206
+    second: AirAttack03_atlas_57
+  - first:
+      213: -3270999196370859079
+    second: AirAttack03_atlas_58
+  - first:
+      213: -7604619874358538087
+    second: AirAttack03_atlas_59
+  - first:
+      213: 5141695212486552492
+    second: AirAttack03_atlas_60
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 0
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 64
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: AirAttack03_atlas_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 721
+        width: 85
+        height: 103
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 78be0803e9b5d7770800000000000000
+      internalID: 8610138797578972039
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AirAttack03_atlas_1
+      rect:
+        serializedVersion: 2
+        x: 85
+        y: 721
+        width: 85
+        height: 103
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: fc9cb2a7b2e514ec0800000000000000
+      internalID: -3584480287583909425
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AirAttack03_atlas_2
+      rect:
+        serializedVersion: 2
+        x: 170
+        y: 721
+        width: 85
+        height: 103
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c7a7aa33ba8db84b0800000000000000
+      internalID: -5437013895301924228
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AirAttack03_atlas_3
+      rect:
+        serializedVersion: 2
+        x: 255
+        y: 721
+        width: 85
+        height: 103
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d49f5cc0cb3418f60800000000000000
+      internalID: 8034777685152889165
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AirAttack03_atlas_4
+      rect:
+        serializedVersion: 2
+        x: 340
+        y: 721
+        width: 85
+        height: 103
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7eaf21be2ae1c8780800000000000000
+      internalID: -8679528696772363545
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AirAttack03_atlas_5
+      rect:
+        serializedVersion: 2
+        x: 425
+        y: 721
+        width: 85
+        height: 103
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ac93c1809278ccdb0800000000000000
+      internalID: -4770289294992721462
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AirAttack03_atlas_6
+      rect:
+        serializedVersion: 2
+        x: 510
+        y: 721
+        width: 85
+        height: 103
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b1e66d44565d2d200800000000000000
+      internalID: 203459564108410395
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AirAttack03_atlas_7
+      rect:
+        serializedVersion: 2
+        x: 595
+        y: 721
+        width: 85
+        height: 103
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 82dc362097a5937f0800000000000000
+      internalID: -632374796891206360
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AirAttack03_atlas_8
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 618
+        width: 85
+        height: 103
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c76db9f5b504e2af0800000000000000
+      internalID: -419326954108627332
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AirAttack03_atlas_9
+      rect:
+        serializedVersion: 2
+        x: 85
+        y: 618
+        width: 85
+        height: 103
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: cd86a45fab11b6060800000000000000
+      internalID: 6947666344826005724
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AirAttack03_atlas_10
+      rect:
+        serializedVersion: 2
+        x: 170
+        y: 618
+        width: 85
+        height: 103
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e0b7f0a587e99e490800000000000000
+      internalID: -7716462246778406130
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AirAttack03_atlas_11
+      rect:
+        serializedVersion: 2
+        x: 255
+        y: 618
+        width: 85
+        height: 103
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2836ee837a21ddc90800000000000000
+      internalID: -7143532924515753086
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AirAttack03_atlas_12
+      rect:
+        serializedVersion: 2
+        x: 340
+        y: 618
+        width: 85
+        height: 103
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2f62f77f604448ce0800000000000000
+      internalID: -1403922387119954190
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AirAttack03_atlas_13
+      rect:
+        serializedVersion: 2
+        x: 425
+        y: 618
+        width: 85
+        height: 103
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a1f9bee0e58d81450800000000000000
+      internalID: 6059831197115850522
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AirAttack03_atlas_14
+      rect:
+        serializedVersion: 2
+        x: 510
+        y: 618
+        width: 85
+        height: 103
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3c28392339201e1a0800000000000000
+      internalID: -6782136732611280189
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AirAttack03_atlas_15
+      rect:
+        serializedVersion: 2
+        x: 595
+        y: 618
+        width: 85
+        height: 103
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 93d9898784164bba0800000000000000
+      internalID: -6074123033527149255
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AirAttack03_atlas_16
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 515
+        width: 85
+        height: 103
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d9bf6bfa7cd3f7110800000000000000
+      internalID: 1260794348542819229
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AirAttack03_atlas_17
+      rect:
+        serializedVersion: 2
+        x: 85
+        y: 515
+        width: 85
+        height: 103
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 38e239751b6551d60800000000000000
+      internalID: 7860284044323532419
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AirAttack03_atlas_18
+      rect:
+        serializedVersion: 2
+        x: 170
+        y: 515
+        width: 85
+        height: 103
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f3866e72b1ccb3c90800000000000000
+      internalID: -7188927963161270209
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AirAttack03_atlas_19
+      rect:
+        serializedVersion: 2
+        x: 255
+        y: 515
+        width: 85
+        height: 103
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 60495d53224f906f0800000000000000
+      internalID: -717774237819628538
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AirAttack03_atlas_20
+      rect:
+        serializedVersion: 2
+        x: 340
+        y: 515
+        width: 85
+        height: 103
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e04e1b14665a607f0800000000000000
+      internalID: -646647637873662962
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AirAttack03_atlas_21
+      rect:
+        serializedVersion: 2
+        x: 425
+        y: 515
+        width: 85
+        height: 103
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7c1d65ce22853d990800000000000000
+      internalID: -7362444058803383865
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AirAttack03_atlas_22
+      rect:
+        serializedVersion: 2
+        x: 510
+        y: 515
+        width: 85
+        height: 103
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 774847b02980dc830800000000000000
+      internalID: 4092937059700081783
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AirAttack03_atlas_23
+      rect:
+        serializedVersion: 2
+        x: 595
+        y: 515
+        width: 85
+        height: 103
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8366d8a890750dfc0800000000000000
+      internalID: -3472179614211807688
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AirAttack03_atlas_24
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 412
+        width: 85
+        height: 103
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9be34d5aa97acbb00800000000000000
+      internalID: 845735112687763129
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AirAttack03_atlas_25
+      rect:
+        serializedVersion: 2
+        x: 85
+        y: 412
+        width: 85
+        height: 103
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 86cb01276cfe36250800000000000000
+      internalID: 5936852369400708200
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AirAttack03_atlas_26
+      rect:
+        serializedVersion: 2
+        x: 170
+        y: 412
+        width: 85
+        height: 103
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 84402d1f2bc194970800000000000000
+      internalID: 8739548106775987272
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AirAttack03_atlas_27
+      rect:
+        serializedVersion: 2
+        x: 255
+        y: 412
+        width: 85
+        height: 103
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3a268ec41faac69c0800000000000000
+      internalID: -3932580421247147357
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AirAttack03_atlas_28
+      rect:
+        serializedVersion: 2
+        x: 340
+        y: 412
+        width: 85
+        height: 103
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c1a4937b7ef342870800000000000000
+      internalID: 8657114648156916252
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AirAttack03_atlas_29
+      rect:
+        serializedVersion: 2
+        x: 425
+        y: 412
+        width: 85
+        height: 103
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: de0189c773cbb1bf0800000000000000
+      internalID: -352481199318888211
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AirAttack03_atlas_30
+      rect:
+        serializedVersion: 2
+        x: 510
+        y: 412
+        width: 85
+        height: 103
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1a1efe39cc45e7ff0800000000000000
+      internalID: -36498509340352095
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AirAttack03_atlas_31
+      rect:
+        serializedVersion: 2
+        x: 595
+        y: 412
+        width: 85
+        height: 103
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5b50b884326e67db0800000000000000
+      internalID: -4794391714073999947
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AirAttack03_atlas_32
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 309
+        width: 85
+        height: 103
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c8de9264ca490a1e0800000000000000
+      internalID: -2188585951269622388
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AirAttack03_atlas_33
+      rect:
+        serializedVersion: 2
+        x: 85
+        y: 309
+        width: 85
+        height: 103
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8055fd47face62840800000000000000
+      internalID: 5199103058170041608
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AirAttack03_atlas_34
+      rect:
+        serializedVersion: 2
+        x: 170
+        y: 309
+        width: 85
+        height: 103
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: dd2e1351d8a181800800000000000000
+      internalID: 583245344992781021
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AirAttack03_atlas_35
+      rect:
+        serializedVersion: 2
+        x: 255
+        y: 309
+        width: 85
+        height: 103
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5a9ac08110ac86d30800000000000000
+      internalID: 4425008739938773413
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AirAttack03_atlas_36
+      rect:
+        serializedVersion: 2
+        x: 340
+        y: 309
+        width: 85
+        height: 103
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d42f44468bc9d09d0800000000000000
+      internalID: -2806414677011795379
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AirAttack03_atlas_37
+      rect:
+        serializedVersion: 2
+        x: 425
+        y: 309
+        width: 85
+        height: 103
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 678862a6b88d5ea80800000000000000
+      internalID: -8438100233515792266
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AirAttack03_atlas_38
+      rect:
+        serializedVersion: 2
+        x: 510
+        y: 309
+        width: 85
+        height: 103
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 61144df196ba331e0800000000000000
+      internalID: -2219241723369602794
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AirAttack03_atlas_39
+      rect:
+        serializedVersion: 2
+        x: 595
+        y: 309
+        width: 85
+        height: 103
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 35761d9c0875b1e10800000000000000
+      internalID: 2169423856162400083
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AirAttack03_atlas_40
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 206
+        width: 85
+        height: 103
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2ede5a25a3d956f40800000000000000
+      internalID: 5721151775464353250
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AirAttack03_atlas_41
+      rect:
+        serializedVersion: 2
+        x: 85
+        y: 206
+        width: 85
+        height: 103
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8b4318f0371c55320800000000000000
+      internalID: 2546153864273409208
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AirAttack03_atlas_42
+      rect:
+        serializedVersion: 2
+        x: 170
+        y: 206
+        width: 85
+        height: 103
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3f73ced6521aa2ed0800000000000000
+      internalID: -2437959066137643021
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AirAttack03_atlas_43
+      rect:
+        serializedVersion: 2
+        x: 255
+        y: 206
+        width: 85
+        height: 103
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f651de31ccc484bf0800000000000000
+      internalID: -339937332475128465
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AirAttack03_atlas_44
+      rect:
+        serializedVersion: 2
+        x: 340
+        y: 206
+        width: 85
+        height: 103
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9127ae042d6c0f970800000000000000
+      internalID: 8786741479334375961
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AirAttack03_atlas_45
+      rect:
+        serializedVersion: 2
+        x: 425
+        y: 206
+        width: 85
+        height: 103
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e433060f74cf6ccf0800000000000000
+      internalID: -232220944857287858
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AirAttack03_atlas_46
+      rect:
+        serializedVersion: 2
+        x: 510
+        y: 206
+        width: 85
+        height: 103
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 260f42610ccad6880800000000000000
+      internalID: -8616040571084672926
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AirAttack03_atlas_47
+      rect:
+        serializedVersion: 2
+        x: 595
+        y: 206
+        width: 85
+        height: 103
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: fcf840fb7adbbb960800000000000000
+      internalID: 7618891722789261263
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AirAttack03_atlas_48
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 103
+        width: 85
+        height: 103
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 59a4dc6b6b21bb9c0800000000000000
+      internalID: -3910511275480888683
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AirAttack03_atlas_49
+      rect:
+        serializedVersion: 2
+        x: 85
+        y: 103
+        width: 85
+        height: 103
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3affa044e1f0be1b0800000000000000
+      internalID: -5626386686804295773
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AirAttack03_atlas_50
+      rect:
+        serializedVersion: 2
+        x: 170
+        y: 103
+        width: 85
+        height: 103
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a3ed3b5c1e81b7060800000000000000
+      internalID: 6952177807740100154
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AirAttack03_atlas_51
+      rect:
+        serializedVersion: 2
+        x: 255
+        y: 103
+        width: 85
+        height: 103
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3f639df4754eb2730800000000000000
+      internalID: 3975522159737517811
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AirAttack03_atlas_52
+      rect:
+        serializedVersion: 2
+        x: 340
+        y: 103
+        width: 85
+        height: 103
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 83797f9d65c7cc600800000000000000
+      internalID: 489903171942455096
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AirAttack03_atlas_53
+      rect:
+        serializedVersion: 2
+        x: 425
+        y: 103
+        width: 85
+        height: 103
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 18b01078ce668fa00800000000000000
+      internalID: 790494900666829697
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AirAttack03_atlas_54
+      rect:
+        serializedVersion: 2
+        x: 510
+        y: 103
+        width: 85
+        height: 103
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0a4b4cb918716eb90800000000000000
+      internalID: -7213051907755690848
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AirAttack03_atlas_55
+      rect:
+        serializedVersion: 2
+        x: 595
+        y: 103
+        width: 85
+        height: 103
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4c58df1a846adb5a0800000000000000
+      internalID: -6503859455967525436
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AirAttack03_atlas_56
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 0
+        width: 85
+        height: 103
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 90760039276973f20800000000000000
+      internalID: 3402353462338414345
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AirAttack03_atlas_57
+      rect:
+        serializedVersion: 2
+        x: 85
+        y: 0
+        width: 85
+        height: 103
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e3fcb723c1fa0ff60800000000000000
+      internalID: 8066139468261478206
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AirAttack03_atlas_58
+      rect:
+        serializedVersion: 2
+        x: 170
+        y: 0
+        width: 85
+        height: 103
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9bb0ab7bf831b92d0800000000000000
+      internalID: -3270999196370859079
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AirAttack03_atlas_59
+      rect:
+        serializedVersion: 2
+        x: 255
+        y: 0
+        width: 85
+        height: 103
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 990dbf8e386f67690800000000000000
+      internalID: -7604619874358538087
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AirAttack03_atlas_60
+      rect:
+        serializedVersion: 2
+        x: 340
+        y: 0
+        width: 85
+        height: 103
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: cab669bcd88fa5740800000000000000
+      internalID: 5141695212486552492
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AirAttack03_atlas_61
+      rect:
+        serializedVersion: 2
+        x: 425
+        y: 0
+        width: 85
+        height: 103
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: de56eb620eeb1984382a2842a5f26665
+      internalID: 778942468
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AirAttack03_atlas_62
+      rect:
+        serializedVersion: 2
+        x: 510
+        y: 0
+        width: 85
+        height: 103
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 24a30172ee20e6141839f144f5d8f798
+      internalID: 705854654
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AirAttack03_atlas_63
+      rect:
+        serializedVersion: 2
+        x: 595
+        y: 0
+        width: 85
+        height: 103
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6ddde10f05131154dad74c890e682b98
+      internalID: 2074748607
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 679225cbc5efa0d47b19cf4893694cab
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures:
+    - texture: {fileID: 2800000, guid: ef9306138f38c65459dbd48885872697, type: 3}
+      name: _NormalMap
+    spriteCustomMetadata:
+      entries:
+      - key: SpriteEditor.SliceSettings
+        value: '{"sliceOnImport":false,"gridCellCount":{"x":8.0,"y":8.0},"gridSpriteSize":{"x":85.0,"y":103.0},"gridSpriteOffset":{"x":0.0,"y":0.0},"gridSpritePadding":{"x":0.0,"y":0.0},"pivot":{"x":0.5,"y":0.5},"pivotPixels":{"x":0.0,"y":0.0},"autoSlicingMethod":0,"spriteAlignment":0,"pivotUnitMode":0,"slicingType":2,"keepEmptyRects":false,"isAlternate":false}'
+    nameFileIdTable:
+      AirAttack03_atlas_0: 8610138797578972039
+      AirAttack03_atlas_1: -3584480287583909425
+      AirAttack03_atlas_10: -7716462246778406130
+      AirAttack03_atlas_11: -7143532924515753086
+      AirAttack03_atlas_12: -1403922387119954190
+      AirAttack03_atlas_13: 6059831197115850522
+      AirAttack03_atlas_14: -6782136732611280189
+      AirAttack03_atlas_15: -6074123033527149255
+      AirAttack03_atlas_16: 1260794348542819229
+      AirAttack03_atlas_17: 7860284044323532419
+      AirAttack03_atlas_18: -7188927963161270209
+      AirAttack03_atlas_19: -717774237819628538
+      AirAttack03_atlas_2: -5437013895301924228
+      AirAttack03_atlas_20: -646647637873662962
+      AirAttack03_atlas_21: -7362444058803383865
+      AirAttack03_atlas_22: 4092937059700081783
+      AirAttack03_atlas_23: -3472179614211807688
+      AirAttack03_atlas_24: 845735112687763129
+      AirAttack03_atlas_25: 5936852369400708200
+      AirAttack03_atlas_26: 8739548106775987272
+      AirAttack03_atlas_27: -3932580421247147357
+      AirAttack03_atlas_28: 8657114648156916252
+      AirAttack03_atlas_29: -352481199318888211
+      AirAttack03_atlas_3: 8034777685152889165
+      AirAttack03_atlas_30: -36498509340352095
+      AirAttack03_atlas_31: -4794391714073999947
+      AirAttack03_atlas_32: -2188585951269622388
+      AirAttack03_atlas_33: 5199103058170041608
+      AirAttack03_atlas_34: 583245344992781021
+      AirAttack03_atlas_35: 4425008739938773413
+      AirAttack03_atlas_36: -2806414677011795379
+      AirAttack03_atlas_37: -8438100233515792266
+      AirAttack03_atlas_38: -2219241723369602794
+      AirAttack03_atlas_39: 2169423856162400083
+      AirAttack03_atlas_4: -8679528696772363545
+      AirAttack03_atlas_40: 5721151775464353250
+      AirAttack03_atlas_41: 2546153864273409208
+      AirAttack03_atlas_42: -2437959066137643021
+      AirAttack03_atlas_43: -339937332475128465
+      AirAttack03_atlas_44: 8786741479334375961
+      AirAttack03_atlas_45: -232220944857287858
+      AirAttack03_atlas_46: -8616040571084672926
+      AirAttack03_atlas_47: 7618891722789261263
+      AirAttack03_atlas_48: -3910511275480888683
+      AirAttack03_atlas_49: -5626386686804295773
+      AirAttack03_atlas_5: -4770289294992721462
+      AirAttack03_atlas_50: 6952177807740100154
+      AirAttack03_atlas_51: 3975522159737517811
+      AirAttack03_atlas_52: 489903171942455096
+      AirAttack03_atlas_53: 790494900666829697
+      AirAttack03_atlas_54: -7213051907755690848
+      AirAttack03_atlas_55: -6503859455967525436
+      AirAttack03_atlas_56: 3402353462338414345
+      AirAttack03_atlas_57: 8066139468261478206
+      AirAttack03_atlas_58: -3270999196370859079
+      AirAttack03_atlas_59: -7604619874358538087
+      AirAttack03_atlas_6: 203459564108410395
+      AirAttack03_atlas_60: 5141695212486552492
+      AirAttack03_atlas_61: 778942468
+      AirAttack03_atlas_62: 705854654
+      AirAttack03_atlas_63: 2074748607
+      AirAttack03_atlas_7: -632374796891206360
+      AirAttack03_atlas_8: -419326954108627332
+      AirAttack03_atlas_9: 6947666344826005724
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

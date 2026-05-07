@@ -1,0 +1,2457 @@
+fileFormatVersion: 2
+guid: ff05876073f38d441b18dbbf21954aac
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: -3447322872828343150
+    second: air_dash_atlas_n_0
+  - first:
+      213: 3427019940190087644
+    second: air_dash_atlas_n_1
+  - first:
+      213: -4499315266737067288
+    second: air_dash_atlas_n_2
+  - first:
+      213: 6984181516897467660
+    second: air_dash_atlas_n_3
+  - first:
+      213: 9094833400624454668
+    second: air_dash_atlas_n_4
+  - first:
+      213: 3588924787843592993
+    second: air_dash_atlas_n_5
+  - first:
+      213: -4636882022131162158
+    second: air_dash_atlas_n_6
+  - first:
+      213: 3170140496461165478
+    second: air_dash_atlas_n_7
+  - first:
+      213: -3046038123597709183
+    second: air_dash_atlas_n_8
+  - first:
+      213: -1520734779931350541
+    second: air_dash_atlas_n_9
+  - first:
+      213: 1051332386984838
+    second: air_dash_atlas_n_10
+  - first:
+      213: 8118681903238354264
+    second: air_dash_atlas_n_11
+  - first:
+      213: -8690605452377204431
+    second: air_dash_atlas_n_12
+  - first:
+      213: -4152053268902538277
+    second: air_dash_atlas_n_13
+  - first:
+      213: 5293872125157003477
+    second: air_dash_atlas_n_14
+  - first:
+      213: -4218322430904330409
+    second: air_dash_atlas_n_15
+  - first:
+      213: 7401326242192547414
+    second: air_dash_atlas_n_16
+  - first:
+      213: 754211892756559021
+    second: air_dash_atlas_n_17
+  - first:
+      213: -1443598577159254619
+    second: air_dash_atlas_n_18
+  - first:
+      213: -6742499617840732095
+    second: air_dash_atlas_n_19
+  - first:
+      213: 7018057077212790270
+    second: air_dash_atlas_n_20
+  - first:
+      213: 1776948543534964179
+    second: air_dash_atlas_n_21
+  - first:
+      213: -394883958895765670
+    second: air_dash_atlas_n_22
+  - first:
+      213: -2657775963919089774
+    second: air_dash_atlas_n_23
+  - first:
+      213: -310141314308054600
+    second: air_dash_atlas_n_24
+  - first:
+      213: -887520138731514104
+    second: air_dash_atlas_n_25
+  - first:
+      213: -241064042550396285
+    second: air_dash_atlas_n_26
+  - first:
+      213: -8128494503072630193
+    second: air_dash_atlas_n_27
+  - first:
+      213: 376217509524335548
+    second: air_dash_atlas_n_28
+  - first:
+      213: 563193309327872753
+    second: air_dash_atlas_n_29
+  - first:
+      213: -6890575871962992961
+    second: air_dash_atlas_n_30
+  - first:
+      213: -8585733473219764802
+    second: air_dash_atlas_n_31
+  - first:
+      213: 2634222067103206512
+    second: air_dash_atlas_n_32
+  - first:
+      213: -3429915239811352366
+    second: air_dash_atlas_n_33
+  - first:
+      213: 2959300546949530694
+    second: air_dash_atlas_n_34
+  - first:
+      213: -1510237568386125760
+    second: air_dash_atlas_n_35
+  - first:
+      213: 3788523371296014698
+    second: air_dash_atlas_n_36
+  - first:
+      213: 1438387689194472271
+    second: air_dash_atlas_n_37
+  - first:
+      213: -5946340090093115704
+    second: air_dash_atlas_n_38
+  - first:
+      213: 8131532722217869545
+    second: air_dash_atlas_n_39
+  - first:
+      213: -1710764719941484432
+    second: air_dash_atlas_n_40
+  - first:
+      213: 2671226655192251039
+    second: air_dash_atlas_n_41
+  - first:
+      213: 3637008544197597803
+    second: air_dash_atlas_n_42
+  - first:
+      213: 5315528578649247244
+    second: air_dash_atlas_n_43
+  - first:
+      213: -1339153775071537975
+    second: air_dash_atlas_n_44
+  - first:
+      213: 3399105660274924152
+    second: air_dash_atlas_n_45
+  - first:
+      213: 6267940991265514423
+    second: air_dash_atlas_n_46
+  - first:
+      213: 2344908605580952039
+    second: air_dash_atlas_n_47
+  - first:
+      213: 930873821466881658
+    second: air_dash_atlas_n_48
+  - first:
+      213: -6668672235789300943
+    second: air_dash_atlas_n_49
+  - first:
+      213: 1651295116817085947
+    second: air_dash_atlas_n_50
+  - first:
+      213: 6629548221080343889
+    second: air_dash_atlas_n_51
+  - first:
+      213: 7925505709641374615
+    second: air_dash_atlas_n_52
+  - first:
+      213: 7660754504499116848
+    second: air_dash_atlas_n_53
+  - first:
+      213: -6225401124470690718
+    second: air_dash_atlas_n_54
+  - first:
+      213: 19311065384413149
+    second: air_dash_atlas_n_55
+  - first:
+      213: 2283920931478816292
+    second: air_dash_atlas_n_56
+  - first:
+      213: 6033436048971400756
+    second: air_dash_atlas_n_57
+  - first:
+      213: 7168685656750940830
+    second: air_dash_atlas_n_58
+  - first:
+      213: 8926299974045483414
+    second: air_dash_atlas_n_59
+  - first:
+      213: 9063588831848826423
+    second: air_dash_atlas_n_60
+  - first:
+      213: -2388400045946319245
+    second: air_dash_atlas_n_61
+  - first:
+      213: -8602461435414500455
+    second: air_dash_atlas_n_62
+  - first:
+      213: -8459093198613957340
+    second: air_dash_atlas_n_63
+  - first:
+      213: 7554269831237257435
+    second: air_dash_atlas_n_64
+  - first:
+      213: 5335873900117312742
+    second: air_dash_atlas_n_65
+  - first:
+      213: 7577748880157987452
+    second: air_dash_atlas_n_66
+  - first:
+      213: -5238079382715539215
+    second: air_dash_atlas_n_67
+  - first:
+      213: -5647698799740066663
+    second: air_dash_atlas_n_68
+  - first:
+      213: 966448632145910863
+    second: air_dash_atlas_n_69
+  - first:
+      213: -1768492317216399396
+    second: air_dash_atlas_n_70
+  - first:
+      213: 4567592631748591417
+    second: air_dash_atlas_n_71
+  - first:
+      213: -3799171590167189905
+    second: air_dash_atlas_n_72
+  - first:
+      213: 2373168747304736251
+    second: air_dash_atlas_n_73
+  - first:
+      213: -563078187816610938
+    second: air_dash_atlas_n_74
+  - first:
+      213: 8967292562964314307
+    second: air_dash_atlas_n_75
+  - first:
+      213: -6950132028670665980
+    second: air_dash_atlas_n_76
+  - first:
+      213: -8410762314216970301
+    second: air_dash_atlas_n_77
+  - first:
+      213: 2842293607506570909
+    second: air_dash_atlas_n_78
+  - first:
+      213: 1366200426840650002
+    second: air_dash_atlas_n_79
+  - first:
+      213: 8935037867678373977
+    second: air_dash_atlas_n_80
+  - first:
+      213: -8371076967128243614
+    second: air_dash_atlas_n_81
+  - first:
+      213: 4572675642030644786
+    second: air_dash_atlas_n_82
+  - first:
+      213: -9086164206357287943
+    second: air_dash_atlas_n_83
+  - first:
+      213: -1380477634691368570
+    second: air_dash_atlas_n_84
+  - first:
+      213: -6840608403966167194
+    second: air_dash_atlas_n_85
+  - first:
+      213: -1048021388807584393
+    second: air_dash_atlas_n_86
+  - first:
+      213: -8666082172573674885
+    second: air_dash_atlas_n_87
+  - first:
+      213: -7289478584187461685
+    second: air_dash_atlas_n_88
+  - first:
+      213: 3399136345038922592
+    second: air_dash_atlas_n_89
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 1
+    sRGBTexture: 0
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 0
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 1
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 0
+  spriteTessellationDetail: -1
+  textureType: 1
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: air_dash_atlas_n_0
+      rect:
+        serializedVersion: 2
+        x: 21
+        y: 493
+        width: 62
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 29cccf2ac16a820d0800000000000000
+      internalID: -3447322872828343150
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: air_dash_atlas_n_1
+      rect:
+        serializedVersion: 2
+        x: 114
+        y: 494
+        width: 33
+        height: 53
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: cd9e53d7a783f8f20800000000000000
+      internalID: 3427019940190087644
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: air_dash_atlas_n_2
+      rect:
+        serializedVersion: 2
+        x: 191
+        y: 495
+        width: 47
+        height: 52
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8ea25a17a983f81c0800000000000000
+      internalID: -4499315266737067288
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: air_dash_atlas_n_3
+      rect:
+        serializedVersion: 2
+        x: 237
+        y: 507
+        width: 6
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c0db589f51ccce060800000000000000
+      internalID: 6984181516897467660
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: air_dash_atlas_n_4
+      rect:
+        serializedVersion: 2
+        x: 275
+        y: 495
+        width: 47
+        height: 52
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c0c14979ac6573e70800000000000000
+      internalID: 9094833400624454668
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: air_dash_atlas_n_5
+      rect:
+        serializedVersion: 2
+        x: 321
+        y: 508
+        width: 6
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 123f201641c6ec130800000000000000
+      internalID: 3588924787843592993
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: air_dash_atlas_n_6
+      rect:
+        serializedVersion: 2
+        x: 359
+        y: 495
+        width: 43
+        height: 51
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2d32a7d3e5c76afb0800000000000000
+      internalID: -4636882022131162158
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: air_dash_atlas_n_7
+      rect:
+        serializedVersion: 2
+        x: 401
+        y: 508
+        width: 11
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6a3f5a34cf99efb20800000000000000
+      internalID: 3170140496461165478
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: air_dash_atlas_n_8
+      rect:
+        serializedVersion: 2
+        x: 443
+        y: 495
+        width: 45
+        height: 51
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 18049a6177c4ab5d0800000000000000
+      internalID: -3046038123597709183
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: air_dash_atlas_n_9
+      rect:
+        serializedVersion: 2
+        x: 487
+        y: 511
+        width: 6
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3f92c9c56c345eae0800000000000000
+      internalID: -1520734779931350541
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: air_dash_atlas_n_10
+      rect:
+        serializedVersion: 2
+        x: 492
+        y: 498
+        width: 18
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 68397756e2cb30000800000000000000
+      internalID: 1051332386984838
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: air_dash_atlas_n_11
+      rect:
+        serializedVersion: 2
+        x: 527
+        y: 495
+        width: 57
+        height: 50
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8551ae62d2a5ba070800000000000000
+      internalID: 8118681903238354264
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: air_dash_atlas_n_12
+      rect:
+        serializedVersion: 2
+        x: 611
+        y: 495
+        width: 46
+        height: 49
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 139dbf7c264c46780800000000000000
+      internalID: -8690605452377204431
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: air_dash_atlas_n_13
+      rect:
+        serializedVersion: 2
+        x: 655
+        y: 511
+        width: 7
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: bd3909aec81f066c0800000000000000
+      internalID: -4152053268902538277
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: air_dash_atlas_n_14
+      rect:
+        serializedVersion: 2
+        x: 661
+        y: 499
+        width: 17
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5d0535256ac977940800000000000000
+      internalID: 5293872125157003477
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: air_dash_atlas_n_15
+      rect:
+        serializedVersion: 2
+        x: 242
+        y: 497
+        width: 14
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 75792e549128575c0800000000000000
+      internalID: -4218322430904330409
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: air_dash_atlas_n_16
+      rect:
+        serializedVersion: 2
+        x: 326
+        y: 498
+        width: 14
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 65ed9acd00bc6b660800000000000000
+      internalID: 7401326242192547414
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: air_dash_atlas_n_17
+      rect:
+        serializedVersion: 2
+        x: 411
+        y: 498
+        width: 14
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: da4312178bf777a00800000000000000
+      internalID: 754211892756559021
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: air_dash_atlas_n_18
+      rect:
+        serializedVersion: 2
+        x: 583
+        y: 498
+        width: 12
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5adc92a1ebe47fbe0800000000000000
+      internalID: -1443598577159254619
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: air_dash_atlas_n_19
+      rect:
+        serializedVersion: 2
+        x: 15
+        y: 425
+        width: 49
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 14865642254dd62a0800000000000000
+      internalID: -6742499617840732095
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: air_dash_atlas_n_20
+      rect:
+        serializedVersion: 2
+        x: 63
+        y: 439
+        width: 6
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: efd3fac7ab5256160800000000000000
+      internalID: 7018057077212790270
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: air_dash_atlas_n_21
+      rect:
+        serializedVersion: 2
+        x: 68
+        y: 429
+        width: 14
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3dd9c81294df8a810800000000000000
+      internalID: 1776948543534964179
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: air_dash_atlas_n_22
+      rect:
+        serializedVersion: 2
+        x: 99
+        y: 425
+        width: 48
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a57948ea127158af0800000000000000
+      internalID: -394883958895765670
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: air_dash_atlas_n_23
+      rect:
+        serializedVersion: 2
+        x: 145
+        y: 440
+        width: 7
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 29ff702a7dead1bd0800000000000000
+      internalID: -2657775963919089774
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: air_dash_atlas_n_24
+      rect:
+        serializedVersion: 2
+        x: 151
+        y: 430
+        width: 14
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8b1ee7a2e1822bbf0800000000000000
+      internalID: -310141314308054600
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: air_dash_atlas_n_25
+      rect:
+        serializedVersion: 2
+        x: 183
+        y: 425
+        width: 53
+        height: 47
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 80717e7d225eea3f0800000000000000
+      internalID: -887520138731514104
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: air_dash_atlas_n_26
+      rect:
+        serializedVersion: 2
+        x: 235
+        y: 430
+        width: 14
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 38af9afc78197acf0800000000000000
+      internalID: -241064042550396285
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: air_dash_atlas_n_27
+      rect:
+        serializedVersion: 2
+        x: 266
+        y: 425
+        width: 53
+        height: 46
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f4af3a9e059c13f80800000000000000
+      internalID: -8128494503072630193
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: air_dash_atlas_n_28
+      rect:
+        serializedVersion: 2
+        x: 318
+        y: 436
+        width: 7
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: cbbea75e4d7983500800000000000000
+      internalID: 376217509524335548
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: air_dash_atlas_n_29
+      rect:
+        serializedVersion: 2
+        x: 350
+        y: 425
+        width: 53
+        height: 45
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1f25d56b45dd0d700800000000000000
+      internalID: 563193309327872753
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: air_dash_atlas_n_30
+      rect:
+        serializedVersion: 2
+        x: 395
+        y: 440
+        width: 9
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: fbea4c590c1cf50a0800000000000000
+      internalID: -6890575871962992961
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: air_dash_atlas_n_31
+      rect:
+        serializedVersion: 2
+        x: 403
+        y: 432
+        width: 11
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ebd1e8035e859d880800000000000000
+      internalID: -8585733473219764802
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: air_dash_atlas_n_32
+      rect:
+        serializedVersion: 2
+        x: 434
+        y: 425
+        width: 55
+        height: 44
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 07c8e296303ae8420800000000000000
+      internalID: 2634222067103206512
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: air_dash_atlas_n_33
+      rect:
+        serializedVersion: 2
+        x: 488
+        y: 432
+        width: 10
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2d87859034e7660d0800000000000000
+      internalID: -3429915239811352366
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: air_dash_atlas_n_34
+      rect:
+        serializedVersion: 2
+        x: 519
+        y: 425
+        width: 56
+        height: 43
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 644cb8c1b2c811920800000000000000
+      internalID: 2959300546949530694
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: air_dash_atlas_n_35
+      rect:
+        serializedVersion: 2
+        x: 603
+        y: 425
+        width: 59
+        height: 42
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 04035e1eeee8a0be0800000000000000
+      internalID: -1510237568386125760
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: air_dash_atlas_n_36
+      rect:
+        serializedVersion: 2
+        x: 324
+        y: 430
+        width: 9
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a614d590fe9839430800000000000000
+      internalID: 3788523371296014698
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: air_dash_atlas_n_37
+      rect:
+        serializedVersion: 2
+        x: 574
+        y: 433
+        width: 6
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f434bbf7bfd26f310800000000000000
+      internalID: 1438387689194472271
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: air_dash_atlas_n_38
+      rect:
+        serializedVersion: 2
+        x: 8
+        y: 355
+        width: 59
+        height: 41
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8c6e550713b5a7da0800000000000000
+      internalID: -5946340090093115704
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: air_dash_atlas_n_39
+      rect:
+        serializedVersion: 2
+        x: 93
+        y: 355
+        width: 57
+        height: 40
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9e0e24b9de109d070800000000000000
+      internalID: 8131532722217869545
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: air_dash_atlas_n_40
+      rect:
+        serializedVersion: 2
+        x: 178
+        y: 355
+        width: 57
+        height: 38
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0700e9d1d842248e0800000000000000
+      internalID: -1710764719941484432
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: air_dash_atlas_n_41
+      rect:
+        serializedVersion: 2
+        x: 263
+        y: 355
+        width: 58
+        height: 37
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f9af9497d7a121520800000000000000
+      internalID: 2671226655192251039
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: air_dash_atlas_n_42
+      rect:
+        serializedVersion: 2
+        x: 349
+        y: 355
+        width: 57
+        height: 36
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b6a55f15000497230800000000000000
+      internalID: 3637008544197597803
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: air_dash_atlas_n_43
+      rect:
+        serializedVersion: 2
+        x: 434
+        y: 355
+        width: 57
+        height: 35
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c0e43d3541d84c940800000000000000
+      internalID: 5315528578649247244
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: air_dash_atlas_n_44
+      rect:
+        serializedVersion: 2
+        x: 520
+        y: 354
+        width: 57
+        height: 35
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9c4dc399cbe5a6de0800000000000000
+      internalID: -1339153775071537975
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: air_dash_atlas_n_45
+      rect:
+        serializedVersion: 2
+        x: 606
+        y: 353
+        width: 56
+        height: 35
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 87ad4bab69c0c2f20800000000000000
+      internalID: 3399105660274924152
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: air_dash_atlas_n_46
+      rect:
+        serializedVersion: 2
+        x: 12
+        y: 283
+        width: 55
+        height: 35
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7b3ad716f133cf650800000000000000
+      internalID: 6267940991265514423
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: air_dash_atlas_n_47
+      rect:
+        serializedVersion: 2
+        x: 97
+        y: 282
+        width: 56
+        height: 35
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7e1c862f3f9ca8020800000000000000
+      internalID: 2344908605580952039
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: air_dash_atlas_n_48
+      rect:
+        serializedVersion: 2
+        x: 181
+        y: 282
+        width: 57
+        height: 35
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a7e6e330fc02bec00800000000000000
+      internalID: 930873821466881658
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: air_dash_atlas_n_49
+      rect:
+        serializedVersion: 2
+        x: 265
+        y: 282
+        width: 58
+        height: 35
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 13bc4460fed1473a0800000000000000
+      internalID: -6668672235789300943
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: air_dash_atlas_n_50
+      rect:
+        serializedVersion: 2
+        x: 349
+        y: 281
+        width: 59
+        height: 36
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: bf53839e8249ae610800000000000000
+      internalID: 1651295116817085947
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: air_dash_atlas_n_51
+      rect:
+        serializedVersion: 2
+        x: 434
+        y: 281
+        width: 60
+        height: 36
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 15511d27bf2e00c50800000000000000
+      internalID: 6629548221080343889
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: air_dash_atlas_n_52
+      rect:
+        serializedVersion: 2
+        x: 518
+        y: 282
+        width: 61
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 79b1188a37d0dfd60800000000000000
+      internalID: 7925505709641374615
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: air_dash_atlas_n_53
+      rect:
+        serializedVersion: 2
+        x: 602
+        y: 283
+        width: 62
+        height: 33
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 03bb42822a7705a60800000000000000
+      internalID: 7660754504499116848
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: air_dash_atlas_n_54
+      rect:
+        serializedVersion: 2
+        x: 7
+        y: 214
+        width: 62
+        height: 33
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 26c6b9f29aeea99a0800000000000000
+      internalID: -6225401124470690718
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: air_dash_atlas_n_55
+      rect:
+        serializedVersion: 2
+        x: 92
+        y: 214
+        width: 62
+        height: 33
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: dd7e878cf4b944000800000000000000
+      internalID: 19311065384413149
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: air_dash_atlas_n_56
+      rect:
+        serializedVersion: 2
+        x: 177
+        y: 214
+        width: 61
+        height: 33
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 426cfd78cfd12bf10800000000000000
+      internalID: 2283920931478816292
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: air_dash_atlas_n_57
+      rect:
+        serializedVersion: 2
+        x: 261
+        y: 214
+        width: 62
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4360af9be121bb350800000000000000
+      internalID: 6033436048971400756
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: air_dash_atlas_n_58
+      rect:
+        serializedVersion: 2
+        x: 346
+        y: 214
+        width: 62
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e92e31d9f994c7360800000000000000
+      internalID: 7168685656750940830
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: air_dash_atlas_n_59
+      rect:
+        serializedVersion: 2
+        x: 431
+        y: 214
+        width: 62
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6914f87688690eb70800000000000000
+      internalID: 8926299974045483414
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: air_dash_atlas_n_60
+      rect:
+        serializedVersion: 2
+        x: 516
+        y: 215
+        width: 62
+        height: 33
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7360c88850658cd70800000000000000
+      internalID: 9063588831848826423
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: air_dash_atlas_n_61
+      rect:
+        serializedVersion: 2
+        x: 601
+        y: 215
+        width: 62
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 37ec7dfffc2baded0800000000000000
+      internalID: -2388400045946319245
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: air_dash_atlas_n_62
+      rect:
+        serializedVersion: 2
+        x: 6
+        y: 145
+        width: 62
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 99b2f1cf6eaed9880800000000000000
+      internalID: -8602461435414500455
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: air_dash_atlas_n_63
+      rect:
+        serializedVersion: 2
+        x: 91
+        y: 145
+        width: 62
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 42531b6dd834b9a80800000000000000
+      internalID: -8459093198613957340
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: air_dash_atlas_n_64
+      rect:
+        serializedVersion: 2
+        x: 176
+        y: 145
+        width: 62
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: bd8c854236826d860800000000000000
+      internalID: 7554269831237257435
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: air_dash_atlas_n_65
+      rect:
+        serializedVersion: 2
+        x: 261
+        y: 145
+        width: 62
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6e445ce9a05dc0a40800000000000000
+      internalID: 5335873900117312742
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: air_dash_atlas_n_66
+      rect:
+        serializedVersion: 2
+        x: 346
+        y: 146
+        width: 62
+        height: 33
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c725ee63572992960800000000000000
+      internalID: 7577748880157987452
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: air_dash_atlas_n_67
+      rect:
+        serializedVersion: 2
+        x: 432
+        y: 145
+        width: 61
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1f061ffcd8a9e47b0800000000000000
+      internalID: -5238079382715539215
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: air_dash_atlas_n_68
+      rect:
+        serializedVersion: 2
+        x: 519
+        y: 144
+        width: 59
+        height: 36
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 994e71b4dd75f91b0800000000000000
+      internalID: -5647698799740066663
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: air_dash_atlas_n_69
+      rect:
+        serializedVersion: 2
+        x: 606
+        y: 143
+        width: 57
+        height: 38
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f4c18b419e3896d00800000000000000
+      internalID: 966448632145910863
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: air_dash_atlas_n_70
+      rect:
+        serializedVersion: 2
+        x: 13
+        y: 74
+        width: 55
+        height: 38
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: cdf1f4c7b9d0577e0800000000000000
+      internalID: -1768492317216399396
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: air_dash_atlas_n_71
+      rect:
+        serializedVersion: 2
+        x: 99
+        y: 74
+        width: 54
+        height: 39
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 93ff0166c49536f30800000000000000
+      internalID: 4567592631748591417
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: air_dash_atlas_n_72
+      rect:
+        serializedVersion: 2
+        x: 183
+        y: 75
+        width: 55
+        height: 38
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f66245f4191a64bc0800000000000000
+      internalID: -3799171590167189905
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: air_dash_atlas_n_73
+      rect:
+        serializedVersion: 2
+        x: 266
+        y: 76
+        width: 56
+        height: 37
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: bf5582fe6603fe020800000000000000
+      internalID: 2373168747304736251
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: air_dash_atlas_n_74
+      rect:
+        serializedVersion: 2
+        x: 351
+        y: 75
+        width: 56
+        height: 41
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6839b6a1f5b8f28f0800000000000000
+      internalID: -563078187816610938
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: air_dash_atlas_n_75
+      rect:
+        serializedVersion: 2
+        x: 436
+        y: 75
+        width: 55
+        height: 43
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3c87d744319327c70800000000000000
+      internalID: 8967292562964314307
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: air_dash_atlas_n_76
+      rect:
+        serializedVersion: 2
+        x: 521
+        y: 75
+        width: 59
+        height: 46
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 40b15094ebb2c8f90800000000000000
+      internalID: -6950132028670665980
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: air_dash_atlas_n_77
+      rect:
+        serializedVersion: 2
+        x: 608
+        y: 75
+        width: 59
+        height: 47
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3c7ead2cc38f64b80800000000000000
+      internalID: -8410762314216970301
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: air_dash_atlas_n_78
+      rect:
+        serializedVersion: 2
+        x: 666
+        y: 79
+        width: 7
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d9eeac61afad17720800000000000000
+      internalID: 2842293607506570909
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: air_dash_atlas_n_79
+      rect:
+        serializedVersion: 2
+        x: 15
+        y: 4
+        width: 59
+        height: 50
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 211f2ddbc08b5f210800000000000000
+      internalID: 1366200426840650002
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: air_dash_atlas_n_80
+      rect:
+        serializedVersion: 2
+        x: 103
+        y: 5
+        width: 44
+        height: 50
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 95812adc991affb70800000000000000
+      internalID: 8935037867678373977
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: air_dash_atlas_n_81
+      rect:
+        serializedVersion: 2
+        x: 146
+        y: 17
+        width: 12
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 262eddaa9d5f3db80800000000000000
+      internalID: -8371076967128243614
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: air_dash_atlas_n_82
+      rect:
+        serializedVersion: 2
+        x: 157
+        y: 8
+        width: 13
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 23e5154f448657f30800000000000000
+      internalID: 4572675642030644786
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: air_dash_atlas_n_83
+      rect:
+        serializedVersion: 2
+        x: 189
+        y: 5
+        width: 53
+        height: 51
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9fb643d7bc577e180800000000000000
+      internalID: -9086164206357287943
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: air_dash_atlas_n_84
+      rect:
+        serializedVersion: 2
+        x: 241
+        y: 8
+        width: 14
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 68979d3c7ee87dce0800000000000000
+      internalID: -1380477634691368570
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: air_dash_atlas_n_85
+      rect:
+        serializedVersion: 2
+        x: 276
+        y: 4
+        width: 46
+        height: 53
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6677b0256e64111a0800000000000000
+      internalID: -6840608403966167194
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: air_dash_atlas_n_86
+      rect:
+        serializedVersion: 2
+        x: 321
+        y: 18
+        width: 6
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 775cc1b791ea471f0800000000000000
+      internalID: -1048021388807584393
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: air_dash_atlas_n_87
+      rect:
+        serializedVersion: 2
+        x: 326
+        y: 11
+        width: 10
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b72966dcd24ebb780800000000000000
+      internalID: -8666082172573674885
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: air_dash_atlas_n_88
+      rect:
+        serializedVersion: 2
+        x: 335
+        y: 0
+        width: 345
+        height: 71
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: bcf50b759d196da90800000000000000
+      internalID: -7289478584187461685
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: air_dash_atlas_n_89
+      rect:
+        serializedVersion: 2
+        x: 73
+        y: 8
+        width: 10
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0632a251f782c2f20800000000000000
+      internalID: 3399136345038922592
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      air_dash_atlas_n_0: -3447322872828343150
+      air_dash_atlas_n_1: 3427019940190087644
+      air_dash_atlas_n_10: 1051332386984838
+      air_dash_atlas_n_11: 8118681903238354264
+      air_dash_atlas_n_12: -8690605452377204431
+      air_dash_atlas_n_13: -4152053268902538277
+      air_dash_atlas_n_14: 5293872125157003477
+      air_dash_atlas_n_15: -4218322430904330409
+      air_dash_atlas_n_16: 7401326242192547414
+      air_dash_atlas_n_17: 754211892756559021
+      air_dash_atlas_n_18: -1443598577159254619
+      air_dash_atlas_n_19: -6742499617840732095
+      air_dash_atlas_n_2: -4499315266737067288
+      air_dash_atlas_n_20: 7018057077212790270
+      air_dash_atlas_n_21: 1776948543534964179
+      air_dash_atlas_n_22: -394883958895765670
+      air_dash_atlas_n_23: -2657775963919089774
+      air_dash_atlas_n_24: -310141314308054600
+      air_dash_atlas_n_25: -887520138731514104
+      air_dash_atlas_n_26: -241064042550396285
+      air_dash_atlas_n_27: -8128494503072630193
+      air_dash_atlas_n_28: 376217509524335548
+      air_dash_atlas_n_29: 563193309327872753
+      air_dash_atlas_n_3: 6984181516897467660
+      air_dash_atlas_n_30: -6890575871962992961
+      air_dash_atlas_n_31: -8585733473219764802
+      air_dash_atlas_n_32: 2634222067103206512
+      air_dash_atlas_n_33: -3429915239811352366
+      air_dash_atlas_n_34: 2959300546949530694
+      air_dash_atlas_n_35: -1510237568386125760
+      air_dash_atlas_n_36: 3788523371296014698
+      air_dash_atlas_n_37: 1438387689194472271
+      air_dash_atlas_n_38: -5946340090093115704
+      air_dash_atlas_n_39: 8131532722217869545
+      air_dash_atlas_n_4: 9094833400624454668
+      air_dash_atlas_n_40: -1710764719941484432
+      air_dash_atlas_n_41: 2671226655192251039
+      air_dash_atlas_n_42: 3637008544197597803
+      air_dash_atlas_n_43: 5315528578649247244
+      air_dash_atlas_n_44: -1339153775071537975
+      air_dash_atlas_n_45: 3399105660274924152
+      air_dash_atlas_n_46: 6267940991265514423
+      air_dash_atlas_n_47: 2344908605580952039
+      air_dash_atlas_n_48: 930873821466881658
+      air_dash_atlas_n_49: -6668672235789300943
+      air_dash_atlas_n_5: 3588924787843592993
+      air_dash_atlas_n_50: 1651295116817085947
+      air_dash_atlas_n_51: 6629548221080343889
+      air_dash_atlas_n_52: 7925505709641374615
+      air_dash_atlas_n_53: 7660754504499116848
+      air_dash_atlas_n_54: -6225401124470690718
+      air_dash_atlas_n_55: 19311065384413149
+      air_dash_atlas_n_56: 2283920931478816292
+      air_dash_atlas_n_57: 6033436048971400756
+      air_dash_atlas_n_58: 7168685656750940830
+      air_dash_atlas_n_59: 8926299974045483414
+      air_dash_atlas_n_6: -4636882022131162158
+      air_dash_atlas_n_60: 9063588831848826423
+      air_dash_atlas_n_61: -2388400045946319245
+      air_dash_atlas_n_62: -8602461435414500455
+      air_dash_atlas_n_63: -8459093198613957340
+      air_dash_atlas_n_64: 7554269831237257435
+      air_dash_atlas_n_65: 5335873900117312742
+      air_dash_atlas_n_66: 7577748880157987452
+      air_dash_atlas_n_67: -5238079382715539215
+      air_dash_atlas_n_68: -5647698799740066663
+      air_dash_atlas_n_69: 966448632145910863
+      air_dash_atlas_n_7: 3170140496461165478
+      air_dash_atlas_n_70: -1768492317216399396
+      air_dash_atlas_n_71: 4567592631748591417
+      air_dash_atlas_n_72: -3799171590167189905
+      air_dash_atlas_n_73: 2373168747304736251
+      air_dash_atlas_n_74: -563078187816610938
+      air_dash_atlas_n_75: 8967292562964314307
+      air_dash_atlas_n_76: -6950132028670665980
+      air_dash_atlas_n_77: -8410762314216970301
+      air_dash_atlas_n_78: 2842293607506570909
+      air_dash_atlas_n_79: 1366200426840650002
+      air_dash_atlas_n_8: -3046038123597709183
+      air_dash_atlas_n_80: 8935037867678373977
+      air_dash_atlas_n_81: -8371076967128243614
+      air_dash_atlas_n_82: 4572675642030644786
+      air_dash_atlas_n_83: -9086164206357287943
+      air_dash_atlas_n_84: -1380477634691368570
+      air_dash_atlas_n_85: -6840608403966167194
+      air_dash_atlas_n_86: -1048021388807584393
+      air_dash_atlas_n_87: -8666082172573674885
+      air_dash_atlas_n_88: -7289478584187461685
+      air_dash_atlas_n_89: 3399136345038922592
+      air_dash_atlas_n_9: -1520734779931350541
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

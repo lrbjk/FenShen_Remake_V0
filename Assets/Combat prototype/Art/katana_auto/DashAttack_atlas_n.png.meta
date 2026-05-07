@@ -1,0 +1,1911 @@
+fileFormatVersion: 2
+guid: 68f4aee834d906649935f78b35b3eebe
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: -1668686410159183661
+    second: DashAttack_atlas_n_0
+  - first:
+      213: 437944843950020628
+    second: DashAttack_atlas_n_1
+  - first:
+      213: 5438576106942464727
+    second: DashAttack_atlas_n_2
+  - first:
+      213: -2412177327795474192
+    second: DashAttack_atlas_n_3
+  - first:
+      213: 63306900178103430
+    second: DashAttack_atlas_n_4
+  - first:
+      213: -2741497236096246081
+    second: DashAttack_atlas_n_5
+  - first:
+      213: 6691289724935680873
+    second: DashAttack_atlas_n_6
+  - first:
+      213: 4966189846372235170
+    second: DashAttack_atlas_n_7
+  - first:
+      213: 3561547447655306721
+    second: DashAttack_atlas_n_8
+  - first:
+      213: -4262217326482026054
+    second: DashAttack_atlas_n_9
+  - first:
+      213: 3173155704286149389
+    second: DashAttack_atlas_n_10
+  - first:
+      213: 6180181265604857334
+    second: DashAttack_atlas_n_11
+  - first:
+      213: 8499432098363804169
+    second: DashAttack_atlas_n_12
+  - first:
+      213: -7737344374536975806
+    second: DashAttack_atlas_n_13
+  - first:
+      213: -4498359298156992277
+    second: DashAttack_atlas_n_14
+  - first:
+      213: -2191940337151273476
+    second: DashAttack_atlas_n_15
+  - first:
+      213: -1921083714038622732
+    second: DashAttack_atlas_n_16
+  - first:
+      213: -5067744837739400739
+    second: DashAttack_atlas_n_17
+  - first:
+      213: -8673458301541961953
+    second: DashAttack_atlas_n_18
+  - first:
+      213: -3114330384278369397
+    second: DashAttack_atlas_n_19
+  - first:
+      213: 5967772959289613150
+    second: DashAttack_atlas_n_20
+  - first:
+      213: -9183741204724501359
+    second: DashAttack_atlas_n_21
+  - first:
+      213: -2758588709946454158
+    second: DashAttack_atlas_n_22
+  - first:
+      213: 4746296698914652118
+    second: DashAttack_atlas_n_23
+  - first:
+      213: 3588863879619299760
+    second: DashAttack_atlas_n_24
+  - first:
+      213: -6824972076139039027
+    second: DashAttack_atlas_n_25
+  - first:
+      213: 187826903410087483
+    second: DashAttack_atlas_n_26
+  - first:
+      213: 4514111250536029066
+    second: DashAttack_atlas_n_27
+  - first:
+      213: -8255428593312815662
+    second: DashAttack_atlas_n_28
+  - first:
+      213: -5694079849342922427
+    second: DashAttack_atlas_n_29
+  - first:
+      213: -5186109264351132720
+    second: DashAttack_atlas_n_30
+  - first:
+      213: 1040627352655191600
+    second: DashAttack_atlas_n_31
+  - first:
+      213: -4406140599007585886
+    second: DashAttack_atlas_n_32
+  - first:
+      213: -8386126652434985744
+    second: DashAttack_atlas_n_33
+  - first:
+      213: -8525585338736726356
+    second: DashAttack_atlas_n_34
+  - first:
+      213: 6653806485995985044
+    second: DashAttack_atlas_n_35
+  - first:
+      213: 2596108618757461865
+    second: DashAttack_atlas_n_36
+  - first:
+      213: -3880102646814783258
+    second: DashAttack_atlas_n_37
+  - first:
+      213: 7664702925171668281
+    second: DashAttack_atlas_n_38
+  - first:
+      213: -5877624999896671566
+    second: DashAttack_atlas_n_39
+  - first:
+      213: -5764344335430255858
+    second: DashAttack_atlas_n_40
+  - first:
+      213: 722617127394544850
+    second: DashAttack_atlas_n_41
+  - first:
+      213: 1151993263124211490
+    second: DashAttack_atlas_n_42
+  - first:
+      213: 8309863161450605077
+    second: DashAttack_atlas_n_43
+  - first:
+      213: 8855854532306469130
+    second: DashAttack_atlas_n_44
+  - first:
+      213: -4661451665055645115
+    second: DashAttack_atlas_n_45
+  - first:
+      213: 3595685753797246629
+    second: DashAttack_atlas_n_46
+  - first:
+      213: -3443344321278831451
+    second: DashAttack_atlas_n_47
+  - first:
+      213: 7885068760191487934
+    second: DashAttack_atlas_n_48
+  - first:
+      213: -6463839309075531485
+    second: DashAttack_atlas_n_49
+  - first:
+      213: 8933469152949379934
+    second: DashAttack_atlas_n_50
+  - first:
+      213: -533536679236100083
+    second: DashAttack_atlas_n_51
+  - first:
+      213: 8096823637428787575
+    second: DashAttack_atlas_n_52
+  - first:
+      213: -2320724618759101881
+    second: DashAttack_atlas_n_53
+  - first:
+      213: 905868377542064476
+    second: DashAttack_atlas_n_54
+  - first:
+      213: -2089040132810254809
+    second: DashAttack_atlas_n_55
+  - first:
+      213: 4134113576990556666
+    second: DashAttack_atlas_n_56
+  - first:
+      213: 3465731013245385500
+    second: DashAttack_atlas_n_57
+  - first:
+      213: 929437697624659263
+    second: DashAttack_atlas_n_58
+  - first:
+      213: -3376449427572450073
+    second: DashAttack_atlas_n_59
+  - first:
+      213: 3228216409821601726
+    second: DashAttack_atlas_n_60
+  - first:
+      213: -1657119271904939685
+    second: DashAttack_atlas_n_61
+  - first:
+      213: -2739106094493052012
+    second: DashAttack_atlas_n_62
+  - first:
+      213: -9105984379895778153
+    second: DashAttack_atlas_n_63
+  - first:
+      213: 3482238182588035543
+    second: DashAttack_atlas_n_64
+  - first:
+      213: 1113341967752124547
+    second: DashAttack_atlas_n_65
+  - first:
+      213: 2828903107361721291
+    second: DashAttack_atlas_n_66
+  - first:
+      213: 4856780185386060801
+    second: DashAttack_atlas_n_67
+  - first:
+      213: -2018630476342795843
+    second: DashAttack_atlas_n_68
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 1
+    sRGBTexture: 0
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 0
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 0
+  spriteTessellationDetail: -1
+  textureType: 1
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: DashAttack_atlas_n_0
+      rect:
+        serializedVersion: 2
+        x: 20
+        y: 727
+        width: 57
+        height: 47
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3d8a0f01d82a7d8e0800000000000000
+      internalID: -1668686410159183661
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DashAttack_atlas_n_1
+      rect:
+        serializedVersion: 2
+        x: 111
+        y: 713
+        width: 42
+        height: 61
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 418dad6e384e31600800000000000000
+      internalID: 437944843950020628
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DashAttack_atlas_n_2
+      rect:
+        serializedVersion: 2
+        x: 186
+        y: 713
+        width: 54
+        height: 49
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7d28b3a8724b97b40800000000000000
+      internalID: 5438576106942464727
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DashAttack_atlas_n_3
+      rect:
+        serializedVersion: 2
+        x: 272
+        y: 713
+        width: 69
+        height: 49
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0f0ff792089368ed0800000000000000
+      internalID: -2412177327795474192
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DashAttack_atlas_n_4
+      rect:
+        serializedVersion: 2
+        x: 361
+        y: 714
+        width: 52
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 68c62f05a49e0e000800000000000000
+      internalID: 63306900178103430
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DashAttack_atlas_n_5
+      rect:
+        serializedVersion: 2
+        x: 445
+        y: 715
+        width: 55
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: fbe94c1f9ce34f9d0800000000000000
+      internalID: -2741497236096246081
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DashAttack_atlas_n_6
+      rect:
+        serializedVersion: 2
+        x: 528
+        y: 719
+        width: 55
+        height: 47
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 96333088d8c3cdc50800000000000000
+      internalID: 6691289724935680873
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DashAttack_atlas_n_7
+      rect:
+        serializedVersion: 2
+        x: 610
+        y: 723
+        width: 54
+        height: 50
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2a73b207a537be440800000000000000
+      internalID: 4966189846372235170
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DashAttack_atlas_n_8
+      rect:
+        serializedVersion: 2
+        x: 13
+        y: 624
+        width: 56
+        height: 49
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1e59134a8882d6130800000000000000
+      internalID: 3561547447655306721
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DashAttack_atlas_n_9
+      rect:
+        serializedVersion: 2
+        x: 98
+        y: 626
+        width: 56
+        height: 46
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ab1168b7cef89d4c0800000000000000
+      internalID: -4262217326482026054
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DashAttack_atlas_n_10
+      rect:
+        serializedVersion: 2
+        x: 183
+        y: 627
+        width: 56
+        height: 45
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d0bfafa0d40590c20800000000000000
+      internalID: 3173155704286149389
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DashAttack_atlas_n_11
+      rect:
+        serializedVersion: 2
+        x: 268
+        y: 629
+        width: 56
+        height: 44
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6fdc6e7fd1a64c550800000000000000
+      internalID: 6180181265604857334
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DashAttack_atlas_n_12
+      rect:
+        serializedVersion: 2
+        x: 352
+        y: 630
+        width: 56
+        height: 43
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 90a0787267c04f570800000000000000
+      internalID: 8499432098363804169
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DashAttack_atlas_n_13
+      rect:
+        serializedVersion: 2
+        x: 437
+        y: 631
+        width: 57
+        height: 43
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 24a4bda194e6f9490800000000000000
+      internalID: -7737344374536975806
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DashAttack_atlas_n_14
+      rect:
+        serializedVersion: 2
+        x: 522
+        y: 631
+        width: 57
+        height: 43
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: be8e6493d0e9291c0800000000000000
+      internalID: -4498359298156992277
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DashAttack_atlas_n_15
+      rect:
+        serializedVersion: 2
+        x: 608
+        y: 630
+        width: 58
+        height: 47
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: cf59f3370e9a491e0800000000000000
+      internalID: -2191940337151273476
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DashAttack_atlas_n_16
+      rect:
+        serializedVersion: 2
+        x: 271
+        y: 509
+        width: 53
+        height: 65
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4f590f85a80f655e0800000000000000
+      internalID: -1921083714038622732
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DashAttack_atlas_n_17
+      rect:
+        serializedVersion: 2
+        x: 353
+        y: 560
+        width: 19
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: dd1393e8be0cba9b0800000000000000
+      internalID: -5067744837739400739
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DashAttack_atlas_n_18
+      rect:
+        serializedVersion: 2
+        x: 608
+        y: 574
+        width: 6
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f1fad62f0afa1a780800000000000000
+      internalID: -8673458301541961953
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DashAttack_atlas_n_19
+      rect:
+        serializedVersion: 2
+        x: 25
+        y: 521
+        width: 59
+        height: 40
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b8bc1e3140da7c4d0800000000000000
+      internalID: -3114330384278369397
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DashAttack_atlas_n_20
+      rect:
+        serializedVersion: 2
+        x: 111
+        y: 512
+        width: 55
+        height: 40
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e5b93aa43e9c1d250800000000000000
+      internalID: 5967772959289613150
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DashAttack_atlas_n_21
+      rect:
+        serializedVersion: 2
+        x: 187
+        y: 510
+        width: 51
+        height: 60
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1943747280ccc8080800000000000000
+      internalID: -9183741204724501359
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DashAttack_atlas_n_22
+      rect:
+        serializedVersion: 2
+        x: 356
+        y: 509
+        width: 52
+        height: 52
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 27f0d361f2687b9d0800000000000000
+      internalID: -2758588709946454158
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DashAttack_atlas_n_23
+      rect:
+        serializedVersion: 2
+        x: 441
+        y: 509
+        width: 51
+        height: 52
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6dfba6163bb3ed140800000000000000
+      internalID: 4746296698914652118
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DashAttack_atlas_n_24
+      rect:
+        serializedVersion: 2
+        x: 526
+        y: 509
+        width: 51
+        height: 52
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0b940f31fa43ec130800000000000000
+      internalID: 3588863879619299760
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DashAttack_atlas_n_25
+      rect:
+        serializedVersion: 2
+        x: 611
+        y: 509
+        width: 51
+        height: 52
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: dc6b5c79e04d841a0800000000000000
+      internalID: -6824972076139039027
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DashAttack_atlas_n_26
+      rect:
+        serializedVersion: 2
+        x: 13
+        y: 470
+        width: 8
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b361501d29b4b9200800000000000000
+      internalID: 187826903410087483
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DashAttack_atlas_n_27
+      rect:
+        serializedVersion: 2
+        x: 100
+        y: 468
+        width: 8
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a8b5bccf34855ae30800000000000000
+      internalID: 4514111250536029066
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DashAttack_atlas_n_28
+      rect:
+        serializedVersion: 2
+        x: 187
+        y: 468
+        width: 6
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2d5acfafe63de6d80800000000000000
+      internalID: -8255428593312815662
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DashAttack_atlas_n_29
+      rect:
+        serializedVersion: 2
+        x: 272
+        y: 467
+        width: 7
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5419439ab809af0b0800000000000000
+      internalID: -5694079849342922427
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DashAttack_atlas_n_30
+      rect:
+        serializedVersion: 2
+        x: 358
+        y: 467
+        width: 6
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0d30dfbe91d3708b0800000000000000
+      internalID: -5186109264351132720
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DashAttack_atlas_n_31
+      rect:
+        serializedVersion: 2
+        x: 442
+        y: 467
+        width: 7
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 03e5192501d017e00800000000000000
+      internalID: 1040627352655191600
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DashAttack_atlas_n_32
+      rect:
+        serializedVersion: 2
+        x: 526
+        y: 468
+        width: 7
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2a9d9bd487e3ad2c0800000000000000
+      internalID: -4406140599007585886
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DashAttack_atlas_n_33
+      rect:
+        serializedVersion: 2
+        x: 608
+        y: 471
+        width: 7
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0fc4d20cd3e7e9b80800000000000000
+      internalID: -8386126652434985744
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DashAttack_atlas_n_34
+      rect:
+        serializedVersion: 2
+        x: 16
+        y: 407
+        width: 51
+        height: 51
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: caea15e0e490fa980800000000000000
+      internalID: -8525585338736726356
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DashAttack_atlas_n_35
+      rect:
+        serializedVersion: 2
+        x: 101
+        y: 407
+        width: 51
+        height: 51
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4981bf1eeb1175c50800000000000000
+      internalID: 6653806485995985044
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DashAttack_atlas_n_36
+      rect:
+        serializedVersion: 2
+        x: 186
+        y: 407
+        width: 51
+        height: 51
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9675e53b80b370420800000000000000
+      internalID: 2596108618757461865
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DashAttack_atlas_n_37
+      rect:
+        serializedVersion: 2
+        x: 271
+        y: 407
+        width: 51
+        height: 51
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6e84d8c433b172ac0800000000000000
+      internalID: -3880102646814783258
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DashAttack_atlas_n_38
+      rect:
+        serializedVersion: 2
+        x: 356
+        y: 407
+        width: 51
+        height: 51
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 93531cb73be7e5a60800000000000000
+      internalID: 7664702925171668281
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DashAttack_atlas_n_39
+      rect:
+        serializedVersion: 2
+        x: 441
+        y: 407
+        width: 51
+        height: 52
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2ba143e143b7e6ea0800000000000000
+      internalID: -5877624999896671566
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DashAttack_atlas_n_40
+      rect:
+        serializedVersion: 2
+        x: 526
+        y: 407
+        width: 51
+        height: 52
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e0bf4a32e5fe000b0800000000000000
+      internalID: -5764344335430255858
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DashAttack_atlas_n_41
+      rect:
+        serializedVersion: 2
+        x: 611
+        y: 407
+        width: 52
+        height: 52
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2dc07f2e270470a00800000000000000
+      internalID: 722617127394544850
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DashAttack_atlas_n_42
+      rect:
+        serializedVersion: 2
+        x: 184
+        y: 365
+        width: 9
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2276920f4c3bcff00800000000000000
+      internalID: 1151993263124211490
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DashAttack_atlas_n_43
+      rect:
+        serializedVersion: 2
+        x: 356
+        y: 305
+        width: 52
+        height: 69
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 51a2e5e8480925370800000000000000
+      internalID: 8309863161450605077
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DashAttack_atlas_n_44
+      rect:
+        serializedVersion: 2
+        x: 442
+        y: 365
+        width: 9
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a0109acd6c056ea70800000000000000
+      internalID: 8855854532306469130
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DashAttack_atlas_n_45
+      rect:
+        serializedVersion: 2
+        x: 447
+        y: 305
+        width: 45
+        height: 60
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 54284b678623f4fb0800000000000000
+      internalID: -4661451665055645115
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DashAttack_atlas_n_46
+      rect:
+        serializedVersion: 2
+        x: 529
+        y: 363
+        width: 10
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5ae740f642176e130800000000000000
+      internalID: 3595685753797246629
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DashAttack_atlas_n_47
+      rect:
+        serializedVersion: 2
+        x: 617
+        y: 305
+        width: 45
+        height: 70
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5a411da5598c630d0800000000000000
+      internalID: -3443344321278831451
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DashAttack_atlas_n_48
+      rect:
+        serializedVersion: 2
+        x: 16
+        y: 305
+        width: 52
+        height: 52
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ebf4eb0b2446d6d60800000000000000
+      internalID: 7885068760191487934
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DashAttack_atlas_n_49
+      rect:
+        serializedVersion: 2
+        x: 101
+        y: 305
+        width: 52
+        height: 52
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 329b8513564db46a0800000000000000
+      internalID: -6463839309075531485
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DashAttack_atlas_n_50
+      rect:
+        serializedVersion: 2
+        x: 187
+        y: 305
+        width: 51
+        height: 53
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e532571fcde0afb70800000000000000
+      internalID: 8933469152949379934
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DashAttack_atlas_n_51
+      rect:
+        serializedVersion: 2
+        x: 273
+        y: 305
+        width: 50
+        height: 53
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d00ad7f873f7898f0800000000000000
+      internalID: -533536679236100083
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DashAttack_atlas_n_52
+      rect:
+        serializedVersion: 2
+        x: 534
+        y: 305
+        width: 43
+        height: 59
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 779dded0332bd5070800000000000000
+      internalID: 8096823637428787575
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DashAttack_atlas_n_53
+      rect:
+        serializedVersion: 2
+        x: 25
+        y: 203
+        width: 43
+        height: 70
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7422c5541412bcfd0800000000000000
+      internalID: -2320724618759101881
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DashAttack_atlas_n_54
+      rect:
+        serializedVersion: 2
+        x: 114
+        y: 203
+        width: 40
+        height: 70
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c5977a86d7a429c00800000000000000
+      internalID: 905868377542064476
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DashAttack_atlas_n_55
+      rect:
+        serializedVersion: 2
+        x: 201
+        y: 203
+        width: 38
+        height: 70
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7265f42411d3203e0800000000000000
+      internalID: -2089040132810254809
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DashAttack_atlas_n_56
+      rect:
+        serializedVersion: 2
+        x: 287
+        y: 203
+        width: 38
+        height: 69
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: af144a115625f5930800000000000000
+      internalID: 4134113576990556666
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DashAttack_atlas_n_57
+      rect:
+        serializedVersion: 2
+        x: 371
+        y: 203
+        width: 39
+        height: 68
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c1bbb8b8effb81030800000000000000
+      internalID: 3465731013245385500
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DashAttack_atlas_n_58
+      rect:
+        serializedVersion: 2
+        x: 454
+        y: 203
+        width: 42
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f3556cf59a606ec00800000000000000
+      internalID: 929437697624659263
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DashAttack_atlas_n_59
+      rect:
+        serializedVersion: 2
+        x: 538
+        y: 203
+        width: 42
+        height: 60
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7ec197382217421d0800000000000000
+      internalID: -3376449427572450073
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DashAttack_atlas_n_60
+      rect:
+        serializedVersion: 2
+        x: 621
+        y: 203
+        width: 44
+        height: 56
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ebfd08d88bdeccc20800000000000000
+      internalID: 3228216409821601726
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DashAttack_atlas_n_61
+      rect:
+        serializedVersion: 2
+        x: 25
+        y: 101
+        width: 43
+        height: 57
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b51f6af4dcab009e0800000000000000
+      internalID: -1657119271904939685
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DashAttack_atlas_n_62
+      rect:
+        serializedVersion: 2
+        x: 109
+        y: 101
+        width: 51
+        height: 57
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 49352abf48dbcf9d0800000000000000
+      internalID: -2739106094493052012
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DashAttack_atlas_n_63
+      rect:
+        serializedVersion: 2
+        x: 193
+        y: 101
+        width: 45
+        height: 58
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7947e0ab37b01a180800000000000000
+      internalID: -9105984379895778153
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DashAttack_atlas_n_64
+      rect:
+        serializedVersion: 2
+        x: 278
+        y: 101
+        width: 59
+        height: 58
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7d136786d25635030800000000000000
+      internalID: 3482238182588035543
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DashAttack_atlas_n_65
+      rect:
+        serializedVersion: 2
+        x: 339
+        y: 0
+        width: 341
+        height: 161
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3885665fe92637f00800000000000000
+      internalID: 1113341967752124547
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DashAttack_atlas_n_66
+      rect:
+        serializedVersion: 2
+        x: 14
+        y: 0
+        width: 72
+        height: 59
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: bcb4b425368424720800000000000000
+      internalID: 2828903107361721291
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DashAttack_atlas_n_67
+      rect:
+        serializedVersion: 2
+        x: 98
+        y: 0
+        width: 73
+        height: 60
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 10c8716a8dfb66340800000000000000
+      internalID: 4856780185386060801
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DashAttack_atlas_n_68
+      rect:
+        serializedVersion: 2
+        x: 183
+        y: 0
+        width: 145
+        height: 60
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: db16fc4e6426cf3e0800000000000000
+      internalID: -2018630476342795843
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      DashAttack_atlas_n_0: -1668686410159183661
+      DashAttack_atlas_n_1: 437944843950020628
+      DashAttack_atlas_n_10: 3173155704286149389
+      DashAttack_atlas_n_11: 6180181265604857334
+      DashAttack_atlas_n_12: 8499432098363804169
+      DashAttack_atlas_n_13: -7737344374536975806
+      DashAttack_atlas_n_14: -4498359298156992277
+      DashAttack_atlas_n_15: -2191940337151273476
+      DashAttack_atlas_n_16: -1921083714038622732
+      DashAttack_atlas_n_17: -5067744837739400739
+      DashAttack_atlas_n_18: -8673458301541961953
+      DashAttack_atlas_n_19: -3114330384278369397
+      DashAttack_atlas_n_2: 5438576106942464727
+      DashAttack_atlas_n_20: 5967772959289613150
+      DashAttack_atlas_n_21: -9183741204724501359
+      DashAttack_atlas_n_22: -2758588709946454158
+      DashAttack_atlas_n_23: 4746296698914652118
+      DashAttack_atlas_n_24: 3588863879619299760
+      DashAttack_atlas_n_25: -6824972076139039027
+      DashAttack_atlas_n_26: 187826903410087483
+      DashAttack_atlas_n_27: 4514111250536029066
+      DashAttack_atlas_n_28: -8255428593312815662
+      DashAttack_atlas_n_29: -5694079849342922427
+      DashAttack_atlas_n_3: -2412177327795474192
+      DashAttack_atlas_n_30: -5186109264351132720
+      DashAttack_atlas_n_31: 1040627352655191600
+      DashAttack_atlas_n_32: -4406140599007585886
+      DashAttack_atlas_n_33: -8386126652434985744
+      DashAttack_atlas_n_34: -8525585338736726356
+      DashAttack_atlas_n_35: 6653806485995985044
+      DashAttack_atlas_n_36: 2596108618757461865
+      DashAttack_atlas_n_37: -3880102646814783258
+      DashAttack_atlas_n_38: 7664702925171668281
+      DashAttack_atlas_n_39: -5877624999896671566
+      DashAttack_atlas_n_4: 63306900178103430
+      DashAttack_atlas_n_40: -5764344335430255858
+      DashAttack_atlas_n_41: 722617127394544850
+      DashAttack_atlas_n_42: 1151993263124211490
+      DashAttack_atlas_n_43: 8309863161450605077
+      DashAttack_atlas_n_44: 8855854532306469130
+      DashAttack_atlas_n_45: -4661451665055645115
+      DashAttack_atlas_n_46: 3595685753797246629
+      DashAttack_atlas_n_47: -3443344321278831451
+      DashAttack_atlas_n_48: 7885068760191487934
+      DashAttack_atlas_n_49: -6463839309075531485
+      DashAttack_atlas_n_5: -2741497236096246081
+      DashAttack_atlas_n_50: 8933469152949379934
+      DashAttack_atlas_n_51: -533536679236100083
+      DashAttack_atlas_n_52: 8096823637428787575
+      DashAttack_atlas_n_53: -2320724618759101881
+      DashAttack_atlas_n_54: 905868377542064476
+      DashAttack_atlas_n_55: -2089040132810254809
+      DashAttack_atlas_n_56: 4134113576990556666
+      DashAttack_atlas_n_57: 3465731013245385500
+      DashAttack_atlas_n_58: 929437697624659263
+      DashAttack_atlas_n_59: -3376449427572450073
+      DashAttack_atlas_n_6: 6691289724935680873
+      DashAttack_atlas_n_60: 3228216409821601726
+      DashAttack_atlas_n_61: -1657119271904939685
+      DashAttack_atlas_n_62: -2739106094493052012
+      DashAttack_atlas_n_63: -9105984379895778153
+      DashAttack_atlas_n_64: 3482238182588035543
+      DashAttack_atlas_n_65: 1113341967752124547
+      DashAttack_atlas_n_66: 2828903107361721291
+      DashAttack_atlas_n_67: 4856780185386060801
+      DashAttack_atlas_n_68: -2018630476342795843
+      DashAttack_atlas_n_7: 4966189846372235170
+      DashAttack_atlas_n_8: 3561547447655306721
+      DashAttack_atlas_n_9: -4262217326482026054
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

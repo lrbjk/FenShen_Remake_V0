@@ -1,6 +1,7 @@
 using FenShen.CombatPrototype;
 using System.IO;
 using UnityEditor;
+using UnityEditor.Animations;
 using UnityEditor.SceneManagement;
 using UnityEngine;
 using UnityEngine.SceneManagement;
@@ -11,6 +12,7 @@ namespace FenShen.CombatPrototype.Editor
     {
         private const string ScenePath = "Assets/Combat prototype/Scenes/CombatPrototypeScene.unity";
         private const string WhitePixelPath = "Assets/Combat prototype/PrototypeWhitePixel.png";
+        private const string PlayerControllerPath = "Assets/Combat prototype/Art/Animation/Cyber Jinyiwei Player.controller";
 
         [InitializeOnLoadMethod]
         private static void AutoBuildPrototypeSceneOnce()
@@ -39,6 +41,7 @@ namespace FenShen.CombatPrototype.Editor
         {
             Scene scene = EditorSceneManager.NewScene(NewSceneSetup.EmptyScene, NewSceneMode.Single);
             scene.name = "CombatPrototypeScene";
+            EnsurePrototypeAnimatorController();
 
             CreateCamera();
             CreateBand("Background", new Vector3(9f, 1.2f, 3f), new Vector2(24f, 10f), new Color(0.035f, 0.04f, 0.075f));
@@ -88,7 +91,9 @@ namespace FenShen.CombatPrototype.Editor
             damageable.maxHealth = 120f;
             damageable.currentHealth = 120f;
             damageable.destroyOnDeath = false;
-            player.AddComponent<CombatPrototypePlayerController>();
+            Animator animator = player.AddComponent<Animator>();
+            animator.runtimeAnimatorController = AssetDatabase.LoadAssetAtPath<RuntimeAnimatorController>(PlayerControllerPath);
+            player.AddComponent<CombatPrototypeRuntime>();
         }
 
         private static void CreateEnemy(string name, Vector3 position)
@@ -173,6 +178,82 @@ namespace FenShen.CombatPrototype.Editor
             }
 
             return AssetDatabase.LoadAssetAtPath<Sprite>(WhitePixelPath);
+        }
+
+        private static void EnsurePrototypeAnimatorController()
+        {
+            AnimatorController controller = AssetDatabase.LoadAssetAtPath<AnimatorController>(PlayerControllerPath);
+            if (controller == null || controller.layers == null || controller.layers.Length == 0)
+            {
+                if (controller != null)
+                {
+                    AssetDatabase.DeleteAsset(PlayerControllerPath);
+                }
+
+                controller = AnimatorController.CreateAnimatorControllerAtPath(PlayerControllerPath);
+            }
+
+            AddOrUpdateState(controller, "Idle", "Assets/Combat prototype/Art/Animation/Idle.anim", true);
+            AddOrUpdateState(controller, "Move", "Assets/Combat prototype/Art/Animation/Move.anim", false);
+            AddOrUpdateState(controller, "JumpStart", "Assets/Combat prototype/Art/Animation/JumpStart.anim", false);
+            AddOrUpdateState(controller, "Fall", "Assets/Combat prototype/Art/Animation/Fall.anim", false);
+            AddOrUpdateState(controller, "DoubleJump", "Assets/Combat prototype/Art/Animation/DoubleJump.anim", false);
+            AddOrUpdateState(controller, "GroundDash", "Assets/Combat prototype/Art/Animation/GroundDash.anim", false);
+            AddOrUpdateState(controller, "AirDash", "Assets/Combat prototype/Art/Animation/AirDash.anim", false);
+            AddOrUpdateState(controller, "Landing", "Assets/Combat prototype/Art/Animation/Landing.anim", false);
+            AddOrUpdateState(controller, "Attack01", "Assets/Combat prototype/Art/Animation/Attack01.anim", false);
+            AddOrUpdateState(controller, "Attack02", "Assets/Combat prototype/Art/Animation/Attack02.anim", false);
+            AddOrUpdateState(controller, "Attack03", "Assets/Combat prototype/Art/Animation/Attack03.anim", false);
+            AddOrUpdateState(controller, "Attack04", "Assets/Combat prototype/Art/Animation/Attack04.anim", false);
+            AddOrUpdateState(controller, "AttackUp", "Assets/Combat prototype/Art/Animation/AttackUp.anim", false);
+            AddOrUpdateState(controller, "AirAttack01", "Assets/Combat prototype/Art/Animation/AirAttack01.anim", false);
+            AddOrUpdateState(controller, "AirAttack02", "Assets/Combat prototype/Art/Animation/AirAttack02.anim", false);
+            AddOrUpdateState(controller, "AirAttack03", "Assets/Combat prototype/Art/Animation/AirAttack03.anim", false);
+            AddOrUpdateState(controller, "AirAttack04", "Assets/Combat prototype/Art/Animation/AirAttack04.anim", false);
+            AddOrUpdateState(controller, "SpAttack", "Assets/Combat prototype/Art/Animation/SpAttack.anim", false);
+
+            EditorUtility.SetDirty(controller);
+            AssetDatabase.SaveAssets();
+        }
+
+        private static void AddOrUpdateState(AnimatorController controller, string stateName, string clipPath, bool isDefault)
+        {
+            if (controller == null || controller.layers == null || controller.layers.Length == 0)
+            {
+                return;
+            }
+
+            AnimationClip clip = AssetDatabase.LoadAssetAtPath<AnimationClip>(clipPath);
+            if (clip == null)
+            {
+                Debug.LogWarning("Missing combat prototype animation clip: " + clipPath);
+                return;
+            }
+
+            AnimatorStateMachine stateMachine = controller.layers[0].stateMachine;
+            AnimatorState state = null;
+            ChildAnimatorState[] states = stateMachine.states;
+            for (int i = 0; i < states.Length; i++)
+            {
+                if (states[i].state != null && states[i].state.name == stateName)
+                {
+                    state = states[i].state;
+                    break;
+                }
+            }
+
+            if (state == null)
+            {
+                state = stateMachine.AddState(stateName);
+            }
+
+            state.motion = clip;
+            state.writeDefaultValues = true;
+
+            if (isDefault)
+            {
+                stateMachine.defaultState = state;
+            }
         }
     }
 }

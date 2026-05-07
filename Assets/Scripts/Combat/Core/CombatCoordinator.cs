@@ -24,37 +24,63 @@ namespace FenShen.Combat
             }
         }
 
-        [Header("References")]
+        [Header("引用")]
+        [InspectorName("玩家FSM")]
         [SerializeField] private PlayerFsm playerFsm;
+        [InspectorName("武器运行时")]
         [SerializeField] private WeaponRuntimeController weaponRuntime;
+        [InspectorName("核心运行时")]
+        [SerializeField] private CoreRuntimeController coreRuntime;
 
-        [Header("Default Attack")]
+        [Header("默认攻击")]
+        [InspectorName("自动处理攻击输入")]
         [SerializeField] private bool handleAttackInputAutomatically = true;
+        [InspectorName("默认技能ID")]
         [SerializeField] private string defaultSkillId = "Primary";
+        [InspectorName("默认攻击持续时间")]
         [SerializeField] private float defaultAttackDuration = 0.6f;
+        [InspectorName("备用基础攻击力")]
+        [SerializeField] private float fallbackBaseAttack = 10f;
+        [InspectorName("默认动画状态名")]
         [SerializeField] private string defaultAnimationStateName;
+        [InspectorName("默认动画层")]
         [SerializeField] private int defaultAnimationLayer;
+        [InspectorName("默认使用过渡")]
         [SerializeField] private bool defaultCrossFade = true;
+        [InspectorName("默认过渡时间")]
         [SerializeField] private float defaultTransitionDuration = 0.05f;
 
-        [Header("Recovery")]
+        [Header("恢复状态")]
+        [InspectorName("地面恢复状态")]
         [SerializeField] private StateSO groundedRecoveryState;
+        [InspectorName("空中恢复状态")]
         [SerializeField] private StateSO airborneRecoveryState;
 
-        [Header("Input Buffer")]
+        [Header("输入缓冲")]
+        [InspectorName("启用派生输入缓冲")]
         [SerializeField] private bool enableDerivationInputBuffer = true;
+        [InspectorName("派生输入缓冲时长")]
         [SerializeField] private float derivationInputBufferDuration = 0.12f;
 
-        [Header("Runtime Spawn")]
+        [Header("运行时生成")]
+        [InspectorName("生成根节点")]
         [SerializeField] private Transform spawnRoot;
+        [InspectorName("音频源")]
         [SerializeField] private AudioSource audioSource;
 
-        [Header("Debug")]
+        [Header("调试")]
+        [InspectorName("绘制当前打击框")]
         [SerializeField] private bool drawActiveHitGizmos = true;
+        [InspectorName("未选中时也绘制Gizmos")]
         [SerializeField] private bool drawGizmosWhenNotSelected = true;
+        [InspectorName("打击框填充颜色")]
         [SerializeField] private Color activeHitGizmoColor = new Color(1f, 0.25f, 0.15f, 0.35f);
+        [InspectorName("打击框线框颜色")]
         [SerializeField] private Color activeHitWireColor = new Color(1f, 0.45f, 0.2f, 1f);
+        [InspectorName("位移调试颜色")]
         [SerializeField] private Color activeMovementGizmoColor = new Color(0.2f, 0.7f, 1f, 0.85f);
+        [InspectorName("打印命中诊断日志")]
+        [SerializeField] private bool logHitDiagnostics;
 
         private readonly CombatStateMachine _stateMachine = new CombatStateMachine();
         private readonly SkillExecutor _skillExecutor = new SkillExecutor();
@@ -62,6 +88,7 @@ namespace FenShen.Combat
         private CombatSkillDefinitionSO _lastCompletedSkill;
         private bool _lastCompletedHadHitConfirm;
         private float _bufferedDerivationInputUntil = float.NegativeInfinity;
+        private bool _aerialAttackLockedUntilGrounded;
 
         public bool IsActive
         {
@@ -70,7 +97,21 @@ namespace FenShen.Combat
 
         public WeaponCancelPermission CurrentCancelPermission
         {
-            get { return _skillExecutor.GetCurrentCancelPermission(); }
+            get
+            {
+                WeaponCancelPermission permission = _skillExecutor.GetCurrentCancelPermission();
+                return coreRuntime != null ? coreRuntime.ModifyCancelPermission(permission) : permission;
+            }
+        }
+
+        public CoreRuntimeController CoreController
+        {
+            get { return coreRuntime; }
+        }
+
+        public void ClearAerialAttackLock()
+        {
+            _aerialAttackLockedUntilGrounded = false;
         }
 
         void Awake()
@@ -85,6 +126,11 @@ namespace FenShen.Combat
                 weaponRuntime = GetComponent<WeaponRuntimeController>();
             }
 
+            if (coreRuntime == null)
+            {
+                coreRuntime = GetComponent<CoreRuntimeController>();
+            }
+
             if (audioSource == null)
             {
                 audioSource = GetComponent<AudioSource>();
@@ -93,6 +139,7 @@ namespace FenShen.Combat
 
         public void ManualUpdate(float deltaTime)
         {
+            RefreshAerialAttackLock();
             TryConsumeBufferedDerivationInput();
 
             if (_stateMachine.Tick(this, deltaTime))
@@ -146,6 +193,11 @@ namespace FenShen.Combat
             }
 
             bool grounded = playerFsm.CheckGround();
+            if (!grounded && _aerialAttackLockedUntilGrounded && !AllowsRepeatedAerialAttackBeforeLanding())
+            {
+                return false;
+            }
+
             ResolvedCombatSkill resolvedSkill = ResolveAttackSkill(null, skillId, grounded);
             if (resolvedSkill.SkillAsset == null && string.IsNullOrWhiteSpace(resolvedSkill.SkillId))
             {
@@ -161,6 +213,11 @@ namespace FenShen.Combat
                 }
             }
 
+            if (coreRuntime != null && !coreRuntime.CanPaySkillCost(resolvedSkill.SkillAsset))
+            {
+                return false;
+            }
+
             playerFsm.SuspendByCombat();
             _stateMachine.Enter(this, new SkillCombatState(
                 resolvedSkill.SkillAsset,
@@ -174,6 +231,15 @@ namespace FenShen.Combat
             {
                 weaponRuntime.NotifyAttackStarted(resolvedSkill.SkillAsset, resolvedSkill.SkillId, grounded);
             }
+            if (coreRuntime != null)
+            {
+                coreRuntime.TryPaySkillCost(resolvedSkill.SkillAsset);
+                coreRuntime.NotifySkillStarted(resolvedSkill.SkillAsset, grounded);
+            }
+            if (!grounded && !AllowsRepeatedAerialAttackBeforeLanding())
+            {
+                _aerialAttackLockedUntilGrounded = true;
+            }
             ClearCompletedSkillContext();
             ClearQueuedSkill();
             return true;
@@ -184,6 +250,7 @@ namespace FenShen.Combat
             _stateMachine.Exit(this);
             ClearBufferedDerivationInput();
             ClearCompletedSkillContext();
+            RefreshAerialAttackLock();
             ReleaseToLocomotion();
         }
 
@@ -230,6 +297,11 @@ namespace FenShen.Combat
             }
 
             CombatSkillDefinitionSO currentSkill = _skillExecutor.Skill;
+            if (_queuedSkill.IsValid)
+            {
+                return true;
+            }
+
             if (HasBlockingRecoveryRules(currentSkill))
             {
                 bool grounded = playerFsm != null && playerFsm.CheckGround();
@@ -243,17 +315,32 @@ namespace FenShen.Combat
         {
             _lastCompletedSkill = _skillExecutor.Skill;
             _lastCompletedHadHitConfirm = _skillExecutor.HasHitConfirm;
+            if (coreRuntime != null)
+            {
+                bool grounded = playerFsm == null || playerFsm.CheckGround();
+                coreRuntime.NotifySkillFinished(_skillExecutor.Skill, grounded);
+            }
             _skillExecutor.End();
         }
 
         public void NotifySkillHitConfirmed(CombatSkillDefinitionSO skill)
         {
             _skillExecutor.NotifyHitConfirmed(skill, skill != null ? skill.ResolveSkillId() : string.Empty);
+            if (coreRuntime != null)
+            {
+                bool grounded = playerFsm == null || playerFsm.CheckGround();
+                coreRuntime.NotifyHitConfirmed(skill, grounded);
+            }
         }
 
         public void NotifySkillHitConfirmed(string skillId)
         {
             _skillExecutor.NotifyHitConfirmed(null, skillId);
+            if (coreRuntime != null)
+            {
+                bool grounded = playerFsm == null || playerFsm.CheckGround();
+                coreRuntime.NotifyHitConfirmed(null, grounded);
+            }
         }
 
         public bool TryApplyHitClip(
@@ -270,6 +357,7 @@ namespace FenShen.Combat
             Collider[] hits = QueryHitTargets(clip);
             if (hits == null || hits.Length == 0)
             {
+                LogHitDiagnostic($"HitClip '{ResolveClipLabel(clip)}' did not overlap any collider. Center={ResolveHitCenter(clip)}, Size={clip.size}, LayerMask={clip.targetLayers.value}");
                 return false;
             }
 
@@ -285,6 +373,7 @@ namespace FenShen.Combat
                 CombatHurtbox hurtbox = hit.GetComponentInParent<CombatHurtbox>();
                 if (hurtbox == null)
                 {
+                    LogHitDiagnostic($"Collider '{hit.name}' was overlapped but has no CombatHurtbox in parent.");
                     continue;
                 }
 
@@ -296,18 +385,30 @@ namespace FenShen.Combat
 
                 if (!hurtbox.CanBeHitBy(ResolveAttackerTeam(), playerFsm.Character))
                 {
+                    LogHitDiagnostic($"Hurtbox '{hurtbox.name}' rejected team/root check. Team={hurtbox.Team}, AttackerTeam={ResolveAttackerTeam()}");
                     continue;
                 }
 
                 float damage = ResolveDamage(skill, clip);
                 DamageType damageType = ResolveDamageType();
-                if (!hurtbox.ApplyHit(damage, damageType))
+                DamageInfo damageInfo = new DamageInfo(
+                    damage,
+                    damageType,
+                    gameObject,
+                    playerFsm.Character.gameObject,
+                    hit.ClosestPoint(playerFsm.Character.position),
+                    hurtbox.RootTransform.position - playerFsm.Character.position,
+                    clip.poiseDamage);
+                DamageResult damageResult = hurtbox.ReceiveDamage(damageInfo);
+                if (!damageResult.Applied)
                 {
+                    LogHitDiagnostic($"Hurtbox '{hurtbox.name}' received hit but damage was not applied. Raw={damage:0.###}, Type={damageType}, HP={hurtbox.RuntimeStats?.CurrentHP:0.###}");
                     continue;
                 }
 
                 hitTargets.Add(hurtboxId);
                 confirmed = true;
+                LogHitDiagnostic($"Hit '{hurtbox.name}' for {damageResult.FinalDamage:0.###}. HP={hurtbox.RuntimeStats?.CurrentHP:0.###}/{hurtbox.RuntimeStats?.MaxHP:0.###}");
             }
 
             return confirmed;
@@ -443,7 +544,26 @@ namespace FenShen.Combat
         public List<CombatSkillDefinitionSO> GetCurrentDerivations()
         {
             bool grounded = playerFsm != null && playerFsm.CheckGround();
-            return _skillExecutor.GetCurrentDerivations(grounded);
+            List<CombatSkillDefinitionSO> derivations = _skillExecutor.GetCurrentDerivations(grounded);
+            if (coreRuntime == null)
+            {
+                return derivations;
+            }
+
+            List<CombatSkillDefinitionSO> coreDerivations = coreRuntime.GetSpecialDerivations(
+                _skillExecutor.Skill,
+                grounded,
+                _skillExecutor.HasHitConfirm);
+            for (int i = 0; i < coreDerivations.Count; i++)
+            {
+                CombatSkillDefinitionSO skill = coreDerivations[i];
+                if (skill != null && !derivations.Contains(skill))
+                {
+                    derivations.Add(skill);
+                }
+            }
+
+            return derivations;
         }
 
         public List<HitSkillClip> GetActiveHitClips()
@@ -468,6 +588,7 @@ namespace FenShen.Combat
                 weaponRuntime.NotifyCombatFinished();
             }
 
+            RefreshAerialAttackLock();
             ClearCompletedSkillContext();
 
             StateSO recoveryState = playerFsm.CheckGround()
@@ -542,10 +663,29 @@ namespace FenShen.Combat
                 return false;
             }
 
+            if (!grounded && requestedSkill == _skillExecutor.Skill)
+            {
+                return false;
+            }
+
             CombatSkillDefinitionSO previousSkill = weaponRuntime != null ? weaponRuntime.LastResolvedSkill : null;
             if (!SkillGateEvaluator.CanEnterSkill(playerFsm, weaponRuntime, requestedSkill, previousSkill, out _))
             {
                 return false;
+            }
+
+            if (coreRuntime != null)
+            {
+                if (!coreRuntime.CanPaySkillCost(requestedSkill))
+                {
+                    return false;
+                }
+
+                bool hasHitConfirm = _skillExecutor.HasHitConfirm;
+                if (!coreRuntime.TryConsumeSpecialDerivationCost(_skillExecutor.Skill, requestedSkill, grounded, hasHitConfirm))
+                {
+                    return false;
+                }
             }
 
             _queuedSkill = new QueuedCombatSkill
@@ -735,6 +875,11 @@ namespace FenShen.Combat
                 return false;
             }
 
+            if (coreRuntime != null && !coreRuntime.CanPaySkillCost(skill))
+            {
+                return false;
+            }
+
             playerFsm.SuspendByCombat();
             _stateMachine.Enter(this, new SkillCombatState(
                 skill,
@@ -748,6 +893,17 @@ namespace FenShen.Combat
             if (weaponRuntime != null)
             {
                 weaponRuntime.NotifyAttackStarted(skill, skillId, grounded);
+            }
+
+            if (coreRuntime != null)
+            {
+                coreRuntime.TryPaySkillCost(skill);
+                coreRuntime.NotifySkillStarted(skill, grounded);
+            }
+
+            if (!grounded && !AllowsRepeatedAerialAttackBeforeLanding())
+            {
+                _aerialAttackLockedUntilGrounded = true;
             }
 
             return true;
@@ -784,6 +940,19 @@ namespace FenShen.Combat
         private void ClearBufferedDerivationInput()
         {
             _bufferedDerivationInputUntil = float.NegativeInfinity;
+        }
+
+        private void RefreshAerialAttackLock()
+        {
+            if (!_aerialAttackLockedUntilGrounded || playerFsm == null)
+            {
+                return;
+            }
+
+            if (playerFsm.CheckGround())
+            {
+                _aerialAttackLockedUntilGrounded = false;
+            }
         }
 
         private bool HasBufferedDerivationInput()
@@ -972,10 +1141,46 @@ namespace FenShen.Combat
 
         private float ResolveDamage(CombatSkillDefinitionSO skill, HitSkillClip clip)
         {
-            float baseAttack = playerFsm != null ? playerFsm.GetStat(StatKeys.Attack, 0f) : 0f;
+            float baseAttack = playerFsm != null ? playerFsm.GetStat(StatKeys.Attack, fallbackBaseAttack) : fallbackBaseAttack;
+            if (baseAttack <= 0f)
+            {
+                baseAttack = fallbackBaseAttack;
+            }
+
             float skillMultiplier = skill != null ? Mathf.Max(0f, skill.damageMultiplier) : 1f;
             float clipMultiplier = clip != null ? Mathf.Max(0f, clip.damageMultiplier) : 1f;
-            return baseAttack * skillMultiplier * clipMultiplier;
+            float damage = baseAttack * skillMultiplier * clipMultiplier;
+            return coreRuntime != null ? coreRuntime.ModifyDamageDealt(damage) : damage;
+        }
+
+        private void LogHitDiagnostic(string message)
+        {
+            if (!logHitDiagnostics)
+            {
+                return;
+            }
+
+            Debug.Log("[Combat Hit] " + message, this);
+        }
+
+        private string ResolveClipLabel(SkillClipBase clip)
+        {
+            if (clip == null)
+            {
+                return "<null>";
+            }
+
+            if (!string.IsNullOrWhiteSpace(clip.displayName))
+            {
+                return clip.displayName;
+            }
+
+            return !string.IsNullOrWhiteSpace(clip.clipId) ? clip.clipId : clip.GetType().Name;
+        }
+
+        private bool AllowsRepeatedAerialAttackBeforeLanding()
+        {
+            return coreRuntime != null && coreRuntime.AllowsRepeatedAerialAttackBeforeLanding();
         }
 
         private DamageType ResolveDamageType()

@@ -1,0 +1,1803 @@
+fileFormatVersion: 2
+guid: cf61f9f9400a7de47866c7a9157b6b77
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: -2429245590380309219
+    second: JumpStart_atlas_0
+  - first:
+      213: -5646772202600403029
+    second: JumpStart_atlas_1
+  - first:
+      213: 3519085013500618171
+    second: JumpStart_atlas_2
+  - first:
+      213: 7471921594166806804
+    second: JumpStart_atlas_3
+  - first:
+      213: -938888553214799042
+    second: JumpStart_atlas_4
+  - first:
+      213: 2271628812779472518
+    second: JumpStart_atlas_5
+  - first:
+      213: -7626051262093994629
+    second: JumpStart_atlas_6
+  - first:
+      213: 6622607658520584570
+    second: JumpStart_atlas_7
+  - first:
+      213: 5506338014520849799
+    second: JumpStart_atlas_8
+  - first:
+      213: -4984673311288656561
+    second: JumpStart_atlas_9
+  - first:
+      213: 3311236697086699433
+    second: JumpStart_atlas_10
+  - first:
+      213: 8597715011018146858
+    second: JumpStart_atlas_11
+  - first:
+      213: -905310111699920811
+    second: JumpStart_atlas_12
+  - first:
+      213: 387707223476601955
+    second: JumpStart_atlas_13
+  - first:
+      213: -9028015611628510971
+    second: JumpStart_atlas_14
+  - first:
+      213: -3040963316133396126
+    second: JumpStart_atlas_15
+  - first:
+      213: 4122170771482473034
+    second: JumpStart_atlas_16
+  - first:
+      213: -2609532456936350423
+    second: JumpStart_atlas_17
+  - first:
+      213: -6225386478649294789
+    second: JumpStart_atlas_18
+  - first:
+      213: -2677725832459196093
+    second: JumpStart_atlas_19
+  - first:
+      213: 716048432699631122
+    second: JumpStart_atlas_20
+  - first:
+      213: -1597913126647896808
+    second: JumpStart_atlas_21
+  - first:
+      213: -5979730721720274675
+    second: JumpStart_atlas_22
+  - first:
+      213: -2901664292580632008
+    second: JumpStart_atlas_23
+  - first:
+      213: 2538033552574514326
+    second: JumpStart_atlas_24
+  - first:
+      213: 2483751414664202482
+    second: JumpStart_atlas_25
+  - first:
+      213: -6557512644936259666
+    second: JumpStart_atlas_26
+  - first:
+      213: 6709246114114129867
+    second: JumpStart_atlas_27
+  - first:
+      213: -5639226714867723947
+    second: JumpStart_atlas_28
+  - first:
+      213: 53844713350076643
+    second: JumpStart_atlas_29
+  - first:
+      213: -4948807550098180725
+    second: JumpStart_atlas_30
+  - first:
+      213: -4401509023699584192
+    second: JumpStart_atlas_31
+  - first:
+      213: -8990143959960812008
+    second: JumpStart_atlas_32
+  - first:
+      213: 5621104772249792077
+    second: JumpStart_atlas_33
+  - first:
+      213: 3891394073945850885
+    second: JumpStart_atlas_34
+  - first:
+      213: -3466083814639624708
+    second: JumpStart_atlas_35
+  - first:
+      213: -2094101571737040210
+    second: JumpStart_atlas_36
+  - first:
+      213: -259230890995468066
+    second: JumpStart_atlas_37
+  - first:
+      213: 2865499854758404751
+    second: JumpStart_atlas_38
+  - first:
+      213: 8523110637122927289
+    second: JumpStart_atlas_39
+  - first:
+      213: 2242408784419765959
+    second: JumpStart_atlas_40
+  - first:
+      213: -2470383015935508596
+    second: JumpStart_atlas_41
+  - first:
+      213: 2614914442138484200
+    second: JumpStart_atlas_42
+  - first:
+      213: -2238953650139424152
+    second: JumpStart_atlas_43
+  - first:
+      213: 10441157581962432
+    second: JumpStart_atlas_44
+  - first:
+      213: 1286481265128420823
+    second: JumpStart_atlas_45
+  - first:
+      213: 8913882096146259290
+    second: JumpStart_atlas_46
+  - first:
+      213: 4144491162933375553
+    second: JumpStart_atlas_47
+  - first:
+      213: -3093212789266645795
+    second: JumpStart_atlas_48
+  - first:
+      213: 6848351511188056571
+    second: JumpStart_atlas_49
+  - first:
+      213: 1267301344309259560
+    second: JumpStart_atlas_50
+  - first:
+      213: -1731353554671715299
+    second: JumpStart_atlas_51
+  - first:
+      213: 5528032161605938759
+    second: JumpStart_atlas_52
+  - first:
+      213: 535800534463581087
+    second: JumpStart_atlas_53
+  - first:
+      213: -403187507295938832
+    second: JumpStart_atlas_54
+  - first:
+      213: 5660969498382302235
+    second: JumpStart_atlas_55
+  - first:
+      213: 2288034052471108232
+    second: JumpStart_atlas_56
+  - first:
+      213: -988044679237033275
+    second: JumpStart_atlas_57
+  - first:
+      213: 3080365596731857454
+    second: JumpStart_atlas_58
+  - first:
+      213: -342402347651602388
+    second: JumpStart_atlas_59
+  - first:
+      213: 5629189113976698099
+    second: JumpStart_atlas_60
+  - first:
+      213: -4663749733242377415
+    second: JumpStart_atlas_61
+  - first:
+      213: 728429156820239274
+    second: JumpStart_atlas_62
+  - first:
+      213: -7926719300144780437
+    second: JumpStart_atlas_63
+  - first:
+      213: 1599912211405561662
+    second: JumpStart_atlas_64
+  - first:
+      213: 4290444993972444035
+    second: JumpStart_atlas_65
+  - first:
+      213: -6957765880559384931
+    second: JumpStart_atlas_66
+  - first:
+      213: -3092451190736445292
+    second: JumpStart_atlas_67
+  - first:
+      213: 6183577300478305724
+    second: JumpStart_atlas_68
+  - first:
+      213: 2783408541149782190
+    second: JumpStart_atlas_69
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 0
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 64
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: JumpStart_atlas_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 490
+        width: 85
+        height: 70
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d1592399106994ed0800000000000000
+      internalID: -2429245590380309219
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: JumpStart_atlas_1
+      rect:
+        serializedVersion: 2
+        x: 85
+        y: 490
+        width: 85
+        height: 70
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: bafe3708992a2a1b0800000000000000
+      internalID: -5646772202600403029
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: JumpStart_atlas_2
+      rect:
+        serializedVersion: 2
+        x: 170
+        y: 490
+        width: 85
+        height: 70
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: bb5ea14cc2d46d030800000000000000
+      internalID: 3519085013500618171
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: JumpStart_atlas_3
+      rect:
+        serializedVersion: 2
+        x: 255
+        y: 490
+        width: 85
+        height: 70
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 41902e91a1991b760800000000000000
+      internalID: 7471921594166806804
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: JumpStart_atlas_4
+      rect:
+        serializedVersion: 2
+        x: 340
+        y: 490
+        width: 85
+        height: 70
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e3393f5d5d568f2f0800000000000000
+      internalID: -938888553214799042
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: JumpStart_atlas_5
+      rect:
+        serializedVersion: 2
+        x: 425
+        y: 490
+        width: 85
+        height: 70
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 686434f9e52768f10800000000000000
+      internalID: 2271628812779472518
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: JumpStart_atlas_6
+      rect:
+        serializedVersion: 2
+        x: 510
+        y: 490
+        width: 85
+        height: 70
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b75d7fb18c2da2690800000000000000
+      internalID: -7626051262093994629
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: JumpStart_atlas_7
+      rect:
+        serializedVersion: 2
+        x: 595
+        y: 490
+        width: 85
+        height: 70
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a71a6ecc39a38eb50800000000000000
+      internalID: 6622607658520584570
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: JumpStart_atlas_8
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 420
+        width: 85
+        height: 70
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 785beb810417a6c40800000000000000
+      internalID: 5506338014520849799
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: JumpStart_atlas_9
+      rect:
+        serializedVersion: 2
+        x: 85
+        y: 420
+        width: 85
+        height: 70
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f4df4478802e2dab0800000000000000
+      internalID: -4984673311288656561
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: JumpStart_atlas_10
+      rect:
+        serializedVersion: 2
+        x: 170
+        y: 420
+        width: 85
+        height: 70
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9a727197b30e3fd20800000000000000
+      internalID: 3311236697086699433
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: JumpStart_atlas_11
+      rect:
+        serializedVersion: 2
+        x: 255
+        y: 420
+        width: 85
+        height: 70
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a24c7c7ff38315770800000000000000
+      internalID: 8597715011018146858
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: JumpStart_atlas_12
+      rect:
+        serializedVersion: 2
+        x: 340
+        y: 420
+        width: 85
+        height: 70
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5589e8cff31bf63f0800000000000000
+      internalID: -905310111699920811
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: JumpStart_atlas_13
+      rect:
+        serializedVersion: 2
+        x: 425
+        y: 420
+        width: 85
+        height: 70
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3640d246aa9616500800000000000000
+      internalID: 387707223476601955
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: JumpStart_atlas_14
+      rect:
+        serializedVersion: 2
+        x: 510
+        y: 420
+        width: 85
+        height: 70
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 501a33a32ab06b280800000000000000
+      internalID: -9028015611628510971
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: JumpStart_atlas_15
+      rect:
+        serializedVersion: 2
+        x: 595
+        y: 420
+        width: 85
+        height: 70
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 26100e6c9f35cc5d0800000000000000
+      internalID: -3040963316133396126
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: JumpStart_atlas_16
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 350
+        width: 85
+        height: 70
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a42f5b9f974e43930800000000000000
+      internalID: 4122170771482473034
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: JumpStart_atlas_17
+      rect:
+        serializedVersion: 2
+        x: 85
+        y: 350
+        width: 85
+        height: 70
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 92dd47a6e0419cbd0800000000000000
+      internalID: -2609532456936350423
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: JumpStart_atlas_18
+      rect:
+        serializedVersion: 2
+        x: 170
+        y: 350
+        width: 85
+        height: 70
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b30c69e2bfbfa99a0800000000000000
+      internalID: -6225386478649294789
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: JumpStart_atlas_19
+      rect:
+        serializedVersion: 2
+        x: 255
+        y: 350
+        width: 85
+        height: 70
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 349e166ea8ec6dad0800000000000000
+      internalID: -2677725832459196093
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: JumpStart_atlas_20
+      rect:
+        serializedVersion: 2
+        x: 340
+        y: 350
+        width: 85
+        height: 70
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2166909714aefe900800000000000000
+      internalID: 716048432699631122
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: JumpStart_atlas_21
+      rect:
+        serializedVersion: 2
+        x: 425
+        y: 350
+        width: 85
+        height: 70
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 815e7383a7213d9e0800000000000000
+      internalID: -1597913126647896808
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: JumpStart_atlas_22
+      rect:
+        serializedVersion: 2
+        x: 510
+        y: 350
+        width: 85
+        height: 70
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d017f5f279ab30da0800000000000000
+      internalID: -5979730721720274675
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: JumpStart_atlas_23
+      rect:
+        serializedVersion: 2
+        x: 595
+        y: 350
+        width: 85
+        height: 70
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 83adb4713b73bb7d0800000000000000
+      internalID: -2901664292580632008
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: JumpStart_atlas_24
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 280
+        width: 85
+        height: 70
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6940a39a118e83320800000000000000
+      internalID: 2538033552574514326
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: JumpStart_atlas_25
+      rect:
+        serializedVersion: 2
+        x: 85
+        y: 280
+        width: 85
+        height: 70
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2f80f6d80ce087220800000000000000
+      internalID: 2483751414664202482
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: JumpStart_atlas_26
+      rect:
+        serializedVersion: 2
+        x: 170
+        y: 280
+        width: 85
+        height: 70
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ea7217c1ef80ff4a0800000000000000
+      internalID: -6557512644936259666
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: JumpStart_atlas_27
+      rect:
+        serializedVersion: 2
+        x: 255
+        y: 280
+        width: 85
+        height: 70
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: bcf417e2bc70c1d50800000000000000
+      internalID: 6709246114114129867
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: JumpStart_atlas_28
+      rect:
+        serializedVersion: 2
+        x: 340
+        y: 280
+        width: 85
+        height: 70
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5519a644e217db1b0800000000000000
+      internalID: -5639226714867723947
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: JumpStart_atlas_29
+      rect:
+        serializedVersion: 2
+        x: 425
+        y: 280
+        width: 85
+        height: 70
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3e893444b7b4fb000800000000000000
+      internalID: 53844713350076643
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: JumpStart_atlas_30
+      rect:
+        serializedVersion: 2
+        x: 510
+        y: 280
+        width: 85
+        height: 70
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b8570aac0cd425bb0800000000000000
+      internalID: -4948807550098180725
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: JumpStart_atlas_31
+      rect:
+        serializedVersion: 2
+        x: 595
+        y: 280
+        width: 85
+        height: 70
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 04bb5b6fcd2bae2c0800000000000000
+      internalID: -4401509023699584192
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: JumpStart_atlas_32
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 210
+        width: 85
+        height: 70
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 81689e243b79c3380800000000000000
+      internalID: -8990143959960812008
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: JumpStart_atlas_33
+      rect:
+        serializedVersion: 2
+        x: 85
+        y: 210
+        width: 85
+        height: 70
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d4ea33b220d220e40800000000000000
+      internalID: 5621104772249792077
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: JumpStart_atlas_34
+      rect:
+        serializedVersion: 2
+        x: 170
+        y: 210
+        width: 85
+        height: 70
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5044a92fa42010630800000000000000
+      internalID: 3891394073945850885
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: JumpStart_atlas_35
+      rect:
+        serializedVersion: 2
+        x: 255
+        y: 210
+        width: 85
+        height: 70
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: cfd9caa722ff5efc0800000000000000
+      internalID: -3466083814639624708
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: JumpStart_atlas_36
+      rect:
+        serializedVersion: 2
+        x: 340
+        y: 210
+        width: 85
+        height: 70
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: eaac60d27b140f2e0800000000000000
+      internalID: -2094101571737040210
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: JumpStart_atlas_37
+      rect:
+        serializedVersion: 2
+        x: 425
+        y: 210
+        width: 85
+        height: 70
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ed8386bc0e6076cf0800000000000000
+      internalID: -259230890995468066
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: JumpStart_atlas_38
+      rect:
+        serializedVersion: 2
+        x: 510
+        y: 210
+        width: 85
+        height: 70
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f82eec29fec44c720800000000000000
+      internalID: 2865499854758404751
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: JumpStart_atlas_39
+      rect:
+        serializedVersion: 2
+        x: 595
+        y: 210
+        width: 85
+        height: 70
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9bab01397fb284670800000000000000
+      internalID: 8523110637122927289
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: JumpStart_atlas_40
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 140
+        width: 85
+        height: 70
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7ce3e8c98e2ae1f10800000000000000
+      internalID: 2242408784419765959
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: JumpStart_atlas_41
+      rect:
+        serializedVersion: 2
+        x: 85
+        y: 140
+        width: 85
+        height: 70
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c8f71045cbf67bdd0800000000000000
+      internalID: -2470383015935508596
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: JumpStart_atlas_42
+      rect:
+        serializedVersion: 2
+        x: 170
+        y: 140
+        width: 85
+        height: 70
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8edf3b9a4da0a4420800000000000000
+      internalID: 2614914442138484200
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: JumpStart_atlas_43
+      rect:
+        serializedVersion: 2
+        x: 255
+        y: 140
+        width: 85
+        height: 70
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 86a10e68483ade0e0800000000000000
+      internalID: -2238953650139424152
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: JumpStart_atlas_44
+      rect:
+        serializedVersion: 2
+        x: 340
+        y: 140
+        width: 85
+        height: 70
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0cc77b07d28152000800000000000000
+      internalID: 10441157581962432
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: JumpStart_atlas_45
+      rect:
+        serializedVersion: 2
+        x: 425
+        y: 140
+        width: 85
+        height: 70
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7d5bc2205ef7ad110800000000000000
+      internalID: 1286481265128420823
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: JumpStart_atlas_46
+      rect:
+        serializedVersion: 2
+        x: 510
+        y: 140
+        width: 85
+        height: 70
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a5d1386e98874bb70800000000000000
+      internalID: 8913882096146259290
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: JumpStart_atlas_47
+      rect:
+        serializedVersion: 2
+        x: 595
+        y: 140
+        width: 85
+        height: 70
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 142b36511c0348930800000000000000
+      internalID: 4144491162933375553
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: JumpStart_atlas_48
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 70
+        width: 85
+        height: 70
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ddcf0115b53b215d0800000000000000
+      internalID: -3093212789266645795
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: JumpStart_atlas_49
+      rect:
+        serializedVersion: 2
+        x: 85
+        y: 70
+        width: 85
+        height: 70
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: bf9af515a6b3a0f50800000000000000
+      internalID: 6848351511188056571
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: JumpStart_atlas_50
+      rect:
+        serializedVersion: 2
+        x: 170
+        y: 70
+        width: 85
+        height: 70
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 82dade2bbdb569110800000000000000
+      internalID: 1267301344309259560
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: JumpStart_atlas_51
+      rect:
+        serializedVersion: 2
+        x: 255
+        y: 70
+        width: 85
+        height: 70
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d1cbe297d1ff8f7e0800000000000000
+      internalID: -1731353554671715299
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: JumpStart_atlas_52
+      rect:
+        serializedVersion: 2
+        x: 340
+        y: 70
+        width: 85
+        height: 70
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 74ee47356f387bc40800000000000000
+      internalID: 5528032161605938759
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: JumpStart_atlas_53
+      rect:
+        serializedVersion: 2
+        x: 425
+        y: 70
+        width: 85
+        height: 70
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f9b8a2f4fbb8f6700800000000000000
+      internalID: 535800534463581087
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: JumpStart_atlas_54
+      rect:
+        serializedVersion: 2
+        x: 510
+        y: 70
+        width: 85
+        height: 70
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0f610c92917976af0800000000000000
+      internalID: -403187507295938832
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: JumpStart_atlas_55
+      rect:
+        serializedVersion: 2
+        x: 595
+        y: 70
+        width: 85
+        height: 70
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b1cf56304cdcf8e40800000000000000
+      internalID: 5660969498382302235
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: JumpStart_atlas_56
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 0
+        width: 85
+        height: 70
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 882b98329dab0cf10800000000000000
+      internalID: 2288034052471108232
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: JumpStart_atlas_57
+      rect:
+        serializedVersion: 2
+        x: 85
+        y: 0
+        width: 85
+        height: 70
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5c2acdf5992c942f0800000000000000
+      internalID: -988044679237033275
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: JumpStart_atlas_58
+      rect:
+        serializedVersion: 2
+        x: 170
+        y: 0
+        width: 85
+        height: 70
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e2a59839038afba20800000000000000
+      internalID: 3080365596731857454
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: JumpStart_atlas_59
+      rect:
+        serializedVersion: 2
+        x: 255
+        y: 0
+        width: 85
+        height: 70
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c2867f101ea8f3bf0800000000000000
+      internalID: -342402347651602388
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: JumpStart_atlas_60
+      rect:
+        serializedVersion: 2
+        x: 340
+        y: 0
+        width: 85
+        height: 70
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3f4b318aca5ee1e40800000000000000
+      internalID: 5629189113976698099
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: JumpStart_atlas_61
+      rect:
+        serializedVersion: 2
+        x: 425
+        y: 0
+        width: 85
+        height: 70
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 93be3c4c358074fb0800000000000000
+      internalID: -4663749733242377415
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: JumpStart_atlas_62
+      rect:
+        serializedVersion: 2
+        x: 510
+        y: 0
+        width: 85
+        height: 70
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: aa3ce407576eb1a00800000000000000
+      internalID: 728429156820239274
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: JumpStart_atlas_63
+      rect:
+        serializedVersion: 2
+        x: 595
+        y: 0
+        width: 85
+        height: 70
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b6b23a84bc2aef190800000000000000
+      internalID: -7926719300144780437
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 75be8801f13ca7d47ac2248815810f3a
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures:
+    - texture: {fileID: 2800000, guid: ae61d594b3ea3754d8aa6896dbfbffc0, type: 3}
+      name: _NormalMap
+    spriteCustomMetadata:
+      entries:
+      - key: SpriteEditor.SliceSettings
+        value: '{"sliceOnImport":false,"gridCellCount":{"x":8.0,"y":8.0},"gridSpriteSize":{"x":85.0,"y":70.0},"gridSpriteOffset":{"x":0.0,"y":0.0},"gridSpritePadding":{"x":0.0,"y":0.0},"pivot":{"x":0.5,"y":0.5},"pivotPixels":{"x":0.0,"y":0.0},"autoSlicingMethod":0,"spriteAlignment":0,"pivotUnitMode":0,"slicingType":2,"keepEmptyRects":false,"isAlternate":false}'
+    nameFileIdTable:
+      JumpStart_atlas_0: -2429245590380309219
+      JumpStart_atlas_1: -5646772202600403029
+      JumpStart_atlas_10: 3311236697086699433
+      JumpStart_atlas_11: 8597715011018146858
+      JumpStart_atlas_12: -905310111699920811
+      JumpStart_atlas_13: 387707223476601955
+      JumpStart_atlas_14: -9028015611628510971
+      JumpStart_atlas_15: -3040963316133396126
+      JumpStart_atlas_16: 4122170771482473034
+      JumpStart_atlas_17: -2609532456936350423
+      JumpStart_atlas_18: -6225386478649294789
+      JumpStart_atlas_19: -2677725832459196093
+      JumpStart_atlas_2: 3519085013500618171
+      JumpStart_atlas_20: 716048432699631122
+      JumpStart_atlas_21: -1597913126647896808
+      JumpStart_atlas_22: -5979730721720274675
+      JumpStart_atlas_23: -2901664292580632008
+      JumpStart_atlas_24: 2538033552574514326
+      JumpStart_atlas_25: 2483751414664202482
+      JumpStart_atlas_26: -6557512644936259666
+      JumpStart_atlas_27: 6709246114114129867
+      JumpStart_atlas_28: -5639226714867723947
+      JumpStart_atlas_29: 53844713350076643
+      JumpStart_atlas_3: 7471921594166806804
+      JumpStart_atlas_30: -4948807550098180725
+      JumpStart_atlas_31: -4401509023699584192
+      JumpStart_atlas_32: -8990143959960812008
+      JumpStart_atlas_33: 5621104772249792077
+      JumpStart_atlas_34: 3891394073945850885
+      JumpStart_atlas_35: -3466083814639624708
+      JumpStart_atlas_36: -2094101571737040210
+      JumpStart_atlas_37: -259230890995468066
+      JumpStart_atlas_38: 2865499854758404751
+      JumpStart_atlas_39: 8523110637122927289
+      JumpStart_atlas_4: -938888553214799042
+      JumpStart_atlas_40: 2242408784419765959
+      JumpStart_atlas_41: -2470383015935508596
+      JumpStart_atlas_42: 2614914442138484200
+      JumpStart_atlas_43: -2238953650139424152
+      JumpStart_atlas_44: 10441157581962432
+      JumpStart_atlas_45: 1286481265128420823
+      JumpStart_atlas_46: 8913882096146259290
+      JumpStart_atlas_47: 4144491162933375553
+      JumpStart_atlas_48: -3093212789266645795
+      JumpStart_atlas_49: 6848351511188056571
+      JumpStart_atlas_5: 2271628812779472518
+      JumpStart_atlas_50: 1267301344309259560
+      JumpStart_atlas_51: -1731353554671715299
+      JumpStart_atlas_52: 5528032161605938759
+      JumpStart_atlas_53: 535800534463581087
+      JumpStart_atlas_54: -403187507295938832
+      JumpStart_atlas_55: 5660969498382302235
+      JumpStart_atlas_56: 2288034052471108232
+      JumpStart_atlas_57: -988044679237033275
+      JumpStart_atlas_58: 3080365596731857454
+      JumpStart_atlas_59: -342402347651602388
+      JumpStart_atlas_6: -7626051262093994629
+      JumpStart_atlas_60: 5629189113976698099
+      JumpStart_atlas_61: -4663749733242377415
+      JumpStart_atlas_62: 728429156820239274
+      JumpStart_atlas_63: -7926719300144780437
+      JumpStart_atlas_7: 6622607658520584570
+      JumpStart_atlas_8: 5506338014520849799
+      JumpStart_atlas_9: -4984673311288656561
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

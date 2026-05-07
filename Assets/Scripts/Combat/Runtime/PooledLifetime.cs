@@ -5,7 +5,9 @@ namespace FenShen.Combat
     [RequireComponent(typeof(PooledObject))]
     public class PooledLifetime : MonoBehaviour
     {
+        [InspectorName("生命周期")]
         [Min(0f)] public float lifetime = 1f;
+        [InspectorName("生成后自动回收")]
         [SerializeField] private bool releaseOnSpawn = true;
 
         private PooledObject _pooledObject;

@@ -25,6 +25,10 @@ namespace FenShen.PlayerFSM
             if (fsm != null)
             {
                 fsm.StartDodgeCooldown(dodgeCooldown);
+                if (fsm.CombatController != null && fsm.CombatController.CoreController != null)
+                {
+                    fsm.CombatController.CoreController.NotifyDodge(false);
+                }
             }
 
             if (fsm != null && fsm.Character != null)

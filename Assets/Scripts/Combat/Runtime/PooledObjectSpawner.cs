@@ -17,10 +17,14 @@ namespace FenShen.Combat
             }
         }
 
-        [Header("Pool")]
+        [Header("对象池")]
+        [InspectorName("对象池根节点")]
         [SerializeField] private Transform poolRoot;
+        [InspectorName("默认预热数量")]
         [SerializeField] private int defaultPrewarmCount;
+        [InspectorName("每个预制体最大实例数")]
         [SerializeField] private int maxInstancesPerPrefab = 64;
+        [InspectorName("允许扩容")]
         [SerializeField] private bool allowExpand = true;
 
         private readonly Dictionary<GameObject, Pool> _pools = new Dictionary<GameObject, Pool>();

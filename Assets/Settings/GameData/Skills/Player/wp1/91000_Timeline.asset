@@ -76,12 +76,12 @@ MonoBehaviour:
     size: {x: 1.17, y: 1.07, z: 1}
     targetLayers:
       serializedVersion: 2
-      m_Bits: 0
+      m_Bits: 1
     followsCaster: 0
     allowRepeatHitsOnSameTarget: 0
     isContinuous: 0
     tickInterval: 0
-    damageMultiplier: 0
+    damageMultiplier: 1
     poiseDamage: 0
   projectileClips: []
   vfxClips: []

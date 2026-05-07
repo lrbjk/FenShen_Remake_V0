@@ -11,7 +11,9 @@ namespace FenShen.PlayerFSM
     [CreateAssetMenu(fileName = "HeavyAttackCondition", menuName = "PlayerFSM / Conditions / HeavyAttack")]
     public class HeavyAttackConditionSO : ConditionSO
     {
+        [InspectorName("触发模式")]
         public HeavyAttackTriggerMode triggerMode = HeavyAttackTriggerMode.ReleaseAfterHold;
+        [InspectorName("最短蓄力时长")]
         [Min(0.01f)] public float minHoldDuration = 0.35f;
 
         public override bool Evaluate(PlayerFsm fsm)

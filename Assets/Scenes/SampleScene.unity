@@ -670,6 +670,218 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &966025655
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 966025664}
+  - component: {fileID: 966025663}
+  - component: {fileID: 966025662}
+  - component: {fileID: 966025661}
+  - component: {fileID: 966025660}
+  - component: {fileID: 966025659}
+  - component: {fileID: 966025658}
+  - component: {fileID: 966025657}
+  - component: {fileID: 966025656}
+  m_Layer: 0
+  m_Name: Combat Test Enemy
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &966025656
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 966025655}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fc844b2254a333c4e99d9de676e452ac, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::FenShen.Combat.CombatTestEnemy
+  destroyOnDeath: 0
+  deactivateOnDeath: 1
+  logDamage: 1
+  drawGizmos: 1
+  gizmoColor: {r: 1, g: 0.2, b: 0.1, a: 0.25}
+  gizmoSize: {x: 1, y: 2, z: 1}
+  hitFlashColor: {r: 1, g: 0.15, b: 0.05, a: 1}
+  hitFlashDuration: 0.08
+--- !u!114 &966025657
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 966025655}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3cd5f3e8b24f83a408ee4df0c1c4b4e7, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::FenShen.Combat.CombatHurtbox
+  team: 0
+  runtimeStats: {fileID: 0}
+  rootTransform: {fileID: 0}
+--- !u!114 &966025658
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 966025655}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c0942416df603bb419c7c27db5501edd, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::FenShen.GameData.BuffController
+  statsComponent: {fileID: 0}
+  buffDatabase: {fileID: 0}
+--- !u!114 &966025659
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 966025655}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3193b613604ed124ab767733346588b8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::FenShen.GameData.TestEnemyRuntimeStatsComponent
+  initializeOnAwake: 1
+  maxHP: 120
+  attack: 8
+  defense: 0
+  staggerValue: 10
+--- !u!54 &966025660
+Rigidbody:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 966025655}
+  serializedVersion: 5
+  m_Mass: 1
+  m_LinearDamping: 0
+  m_AngularDamping: 0.05
+  m_CenterOfMass: {x: 0, y: 0, z: 0}
+  m_InertiaTensor: {x: 1, y: 1, z: 1}
+  m_InertiaRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ImplicitCom: 1
+  m_ImplicitTensor: 1
+  m_UseGravity: 0
+  m_IsKinematic: 1
+  m_Interpolate: 0
+  m_Constraints: 0
+  m_CollisionDetection: 0
+--- !u!23 &966025661
+MeshRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 966025655}
+  m_Enabled: 1
+  m_CastShadows: 1
+  m_ReceiveShadows: 1
+  m_DynamicOccludee: 1
+  m_StaticShadowCaster: 0
+  m_MotionVectors: 1
+  m_LightProbeUsage: 1
+  m_ReflectionProbeUsage: 1
+  m_RayTracingMode: 2
+  m_RayTraceProcedural: 0
+  m_RayTracingAccelStructBuildFlagsOverride: 0
+  m_RayTracingAccelStructBuildFlags: 1
+  m_SmallMeshCulling: 1
+  m_ForceMeshLod: -1
+  m_MeshLodSelectionBias: 0
+  m_RenderingLayerMask: 1
+  m_RendererPriority: 0
+  m_Materials:
+  - {fileID: 2100000, guid: 9452ae1262a74094f8a68013fbcd1834, type: 2}
+  m_StaticBatchInfo:
+    firstSubMesh: 0
+    subMeshCount: 0
+  m_StaticBatchRoot: {fileID: 0}
+  m_ProbeAnchor: {fileID: 0}
+  m_LightProbeVolumeOverride: {fileID: 0}
+  m_ScaleInLightmap: 1
+  m_ReceiveGI: 1
+  m_PreserveUVs: 1
+  m_IgnoreNormalsForChartDetection: 0
+  m_ImportantGI: 0
+  m_StitchLightmapSeams: 1
+  m_SelectedEditorRenderState: 3
+  m_MinimumChartSize: 4
+  m_AutoUVMaxDistance: 0.5
+  m_AutoUVMaxAngle: 89
+  m_LightmapParameters: {fileID: 0}
+  m_GlobalIlluminationMeshLod: 0
+  m_SortingLayerID: 0
+  m_SortingLayer: 0
+  m_SortingOrder: 0
+  m_MaskInteraction: 0
+  m_AdditionalVertexStreams: {fileID: 0}
+--- !u!136 &966025662
+CapsuleCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 966025655}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Radius: 0.5
+  m_Height: 2
+  m_Direction: 1
+  m_Center: {x: 0, y: 0, z: 0}
+--- !u!33 &966025663
+MeshFilter:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 966025655}
+  m_Mesh: {fileID: 10208, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!4 &966025664
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 966025655}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: -2.4406586, y: -0.0349257, z: 0.99305296}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1283703480
 GameObject:
   m_ObjectHideFlags: 0
@@ -695,7 +907,7 @@ Transform:
   m_GameObject: {fileID: 1283703480}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0.234, y: -0.448, z: 0}
+  m_LocalPosition: {x: 0.158, y: -0.53, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -726,7 +938,7 @@ Transform:
   m_GameObject: {fileID: 2038235306}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: -1.136, z: 0}
+  m_LocalPosition: {x: -0.002, y: -1.138, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -754,6 +966,7 @@ GameObject:
   - component: {fileID: 2126761141}
   - component: {fileID: 2126761142}
   - component: {fileID: 2126761143}
+  - component: {fileID: 2126761144}
   m_Layer: 0
   m_Name: Player
   m_TagString: Untagged
@@ -1034,7 +1247,7 @@ BoxCollider2D:
   m_UsedByEffector: 0
   m_CompositeOperation: 0
   m_CompositeOrder: 0
-  m_Offset: {x: 0.0010080561, y: -0.5294393}
+  m_Offset: {x: -0.018063158, y: -0.5228199}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
@@ -1044,7 +1257,7 @@ BoxCollider2D:
     drawMode: 0
     adaptiveTiling: 0
   m_AutoTiling: 0
-  m_Size: {x: 0.33057302, y: 1.3146075}
+  m_Size: {x: 0.4978481, y: 1.3145096}
   m_EdgeRadius: 0
 --- !u!114 &2126761141
 MonoBehaviour:
@@ -1060,20 +1273,27 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::FenShen.Combat.CombatCoordinator
   playerFsm: {fileID: 2126761131}
   weaponRuntime: {fileID: 2126761142}
+  coreRuntime: {fileID: 0}
   handleAttackInputAutomatically: 1
   defaultSkillId: Primary
   defaultAttackDuration: 0.3
+  fallbackBaseAttack: 10
   defaultAnimationStateName: 0
   defaultAnimationLayer: 0
   defaultCrossFade: 0
   defaultTransitionDuration: 0
   groundedRecoveryState: {fileID: 11400000, guid: 30513ed1022285348b8369ac2ec2e546, type: 2}
   airborneRecoveryState: {fileID: 11400000, guid: f301abe62521f6a44a762f4fd264d11a, type: 2}
+  enableDerivationInputBuffer: 1
+  derivationInputBufferDuration: 0.12
+  spawnRoot: {fileID: 0}
+  audioSource: {fileID: 0}
   drawActiveHitGizmos: 1
   drawGizmosWhenNotSelected: 1
   activeHitGizmoColor: {r: 1, g: 0.25, b: 0.15, a: 0.35}
   activeHitWireColor: {r: 1, g: 0.45, b: 0.2, a: 1}
   activeMovementGizmoColor: {r: 0.2, g: 0.7, b: 1, a: 0.85}
+  logHitDiagnostics: 1
 --- !u!114 &2126761142
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1106,6 +1326,21 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::FenShen.Combat.CombatSkillPreviewAnchor
   previewOrigin: {fileID: 2126761134}
   mirrorByFacing: 1
+--- !u!114 &2126761144
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2126761129}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 39273b3f8f4e2aa439aefed8934e2c98, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::FenShen.Combat.CoreRuntimeController
+  playerFsm: {fileID: 2126761131}
+  weaponRuntime: {fileID: 2126761142}
+  currentCore: {fileID: 11400000, guid: 87f6366be52fae647a4ca3edcf975ccc, type: 2}
 --- !u!1660057539 &9223372036854775807
 SceneRoots:
   m_ObjectHideFlags: 0
@@ -1116,3 +1351,4 @@ SceneRoots:
   - {fileID: 632889217}
   - {fileID: 863410383}
   - {fileID: 851242299}
+  - {fileID: 966025664}

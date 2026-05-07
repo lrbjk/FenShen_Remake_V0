@@ -13,249 +13,9 @@ namespace FenShen.CombatPrototype
         Decoy
     }
 
-    public class PrototypeDamageable : MonoBehaviour
+    public class CombatPrototypeRuntime : MonoBehaviour
     {
-        public PrototypeTeam team = PrototypeTeam.Enemy;
-        public float maxHealth = 100f;
-        public float currentHealth = 100f;
-        public bool destroyOnDeath = true;
-        public float hitFlashTime = 0.08f;
-
-        private SpriteRenderer _renderer;
-        private Rigidbody2D _body;
-        private Color _baseColor;
-        private Coroutine _flashRoutine;
-
-        public bool IsAlive { get { return currentHealth > 0f; } }
-
-        void Awake()
-        {
-            _renderer = GetComponentInChildren<SpriteRenderer>();
-            _body = GetComponent<Rigidbody2D>();
-            if (_renderer != null)
-            {
-                _baseColor = _renderer.color;
-            }
-
-            currentHealth = Mathf.Clamp(currentHealth <= 0f ? maxHealth : currentHealth, 1f, maxHealth);
-        }
-
-        public void TakeHit(float damage, Vector2 knockback, bool launch, bool slam)
-        {
-            if (!IsAlive)
-            {
-                return;
-            }
-
-            currentHealth = Mathf.Max(0f, currentHealth - damage);
-            if (_body != null)
-            {
-                _body.linearVelocity = Vector2.zero;
-                _body.AddForce(knockback, ForceMode2D.Impulse);
-                if (launch)
-                {
-                    _body.AddForce(Vector2.up * 8f, ForceMode2D.Impulse);
-                }
-                if (slam)
-                {
-                    _body.AddForce(Vector2.down * 12f, ForceMode2D.Impulse);
-                }
-            }
-
-            if (_flashRoutine != null)
-            {
-                StopCoroutine(_flashRoutine);
-            }
-            _flashRoutine = StartCoroutine(Flash());
-
-            if (currentHealth <= 0f)
-            {
-                if (destroyOnDeath)
-                {
-                    Destroy(gameObject, 0.05f);
-                }
-                else
-                {
-                    gameObject.SetActive(false);
-                }
-            }
-        }
-
-        private IEnumerator Flash()
-        {
-            if (_renderer == null)
-            {
-                yield break;
-            }
-
-            _renderer.color = Color.white;
-            yield return new WaitForSeconds(hitFlashTime);
-            _renderer.color = _baseColor;
-        }
-    }
-
-    public class CombatPrototypeDecoy : MonoBehaviour
-    {
-        public float lifetime = 2.5f;
-
-        private float _dieAt;
-
-        public static readonly List<CombatPrototypeDecoy> ActiveDecoys = new List<CombatPrototypeDecoy>();
-
-        void OnEnable()
-        {
-            _dieAt = Time.time + lifetime;
-            ActiveDecoys.Add(this);
-        }
-
-        void OnDisable()
-        {
-            ActiveDecoys.Remove(this);
-        }
-
-        void Update()
-        {
-            if (Time.time >= _dieAt)
-            {
-                Destroy(gameObject);
-            }
-        }
-    }
-
-    public class CombatPrototypeEnemy : MonoBehaviour
-    {
-        public float moveSpeed = 3f;
-        public float attackRange = 1.1f;
-        public float attackCooldown = 1.2f;
-        public float attackDamage = 10f;
-        public Vector2 attackBox = new Vector2(1.2f, 1.0f);
-        public Vector2 attackOffset = new Vector2(0.7f, 0.2f);
-
-        private Rigidbody2D _body;
-        private SpriteRenderer _renderer;
-        private PrototypeDamageable _damageable;
-        private float _nextAttackAt;
-        private float _facing = -1f;
-
-        void Awake()
-        {
-            _body = GetComponent<Rigidbody2D>();
-            _renderer = GetComponentInChildren<SpriteRenderer>();
-            _damageable = GetComponent<PrototypeDamageable>();
-        }
-
-        void Update()
-        {
-            if (_damageable != null && !_damageable.IsAlive)
-            {
-                return;
-            }
-
-            Transform target = FindTarget();
-            if (target == null)
-            {
-                _body.linearVelocity = new Vector2(0f, _body.linearVelocity.y);
-                return;
-            }
-
-            float deltaX = target.position.x - transform.position.x;
-            if (Mathf.Abs(deltaX) > 0.05f)
-            {
-                _facing = Mathf.Sign(deltaX);
-            }
-
-            if (_renderer != null)
-            {
-                _renderer.flipX = _facing < 0f;
-            }
-
-            if (Mathf.Abs(deltaX) > attackRange)
-            {
-                _body.linearVelocity = new Vector2(_facing * moveSpeed, _body.linearVelocity.y);
-            }
-            else
-            {
-                _body.linearVelocity = new Vector2(0f, _body.linearVelocity.y);
-                TryAttack();
-            }
-        }
-
-        private Transform FindTarget()
-        {
-            CombatPrototypePlayerController player = CombatPrototypePlayerController.Instance;
-            Transform best = player != null ? player.transform : null;
-            float bestDistance = best != null ? Vector2.Distance(transform.position, best.position) : float.MaxValue;
-
-            for (int i = CombatPrototypeDecoy.ActiveDecoys.Count - 1; i >= 0; i--)
-            {
-                CombatPrototypeDecoy decoy = CombatPrototypeDecoy.ActiveDecoys[i];
-                if (decoy == null)
-                {
-                    CombatPrototypeDecoy.ActiveDecoys.RemoveAt(i);
-                    continue;
-                }
-
-                float distance = Vector2.Distance(transform.position, decoy.transform.position);
-                if (distance < bestDistance + 3f)
-                {
-                    best = decoy.transform;
-                    bestDistance = distance;
-                }
-            }
-
-            return best;
-        }
-
-        private void TryAttack()
-        {
-            if (Time.time < _nextAttackAt)
-            {
-                return;
-            }
-
-            _nextAttackAt = Time.time + attackCooldown;
-            StartCoroutine(AttackRoutine());
-        }
-
-        private IEnumerator AttackRoutine()
-        {
-            if (_renderer != null)
-            {
-                _renderer.color = new Color(1f, 0.35f, 0.3f);
-            }
-
-            yield return new WaitForSeconds(0.18f);
-
-            Vector2 center = (Vector2)transform.position + new Vector2(attackOffset.x * _facing, attackOffset.y);
-            Collider2D[] hits = Physics2D.OverlapBoxAll(center, attackBox, 0f);
-            for (int i = 0; i < hits.Length; i++)
-            {
-                PrototypeDamageable target = hits[i].GetComponentInParent<PrototypeDamageable>();
-                if (target == null || target.team == PrototypeTeam.Enemy)
-                {
-                    continue;
-                }
-
-                CombatPrototypePlayerController player = target.GetComponent<CombatPrototypePlayerController>();
-                if (player != null && player.TryPerfectDodgeWindow())
-                {
-                    continue;
-                }
-
-                target.TakeHit(attackDamage, new Vector2(_facing * 4f, 2f), false, false);
-            }
-
-            yield return new WaitForSeconds(0.12f);
-            if (_renderer != null)
-            {
-                _renderer.color = new Color(0.95f, 0.24f, 0.26f);
-            }
-        }
-    }
-
-    public class CombatPrototypePlayerController : MonoBehaviour
-    {
-        public static CombatPrototypePlayerController Instance { get; private set; }
+        public static CombatPrototypeRuntime Instance { get; private set; }
 
         [Header("Movement")]
         public float moveSpeed = 7f;
@@ -284,8 +44,19 @@ namespace FenShen.CombatPrototype
         public float mimicCooldown = 1.6f;
         public float mimicDuration = 2f;
 
+        [Header("Animation")]
+        public string idleState = "Idle";
+        public string runState = "Move";
+        public string jumpState = "JumpStart";
+        public string fallState = "Fall";
+        public string dodgeState = "GroundDash";
+        public string launchAttackState = "AttackUp";
+        public string[] groundAttackStates = new string[] { "Attack01", "Attack02", "Attack03", "Attack04" };
+        public string[] airAttackStates = new string[] { "AirAttack01", "AirAttack02", "AirAttack03" };
+
         private Rigidbody2D _body;
         private SpriteRenderer _renderer;
+        private Animator _animator;
         private PrototypeDamageable _damageable;
         private Vector2 _moveInput;
         private float _facing = 1f;
@@ -304,8 +75,12 @@ namespace FenShen.CombatPrototype
         private float _nextMimicAt;
         private int _groundComboIndex;
         private int _airComboIndex;
+        private bool _attackRecoveryCancelable;
+        private bool _queuedAttackCancel;
+        private Coroutine _attackRoutine;
         private CombatPrototypeChaserClone _activeChaser;
         private CombatPrototypeMimicClone _activeMimic;
+        private string _currentAnimationState;
 
         private bool _prevJump;
         private bool _prevDash;
@@ -313,15 +88,18 @@ namespace FenShen.CombatPrototype
         private bool _prevSkill;
         private bool _prevRt;
         private bool _prevRb;
+        private bool _loggedRuntimeReady;
 
         void Awake()
         {
             Instance = this;
             _body = GetComponent<Rigidbody2D>();
             _renderer = GetComponentInChildren<SpriteRenderer>();
+            _animator = GetComponentInChildren<Animator>();
             _damageable = GetComponent<PrototypeDamageable>();
             _body.gravityScale = gravityScale;
             _body.freezeRotation = true;
+            Debug.Log("[CombatPrototype] Player controller awake. Rigidbody=" + (_body != null) + " Animator=" + (_animator != null));
         }
 
         void Update()
@@ -330,8 +108,14 @@ namespace FenShen.CombatPrototype
             UpdateGrounded();
             UpdateFacing();
             HandleActions();
+            UpdateBaseAnimation();
             UpdateVisuals();
             StoreInputEdges();
+            if (!_loggedRuntimeReady)
+            {
+                _loggedRuntimeReady = true;
+                Debug.Log("[CombatPrototype] Runtime input ready. Gamepad=" + (Gamepad.current != null) + " Joystick=" + (Joystick.current != null) + " Keyboard=" + (Keyboard.current != null));
+            }
         }
 
         void FixedUpdate()
@@ -356,6 +140,9 @@ namespace FenShen.CombatPrototype
             _groundComboIndex = 0;
             _airComboIndex = 0;
             _airAttackLocked = false;
+            _isAttacking = false;
+            _attackRecoveryCancelable = false;
+            _queuedAttackCancel = false;
             Pulse(new Color(0.2f, 1f, 1f));
             return true;
         }
@@ -363,9 +150,11 @@ namespace FenShen.CombatPrototype
         private void ReadInput()
         {
             Gamepad pad = Gamepad.current;
+            Joystick joystick = Joystick.current;
             Keyboard keyboard = Keyboard.current;
 
             Vector2 padMove = pad != null ? pad.leftStick.ReadValue() : Vector2.zero;
+            Vector2 joystickMove = joystick != null ? joystick.stick.ReadValue() : Vector2.zero;
             Vector2 keyMove = Vector2.zero;
             if (keyboard != null)
             {
@@ -375,7 +164,12 @@ namespace FenShen.CombatPrototype
                     (keyboard.sKey.isPressed || keyboard.downArrowKey.isPressed ? 1f : 0f);
             }
 
-            _moveInput = padMove.sqrMagnitude > 0.04f ? padMove : keyMove;
+            _moveInput = padMove.sqrMagnitude > 0.04f ? padMove : (joystickMove.sqrMagnitude > 0.04f ? joystickMove : keyMove);
+            if (_moveInput.sqrMagnitude <= 0.04f)
+            {
+                _moveInput = ReadLegacyMove();
+            }
+
             if (_moveInput.sqrMagnitude > 1f)
             {
                 _moveInput.Normalize();
@@ -458,6 +252,7 @@ namespace FenShen.CombatPrototype
             _airAttackLocked = false;
             _body.linearVelocity = new Vector2(_body.linearVelocity.x, 0f);
             _body.AddForce(Vector2.up * jumpForce, ForceMode2D.Impulse);
+            PlayAnimation(jumpState, true);
         }
 
         private void TryDash()
@@ -482,6 +277,7 @@ namespace FenShen.CombatPrototype
         private IEnumerator DashRoutine(float direction)
         {
             _isDashing = true;
+            PlayAnimation(dodgeState, true);
             float endAt = Time.time + dashDuration;
             while (Time.time < endAt)
             {
@@ -493,9 +289,19 @@ namespace FenShen.CombatPrototype
 
         private void TryAttack()
         {
+            if (_isAttacking)
+            {
+                if (_attackRecoveryCancelable)
+                {
+                    _queuedAttackCancel = true;
+                }
+
+                return;
+            }
+
             if (_moveInput.y > 0.45f && _isGrounded)
             {
-                StartCoroutine(AttackRoutine("Launch", 0.28f, groundAttackDamage + 2f, groundAttackBox, new Vector2(0.75f, 0.2f), new Vector2(_facing * 2.5f, 2.5f), true, false));
+                StartAttack(launchAttackState, 0.12f, 0.05f, 0.18f, groundAttackDamage + 2f, groundAttackBox, new Vector2(0.75f, 0.2f), new Vector2(_facing * 2.5f, 2.5f), true, false);
                 return;
             }
 
@@ -506,17 +312,20 @@ namespace FenShen.CombatPrototype
                     _groundComboIndex = 0;
                 }
 
-                _groundComboIndex = (_groundComboIndex % 5) + 1;
-                float damage = groundAttackDamage + _groundComboIndex * 1.5f;
-                Vector2 knockback = new Vector2(_facing * (2f + _groundComboIndex), _groundComboIndex == 5 ? 2.5f : 0.8f);
-                StartCoroutine(AttackRoutine("Ground " + _groundComboIndex, 0.18f + _groundComboIndex * 0.025f, damage, groundAttackBox, new Vector2(0.72f, 0.12f), knockback, false, false));
+                _groundComboIndex = (_groundComboIndex % 4) + 1;
+                float damage = groundAttackDamage + _groundComboIndex * 1.75f;
+                bool finisher = _groundComboIndex == 4;
+                Vector2 knockback = new Vector2(_facing * (2f + _groundComboIndex), finisher ? 2.5f : 0.8f);
+                string stateName = GetAnimationState(groundAttackStates, _groundComboIndex - 1, "Attack");
+                StartAttack(stateName, 0.08f, 0.04f, 0.16f + _groundComboIndex * 0.03f, damage, groundAttackBox, new Vector2(0.72f, 0.12f), knockback, false, false);
             }
             else if (!_airAttackLocked)
             {
                 _airComboIndex = (_airComboIndex % 3) + 1;
                 bool slam = _airComboIndex == 3;
                 Vector2 knockback = slam ? new Vector2(_facing * 2f, -8f) : new Vector2(_facing * 2f, 2f);
-                StartCoroutine(AttackRoutine("Air " + _airComboIndex, 0.2f, airAttackDamage + _airComboIndex, airAttackBox, new Vector2(0.65f, 0f), knockback, false, slam));
+                string stateName = GetAnimationState(airAttackStates, _airComboIndex - 1, "AirAttack");
+                StartAttack(stateName, 0.07f, 0.04f, 0.14f, airAttackDamage + _airComboIndex, airAttackBox, new Vector2(0.65f, 0f), knockback, false, slam);
                 if (slam)
                 {
                     _airAttackLocked = true;
@@ -525,19 +334,54 @@ namespace FenShen.CombatPrototype
             }
         }
 
-        private IEnumerator AttackRoutine(string label, float duration, float damage, Vector2 box, Vector2 offset, Vector2 knockback, bool launch, bool slam)
+        private void StartAttack(string animationState, float startup, float active, float recovery, float damage, Vector2 box, Vector2 offset, Vector2 knockback, bool launch, bool slam)
+        {
+            if (_attackRoutine != null)
+            {
+                StopCoroutine(_attackRoutine);
+            }
+
+            _attackRoutine = StartCoroutine(AttackRoutine(animationState, startup, active, recovery, damage, box, offset, knockback, launch, slam));
+        }
+
+        private IEnumerator AttackRoutine(string animationState, float startup, float active, float recovery, float damage, Vector2 box, Vector2 offset, Vector2 knockback, bool launch, bool slam)
         {
             _isAttacking = true;
+            _attackRecoveryCancelable = false;
+            _queuedAttackCancel = false;
             _lastAttackAt = Time.time;
+            PlayAnimation(animationState, true);
+
+            yield return new WaitForSeconds(startup);
+
             if (_activeMimic != null)
             {
                 _activeMimic.MimicAttack(box, offset, damage * 0.65f, knockback, launch, slam);
             }
 
-            yield return new WaitForSeconds(duration * 0.35f);
             DealDamage(box, offset, ConsumeEmpowered(damage), knockback, launch, slam);
-            yield return new WaitForSeconds(duration * 0.65f);
+            yield return new WaitForSeconds(active);
+
+            _attackRecoveryCancelable = true;
+            float recoveryEndAt = Time.time + recovery;
+            while (Time.time < recoveryEndAt)
+            {
+                if (_queuedAttackCancel)
+                {
+                    _isAttacking = false;
+                    _attackRecoveryCancelable = false;
+                    _queuedAttackCancel = false;
+                    _attackRoutine = null;
+                    TryAttack();
+                    yield break;
+                }
+
+                yield return null;
+            }
+
+            _attackRecoveryCancelable = false;
             _isAttacking = false;
+            _attackRoutine = null;
         }
 
         private void TrySkill()
@@ -562,6 +406,7 @@ namespace FenShen.CombatPrototype
         private IEnumerator DiveSkillRoutine()
         {
             _isDashing = true;
+            PlayAnimation("AirAttack04", true);
             float endAt = Time.time + 0.22f;
             while (Time.time < endAt)
             {
@@ -574,6 +419,7 @@ namespace FenShen.CombatPrototype
 
         private void SpawnWave(Vector2 direction, float damage, bool lift)
         {
+            PlayAnimation(lift ? "SpAttack" : launchAttackState, true);
             GameObject wave = new GameObject(lift ? "Prototype Upward Sword Wave" : "Prototype Sword Wave");
             wave.name = lift ? "Prototype Upward Sword Wave" : "Prototype Sword Wave";
             wave.transform.position = transform.position + new Vector3(_facing * 0.8f, 0.15f, 0f);
@@ -599,6 +445,48 @@ namespace FenShen.CombatPrototype
 
                 target.TakeHit(damage, knockback, launch, slam);
             }
+        }
+
+        private void UpdateBaseAnimation()
+        {
+            if (_isAttacking || _isDashing)
+            {
+                return;
+            }
+
+            if (!_isGrounded)
+            {
+                PlayAnimation(_body.linearVelocity.y > 0.1f ? jumpState : fallState, false);
+                return;
+            }
+
+            PlayAnimation(Mathf.Abs(_moveInput.x) > 0.15f ? runState : idleState, false);
+        }
+
+        private void PlayAnimation(string stateName, bool restart)
+        {
+            if (_animator == null || string.IsNullOrEmpty(stateName))
+            {
+                return;
+            }
+
+            if (!restart && _currentAnimationState == stateName)
+            {
+                return;
+            }
+
+            _currentAnimationState = stateName;
+            _animator.Play(stateName, 0, restart ? 0f : float.NegativeInfinity);
+        }
+
+        private string GetAnimationState(string[] states, int index, string fallback)
+        {
+            if (states != null && index >= 0 && index < states.Length && !string.IsNullOrEmpty(states[index]))
+            {
+                return states[index];
+            }
+
+            return fallback;
         }
 
         private float ConsumeEmpowered(float damage)
@@ -708,22 +596,137 @@ namespace FenShen.CombatPrototype
             }
         }
 
-        private bool CurrentJump() { return ReadButton(Gamepad.current != null ? Gamepad.current.buttonSouth : null, Keyboard.current != null ? Keyboard.current.spaceKey : null); }
-        private bool CurrentDash() { return ReadButton(Gamepad.current != null ? Gamepad.current.buttonEast : null, Keyboard.current != null ? Keyboard.current.leftShiftKey : null); }
-        private bool CurrentAttack() { return ReadButton(Gamepad.current != null ? Gamepad.current.buttonWest : null, Keyboard.current != null ? Keyboard.current.jKey : null); }
-        private bool CurrentSkill() { return ReadButton(Gamepad.current != null ? Gamepad.current.buttonNorth : null, Keyboard.current != null ? Keyboard.current.kKey : null); }
-        private bool CurrentRb() { return ReadButton(Gamepad.current != null ? Gamepad.current.rightShoulder : null, Keyboard.current != null ? Keyboard.current.oKey : null); }
+        private bool CurrentJump() { return ReadButton(Gamepad.current != null ? Gamepad.current.buttonSouth : null, Keyboard.current != null ? Keyboard.current.spaceKey : null, 0); }
+        private bool CurrentDash() { return ReadButton(Gamepad.current != null ? Gamepad.current.buttonEast : null, Keyboard.current != null ? Keyboard.current.leftShiftKey : null, 1); }
+        private bool CurrentAttack() { return ReadButton(Gamepad.current != null ? Gamepad.current.buttonWest : null, Keyboard.current != null ? Keyboard.current.jKey : null, 2); }
+        private bool CurrentSkill() { return ReadButton(Gamepad.current != null ? Gamepad.current.buttonNorth : null, Keyboard.current != null ? Keyboard.current.kKey : null, 3); }
+        private bool CurrentRb() { return ReadButton(Gamepad.current != null ? Gamepad.current.rightShoulder : null, Keyboard.current != null ? Keyboard.current.oKey : null, 5); }
 
         private bool CurrentRt()
         {
             bool pad = Gamepad.current != null && Gamepad.current.rightTrigger.ReadValue() > 0.35f;
             bool key = Keyboard.current != null && Keyboard.current.iKey.isPressed;
-            return pad || key;
+            return pad || key || ReadJoystickButton(6) || ReadJoystickButton(7) || ReadLegacyButton("Fire3");
         }
 
-        private bool ReadButton(ButtonControl padButton, KeyControl key)
+        private bool ReadButton(ButtonControl padButton, KeyControl key, int joystickButtonIndex)
         {
-            return (padButton != null && padButton.isPressed) || (key != null && key.isPressed);
+            return (padButton != null && padButton.isPressed) || (key != null && key.isPressed) || ReadJoystickButton(joystickButtonIndex) || ReadLegacyButtonForKey(key);
+        }
+
+        private bool ReadJoystickButton(int buttonIndex)
+        {
+            Joystick joystick = Joystick.current;
+            if (joystick == null || buttonIndex < 0)
+            {
+                return false;
+            }
+
+            int seenButtons = 0;
+            foreach (InputControl control in joystick.allControls)
+            {
+                ButtonControl button = control as ButtonControl;
+                if (button == null)
+                {
+                    continue;
+                }
+
+                if (seenButtons == buttonIndex)
+                {
+                    return button.isPressed;
+                }
+
+                seenButtons++;
+            }
+
+            return false;
+        }
+
+        private Vector2 ReadLegacyMove()
+        {
+            try
+            {
+                return new Vector2(UnityEngine.Input.GetAxisRaw("Horizontal"), UnityEngine.Input.GetAxisRaw("Vertical"));
+            }
+            catch (System.InvalidOperationException)
+            {
+                return Vector2.zero;
+            }
+        }
+
+        private bool ReadLegacyButtonForKey(KeyControl key)
+        {
+            if (key == null)
+            {
+                return false;
+            }
+
+            if (key == Keyboard.current.spaceKey)
+            {
+                return ReadLegacyButton("Jump");
+            }
+
+            if (key == Keyboard.current.leftShiftKey)
+            {
+                return ReadLegacyKey(KeyCode.LeftShift) || ReadLegacyButton("Fire2");
+            }
+
+            if (key == Keyboard.current.jKey)
+            {
+                return ReadLegacyKey(KeyCode.J) || ReadLegacyButton("Fire1") || ReadLegacyJoystickButton(2);
+            }
+
+            if (key == Keyboard.current.kKey)
+            {
+                return ReadLegacyKey(KeyCode.K) || ReadLegacyJoystickButton(3);
+            }
+
+            if (key == Keyboard.current.oKey)
+            {
+                return ReadLegacyKey(KeyCode.O) || ReadLegacyJoystickButton(5);
+            }
+
+            return false;
+        }
+
+        private bool ReadLegacyButton(string buttonName)
+        {
+            try
+            {
+                return UnityEngine.Input.GetButton(buttonName);
+            }
+            catch (System.InvalidOperationException)
+            {
+                return false;
+            }
+            catch (System.ArgumentException)
+            {
+                return false;
+            }
+        }
+
+        private bool ReadLegacyKey(KeyCode key)
+        {
+            try
+            {
+                return UnityEngine.Input.GetKey(key);
+            }
+            catch (System.InvalidOperationException)
+            {
+                return false;
+            }
+        }
+
+        private bool ReadLegacyJoystickButton(int button)
+        {
+            try
+            {
+                return UnityEngine.Input.GetKey((KeyCode)((int)KeyCode.JoystickButton0 + button));
+            }
+            catch (System.InvalidOperationException)
+            {
+                return false;
+            }
         }
 
         private bool PressedThisFrame(bool current, bool previous)
@@ -748,143 +751,8 @@ namespace FenShen.CombatPrototype
                 "Gamepad: A Jump / B Dash / X Attack / Y Skill / RT+RB Decoy / RT+X Chaser / RT swap / RT+Y Mimic\n" +
                 "Keyboard: Space Jump / LeftShift Dash / J Attack / K Skill / I+O Decoy / I+J Chaser / I swap / I+K Mimic\n" +
                 "Move: Left Stick or WASD. Up+X launch, Air Down+Y dive, Up+Y anti-air wave.\n" +
-                "Empowered: perfect dodge during enemy strike window boosts next attack.");
-        }
-    }
-
-    public class CombatPrototypeChaserClone : MonoBehaviour
-    {
-        public float lifetime = 1.8f;
-        public float speed = 11f;
-        public float attackInterval = 0.2f;
-
-        private CombatPrototypePlayerController _owner;
-        private PrototypeDamageable _target;
-        private float _dieAt;
-        private float _nextAttackAt;
-
-        public void Initialize(CombatPrototypePlayerController owner, PrototypeDamageable target)
-        {
-            _owner = owner;
-            _target = target;
-            _dieAt = Time.time + lifetime;
-        }
-
-        void Update()
-        {
-            if (Time.time >= _dieAt || _owner == null)
-            {
-                Destroy(gameObject);
-                return;
-            }
-
-            if (_target == null || !_target.IsAlive)
-            {
-                _target = CombatPrototypeFactory.FindNearestEnemy(transform.position);
-            }
-
-            if (_target != null)
-            {
-                transform.position = Vector3.MoveTowards(transform.position, _target.transform.position, speed * Time.deltaTime);
-                if (Vector2.Distance(transform.position, _target.transform.position) < 0.9f && Time.time >= _nextAttackAt)
-                {
-                    _nextAttackAt = Time.time + attackInterval;
-                    float dir = Mathf.Sign(_target.transform.position.x - transform.position.x);
-                    _target.TakeHit(7f, new Vector2(dir * 2.5f, 1.2f), false, false);
-                }
-            }
-            else
-            {
-                transform.position += Vector3.right * speed * Time.deltaTime;
-            }
-        }
-    }
-
-    public class CombatPrototypeMimicClone : MonoBehaviour
-    {
-        private CombatPrototypePlayerController _owner;
-        private float _dieAt;
-
-        public void Initialize(CombatPrototypePlayerController owner, float lifetime)
-        {
-            _owner = owner;
-            _dieAt = Time.time + lifetime;
-        }
-
-        void Update()
-        {
-            if (Time.time >= _dieAt || _owner == null)
-            {
-                Destroy(gameObject);
-            }
-        }
-
-        public void MimicAttack(Vector2 box, Vector2 offset, float damage, Vector2 knockback, bool launch, bool slam)
-        {
-            StartCoroutine(MimicAttackRoutine(box, offset, damage, knockback, launch, slam));
-        }
-
-        private IEnumerator MimicAttackRoutine(Vector2 box, Vector2 offset, float damage, Vector2 knockback, bool launch, bool slam)
-        {
-            yield return new WaitForSeconds(0.08f);
-            PrototypeDamageable target = CombatPrototypeFactory.FindNearestEnemy(transform.position);
-            float facing = target != null ? Mathf.Sign(target.transform.position.x - transform.position.x) : 1f;
-            Vector2 center = (Vector2)transform.position + new Vector2(offset.x * facing, offset.y);
-            Collider2D[] hits = Physics2D.OverlapBoxAll(center, box, 0f);
-            for (int i = 0; i < hits.Length; i++)
-            {
-                PrototypeDamageable damageable = hits[i].GetComponentInParent<PrototypeDamageable>();
-                if (damageable == null || damageable.team != PrototypeTeam.Enemy)
-                {
-                    continue;
-                }
-
-                damageable.TakeHit(damage, new Vector2(facing * Mathf.Abs(knockback.x), knockback.y), launch, slam);
-            }
-        }
-    }
-
-    public class CombatPrototypeProjectile : MonoBehaviour
-    {
-        private PrototypeTeam _team;
-        private Vector2 _direction;
-        private float _speed;
-        private float _damage;
-        private float _dieAt;
-        private bool _lift;
-
-        public void Initialize(PrototypeTeam team, Vector2 direction, float speed, float lifetime, float damage, bool lift)
-        {
-            _team = team;
-            _direction = direction.normalized;
-            _speed = speed;
-            _dieAt = Time.time + lifetime;
-            _damage = damage;
-            _lift = lift;
-        }
-
-        void Update()
-        {
-            transform.position += (Vector3)(_direction * _speed * Time.deltaTime);
-            if (Time.time >= _dieAt)
-            {
-                Destroy(gameObject);
-                return;
-            }
-
-            Collider2D[] hits = Physics2D.OverlapBoxAll(transform.position, new Vector2(0.9f, 0.4f), 0f);
-            for (int i = 0; i < hits.Length; i++)
-            {
-                PrototypeDamageable target = hits[i].GetComponentInParent<PrototypeDamageable>();
-                if (target == null || target.team == _team)
-                {
-                    continue;
-                }
-
-                target.TakeHit(_damage, _lift ? new Vector2(_direction.x * 2f, 5f) : new Vector2(_direction.x * 4f, 1f), _lift, false);
-                Destroy(gameObject);
-                return;
-            }
+                "Empowered: perfect dodge during enemy strike window boosts next attack.\n" +
+                "Debug Move=" + _moveInput + " Gamepad=" + (Gamepad.current != null) + " Joystick=" + (Joystick.current != null) + " Keyboard=" + (Keyboard.current != null));
         }
     }
 

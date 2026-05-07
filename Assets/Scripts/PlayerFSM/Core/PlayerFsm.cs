@@ -304,7 +304,14 @@ namespace FenShen.PlayerFSM
         }
         public bool CanEnterDodge(float fallbackCooldown = 0f)
         {
-            return DodgeCooldownRemaining <= 0f && GetDodgeCooldownDuration(fallbackCooldown) >= 0f;
+            bool cooldownReady = DodgeCooldownRemaining <= 0f && GetDodgeCooldownDuration(fallbackCooldown) >= 0f;
+            if (!cooldownReady)
+            {
+                return false;
+            }
+
+            CoreRuntimeController core = CombatCoordinator != null ? CombatCoordinator.CoreController : null;
+            return core == null || core.CanEnterDodge(CheckGround());
         }
         public void StartDodgeCooldown(float fallbackCooldown = 0f)
         {

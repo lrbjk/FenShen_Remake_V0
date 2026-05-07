@@ -4,7 +4,9 @@ namespace FenShen.Combat
 {
     public class CombatSkillPreviewAnchor : MonoBehaviour
     {
+        [InspectorName("预览原点")]
         [SerializeField] private Transform previewOrigin;
+        [InspectorName("按朝向镜像")]
         [SerializeField] private bool mirrorByFacing = true;
 
         public Transform PreviewOrigin

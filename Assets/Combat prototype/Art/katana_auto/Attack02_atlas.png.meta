@@ -1,0 +1,1764 @@
+fileFormatVersion: 2
+guid: e27d9ab0e567b4f4baf6a88849d23365
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: 5728949206881903358
+    second: Attack02_atlas_0
+  - first:
+      213: -1266914915012631561
+    second: Attack02_atlas_1
+  - first:
+      213: 3427173394783458364
+    second: Attack02_atlas_2
+  - first:
+      213: -4900591936935666272
+    second: Attack02_atlas_3
+  - first:
+      213: 3660376712395972065
+    second: Attack02_atlas_4
+  - first:
+      213: 2070553682133373963
+    second: Attack02_atlas_5
+  - first:
+      213: -8208498473633410515
+    second: Attack02_atlas_6
+  - first:
+      213: 1318432341623734907
+    second: Attack02_atlas_7
+  - first:
+      213: -8768381627958660351
+    second: Attack02_atlas_8
+  - first:
+      213: -2503352946691423527
+    second: Attack02_atlas_9
+  - first:
+      213: 7034928335091146389
+    second: Attack02_atlas_10
+  - first:
+      213: -4429490403267489354
+    second: Attack02_atlas_11
+  - first:
+      213: 2235542721428047342
+    second: Attack02_atlas_12
+  - first:
+      213: -1677555354725126442
+    second: Attack02_atlas_13
+  - first:
+      213: 116695492912855909
+    second: Attack02_atlas_14
+  - first:
+      213: 6056030613704548631
+    second: Attack02_atlas_15
+  - first:
+      213: 2548739599952635655
+    second: Attack02_atlas_16
+  - first:
+      213: 8917555023218655931
+    second: Attack02_atlas_17
+  - first:
+      213: -1540304565681960575
+    second: Attack02_atlas_18
+  - first:
+      213: -3956164750923999379
+    second: Attack02_atlas_19
+  - first:
+      213: 3346256021982741974
+    second: Attack02_atlas_20
+  - first:
+      213: 4241889355518895036
+    second: Attack02_atlas_21
+  - first:
+      213: -2394710246461536366
+    second: Attack02_atlas_22
+  - first:
+      213: -8872407294078689671
+    second: Attack02_atlas_23
+  - first:
+      213: -4895036671547982910
+    second: Attack02_atlas_24
+  - first:
+      213: -184087146872261279
+    second: Attack02_atlas_25
+  - first:
+      213: -4135851510648937021
+    second: Attack02_atlas_26
+  - first:
+      213: -2023968116789119753
+    second: Attack02_atlas_27
+  - first:
+      213: 3382165836612846524
+    second: Attack02_atlas_28
+  - first:
+      213: -4177438382184056471
+    second: Attack02_atlas_29
+  - first:
+      213: -4220310850098061597
+    second: Attack02_atlas_30
+  - first:
+      213: 8593664763020895800
+    second: Attack02_atlas_31
+  - first:
+      213: -5430513647054832176
+    second: Attack02_atlas_32
+  - first:
+      213: 2283751850938064296
+    second: Attack02_atlas_33
+  - first:
+      213: -622176244546426608
+    second: Attack02_atlas_34
+  - first:
+      213: 6522754808945196084
+    second: Attack02_atlas_35
+  - first:
+      213: -990445058786852536
+    second: Attack02_atlas_36
+  - first:
+      213: 5410644352249369463
+    second: Attack02_atlas_37
+  - first:
+      213: 1494464692384907048
+    second: Attack02_atlas_38
+  - first:
+      213: 6716614816971086481
+    second: Attack02_atlas_39
+  - first:
+      213: -8709806327479410741
+    second: Attack02_atlas_40
+  - first:
+      213: -8721994368426657624
+    second: Attack02_atlas_41
+  - first:
+      213: -6020428434267996221
+    second: Attack02_atlas_42
+  - first:
+      213: -5665845293027388750
+    second: Attack02_atlas_43
+  - first:
+      213: 6119738273815699480
+    second: Attack02_atlas_44
+  - first:
+      213: 7776468324868526414
+    second: Attack02_atlas_45
+  - first:
+      213: 6193559630160653491
+    second: Attack02_atlas_46
+  - first:
+      213: 2894915372093026138
+    second: Attack02_atlas_47
+  - first:
+      213: 5014906896046629150
+    second: Attack02_atlas_48
+  - first:
+      213: 7552165591574462224
+    second: Attack02_atlas_49
+  - first:
+      213: -1674079940637144169
+    second: Attack02_atlas_50
+  - first:
+      213: -723608710212764194
+    second: Attack02_atlas_51
+  - first:
+      213: 7062343524595490008
+    second: Attack02_atlas_52
+  - first:
+      213: -1099282246502168848
+    second: Attack02_atlas_53
+  - first:
+      213: 2685867884172266232
+    second: Attack02_atlas_54
+  - first:
+      213: 2946079029198623039
+    second: Attack02_atlas_55
+  - first:
+      213: -5630795982856815279
+    second: Attack02_atlas_56
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 0
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 64
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: Attack02_atlas_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 490
+        width: 85
+        height: 70
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ef2a37c43f0518f40800000000000000
+      internalID: 5728949206881903358
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Attack02_atlas_1
+      rect:
+        serializedVersion: 2
+        x: 85
+        y: 490
+        width: 85
+        height: 70
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7f32702e8930b6ee0800000000000000
+      internalID: -1266914915012631561
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Attack02_atlas_2
+      rect:
+        serializedVersion: 2
+        x: 170
+        y: 490
+        width: 85
+        height: 70
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c34dcbb6b04cf8f20800000000000000
+      internalID: 3427173394783458364
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Attack02_atlas_3
+      rect:
+        serializedVersion: 2
+        x: 255
+        y: 490
+        width: 85
+        height: 70
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0ad5ec909999dfbb0800000000000000
+      internalID: -4900591936935666272
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Attack02_atlas_4
+      rect:
+        serializedVersion: 2
+        x: 340
+        y: 490
+        width: 85
+        height: 70
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1ed5976f9354cc230800000000000000
+      internalID: 3660376712395972065
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Attack02_atlas_5
+      rect:
+        serializedVersion: 2
+        x: 425
+        y: 490
+        width: 85
+        height: 70
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b04dfe78a951cbc10800000000000000
+      internalID: 2070553682133373963
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Attack02_atlas_6
+      rect:
+        serializedVersion: 2
+        x: 510
+        y: 490
+        width: 85
+        height: 70
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d229eb3f02e851e80800000000000000
+      internalID: -8208498473633410515
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Attack02_atlas_7
+      rect:
+        serializedVersion: 2
+        x: 595
+        y: 490
+        width: 85
+        height: 70
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b728ed6ba330c4210800000000000000
+      internalID: 1318432341623734907
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Attack02_atlas_8
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 420
+        width: 85
+        height: 70
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1037672cd53705680800000000000000
+      internalID: -8768381627958660351
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Attack02_atlas_9
+      rect:
+        serializedVersion: 2
+        x: 85
+        y: 420
+        width: 85
+        height: 70
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9d2c70122cd424dd0800000000000000
+      internalID: -2503352946691423527
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Attack02_atlas_10
+      rect:
+        serializedVersion: 2
+        x: 170
+        y: 420
+        width: 85
+        height: 70
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 59e10715c0611a160800000000000000
+      internalID: 7034928335091146389
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Attack02_atlas_11
+      rect:
+        serializedVersion: 2
+        x: 255
+        y: 420
+        width: 85
+        height: 70
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6b15d3952f94782c0800000000000000
+      internalID: -4429490403267489354
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Attack02_atlas_12
+      rect:
+        serializedVersion: 2
+        x: 340
+        y: 420
+        width: 85
+        height: 70
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ee5cdeeb24e360f10800000000000000
+      internalID: 2235542721428047342
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Attack02_atlas_13
+      rect:
+        serializedVersion: 2
+        x: 425
+        y: 420
+        width: 85
+        height: 70
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6deed8efa4028b8e0800000000000000
+      internalID: -1677555354725126442
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Attack02_atlas_14
+      rect:
+        serializedVersion: 2
+        x: 510
+        y: 420
+        width: 85
+        height: 70
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 56bb5f9bee59e9100800000000000000
+      internalID: 116695492912855909
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Attack02_atlas_15
+      rect:
+        serializedVersion: 2
+        x: 595
+        y: 420
+        width: 85
+        height: 70
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 71120c6c1c75b0450800000000000000
+      internalID: 6056030613704548631
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Attack02_atlas_16
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 350
+        width: 85
+        height: 70
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 707e5209921fe5320800000000000000
+      internalID: 2548739599952635655
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Attack02_atlas_17
+      rect:
+        serializedVersion: 2
+        x: 85
+        y: 350
+        width: 85
+        height: 70
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: bb2c2ffdb0581cb70800000000000000
+      internalID: 8917555023218655931
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Attack02_atlas_18
+      rect:
+        serializedVersion: 2
+        x: 170
+        y: 350
+        width: 85
+        height: 70
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1894d9c882dbf9ae0800000000000000
+      internalID: -1540304565681960575
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Attack02_atlas_19
+      rect:
+        serializedVersion: 2
+        x: 255
+        y: 350
+        width: 85
+        height: 70
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d67d044ae11e819c0800000000000000
+      internalID: -3956164750923999379
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Attack02_atlas_20
+      rect:
+        serializedVersion: 2
+        x: 340
+        y: 350
+        width: 85
+        height: 70
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6d50bcd6f1a407e20800000000000000
+      internalID: 3346256021982741974
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Attack02_atlas_21
+      rect:
+        serializedVersion: 2
+        x: 425
+        y: 350
+        width: 85
+        height: 70
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: cb3e634f4e73eda30800000000000000
+      internalID: 4241889355518895036
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Attack02_atlas_22
+      rect:
+        serializedVersion: 2
+        x: 510
+        y: 350
+        width: 85
+        height: 70
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2970ca3f7b744ced0800000000000000
+      internalID: -2394710246461536366
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Attack02_atlas_23
+      rect:
+        serializedVersion: 2
+        x: 595
+        y: 350
+        width: 85
+        height: 70
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 97edad5f290eed480800000000000000
+      internalID: -8872407294078689671
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Attack02_atlas_24
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 280
+        width: 85
+        height: 70
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2cb3fdd0516511cb0800000000000000
+      internalID: -4895036671547982910
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Attack02_atlas_25
+      rect:
+        serializedVersion: 2
+        x: 85
+        y: 280
+        width: 85
+        height: 70
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 165b6fa17bdf17df0800000000000000
+      internalID: -184087146872261279
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Attack02_atlas_26
+      rect:
+        serializedVersion: 2
+        x: 170
+        y: 280
+        width: 85
+        height: 70
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3c5e108b6f08a96c0800000000000000
+      internalID: -4135851510648937021
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Attack02_atlas_27
+      rect:
+        serializedVersion: 2
+        x: 255
+        y: 280
+        width: 85
+        height: 70
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7f47112a8bb69e3e0800000000000000
+      internalID: -2023968116789119753
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Attack02_atlas_28
+      rect:
+        serializedVersion: 2
+        x: 340
+        y: 280
+        width: 85
+        height: 70
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: cb345cea8eddfee20800000000000000
+      internalID: 3382165836612846524
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Attack02_atlas_29
+      rect:
+        serializedVersion: 2
+        x: 425
+        y: 280
+        width: 85
+        height: 70
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 96936d6ace1c606c0800000000000000
+      internalID: -4177438382184056471
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Attack02_atlas_30
+      rect:
+        serializedVersion: 2
+        x: 510
+        y: 280
+        width: 85
+        height: 70
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3ee9d2a54a17e65c0800000000000000
+      internalID: -4220310850098061597
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Attack02_atlas_31
+      rect:
+        serializedVersion: 2
+        x: 595
+        y: 280
+        width: 85
+        height: 70
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 836e6ae1294d24770800000000000000
+      internalID: 8593664763020895800
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Attack02_atlas_32
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 210
+        width: 85
+        height: 70
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0ddb26f2c90f2a4b0800000000000000
+      internalID: -5430513647054832176
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Attack02_atlas_33
+      rect:
+        serializedVersion: 2
+        x: 85
+        y: 210
+        width: 85
+        height: 70
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8addd46653481bf10800000000000000
+      internalID: 2283751850938064296
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Attack02_atlas_34
+      rect:
+        serializedVersion: 2
+        x: 170
+        y: 210
+        width: 85
+        height: 70
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 019af1480069d57f0800000000000000
+      internalID: -622176244546426608
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Attack02_atlas_35
+      rect:
+        serializedVersion: 2
+        x: 255
+        y: 210
+        width: 85
+        height: 70
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 43c362090fa758a50800000000000000
+      internalID: 6522754808945196084
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Attack02_atlas_36
+      rect:
+        serializedVersion: 2
+        x: 340
+        y: 210
+        width: 85
+        height: 70
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8410875777b3142f0800000000000000
+      internalID: -990445058786852536
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Attack02_atlas_37
+      rect:
+        serializedVersion: 2
+        x: 425
+        y: 210
+        width: 85
+        height: 70
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7731ccd1f58761b40800000000000000
+      internalID: 5410644352249369463
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Attack02_atlas_38
+      rect:
+        serializedVersion: 2
+        x: 510
+        y: 210
+        width: 85
+        height: 70
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 82f37fe38b76db410800000000000000
+      internalID: 1494464692384907048
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Attack02_atlas_39
+      rect:
+        serializedVersion: 2
+        x: 595
+        y: 210
+        width: 85
+        height: 70
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 19adfa20795363d50800000000000000
+      internalID: 6716614816971086481
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Attack02_atlas_40
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 140
+        width: 85
+        height: 70
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: bcfd32caa4d802780800000000000000
+      internalID: -8709806327479410741
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Attack02_atlas_41
+      rect:
+        serializedVersion: 2
+        x: 85
+        y: 140
+        width: 85
+        height: 70
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8a8b8f0455045f680800000000000000
+      internalID: -8721994368426657624
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Attack02_atlas_42
+      rect:
+        serializedVersion: 2
+        x: 170
+        y: 140
+        width: 85
+        height: 70
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3cf7bc39c34237ca0800000000000000
+      internalID: -6020428434267996221
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Attack02_atlas_43
+      rect:
+        serializedVersion: 2
+        x: 255
+        y: 140
+        width: 85
+        height: 70
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2b298c499bfde51b0800000000000000
+      internalID: -5665845293027388750
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Attack02_atlas_44
+      rect:
+        serializedVersion: 2
+        x: 340
+        y: 140
+        width: 85
+        height: 70
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 810a529498dade450800000000000000
+      internalID: 6119738273815699480
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Attack02_atlas_45
+      rect:
+        serializedVersion: 2
+        x: 425
+        y: 140
+        width: 85
+        height: 70
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e419dde6db09beb60800000000000000
+      internalID: 7776468324868526414
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Attack02_atlas_46
+      rect:
+        serializedVersion: 2
+        x: 510
+        y: 140
+        width: 85
+        height: 70
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3bcece23ba1f3f550800000000000000
+      internalID: 6193559630160653491
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Attack02_atlas_47
+      rect:
+        serializedVersion: 2
+        x: 595
+        y: 140
+        width: 85
+        height: 70
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a5f2c68613ecc2820800000000000000
+      internalID: 2894915372093026138
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Attack02_atlas_48
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 70
+        width: 85
+        height: 70
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e1124887047889540800000000000000
+      internalID: 5014906896046629150
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Attack02_atlas_49
+      rect:
+        serializedVersion: 2
+        x: 85
+        y: 70
+        width: 85
+        height: 70
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 01f39baa79eaec860800000000000000
+      internalID: 7552165591574462224
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Attack02_atlas_50
+      rect:
+        serializedVersion: 2
+        x: 170
+        y: 70
+        width: 85
+        height: 70
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 79b47b4e92974c8e0800000000000000
+      internalID: -1674079940637144169
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Attack02_atlas_51
+      rect:
+        serializedVersion: 2
+        x: 255
+        y: 70
+        width: 85
+        height: 70
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: eddb36f36b935f5f0800000000000000
+      internalID: -723608710212764194
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Attack02_atlas_52
+      rect:
+        serializedVersion: 2
+        x: 340
+        y: 70
+        width: 85
+        height: 70
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8dc5b49840c720260800000000000000
+      internalID: 7062343524595490008
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Attack02_atlas_53
+      rect:
+        serializedVersion: 2
+        x: 425
+        y: 70
+        width: 85
+        height: 70
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0f6485dfe909eb0f0800000000000000
+      internalID: -1099282246502168848
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Attack02_atlas_54
+      rect:
+        serializedVersion: 2
+        x: 510
+        y: 70
+        width: 85
+        height: 70
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8fac7bd3c9e164520800000000000000
+      internalID: 2685867884172266232
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Attack02_atlas_55
+      rect:
+        serializedVersion: 2
+        x: 595
+        y: 70
+        width: 85
+        height: 70
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f319c9f944392e820800000000000000
+      internalID: 2946079029198623039
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Attack02_atlas_56
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 0
+        width: 85
+        height: 70
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 15d7f1703e46bd1b0800000000000000
+      internalID: -5630795982856815279
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Attack02_atlas_57
+      rect:
+        serializedVersion: 2
+        x: 85
+        y: 0
+        width: 85
+        height: 70
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 284d32c7a95117c47a0cc7465196023a
+      internalID: -1875938322
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Attack02_atlas_58
+      rect:
+        serializedVersion: 2
+        x: 170
+        y: 0
+        width: 85
+        height: 70
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fe312072ee01fdc479ae6e06704900dc
+      internalID: -1479076895
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Attack02_atlas_59
+      rect:
+        serializedVersion: 2
+        x: 255
+        y: 0
+        width: 85
+        height: 70
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f18052c16d6ac694ea9d9d5504809909
+      internalID: 1321105059
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Attack02_atlas_60
+      rect:
+        serializedVersion: 2
+        x: 340
+        y: 0
+        width: 85
+        height: 70
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3746ca599ae57bd47b74181e0a12811a
+      internalID: -713168323
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Attack02_atlas_61
+      rect:
+        serializedVersion: 2
+        x: 425
+        y: 0
+        width: 85
+        height: 70
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4f2529423df1195408b0270aaaaccb40
+      internalID: -1714021403
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Attack02_atlas_62
+      rect:
+        serializedVersion: 2
+        x: 510
+        y: 0
+        width: 85
+        height: 70
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e5e4091245f454b489e01f44684b4c2b
+      internalID: -897245236
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Attack02_atlas_63
+      rect:
+        serializedVersion: 2
+        x: 595
+        y: 0
+        width: 85
+        height: 70
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 120db2d1fb4f21f409a97c5acf28a0cb
+      internalID: 1709558862
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 1ea2d4cd8ad35494c87e51428afce83c
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures:
+    - texture: {fileID: 2800000, guid: 13c6eb17bab1f3540a4f9880b031359b, type: 3}
+      name: _NormalMap
+    spriteCustomMetadata:
+      entries:
+      - key: SpriteEditor.SliceSettings
+        value: '{"sliceOnImport":false,"gridCellCount":{"x":8.0,"y":8.0},"gridSpriteSize":{"x":85.0,"y":70.0},"gridSpriteOffset":{"x":0.0,"y":0.0},"gridSpritePadding":{"x":0.0,"y":0.0},"pivot":{"x":0.5,"y":0.5},"pivotPixels":{"x":0.0,"y":0.0},"autoSlicingMethod":0,"spriteAlignment":0,"pivotUnitMode":0,"slicingType":2,"keepEmptyRects":false,"isAlternate":false}'
+    nameFileIdTable:
+      Attack02_atlas_0: 5728949206881903358
+      Attack02_atlas_1: -1266914915012631561
+      Attack02_atlas_10: 7034928335091146389
+      Attack02_atlas_11: -4429490403267489354
+      Attack02_atlas_12: 2235542721428047342
+      Attack02_atlas_13: -1677555354725126442
+      Attack02_atlas_14: 116695492912855909
+      Attack02_atlas_15: 6056030613704548631
+      Attack02_atlas_16: 2548739599952635655
+      Attack02_atlas_17: 8917555023218655931
+      Attack02_atlas_18: -1540304565681960575
+      Attack02_atlas_19: -3956164750923999379
+      Attack02_atlas_2: 3427173394783458364
+      Attack02_atlas_20: 3346256021982741974
+      Attack02_atlas_21: 4241889355518895036
+      Attack02_atlas_22: -2394710246461536366
+      Attack02_atlas_23: -8872407294078689671
+      Attack02_atlas_24: -4895036671547982910
+      Attack02_atlas_25: -184087146872261279
+      Attack02_atlas_26: -4135851510648937021
+      Attack02_atlas_27: -2023968116789119753
+      Attack02_atlas_28: 3382165836612846524
+      Attack02_atlas_29: -4177438382184056471
+      Attack02_atlas_3: -4900591936935666272
+      Attack02_atlas_30: -4220310850098061597
+      Attack02_atlas_31: 8593664763020895800
+      Attack02_atlas_32: -5430513647054832176
+      Attack02_atlas_33: 2283751850938064296
+      Attack02_atlas_34: -622176244546426608
+      Attack02_atlas_35: 6522754808945196084
+      Attack02_atlas_36: -990445058786852536
+      Attack02_atlas_37: 5410644352249369463
+      Attack02_atlas_38: 1494464692384907048
+      Attack02_atlas_39: 6716614816971086481
+      Attack02_atlas_4: 3660376712395972065
+      Attack02_atlas_40: -8709806327479410741
+      Attack02_atlas_41: -8721994368426657624
+      Attack02_atlas_42: -6020428434267996221
+      Attack02_atlas_43: -5665845293027388750
+      Attack02_atlas_44: 6119738273815699480
+      Attack02_atlas_45: 7776468324868526414
+      Attack02_atlas_46: 6193559630160653491
+      Attack02_atlas_47: 2894915372093026138
+      Attack02_atlas_48: 5014906896046629150
+      Attack02_atlas_49: 7552165591574462224
+      Attack02_atlas_5: 2070553682133373963
+      Attack02_atlas_50: -1674079940637144169
+      Attack02_atlas_51: -723608710212764194
+      Attack02_atlas_52: 7062343524595490008
+      Attack02_atlas_53: -1099282246502168848
+      Attack02_atlas_54: 2685867884172266232
+      Attack02_atlas_55: 2946079029198623039
+      Attack02_atlas_56: -5630795982856815279
+      Attack02_atlas_57: -1875938322
+      Attack02_atlas_58: -1479076895
+      Attack02_atlas_59: 1321105059
+      Attack02_atlas_6: -8208498473633410515
+      Attack02_atlas_60: -713168323
+      Attack02_atlas_61: -1714021403
+      Attack02_atlas_62: -897245236
+      Attack02_atlas_63: 1709558862
+      Attack02_atlas_7: 1318432341623734907
+      Attack02_atlas_8: -8768381627958660351
+      Attack02_atlas_9: -2503352946691423527
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

@@ -6,37 +6,60 @@ namespace FenShen.GameData
     [CreateAssetMenu(fileName = "WeaponMoveSet", menuName = "Game Data/Combat/Weapon Move Set")]
     public class WeaponMoveSetSO : ScriptableObject
     {
-        [Header("Ground Combo")]
+        [Header("地面连段")]
+        [InspectorName("地面普攻1技能")]
         public FenShen.Combat.CombatSkillDefinitionSO primaryAttackA1Skill;
+        [InspectorName("地面普攻1技能ID")]
         public string primaryAttackA1;
+        [InspectorName("地面普攻2技能")]
         public FenShen.Combat.CombatSkillDefinitionSO primaryAttackA2Skill;
+        [InspectorName("地面普攻2技能ID")]
         public string primaryAttackA2;
+        [InspectorName("地面普攻3技能")]
         public FenShen.Combat.CombatSkillDefinitionSO primaryAttackA3Skill;
+        [InspectorName("地面普攻3技能ID")]
         public string primaryAttackA3;
+        [InspectorName("地面普攻4技能")]
         public FenShen.Combat.CombatSkillDefinitionSO primaryAttackA4Skill;
+        [InspectorName("地面普攻4技能ID")]
         public string primaryAttackA4;
 
-        [Header("Air Combo")]
+        [Header("空中连段")]
+        [InspectorName("空中入口技能")]
         public FenShen.Combat.CombatSkillDefinitionSO aerialEntrySkillAsset;
+        [InspectorName("空中入口技能ID")]
         public string aerialEntrySkill;
+        [InspectorName("空中循环技能")]
         public FenShen.Combat.CombatSkillDefinitionSO aerialLoopSkillAsset;
+        [InspectorName("空中循环技能ID")]
         public string aerialLoopSkill;
+        [InspectorName("空中终结技能")]
         public FenShen.Combat.CombatSkillDefinitionSO aerialFinisherSkillAsset;
+        [InspectorName("空中终结技能ID")]
         public string aerialFinisherSkill;
 
-        [Header("Situational")]
+        [Header("场景技")]
+        [InspectorName("挑飞技能")]
         public FenShen.Combat.CombatSkillDefinitionSO launcherSkillAsset;
+        [InspectorName("挑飞技能ID")]
         public string launcherSkill;
+        [InspectorName("下砸技能")]
         public FenShen.Combat.CombatSkillDefinitionSO slamSkillAsset;
+        [InspectorName("下砸技能ID")]
         public string slamSkill;
+        [InspectorName("落地追击技能")]
         public FenShen.Combat.CombatSkillDefinitionSO landingChaseSkillAsset;
+        [InspectorName("落地追击技能ID")]
         public string landingChaseSkill;
 
-        [Header("Entry Skills")]
+        [Header("入口技能")]
+        [InspectorName("入口技能列表")]
         public List<WeaponSkillEntry> entrySkills = new List<WeaponSkillEntry>();
 
-        [Header("Branches")]
+        [Header("派生")]
+        [InspectorName("连段分支")]
         public List<WeaponComboBranch> comboBranches = new List<WeaponComboBranch>();
+        [InspectorName("特殊派生窗口")]
         public List<WeaponSpecialDerivationWindow> specialWindows = new List<WeaponSpecialDerivationWindow>();
 
         public FenShen.Combat.CombatSkillDefinitionSO GetEntrySkillAsset(WeaponAttackSlot slot)

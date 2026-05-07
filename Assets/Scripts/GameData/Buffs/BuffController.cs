@@ -1,10 +1,11 @@
 using System;
 using System.Collections.Generic;
+using FenShen.Combat;
 using UnityEngine;
 
 namespace FenShen.GameData
 {
-    public class BuffController : MonoBehaviour
+    public class BuffController : MonoBehaviour, ICombatBuffReceiver
     {
         private readonly Dictionary<int, BuffBase> activeBuffs = new Dictionary<int, BuffBase>();
         private readonly List<BuffBase> updateOrder = new List<BuffBase>();

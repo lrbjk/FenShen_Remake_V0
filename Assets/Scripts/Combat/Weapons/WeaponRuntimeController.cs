@@ -6,16 +6,22 @@ namespace FenShen.Combat
 {
     public class WeaponRuntimeController : MonoBehaviour
     {
-        [Header("References")]
+        [Header("引用")]
+        [InspectorName("玩家FSM")]
         [SerializeField] private PlayerFsm playerFsm;
 
-        [Header("Weapon")]
+        [Header("武器")]
+        [InspectorName("当前武器")]
         [SerializeField] private WeaponDefinitionSO currentWeapon;
+        [InspectorName("切换武器时重置连段")]
         [SerializeField] private bool resetComboOnWeaponSwap = true;
 
-        [Header("Combo")]
+        [Header("连段")]
+        [InspectorName("连段重置延迟")]
         [SerializeField] private float comboResetDelay = 0.9f;
+        [InspectorName("使用运行时连段窗口属性")]
         [SerializeField] private bool useRuntimeComboWindowStat = true;
+        [InspectorName("备用连段窗口")]
         [SerializeField] private float fallbackComboWindow = 0.2f;
 
         private float _comboExpireTime = float.NegativeInfinity;
