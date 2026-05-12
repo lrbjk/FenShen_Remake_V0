@@ -112,6 +112,17 @@ namespace FenShen.PlayerFSM
             return changed;
         }
 
+        public bool TryHandleAbilityInput(PlayerFsm fsm)
+        {
+            if (fsm == null)
+            {
+                return false;
+            }
+
+            PlayerCloneAbilityController cloneController = GetComponent<PlayerCloneAbilityController>();
+            return cloneController != null && cloneController.TryHandleInput(fsm, this);
+        }
+
         public void ResetToDefaultLoadout()
         {
             _initialized = false;

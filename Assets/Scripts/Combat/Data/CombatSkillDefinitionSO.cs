@@ -20,6 +20,31 @@ namespace FenShen.Combat
         CustomCurve = 2,
     }
 
+    public enum CombatSkillKind
+    {
+        Any = -1,
+        Attack = 0,
+        Movement = 1,
+        Defense = 2,
+        Control = 3,
+        ResourceConvert = 4,
+        Finisher = 5,
+        CoreTrigger = 6,
+    }
+
+    [Flags]
+    public enum CombatSkillRoleTag
+    {
+        None = 0,
+        BurstDamage = 1 << 0,
+        DashEngage = 1 << 1,
+        CrowdControl = 1 << 2,
+        InvulnerableSave = 1 << 3,
+        ResourceConvert = 1 << 4,
+        ComboFinisher = 1 << 5,
+        BuildCoreTrigger = 1 << 6,
+    }
+
     [Serializable]
     public class SkillMotionSettings
     {
@@ -106,6 +131,10 @@ namespace FenShen.Combat
         public Sprite icon;
         [InspectorName("使用方")]
         public SkillUsageSide usageSide = SkillUsageSide.Both;
+        [InspectorName("技能类型")]
+        public CombatSkillKind skillKind = CombatSkillKind.Attack;
+        [InspectorName("战斗定位")]
+        public CombatSkillRoleTag roleTags = CombatSkillRoleTag.None;
         [InspectorName("标签")]
         public List<string> tags = new List<string>();
 

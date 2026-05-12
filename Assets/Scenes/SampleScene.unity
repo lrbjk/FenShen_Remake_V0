@@ -680,13 +680,13 @@ GameObject:
   m_Component:
   - component: {fileID: 966025664}
   - component: {fileID: 966025663}
-  - component: {fileID: 966025662}
   - component: {fileID: 966025661}
-  - component: {fileID: 966025660}
   - component: {fileID: 966025659}
   - component: {fileID: 966025658}
   - component: {fileID: 966025657}
   - component: {fileID: 966025656}
+  - component: {fileID: 966025666}
+  - component: {fileID: 966025665}
   m_Layer: 0
   m_Name: Combat Test Enemy
   m_TagString: Untagged
@@ -760,33 +760,6 @@ MonoBehaviour:
   attack: 8
   defense: 0
   staggerValue: 10
---- !u!54 &966025660
-Rigidbody:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 966025655}
-  serializedVersion: 5
-  m_Mass: 1
-  m_LinearDamping: 0
-  m_AngularDamping: 0.05
-  m_CenterOfMass: {x: 0, y: 0, z: 0}
-  m_InertiaTensor: {x: 1, y: 1, z: 1}
-  m_InertiaRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_IncludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_ExcludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_ImplicitCom: 1
-  m_ImplicitTensor: 1
-  m_UseGravity: 0
-  m_IsKinematic: 1
-  m_Interpolate: 0
-  m_Constraints: 0
-  m_CollisionDetection: 0
 --- !u!23 &966025661
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -836,29 +809,6 @@ MeshRenderer:
   m_SortingOrder: 0
   m_MaskInteraction: 0
   m_AdditionalVertexStreams: {fileID: 0}
---- !u!136 &966025662
-CapsuleCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 966025655}
-  m_Material: {fileID: 0}
-  m_IncludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_ExcludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_LayerOverridePriority: 0
-  m_IsTrigger: 0
-  m_ProvidesContacts: 0
-  m_Enabled: 1
-  serializedVersion: 2
-  m_Radius: 0.5
-  m_Height: 2
-  m_Direction: 1
-  m_Center: {x: 0, y: 0, z: 0}
 --- !u!33 &966025663
 MeshFilter:
   m_ObjectHideFlags: 0
@@ -882,6 +832,70 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!70 &966025665
+CapsuleCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 966025655}
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_ForceSendLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_ForceReceiveLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_ContactCaptureLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_CallbackLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_CompositeOperation: 0
+  m_CompositeOrder: 0
+  m_Offset: {x: 0, y: 0}
+  m_Size: {x: 1, y: 2}
+  m_Direction: 0
+--- !u!50 &966025666
+Rigidbody2D:
+  serializedVersion: 5
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 966025655}
+  m_BodyType: 0
+  m_Simulated: 1
+  m_UseFullKinematicContacts: 0
+  m_UseAutoMass: 0
+  m_Mass: 1
+  m_LinearDamping: 0
+  m_AngularDamping: 0.05
+  m_GravityScale: 1
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_Interpolate: 0
+  m_SleepingMode: 1
+  m_CollisionDetection: 1
+  m_Constraints: 4
 --- !u!1 &1283703480
 GameObject:
   m_ObjectHideFlags: 0
@@ -907,7 +921,7 @@ Transform:
   m_GameObject: {fileID: 1283703480}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0.158, y: -0.53, z: 0}
+  m_LocalPosition: {x: 0.158, y: 0.061, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -938,7 +952,7 @@ Transform:
   m_GameObject: {fileID: 2038235306}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -0.002, y: -1.138, z: 0}
+  m_LocalPosition: {x: -0.032, y: -0.949, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -967,6 +981,7 @@ GameObject:
   - component: {fileID: 2126761142}
   - component: {fileID: 2126761143}
   - component: {fileID: 2126761144}
+  - component: {fileID: 2126761145}
   m_Layer: 0
   m_Name: Player
   m_TagString: Untagged
@@ -1005,11 +1020,29 @@ MonoBehaviour:
   Character: {fileID: 2126761134}
   MoveAction: {fileID: -1680190386980627800, guid: 2bcd2660ca9b64942af0de543d8d7100, type: 3}
   AttackAction: {fileID: 1120369429361536294, guid: 2bcd2660ca9b64942af0de543d8d7100, type: 3}
+  CoreSkill1Action: {fileID: 0}
+  CoreSkill2Action: {fileID: 0}
+  CoreSkill3Action: {fileID: 0}
+  CoreSkill4Action: {fileID: 0}
+  CoreModifierAction: {fileID: 616208249695288124, guid: 2bcd2660ca9b64942af0de543d8d7100, type: 3}
+  FaceYAction: {fileID: 7441364858754191443, guid: 2bcd2660ca9b64942af0de543d8d7100, type: 3}
+  FaceXAction: {fileID: 1120369429361536294, guid: 2bcd2660ca9b64942af0de543d8d7100, type: 3}
+  RightShoulderAction: {fileID: -7471211009204490832, guid: 2bcd2660ca9b64942af0de543d8d7100, type: 3}
+  FinisherAction: {fileID: 0}
   SprintAction: {fileID: -7471211009204490832, guid: 2bcd2660ca9b64942af0de543d8d7100, type: 3}
   JumpAction: {fileID: -2099379676528639254, guid: 2bcd2660ca9b64942af0de543d8d7100, type: 3}
   inputActions: {fileID: -944628639613478452, guid: e01bb67a0e574f24f9112947735d16cc, type: 3}
   moveActionName: Player/Move
   attackActionName: Player/Attack
+  coreSkill1ActionName: Player/Skill1
+  coreSkill2ActionName: Player/Skill2
+  coreSkill3ActionName: Player/Skill3
+  coreSkill4ActionName: Player/Skill4
+  coreModifierActionName: Player/CoreModifier
+  faceYActionName: Player/Skill
+  faceXActionName: Player/Attack
+  rightShoulderActionName: Player/Sprint
+  finisherActionName: Player/Finisher
   sprintActionName: Player/Sprint
   jumpActionName: Player/Jump
   CombatSystemBehaviour: {fileID: 2126761130}
@@ -1069,7 +1102,7 @@ SpriteRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_MaskInteraction: 0
-  m_Sprite: {fileID: 21300000, guid: 300ea1a5869382b43bf6149aba92c4db, type: 3}
+  m_Sprite: {fileID: 4723107735738678597, guid: cc45a6a566cc68547b35910737cf066e, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -1211,7 +1244,7 @@ Rigidbody2D:
     m_Bits: 0
   m_Interpolate: 0
   m_SleepingMode: 1
-  m_CollisionDetection: 0
+  m_CollisionDetection: 1
   m_Constraints: 4
 --- !u!61 &2126761140
 BoxCollider2D:
@@ -1247,17 +1280,17 @@ BoxCollider2D:
   m_UsedByEffector: 0
   m_CompositeOperation: 0
   m_CompositeOrder: 0
-  m_Offset: {x: -0.018063158, y: -0.5228199}
+  m_Offset: {x: -0.018063158, y: -0.0799306}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
-    oldSize: {x: 3.125, y: 2.5}
+    oldSize: {x: 6, y: 4}
     newSize: {x: 3.125, y: 2.5}
     adaptiveTilingThreshold: 0.5
     drawMode: 0
     adaptiveTiling: 0
   m_AutoTiling: 0
-  m_Size: {x: 0.4978481, y: 1.3145096}
+  m_Size: {x: 0.4978481, y: 1.8368918}
   m_EdgeRadius: 0
 --- !u!114 &2126761141
 MonoBehaviour:
@@ -1286,6 +1319,10 @@ MonoBehaviour:
   airborneRecoveryState: {fileID: 11400000, guid: f301abe62521f6a44a762f4fd264d11a, type: 2}
   enableDerivationInputBuffer: 1
   derivationInputBufferDuration: 0.12
+  directionalInputThreshold: 0.45
+  suppressFaceYWhenModifierHeld: 1
+  weaponSpecialDirectionThreshold: 0.45
+  dashAttackRequiresSprintHeld: 1
   spawnRoot: {fileID: 0}
   audioSource: {fileID: 0}
   drawActiveHitGizmos: 1
@@ -1341,6 +1378,38 @@ MonoBehaviour:
   playerFsm: {fileID: 2126761131}
   weaponRuntime: {fileID: 2126761142}
   currentCore: {fileID: 11400000, guid: 87f6366be52fae647a4ca3edcf975ccc, type: 2}
+--- !u!114 &2126761145
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2126761129}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a0ae782566dd16846af284fb6a469281, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::FenShen.PlayerFSM.PlayerCloneAbilityController
+  clonePrefab: {fileID: 3348588404598829666, guid: 62947827c8c33c14b937432548670481, type: 3}
+  enemyLayers:
+    serializedVersion: 2
+    m_Bits: 1
+  targetSearchRadius: 8
+  logDebug: 1
+  forwardSpawnDistance: 1.2
+  behindTargetDistance: 1
+  decoyLifetime: 2
+  decoyCooldown: 0.4
+  decoyDashDistance: 3
+  assaultLifetime: 4
+  assaultCooldown: 0.8
+  assaultMoveSpeed: 8
+  assaultDamage: 12
+  assaultHitRadius: 0.8
+  mimicLifetime: 2
+  mimicCooldown: 1.2
+  mimicDamageMultiplier: 0.75
+  mimicHitRadius: 1
 --- !u!1660057539 &9223372036854775807
 SceneRoots:
   m_ObjectHideFlags: 0

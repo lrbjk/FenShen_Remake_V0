@@ -820,6 +820,15 @@ public class CombatSkillEditorWindow : EditorWindow
             }
             EditorGUILayout.PropertyField(clipProperty.FindPropertyRelative("damageMultiplier"));
             EditorGUILayout.PropertyField(clipProperty.FindPropertyRelative("poiseDamage"));
+            EditorGUILayout.Space(4f);
+            EditorGUILayout.LabelField("Hit Feedback", EditorStyles.boldLabel);
+            EditorGUILayout.PropertyField(clipProperty.FindPropertyRelative("hitStopDuration"));
+            EditorGUILayout.PropertyField(clipProperty.FindPropertyRelative("hitStopScale"));
+            EditorGUILayout.PropertyField(clipProperty.FindPropertyRelative("cameraShakeAmplitude"));
+            EditorGUILayout.PropertyField(clipProperty.FindPropertyRelative("hitSfx"));
+            EditorGUILayout.PropertyField(clipProperty.FindPropertyRelative("hitVfxPrefab"));
+            EditorGUILayout.PropertyField(clipProperty.FindPropertyRelative("knockbackDistance"));
+            EditorGUILayout.PropertyField(clipProperty.FindPropertyRelative("knockbackUpwardDistance"));
             EditorGUILayout.EndVertical();
         }
 

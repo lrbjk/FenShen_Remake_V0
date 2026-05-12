@@ -1,3 +1,5 @@
+using System;
+using System.Collections;
 using System.Collections.Generic;
 using FenShen.GameData;
 using FenShen.PlayerFSM;
@@ -62,6 +64,16 @@ namespace FenShen.Combat
         [InspectorName("派生输入缓冲时长")]
         [SerializeField] private float derivationInputBufferDuration = 0.12f;
 
+        [Header("核心技能输入")]
+        [InspectorName("方向组合阈值")]
+        [SerializeField, Range(0.1f, 1f)] private float directionalInputThreshold = 0.45f;
+        [InspectorName("RT按住时禁止普通Y技能")]
+        [SerializeField] private bool suppressFaceYWhenModifierHeld = true;
+        [InspectorName("武器特殊攻击方向阈值")]
+        [SerializeField, Range(0.1f, 1f)] private float weaponSpecialDirectionThreshold = 0.45f;
+        [InspectorName("冲刺攻击需要按住冲刺")]
+        [SerializeField] private bool dashAttackRequiresSprintHeld = true;
+
         [Header("运行时生成")]
         [InspectorName("生成根节点")]
         [SerializeField] private Transform spawnRoot;
@@ -89,6 +101,8 @@ namespace FenShen.Combat
         private bool _lastCompletedHadHitConfirm;
         private float _bufferedDerivationInputUntil = float.NegativeInfinity;
         private bool _aerialAttackLockedUntilGrounded;
+        private Coroutine _hitStopRoutine;
+        private float _hitStopRestoreTimeScale = 1f;
 
         public bool IsActive
         {
@@ -108,6 +122,8 @@ namespace FenShen.Combat
         {
             get { return coreRuntime; }
         }
+
+        public event Action<CombatSkillDefinitionSO> SkillStarted;
 
         public void ClearAerialAttackLock()
         {
@@ -135,6 +151,11 @@ namespace FenShen.Combat
             {
                 audioSource = GetComponent<AudioSource>();
             }
+        }
+
+        void OnDisable()
+        {
+            RestoreHitStopTimeScale();
         }
 
         public void ManualUpdate(float deltaTime)
@@ -183,6 +204,124 @@ namespace FenShen.Combat
             }
 
             return TryStartAttack(string.Empty);
+        }
+
+        public bool TryHandleCoreSkillInput()
+        {
+            if (playerFsm == null || coreRuntime == null)
+            {
+                return false;
+            }
+
+            int selectedSlotIndex = -1;
+            int selectedPriority = -1;
+            int slotCount = coreRuntime.SkillSlotCount;
+            for (int i = 0; i < slotCount; i++)
+            {
+                if (!coreRuntime.TryGetSkillSlotInput(i, out CoreSkillSlotInput input))
+                {
+                    continue;
+                }
+
+                if (!IsCoreSkillInputPressed(input, i))
+                {
+                    continue;
+                }
+
+                int priority = GetCoreSkillInputPriority(input);
+                if (priority > selectedPriority)
+                {
+                    selectedPriority = priority;
+                    selectedSlotIndex = i;
+                }
+            }
+
+            return selectedSlotIndex >= 0 && TryStartCoreSkill(selectedSlotIndex);
+        }
+
+        private bool IsCoreSkillInputPressed(CoreSkillSlotInput input, int slotIndex)
+        {
+            if (playerFsm == null)
+            {
+                return false;
+            }
+
+            switch (input)
+            {
+                case CoreSkillSlotInput.Skill1:
+                    return playerFsm.CoreSkillPressedThisFrame(0);
+                case CoreSkillSlotInput.Skill2:
+                    return playerFsm.CoreSkillPressedThisFrame(1);
+                case CoreSkillSlotInput.Skill3:
+                    return playerFsm.CoreSkillPressedThisFrame(2);
+                case CoreSkillSlotInput.Skill4:
+                    return playerFsm.CoreSkillPressedThisFrame(3);
+                case CoreSkillSlotInput.FaceY:
+                    return IsFaceYSkillPressed(false);
+                case CoreSkillSlotInput.FaceYNeutral:
+                    return IsFaceYSkillPressed(false) && IsNeutralDirectionHeld();
+                case CoreSkillSlotInput.FaceYUp:
+                    return IsFaceYSkillPressed(false) && IsUpDirectionHeld();
+                case CoreSkillSlotInput.FaceYDown:
+                    return IsFaceYSkillPressed(false) && IsDownDirectionHeld();
+                case CoreSkillSlotInput.Finisher:
+                    return playerFsm.FinisherPressedThisFrame() || playerFsm.CoreSkillPressedThisFrame(slotIndex);
+                case CoreSkillSlotInput.Utility:
+                    return playerFsm.CoreSkillPressedThisFrame(slotIndex);
+                case CoreSkillSlotInput.ModifierRightShoulder:
+                    return playerFsm.CoreModifierIsHeld() && playerFsm.RightShoulderPressedThisFrame();
+                case CoreSkillSlotInput.ModifierFaceX:
+                    return playerFsm.CoreModifierIsHeld() && playerFsm.FaceXPressedThisFrame();
+                case CoreSkillSlotInput.ModifierFaceY:
+                    return playerFsm.CoreModifierIsHeld() && playerFsm.FaceYPressedThisFrame();
+                default:
+                    return playerFsm.CoreSkillPressedThisFrame(slotIndex);
+            }
+        }
+
+        private bool IsFaceYSkillPressed(bool allowModifier)
+        {
+            if (playerFsm == null || !playerFsm.FaceYPressedThisFrame())
+            {
+                return false;
+            }
+
+            return allowModifier || !suppressFaceYWhenModifierHeld || !playerFsm.CoreModifierIsHeld();
+        }
+
+        private bool IsUpDirectionHeld()
+        {
+            return playerFsm != null && playerFsm.CurrentMoveInput.y >= directionalInputThreshold;
+        }
+
+        private bool IsDownDirectionHeld()
+        {
+            return playerFsm != null && playerFsm.CurrentMoveInput.y <= -directionalInputThreshold;
+        }
+
+        private bool IsNeutralDirectionHeld()
+        {
+            return playerFsm != null && Mathf.Abs(playerFsm.CurrentMoveInput.y) < directionalInputThreshold;
+        }
+
+        private int GetCoreSkillInputPriority(CoreSkillSlotInput input)
+        {
+            switch (input)
+            {
+                case CoreSkillSlotInput.ModifierRightShoulder:
+                case CoreSkillSlotInput.ModifierFaceX:
+                case CoreSkillSlotInput.ModifierFaceY:
+                    return 40;
+                case CoreSkillSlotInput.FaceYUp:
+                case CoreSkillSlotInput.FaceYDown:
+                    return 30;
+                case CoreSkillSlotInput.FaceYNeutral:
+                    return 20;
+                case CoreSkillSlotInput.FaceY:
+                    return 10;
+                default:
+                    return 0;
+            }
         }
 
         public bool TryStartAttack(string skillId)
@@ -236,13 +375,58 @@ namespace FenShen.Combat
                 coreRuntime.TryPaySkillCost(resolvedSkill.SkillAsset);
                 coreRuntime.NotifySkillStarted(resolvedSkill.SkillAsset, grounded);
             }
-            if (!grounded && !AllowsRepeatedAerialAttackBeforeLanding())
+
+            SkillStarted?.Invoke(resolvedSkill.SkillAsset);
+            bool locksAerialAttack = resolvedSkill.SkillAsset == null || resolvedSkill.SkillAsset.skillKind == CombatSkillKind.Attack;
+            if (locksAerialAttack && !grounded && !AllowsRepeatedAerialAttackBeforeLanding())
             {
                 _aerialAttackLockedUntilGrounded = true;
             }
             ClearCompletedSkillContext();
             ClearQueuedSkill();
             return true;
+        }
+
+        public bool TryStartCoreSkill(int slotIndex)
+        {
+            if (coreRuntime == null || !coreRuntime.TryGetEquippedSkill(slotIndex, out CombatSkillDefinitionSO skill))
+            {
+                return false;
+            }
+
+            return TryStartSkill(skill);
+        }
+
+        public bool TryStartSkill(CombatSkillDefinitionSO skill)
+        {
+            if (playerFsm == null || skill == null)
+            {
+                return false;
+            }
+
+            bool grounded = playerFsm.CheckGround();
+            if (IsActive)
+            {
+                if (!CanQueueSkillCancel())
+                {
+                    return false;
+                }
+
+                return TryQueueSkill(skill, grounded);
+            }
+
+            if (!grounded && skill.skillKind == CombatSkillKind.Attack && _aerialAttackLockedUntilGrounded && !AllowsRepeatedAerialAttackBeforeLanding())
+            {
+                return false;
+            }
+
+            CombatSkillDefinitionSO previousSkill = weaponRuntime != null ? weaponRuntime.LastResolvedSkill : null;
+            if (!SkillGateEvaluator.CanEnterSkill(playerFsm, weaponRuntime, skill, previousSkill, out _))
+            {
+                return false;
+            }
+
+            return StartResolvedSkill(skill, skill.ResolveSkillId(), grounded);
         }
 
         public void ForceExitCombat()
@@ -354,7 +538,7 @@ namespace FenShen.Combat
                 return false;
             }
 
-            Collider[] hits = QueryHitTargets(clip);
+            Collider2D[] hits = QueryHitTargets(clip);
             if (hits == null || hits.Length == 0)
             {
                 LogHitDiagnostic($"HitClip '{ResolveClipLabel(clip)}' did not overlap any collider. Center={ResolveHitCenter(clip)}, Size={clip.size}, LayerMask={clip.targetLayers.value}");
@@ -362,9 +546,10 @@ namespace FenShen.Combat
             }
 
             bool confirmed = false;
+            Vector3 firstHitPoint = Vector3.zero;
             for (int i = 0; i < hits.Length; i++)
             {
-                Collider hit = hits[i];
+                Collider2D hit = hits[i];
                 if (hit == null)
                 {
                     continue;
@@ -406,9 +591,20 @@ namespace FenShen.Combat
                     continue;
                 }
 
+                ApplyHitKnockback(clip, hurtbox, damageInfo.HitDirection);
                 hitTargets.Add(hurtboxId);
+                if (!confirmed)
+                {
+                    firstHitPoint = damageInfo.HitPoint;
+                }
+
                 confirmed = true;
                 LogHitDiagnostic($"Hit '{hurtbox.name}' for {damageResult.FinalDamage:0.###}. HP={hurtbox.RuntimeStats?.CurrentHP:0.###}/{hurtbox.RuntimeStats?.MaxHP:0.###}");
+            }
+
+            if (confirmed)
+            {
+                TriggerHitFeedback(clip, firstHitPoint);
             }
 
             return confirmed;
@@ -541,6 +737,208 @@ namespace FenShen.Combat
             SendMessage("OnCombatCameraShake", clip, SendMessageOptions.DontRequireReceiver);
         }
 
+        private void TriggerHitFeedback(HitSkillClip clip, Vector3 hitPoint)
+        {
+            if (clip == null)
+            {
+                return;
+            }
+
+            StartHitStop(clip.hitStopDuration, clip.hitStopScale);
+            TriggerHitCameraShake(clip);
+            PlayHitSfx(clip, hitPoint);
+            SpawnHitVfx(clip, hitPoint);
+        }
+
+        private void StartHitStop(float duration, float scale)
+        {
+            if (duration <= 0f)
+            {
+                return;
+            }
+
+            if (_hitStopRoutine != null)
+            {
+                StopCoroutine(_hitStopRoutine);
+                Time.timeScale = _hitStopRestoreTimeScale;
+            }
+
+            _hitStopRestoreTimeScale = Time.timeScale;
+            _hitStopRoutine = StartCoroutine(HitStopRoutine(duration, Mathf.Clamp01(scale)));
+        }
+
+        private void RestoreHitStopTimeScale()
+        {
+            if (_hitStopRoutine == null)
+            {
+                return;
+            }
+
+            StopCoroutine(_hitStopRoutine);
+            Time.timeScale = _hitStopRestoreTimeScale;
+            _hitStopRoutine = null;
+        }
+
+        private IEnumerator HitStopRoutine(float duration, float scale)
+        {
+            Time.timeScale = Mathf.Max(0.0001f, scale);
+            yield return new WaitForSecondsRealtime(duration);
+            Time.timeScale = _hitStopRestoreTimeScale;
+            _hitStopRoutine = null;
+        }
+
+        private void TriggerHitCameraShake(HitSkillClip clip)
+        {
+            if (clip.cameraShakeAmplitude <= 0f)
+            {
+                return;
+            }
+
+            TriggerCameraShake(new CameraShakeSkillClip
+            {
+                clipId = "hit-feedback-camera-shake",
+                displayName = "Hit Feedback Camera Shake",
+                amplitude = clip.cameraShakeAmplitude,
+                frequency = 20f,
+            });
+        }
+
+        private void PlayHitSfx(HitSkillClip clip, Vector3 hitPoint)
+        {
+            if (clip.hitSfx == null)
+            {
+                return;
+            }
+
+            if (audioSource != null)
+            {
+                audioSource.PlayOneShot(clip.hitSfx);
+                return;
+            }
+
+            AudioSource.PlayClipAtPoint(clip.hitSfx, hitPoint);
+        }
+
+        private void SpawnHitVfx(HitSkillClip clip, Vector3 hitPoint)
+        {
+            if (clip.hitVfxPrefab == null)
+            {
+                return;
+            }
+
+            PooledObjectSpawner.Spawn(
+                clip.hitVfxPrefab,
+                hitPoint,
+                Quaternion.identity,
+                0f,
+                spawnRoot);
+        }
+
+        private void ApplyHitKnockback(HitSkillClip clip, CombatHurtbox hurtbox, Vector3 hitDirection)
+        {
+            if (clip == null || hurtbox == null)
+            {
+                return;
+            }
+
+            float horizontalDistance = Mathf.Max(0f, clip.knockbackDistance);
+            float upwardDistance = Mathf.Max(0f, clip.knockbackUpwardDistance);
+            if (horizontalDistance <= 0f && upwardDistance <= 0f)
+            {
+                return;
+            }
+
+            Vector3 horizontalDirection = hitDirection;
+            horizontalDirection.z = 0f;
+            if (horizontalDirection.sqrMagnitude < 0.0001f)
+            {
+                horizontalDirection = IsFacingLeft() ? Vector3.left : Vector3.right;
+            }
+
+            horizontalDirection.Normalize();
+            Vector3 delta = horizontalDirection * horizontalDistance + Vector3.up * upwardDistance;
+            Transform targetRoot = hurtbox.RootTransform;
+            if (targetRoot == null)
+            {
+                return;
+            }
+
+            Rigidbody rigidbody = targetRoot.GetComponent<Rigidbody>();
+            if (rigidbody == null)
+            {
+                rigidbody = hurtbox.GetComponentInParent<Rigidbody>();
+            }
+
+            if (rigidbody != null)
+            {
+                rigidbody.MovePosition(rigidbody.position + delta);
+                return;
+            }
+
+            Rigidbody2D rigidbody2D = targetRoot.GetComponent<Rigidbody2D>();
+            if (rigidbody2D == null)
+            {
+                rigidbody2D = hurtbox.GetComponentInParent<Rigidbody2D>();
+            }
+
+            if (rigidbody2D != null)
+            {
+                rigidbody2D.MovePosition(rigidbody2D.position + new Vector2(delta.x, delta.y));
+                return;
+            }
+
+            CharacterController characterController = targetRoot.GetComponent<CharacterController>();
+            if (characterController == null)
+            {
+                characterController = hurtbox.GetComponentInParent<CharacterController>();
+            }
+
+            if (characterController != null)
+            {
+                characterController.Move(delta);
+                return;
+            }
+
+            targetRoot.position += delta;
+        }
+
+        public void ApplySelfBuffClip(SelfBuffSkillClip clip)
+        {
+            if (clip == null || clip.buff == null || playerFsm == null)
+            {
+                return;
+            }
+
+            BuffController buffController = playerFsm.GetComponent<BuffController>();
+            if (buffController == null && playerFsm.Character != null)
+            {
+                buffController = playerFsm.Character.GetComponentInParent<BuffController>();
+            }
+
+            if (buffController == null)
+            {
+                return;
+            }
+
+            if (clip.removeBuff)
+            {
+                buffController.RemoveBuff(clip.buff);
+                return;
+            }
+
+            buffController.AddBuff(clip.buff, gameObject);
+        }
+
+        public void ApplyCoreResourceClip(CoreResourceSkillClip clip)
+        {
+            if (clip == null || coreRuntime == null)
+            {
+                return;
+            }
+
+            coreRuntime.TryModifyResource(clip.amount, clip.requireEnoughResource);
+        }
+
         public List<CombatSkillDefinitionSO> GetCurrentDerivations()
         {
             bool grounded = playerFsm != null && playerFsm.CheckGround();
@@ -620,24 +1018,11 @@ namespace FenShen.Combat
 
             if (weaponRuntime != null)
             {
-                CombatSkillDefinitionSO weaponSkill = weaponRuntime.ResolvePrimaryAttackSkillAsset(grounded);
-                if (weaponSkill != null)
+                WeaponAttackSlot attackSlot = ResolveWeaponAttackSlot(grounded);
+                ResolvedCombatSkill weaponSkill = ResolveWeaponSkillOrPrimary(attackSlot, grounded);
+                if (weaponSkill.SkillAsset != null || !string.IsNullOrWhiteSpace(weaponSkill.SkillId))
                 {
-                    return new ResolvedCombatSkill
-                    {
-                        SkillAsset = weaponSkill,
-                        SkillId = weaponSkill.ResolveSkillId()
-                    };
-                }
-
-                string weaponSkillId = weaponRuntime.ResolvePrimaryAttackSkillId(grounded);
-                if (!string.IsNullOrWhiteSpace(weaponSkillId))
-                {
-                    return new ResolvedCombatSkill
-                    {
-                        SkillAsset = null,
-                        SkillId = weaponSkillId
-                    };
+                    return weaponSkill;
                 }
             }
 
@@ -646,6 +1031,137 @@ namespace FenShen.Combat
                 SkillAsset = null,
                 SkillId = defaultSkillId
             };
+        }
+
+        private ResolvedCombatSkill ResolveWeaponSkillOrPrimary(WeaponAttackSlot attackSlot, bool grounded)
+        {
+            ResolvedCombatSkill resolvedSkill = ResolveWeaponSkillFromSlot(attackSlot, grounded);
+            if (resolvedSkill.SkillAsset != null || !string.IsNullOrWhiteSpace(resolvedSkill.SkillId))
+            {
+                return resolvedSkill;
+            }
+
+            WeaponAttackSlot primarySlot = grounded ? WeaponAttackSlot.PrimaryGround : WeaponAttackSlot.PrimaryAir;
+            if (attackSlot != primarySlot)
+            {
+                return ResolveWeaponSkillFromSlot(primarySlot, grounded);
+            }
+
+            return resolvedSkill;
+        }
+
+        private ResolvedCombatSkill ResolveWeaponSkillFromSlot(WeaponAttackSlot attackSlot, bool grounded)
+        {
+            if (weaponRuntime == null)
+            {
+                return default;
+            }
+
+            CombatSkillDefinitionSO weaponSkill = weaponRuntime.ResolveSkillAssetForSlot(attackSlot, grounded);
+            if (weaponSkill != null)
+            {
+                return new ResolvedCombatSkill
+                {
+                    SkillAsset = weaponSkill,
+                    SkillId = weaponSkill.ResolveSkillId()
+                };
+            }
+
+            string weaponSkillId = weaponRuntime.ResolveSkillIdForSlot(attackSlot, grounded);
+            if (!string.IsNullOrWhiteSpace(weaponSkillId))
+            {
+                return new ResolvedCombatSkill
+                {
+                    SkillAsset = null,
+                    SkillId = weaponSkillId
+                };
+            }
+
+            return default;
+        }
+
+        private WeaponAttackSlot ResolveWeaponAttackSlot(bool grounded)
+        {
+            if (weaponRuntime == null)
+            {
+                return grounded ? WeaponAttackSlot.PrimaryGround : WeaponAttackSlot.PrimaryAir;
+            }
+
+            if (ShouldUseDashAttack(grounded) && HasWeaponEntry(WeaponAttackSlot.DashAttack, grounded))
+            {
+                return WeaponAttackSlot.DashAttack;
+            }
+
+            if (IsSpecialUpInputHeld())
+            {
+                if (HasWeaponEntry(WeaponAttackSlot.SpecialUp, grounded))
+                {
+                    return WeaponAttackSlot.SpecialUp;
+                }
+
+                if (grounded && HasWeaponEntry(WeaponAttackSlot.Launcher, grounded))
+                {
+                    return WeaponAttackSlot.Launcher;
+                }
+            }
+
+            if (IsSpecialDownInputHeld())
+            {
+                if (HasWeaponEntry(WeaponAttackSlot.SpecialDown, grounded))
+                {
+                    return WeaponAttackSlot.SpecialDown;
+                }
+
+                if (!grounded && HasWeaponEntry(WeaponAttackSlot.Slam, grounded))
+                {
+                    return WeaponAttackSlot.Slam;
+                }
+            }
+
+            if (IsNeutralSpecialInputHeld() && HasWeaponEntry(WeaponAttackSlot.SpecialNeutral, grounded))
+            {
+                return WeaponAttackSlot.SpecialNeutral;
+            }
+
+            return grounded ? WeaponAttackSlot.PrimaryGround : WeaponAttackSlot.PrimaryAir;
+        }
+
+        private bool HasWeaponEntry(WeaponAttackSlot slot, bool grounded)
+        {
+            if (weaponRuntime == null)
+            {
+                return false;
+            }
+
+            return weaponRuntime.ResolveSkillAssetForSlot(slot, grounded) != null
+                || !string.IsNullOrWhiteSpace(weaponRuntime.ResolveSkillIdForSlot(slot, grounded));
+        }
+
+        private bool ShouldUseDashAttack(bool grounded)
+        {
+            if (!grounded || playerFsm == null)
+            {
+                return false;
+            }
+
+            return dashAttackRequiresSprintHeld ? playerFsm.IsSprinting : playerFsm.SprintHeldFor(0.01f);
+        }
+
+        private bool IsSpecialUpInputHeld()
+        {
+            return playerFsm != null && playerFsm.CurrentMoveInput.y >= weaponSpecialDirectionThreshold;
+        }
+
+        private bool IsSpecialDownInputHeld()
+        {
+            return playerFsm != null && playerFsm.CurrentMoveInput.y <= -weaponSpecialDirectionThreshold;
+        }
+
+        private bool IsNeutralSpecialInputHeld()
+        {
+            return playerFsm != null
+                && playerFsm.CurrentMoveInput.sqrMagnitude >= weaponSpecialDirectionThreshold * weaponSpecialDirectionThreshold
+                && Mathf.Abs(playerFsm.CurrentMoveInput.y) < weaponSpecialDirectionThreshold;
         }
 
         private bool TryQueueDerivedAttack()
@@ -694,6 +1210,46 @@ namespace FenShen.Combat
                 SkillId = requestedSkill.ResolveSkillId()
             };
             return true;
+        }
+
+        private bool TryQueueSkill(CombatSkillDefinitionSO requestedSkill, bool grounded)
+        {
+            if (requestedSkill == null || _queuedSkill.IsValid)
+            {
+                return false;
+            }
+
+            if (!grounded && requestedSkill.skillKind == CombatSkillKind.Attack && requestedSkill == _skillExecutor.Skill)
+            {
+                return false;
+            }
+
+            CombatSkillDefinitionSO previousSkill = weaponRuntime != null ? weaponRuntime.LastResolvedSkill : null;
+            if (!SkillGateEvaluator.CanEnterSkill(playerFsm, weaponRuntime, requestedSkill, previousSkill, out _))
+            {
+                return false;
+            }
+
+            if (coreRuntime != null && !coreRuntime.CanPaySkillCost(requestedSkill))
+            {
+                return false;
+            }
+
+            _queuedSkill = new QueuedCombatSkill
+            {
+                SkillAsset = requestedSkill,
+                SkillId = requestedSkill.ResolveSkillId()
+            };
+            return true;
+        }
+
+        private bool CanQueueSkillCancel()
+        {
+            WeaponCancelPermission permission = CurrentCancelPermission;
+            return permission == WeaponCancelPermission.SkillOnly
+                || permission == WeaponCancelPermission.DodgeAndSkill
+                || permission == WeaponCancelPermission.DodgeGuardAndSkill
+                || permission == WeaponCancelPermission.Free;
         }
 
         private CombatSkillDefinitionSO ResolveRequestedDerivedSkill(List<CombatSkillDefinitionSO> derivations, bool grounded)
@@ -901,7 +1457,9 @@ namespace FenShen.Combat
                 coreRuntime.NotifySkillStarted(skill, grounded);
             }
 
-            if (!grounded && !AllowsRepeatedAerialAttackBeforeLanding())
+            SkillStarted?.Invoke(skill);
+
+            if (skill.skillKind == CombatSkillKind.Attack && !grounded && !AllowsRepeatedAerialAttackBeforeLanding())
             {
                 _aerialAttackLockedUntilGrounded = true;
             }
@@ -1004,25 +1562,25 @@ namespace FenShen.Combat
             return 0f;
         }
 
-        private Collider[] QueryHitTargets(HitSkillClip clip)
+        private Collider2D[] QueryHitTargets(HitSkillClip clip)
         {
             Vector3 center = ResolveHitCenter(clip);
             switch (clip.hitShape)
             {
-                case SkillHitShape.Sphere:
-                    return Physics.OverlapSphere(center, Mathf.Max(0.01f, clip.size.x * 0.5f), clip.targetLayers);
-                case SkillHitShape.Capsule:
-                    float radius = Mathf.Max(0.01f, clip.size.x * 0.5f);
-                    float halfHeight = Mathf.Max(radius, clip.size.y * 0.5f);
-                    Vector3 point1 = center + Vector3.up * (halfHeight - radius);
-                    Vector3 point2 = center + Vector3.down * (halfHeight - radius);
-                    return Physics.OverlapCapsule(point1, point2, radius, clip.targetLayers);
+                //case SkillHitShape.Sphere:
+                //    return Physics2D.OverlapSphere(center, Mathf.Max(0.01f, clip.size.x * 0.5f), clip.targetLayers);
+                //case SkillHitShape.Capsule:
+                //    float radius = Mathf.Max(0.01f, clip.size.x * 0.5f);
+                //    float halfHeight = Mathf.Max(radius, clip.size.y * 0.5f);
+                //    Vector3 point1 = center + Vector3.up * (halfHeight - radius);
+                //    Vector3 point2 = center + Vector3.down * (halfHeight - radius);
+                //    return Physics2D.OverlapCapsule(point1, point2, radius, clip.targetLayers);
                 default:
                     Vector3 halfExtents = new Vector3(
                         Mathf.Max(0.01f, clip.size.x * 0.5f),
                         Mathf.Max(0.01f, clip.size.y * 0.5f),
                         Mathf.Max(0.01f, clip.size.z * 0.5f));
-                    return Physics.OverlapBox(center, halfExtents, Quaternion.identity, clip.targetLayers);
+                    return Physics2D.OverlapBoxAll(center, halfExtents, 0f, clip.targetLayers);
             }
         }
 

@@ -96,6 +96,22 @@ namespace FenShen.Combat
         [Min(0f)] public float damageMultiplier = 1f;
         [InspectorName("削韧")]
         [Min(0f)] public float poiseDamage = 0f;
+
+        [Header("命中反馈")]
+        [InspectorName("命中停顿时长")]
+        [Min(0f)] public float hitStopDuration;
+        [InspectorName("命中停顿时间倍率")]
+        [Range(0f, 1f)] public float hitStopScale = 0.05f;
+        [InspectorName("命中镜头震动振幅")]
+        [Min(0f)] public float cameraShakeAmplitude;
+        [InspectorName("命中音效")]
+        public AudioClip hitSfx;
+        [InspectorName("命中特效预制体")]
+        public GameObject hitVfxPrefab;
+        [InspectorName("击退距离")]
+        [Min(0f)] public float knockbackDistance;
+        [InspectorName("击退上抛距离")]
+        [Min(0f)] public float knockbackUpwardDistance;
     }
 
     [Serializable]
@@ -149,6 +165,24 @@ namespace FenShen.Combat
     }
 
     [Serializable]
+    public class SelfBuffSkillClip : SkillClipBase
+    {
+        [InspectorName("Buff")]
+        public BuffSO buff;
+        [InspectorName("移除Buff")]
+        public bool removeBuff;
+    }
+
+    [Serializable]
+    public class CoreResourceSkillClip : SkillClipBase
+    {
+        [InspectorName("资源变化量")]
+        public float amount;
+        [InspectorName("资源不足时忽略")]
+        public bool requireEnoughResource;
+    }
+
+    [Serializable]
     public class CancelWindowSkillClip : SkillClipBase
     {
         [InspectorName("取消权限")]
@@ -189,6 +223,10 @@ namespace FenShen.Combat
         public List<SfxSkillClip> sfxClips = new List<SfxSkillClip>();
         [InspectorName("镜头震动片段")]
         public List<CameraShakeSkillClip> cameraClips = new List<CameraShakeSkillClip>();
+        [InspectorName("自身Buff片段")]
+        public List<SelfBuffSkillClip> selfBuffClips = new List<SelfBuffSkillClip>();
+        [InspectorName("核心资源片段")]
+        public List<CoreResourceSkillClip> coreResourceClips = new List<CoreResourceSkillClip>();
         [InspectorName("取消窗口片段")]
         public List<CancelWindowSkillClip> cancelWindowClips = new List<CancelWindowSkillClip>();
         [InspectorName("派生窗口片段")]

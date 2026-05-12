@@ -1,0 +1,429 @@
+fileFormatVersion: 2
+guid: 6a3db12914c0e654cb8a5d4fc57a8bfe
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: 3488758253401443902
+    second: Air_HitToFall_GetUp_0
+  - first:
+      213: 992302727357232806
+    second: Air_HitToFall_GetUp_1
+  - first:
+      213: -1167085415472816035
+    second: Air_HitToFall_GetUp_2
+  - first:
+      213: 4344945665086594763
+    second: Air_HitToFall_GetUp_3
+  - first:
+      213: 3817427679043323966
+    second: Air_HitToFall_GetUp_4
+  - first:
+      213: 7005228289410216696
+    second: Air_HitToFall_GetUp_5
+  - first:
+      213: -5584094379415966896
+    second: Air_HitToFall_GetUp_6
+  - first:
+      213: 3094878275068371186
+    second: Air_HitToFall_GetUp_7
+  - first:
+      213: 7668326311662127702
+    second: Air_HitToFall_GetUp_8
+  - first:
+      213: 2038062116566614160
+    second: Air_HitToFall_GetUp_9
+  - first:
+      213: -4272627381138973448
+    second: Air_HitToFall_GetUp_10
+  - first:
+      213: 1097882779580091516
+    second: Air_HitToFall_GetUp_11
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 0
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 32
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: Air_HitToFall_GetUp_0
+      rect:
+        serializedVersion: 2
+        x: 55
+        y: 31
+        width: 77
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e3e8431b52f8a6030800000000000000
+      internalID: 3488758253401443902
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Air_HitToFall_GetUp_1
+      rect:
+        serializedVersion: 2
+        x: 253
+        y: 31
+        width: 71
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6a677c5b21e55cd00800000000000000
+      internalID: 992302727357232806
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Air_HitToFall_GetUp_2
+      rect:
+        serializedVersion: 2
+        x: 447
+        y: 31
+        width: 69
+        height: 21
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d5024348ffdadcfe0800000000000000
+      internalID: -1167085415472816035
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Air_HitToFall_GetUp_3
+      rect:
+        serializedVersion: 2
+        x: 646
+        y: 31
+        width: 62
+        height: 28
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: bce1cd7df095c4c30800000000000000
+      internalID: 4344945665086594763
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Air_HitToFall_GetUp_4
+      rect:
+        serializedVersion: 2
+        x: 841
+        y: 31
+        width: 58
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e380f1d9f3a3af430800000000000000
+      internalID: 3817427679043323966
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Air_HitToFall_GetUp_5
+      rect:
+        serializedVersion: 2
+        x: 1032
+        y: 31
+        width: 51
+        height: 33
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8f230d09302973160800000000000000
+      internalID: 7005228289410216696
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Air_HitToFall_GetUp_6
+      rect:
+        serializedVersion: 2
+        x: 1220
+        y: 31
+        width: 50
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 05be7aa6fbf4182b0800000000000000
+      internalID: -5584094379415966896
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Air_HitToFall_GetUp_7
+      rect:
+        serializedVersion: 2
+        x: 1412
+        y: 31
+        width: 48
+        height: 36
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2f02680d46733fa20800000000000000
+      internalID: 3094878275068371186
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Air_HitToFall_GetUp_8
+      rect:
+        serializedVersion: 2
+        x: 1604
+        y: 31
+        width: 48
+        height: 38
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 65a0764e62e5b6a60800000000000000
+      internalID: 7668326311662127702
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Air_HitToFall_GetUp_9
+      rect:
+        serializedVersion: 2
+        x: 1796
+        y: 31
+        width: 48
+        height: 40
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 090422862b6a84c10800000000000000
+      internalID: 2038062116566614160
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Air_HitToFall_GetUp_10
+      rect:
+        serializedVersion: 2
+        x: 1991
+        y: 31
+        width: 45
+        height: 54
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8fc9a91c80494b4c0800000000000000
+      internalID: -4272627381138973448
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Air_HitToFall_GetUp_11
+      rect:
+        serializedVersion: 2
+        x: 2186
+        y: 31
+        width: 45
+        height: 59
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c7cc3e932967c3f00800000000000000
+      internalID: 1097882779580091516
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      Air_HitToFall_GetUp_0: 3488758253401443902
+      Air_HitToFall_GetUp_1: 992302727357232806
+      Air_HitToFall_GetUp_10: -4272627381138973448
+      Air_HitToFall_GetUp_11: 1097882779580091516
+      Air_HitToFall_GetUp_2: -1167085415472816035
+      Air_HitToFall_GetUp_3: 4344945665086594763
+      Air_HitToFall_GetUp_4: 3817427679043323966
+      Air_HitToFall_GetUp_5: 7005228289410216696
+      Air_HitToFall_GetUp_6: -5584094379415966896
+      Air_HitToFall_GetUp_7: 3094878275068371186
+      Air_HitToFall_GetUp_8: 7668326311662127702
+      Air_HitToFall_GetUp_9: 2038062116566614160
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

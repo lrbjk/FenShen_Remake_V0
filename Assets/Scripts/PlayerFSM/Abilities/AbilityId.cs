@@ -8,6 +8,9 @@ namespace FenShen.PlayerFSM
         Dash = 3,
         Grapple = 4,
         Morph = 5,
-        BreakWall = 6
+        BreakWall = 6,
+        CloneDecoyDash = 20,
+        CloneAssaultSwap = 21,
+        CloneMimic = 22
     }
 }

@@ -1,0 +1,377 @@
+fileFormatVersion: 2
+guid: 2dc19add98f4d634893984e569be5ea3
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: -3965197574566570584
+    second: MainChar - Swimming(DeathStart)_0
+  - first:
+      213: 7179773144902658004
+    second: MainChar - Swimming(DeathStart)_1
+  - first:
+      213: -1161212529569727440
+    second: MainChar - Swimming(DeathStart)_2
+  - first:
+      213: 1540948333265767280
+    second: MainChar - Swimming(DeathStart)_3
+  - first:
+      213: -1081239433989800408
+    second: MainChar - Swimming(DeathStart)_4
+  - first:
+      213: 3798388957858843750
+    second: MainChar - Swimming(DeathStart)_5
+  - first:
+      213: -4940371621378590466
+    second: MainChar - Swimming(DeathStart)_6
+  - first:
+      213: -235477077037665353
+    second: MainChar - Swimming(DeathStart)_7
+  - first:
+      213: 5086831561028267815
+    second: MainChar - Swimming(DeathStart)_8
+  - first:
+      213: -1546499147639518733
+    second: MainChar - Swimming(DeathStart)_9
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: MainChar - Swimming(DeathStart)_0
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 30
+        width: 52
+        height: 62
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8a518bf70d9c8f8c0800000000000000
+      internalID: -3965197574566570584
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MainChar - Swimming(DeathStart)_1
+      rect:
+        serializedVersion: 2
+        x: 258
+        y: 29
+        width: 49
+        height: 63
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4d7efcd92ada3a360800000000000000
+      internalID: 7179773144902658004
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MainChar - Swimming(DeathStart)_2
+      rect:
+        serializedVersion: 2
+        x: 455
+        y: 11
+        width: 46
+        height: 76
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 03c73425b5b82efe0800000000000000
+      internalID: -1161212529569727440
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MainChar - Swimming(DeathStart)_3
+      rect:
+        serializedVersion: 2
+        x: 639
+        y: 5
+        width: 58
+        height: 84
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 07b4985485c826510800000000000000
+      internalID: 1540948333265767280
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MainChar - Swimming(DeathStart)_4
+      rect:
+        serializedVersion: 2
+        x: 830
+        y: 2
+        width: 59
+        height: 92
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 82eb4e3a67aaef0f0800000000000000
+      internalID: -1081239433989800408
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MainChar - Swimming(DeathStart)_5
+      rect:
+        serializedVersion: 2
+        x: 1023
+        y: 2
+        width: 59
+        height: 90
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 66c41f7e1a696b430800000000000000
+      internalID: 3798388957858843750
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MainChar - Swimming(DeathStart)_6
+      rect:
+        serializedVersion: 2
+        x: 1214
+        y: 3
+        width: 60
+        height: 89
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ef8fe418f26407bb0800000000000000
+      internalID: -4940371621378590466
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MainChar - Swimming(DeathStart)_7
+      rect:
+        serializedVersion: 2
+        x: 1406
+        y: 3
+        width: 59
+        height: 89
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7b33c6698da6bbcf0800000000000000
+      internalID: -235477077037665353
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MainChar - Swimming(DeathStart)_8
+      rect:
+        serializedVersion: 2
+        x: 1598
+        y: 3
+        width: 59
+        height: 89
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 72fe5538a5e089640800000000000000
+      internalID: 5086831561028267815
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MainChar - Swimming(DeathStart)_9
+      rect:
+        serializedVersion: 2
+        x: 1790
+        y: 3
+        width: 59
+        height: 89
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3f9808b083bb98ae0800000000000000
+      internalID: -1546499147639518733
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      MainChar - Swimming(DeathStart)_0: -3965197574566570584
+      MainChar - Swimming(DeathStart)_1: 7179773144902658004
+      MainChar - Swimming(DeathStart)_2: -1161212529569727440
+      MainChar - Swimming(DeathStart)_3: 1540948333265767280
+      MainChar - Swimming(DeathStart)_4: -1081239433989800408
+      MainChar - Swimming(DeathStart)_5: 3798388957858843750
+      MainChar - Swimming(DeathStart)_6: -4940371621378590466
+      MainChar - Swimming(DeathStart)_7: -235477077037665353
+      MainChar - Swimming(DeathStart)_8: 5086831561028267815
+      MainChar - Swimming(DeathStart)_9: -1546499147639518733
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

@@ -1,0 +1,429 @@
+fileFormatVersion: 2
+guid: 39b25ba5727af854e9f4664fd9995088
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: 2461319333115109044
+    second: MainChar - RopeSwing_0
+  - first:
+      213: -2801741485605216690
+    second: MainChar - RopeSwing_1
+  - first:
+      213: 1615410946019449894
+    second: MainChar - RopeSwing_2
+  - first:
+      213: -8169705540739321363
+    second: MainChar - RopeSwing_3
+  - first:
+      213: 8871843896798763278
+    second: MainChar - RopeSwing_4
+  - first:
+      213: 3330124697502846896
+    second: MainChar - RopeSwing_5
+  - first:
+      213: 3465159171678868118
+    second: MainChar - RopeSwing_6
+  - first:
+      213: 6592929124581336182
+    second: MainChar - RopeSwing_7
+  - first:
+      213: 4340272064362904759
+    second: MainChar - RopeSwing_8
+  - first:
+      213: 1146270126470128870
+    second: MainChar - RopeSwing_9
+  - first:
+      213: -3549203254064609645
+    second: MainChar - RopeSwing_10
+  - first:
+      213: 4776190472548812958
+    second: MainChar - RopeSwing_11
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: MainChar - RopeSwing_0
+      rect:
+        serializedVersion: 2
+        x: 77
+        y: 34
+        width: 45
+        height: 66
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4be902194ec582220800000000000000
+      internalID: 2461319333115109044
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MainChar - RopeSwing_1
+      rect:
+        serializedVersion: 2
+        x: 268
+        y: 34
+        width: 46
+        height: 66
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e4e960e86f63e19d0800000000000000
+      internalID: -2801741485605216690
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MainChar - RopeSwing_2
+      rect:
+        serializedVersion: 2
+        x: 460
+        y: 34
+        width: 46
+        height: 66
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 62c54c352b71b6610800000000000000
+      internalID: 1615410946019449894
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MainChar - RopeSwing_3
+      rect:
+        serializedVersion: 2
+        x: 652
+        y: 34
+        width: 46
+        height: 66
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: de131bc78106f9e80800000000000000
+      internalID: -8169705540739321363
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MainChar - RopeSwing_4
+      rect:
+        serializedVersion: 2
+        x: 844
+        y: 34
+        width: 46
+        height: 66
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e095863e40f1f1b70800000000000000
+      internalID: 8871843896798763278
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MainChar - RopeSwing_5
+      rect:
+        serializedVersion: 2
+        x: 1038
+        y: 34
+        width: 46
+        height: 66
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0bf8964c4caf63e20800000000000000
+      internalID: 3330124697502846896
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MainChar - RopeSwing_6
+      rect:
+        serializedVersion: 2
+        x: 1231
+        y: 32
+        width: 46
+        height: 68
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6921b1e48e7b61030800000000000000
+      internalID: 3465159171678868118
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MainChar - RopeSwing_7
+      rect:
+        serializedVersion: 2
+        x: 1423
+        y: 33
+        width: 48
+        height: 67
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6746ff3ab1ace7b50800000000000000
+      internalID: 6592929124581336182
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MainChar - RopeSwing_8
+      rect:
+        serializedVersion: 2
+        x: 1615
+        y: 33
+        width: 48
+        height: 67
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7bcf6e0627ebb3c30800000000000000
+      internalID: 4340272064362904759
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MainChar - RopeSwing_9
+      rect:
+        serializedVersion: 2
+        x: 1807
+        y: 33
+        width: 48
+        height: 67
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6e4e4e85b9e58ef00800000000000000
+      internalID: 1146270126470128870
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MainChar - RopeSwing_10
+      rect:
+        serializedVersion: 2
+        x: 1998
+        y: 33
+        width: 47
+        height: 67
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 39681d5e172bebec0800000000000000
+      internalID: -3549203254064609645
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MainChar - RopeSwing_11
+      rect:
+        serializedVersion: 2
+        x: 2190
+        y: 34
+        width: 46
+        height: 66
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e9880efedef684240800000000000000
+      internalID: 4776190472548812958
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      MainChar - RopeSwing_0: 2461319333115109044
+      MainChar - RopeSwing_1: -2801741485605216690
+      MainChar - RopeSwing_10: -3549203254064609645
+      MainChar - RopeSwing_11: 4776190472548812958
+      MainChar - RopeSwing_2: 1615410946019449894
+      MainChar - RopeSwing_3: -8169705540739321363
+      MainChar - RopeSwing_4: 8871843896798763278
+      MainChar - RopeSwing_5: 3330124697502846896
+      MainChar - RopeSwing_6: 3465159171678868118
+      MainChar - RopeSwing_7: 6592929124581336182
+      MainChar - RopeSwing_8: 4340272064362904759
+      MainChar - RopeSwing_9: 1146270126470128870
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

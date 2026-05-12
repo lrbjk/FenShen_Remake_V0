@@ -24,6 +24,12 @@ namespace FenShen.GameData
         [InspectorName("技能消耗规则")]
         public CoreSkillCostRule skillCost = new CoreSkillCostRule();
 
+        [Header("技能槽")]
+        [InspectorName("技能槽定义")]
+        public List<CoreSkillSlotDefinition> skillSlots = new List<CoreSkillSlotDefinition>();
+        [InspectorName("默认装备技能")]
+        public List<CoreEquippedSkill> defaultEquippedSkills = new List<CoreEquippedSkill>();
+
         [Header("战斗规则")]
         [InspectorName("取消规则")]
         public CoreCancelRule cancelRule = new CoreCancelRule();

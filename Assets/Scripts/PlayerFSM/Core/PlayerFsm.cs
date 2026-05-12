@@ -8,6 +8,8 @@ namespace FenShen.PlayerFSM
 {
     public class PlayerFsm : MonoBehaviour
     {
+        public const int MaxCoreSkillInputSlots = 4;
+
         [Header("Config")]
         public FsmGraphSO graph;
         public Animator Animator;
@@ -15,12 +17,30 @@ namespace FenShen.PlayerFSM
         [Header("Input (New Input System)")]
         public InputActionReference MoveAction;
         public InputActionReference AttackAction;
+        public InputActionReference CoreSkill1Action;
+        public InputActionReference CoreSkill2Action;
+        public InputActionReference CoreSkill3Action;
+        public InputActionReference CoreSkill4Action;
+        public InputActionReference CoreModifierAction;
+        public InputActionReference FaceYAction;
+        public InputActionReference FaceXAction;
+        public InputActionReference RightShoulderAction;
+        public InputActionReference FinisherAction;
         public InputActionReference SprintAction;
         public InputActionReference JumpAction;
         [Tooltip("Optional: If not using the Reference fields, assign asset and action names.")]
         public InputActionAsset inputActions;
         public string moveActionName = "Player/Move";
         public string attackActionName = "Player/Attack";
+        public string coreSkill1ActionName = "Player/Skill1";
+        public string coreSkill2ActionName = "Player/Skill2";
+        public string coreSkill3ActionName = "Player/Skill3";
+        public string coreSkill4ActionName = "Player/Skill4";
+        public string coreModifierActionName = "Player/CoreModifier";
+        public string faceYActionName = "Player/FaceY";
+        public string faceXActionName = "Player/FaceX";
+        public string rightShoulderActionName = "Player/RightShoulder";
+        public string finisherActionName = "Player/Finisher";
         public string sprintActionName = "Player/Sprint";
         public string jumpActionName = "Player/Jump";
 
@@ -47,6 +67,12 @@ namespace FenShen.PlayerFSM
 
         private InputAction _move;
         private InputAction _attack;
+        private readonly InputAction[] _coreSkillActions = new InputAction[MaxCoreSkillInputSlots];
+        private InputAction _coreModifier;
+        private InputAction _faceY;
+        private InputAction _faceX;
+        private InputAction _rightShoulder;
+        private InputAction _finisher;
         private InputAction _sprint;
         private InputAction _jump;
         private float _attackHeldTime;
@@ -81,10 +107,28 @@ namespace FenShen.PlayerFSM
         {
             _move = (MoveAction != null) ? MoveAction.action : FindOptionalAction(moveActionName);
             _attack = (AttackAction != null) ? AttackAction.action : FindOptionalAction(attackActionName);
+            _coreSkillActions[0] = (CoreSkill1Action != null) ? CoreSkill1Action.action : FindOptionalAction(coreSkill1ActionName);
+            _coreSkillActions[1] = (CoreSkill2Action != null) ? CoreSkill2Action.action : FindOptionalAction(coreSkill2ActionName);
+            _coreSkillActions[2] = (CoreSkill3Action != null) ? CoreSkill3Action.action : FindOptionalAction(coreSkill3ActionName);
+            _coreSkillActions[3] = (CoreSkill4Action != null) ? CoreSkill4Action.action : FindOptionalAction(coreSkill4ActionName);
+            _coreModifier = (CoreModifierAction != null) ? CoreModifierAction.action : FindOptionalAction(coreModifierActionName);
+            _faceY = (FaceYAction != null) ? FaceYAction.action : FindOptionalAction(faceYActionName);
+            _faceX = (FaceXAction != null) ? FaceXAction.action : FindOptionalAction(faceXActionName);
+            _rightShoulder = (RightShoulderAction != null) ? RightShoulderAction.action : FindOptionalAction(rightShoulderActionName);
+            _finisher = (FinisherAction != null) ? FinisherAction.action : FindOptionalAction(finisherActionName);
             _sprint = (SprintAction != null) ? SprintAction.action : FindOptionalAction(sprintActionName);
             _jump = (JumpAction != null) ? JumpAction.action : FindOptionalAction(jumpActionName);
             if (_move != null) _move.Enable();
             if (_attack != null) _attack.Enable();
+            for (int i = 0; i < _coreSkillActions.Length; i++)
+            {
+                if (_coreSkillActions[i] != null) _coreSkillActions[i].Enable();
+            }
+            if (_coreModifier != null) _coreModifier.Enable();
+            if (_faceY != null) _faceY.Enable();
+            if (_faceX != null) _faceX.Enable();
+            if (_rightShoulder != null) _rightShoulder.Enable();
+            if (_finisher != null) _finisher.Enable();
             if (_sprint != null) _sprint.Enable();
             if (_jump != null) _jump.Enable();
         }
@@ -92,6 +136,15 @@ namespace FenShen.PlayerFSM
         {
             if (_move != null) _move.Disable();
             if (_attack != null) _attack.Disable();
+            for (int i = 0; i < _coreSkillActions.Length; i++)
+            {
+                if (_coreSkillActions[i] != null) _coreSkillActions[i].Disable();
+            }
+            if (_coreModifier != null) _coreModifier.Disable();
+            if (_faceY != null) _faceY.Disable();
+            if (_faceX != null) _faceX.Disable();
+            if (_rightShoulder != null) _rightShoulder.Disable();
+            if (_finisher != null) _finisher.Disable();
             if (_sprint != null) _sprint.Disable();
             if (_jump != null) _jump.Disable();
         }
@@ -114,6 +167,12 @@ namespace FenShen.PlayerFSM
             UpdateSprintInputState(dt);
             if (CombatCoordinator != null)
             {
+                bool abilityInputConsumed = AbilityController != null && AbilityController.TryHandleAbilityInput(this);
+                if (!abilityInputConsumed)
+                {
+                    CombatCoordinator.TryHandleCoreSkillInput();
+                }
+
                 CombatCoordinator.TryHandleAttackInput();
                 CombatCoordinator.ManualUpdate(dt);
             }
@@ -203,6 +262,19 @@ namespace FenShen.PlayerFSM
         public PlayerDetection Detection { get { return PlayerDetection; } }
         public PlayerRuntimeStatsComponent RuntimeStats { get { return RuntimeStatsComponent; } }
         public bool AttackPressedThisFrame() { return _attack != null && _attack.WasPressedThisFrame(); }
+        public bool CoreSkillPressedThisFrame(int slotIndex)
+        {
+            return slotIndex >= 0
+                && slotIndex < _coreSkillActions.Length
+                && _coreSkillActions[slotIndex] != null
+                && _coreSkillActions[slotIndex].WasPressedThisFrame();
+        }
+        public bool CoreModifierIsHeld() { return _coreModifier != null && _coreModifier.IsPressed(); }
+        public bool CoreModifierPressedThisFrame() { return _coreModifier != null && _coreModifier.WasPressedThisFrame(); }
+        public bool FaceYPressedThisFrame() { return _faceY != null && _faceY.WasPressedThisFrame(); }
+        public bool FaceXPressedThisFrame() { return _faceX != null && _faceX.WasPressedThisFrame(); }
+        public bool RightShoulderPressedThisFrame() { return _rightShoulder != null && _rightShoulder.WasPressedThisFrame(); }
+        public bool FinisherPressedThisFrame() { return _finisher != null && _finisher.WasPressedThisFrame(); }
         public bool AttackIsHeld() { return _attack != null && _attack.IsPressed(); }
         public bool AttackReleasedThisFrame() { return _attackReleasedThisFrame; }
         public bool AttackHeldFor(float duration) { return AttackIsHeld() && _attackHeldTime >= duration; }

@@ -17,12 +17,14 @@ MonoBehaviour:
   description: 
   icon: {fileID: 0}
   usageSide: 0
+  skillKind: 0
+  roleTags: 0
   tags: []
-  animationStateName: AttackAirSlam
+  animationStateName: AirAttack2
   animationLayer: 0
   crossFade: 1
   transitionDuration: 0
-  previewAnimationClip: {fileID: 7400000, guid: 7827f607e8cce614dad369b567ba399f, type: 2}
+  previewAnimationClip: {fileID: 7400000, guid: cd21e2f9322d84741a7bcc4599a8f3eb, type: 2}
   timeline: {fileID: 11400000, guid: 52340c29c7bbe374b8e28d213d5e9e73, type: 2}
   motion:
     motionSource: 1
@@ -95,15 +97,4 @@ MonoBehaviour:
   previousSkills:
   - {fileID: 11400000, guid: f56ed4668476b9c4799cad66626160e6, type: 2}
   derivationRules: []
-  recoveryRules:
-  - ruleId: 
-    displayName: Recovery Rule 1
-    nextSkill: {fileID: 11400000, guid: bbfcb616a365a84429f43b2923e5732a, type: 2}
-    description: 
-    requiresHitConfirm: 0
-    requiresGrounded: 1
-    requiresAerial: 0
-    conditions:
-      logic: 0
-      conditions:
-      - {fileID: 11400000, guid: 83a87eba91b6b6e49a67e38f6154dfe8, type: 2}
+  recoveryRules: []

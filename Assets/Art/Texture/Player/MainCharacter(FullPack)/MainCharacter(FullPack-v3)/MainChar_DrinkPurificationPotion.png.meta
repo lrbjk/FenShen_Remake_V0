@@ -1,0 +1,585 @@
+fileFormatVersion: 2
+guid: 9e1dcc8d8db20494bad136352e333d74
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: -1143310371212288133
+    second: MainChar_DrinkPurificationPotion_0
+  - first:
+      213: 4614351435325698061
+    second: MainChar_DrinkPurificationPotion_1
+  - first:
+      213: -3502201430337072588
+    second: MainChar_DrinkPurificationPotion_2
+  - first:
+      213: -130113143127271271
+    second: MainChar_DrinkPurificationPotion_3
+  - first:
+      213: 4734031686970339885
+    second: MainChar_DrinkPurificationPotion_4
+  - first:
+      213: 187549239516953988
+    second: MainChar_DrinkPurificationPotion_5
+  - first:
+      213: -7944481747340878481
+    second: MainChar_DrinkPurificationPotion_6
+  - first:
+      213: 4021283477139245627
+    second: MainChar_DrinkPurificationPotion_7
+  - first:
+      213: 6765896277365395844
+    second: MainChar_DrinkPurificationPotion_8
+  - first:
+      213: 3695092846226811953
+    second: MainChar_DrinkPurificationPotion_9
+  - first:
+      213: 4682858168064833177
+    second: MainChar_DrinkPurificationPotion_10
+  - first:
+      213: 6759082653152735993
+    second: MainChar_DrinkPurificationPotion_11
+  - first:
+      213: -8051178085968572701
+    second: MainChar_DrinkPurificationPotion_12
+  - first:
+      213: -5391642569558810086
+    second: MainChar_DrinkPurificationPotion_13
+  - first:
+      213: -6958757653473265250
+    second: MainChar_DrinkPurificationPotion_14
+  - first:
+      213: 5992763310463656222
+    second: MainChar_DrinkPurificationPotion_15
+  - first:
+      213: -722859181163378355
+    second: MainChar_DrinkPurificationPotion_16
+  - first:
+      213: 6979749481935318683
+    second: MainChar_DrinkPurificationPotion_17
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: MainChar_DrinkPurificationPotion_0
+      rect:
+        serializedVersion: 2
+        x: 76
+        y: 31
+        width: 45
+        height: 60
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b7f1fdf56452220f0800000000000000
+      internalID: -1143310371212288133
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MainChar_DrinkPurificationPotion_1
+      rect:
+        serializedVersion: 2
+        x: 268
+        y: 31
+        width: 45
+        height: 60
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d00f66bbe28790040800000000000000
+      internalID: 4614351435325698061
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MainChar_DrinkPurificationPotion_2
+      rect:
+        serializedVersion: 2
+        x: 460
+        y: 31
+        width: 45
+        height: 60
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 432d4e4ca5ea56fc0800000000000000
+      internalID: -3502201430337072588
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MainChar_DrinkPurificationPotion_3
+      rect:
+        serializedVersion: 2
+        x: 652
+        y: 31
+        width: 45
+        height: 60
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9981a4329ceb13ef0800000000000000
+      internalID: -130113143127271271
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MainChar_DrinkPurificationPotion_4
+      rect:
+        serializedVersion: 2
+        x: 844
+        y: 31
+        width: 45
+        height: 60
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d227f41ccb8a2b140800000000000000
+      internalID: 4734031686970339885
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MainChar_DrinkPurificationPotion_5
+      rect:
+        serializedVersion: 2
+        x: 1036
+        y: 31
+        width: 45
+        height: 60
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 48d7d472a0f4a9200800000000000000
+      internalID: 187549239516953988
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MainChar_DrinkPurificationPotion_6
+      rect:
+        serializedVersion: 2
+        x: 1228
+        y: 31
+        width: 45
+        height: 60
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f6d1c2541f78fb190800000000000000
+      internalID: -7944481747340878481
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MainChar_DrinkPurificationPotion_7
+      rect:
+        serializedVersion: 2
+        x: 1420
+        y: 31
+        width: 45
+        height: 60
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b3a480c44087ec730800000000000000
+      internalID: 4021283477139245627
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MainChar_DrinkPurificationPotion_8
+      rect:
+        serializedVersion: 2
+        x: 1609
+        y: 31
+        width: 51
+        height: 63
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 481908721da45ed50800000000000000
+      internalID: 6765896277365395844
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MainChar_DrinkPurificationPotion_9
+      rect:
+        serializedVersion: 2
+        x: 1802
+        y: 31
+        width: 49
+        height: 62
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 13caf6fbd5b974330800000000000000
+      internalID: 3695092846226811953
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MainChar_DrinkPurificationPotion_10
+      rect:
+        serializedVersion: 2
+        x: 1991
+        y: 31
+        width: 51
+        height: 61
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9967a0961badcf040800000000000000
+      internalID: 4682858168064833177
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MainChar_DrinkPurificationPotion_11
+      rect:
+        serializedVersion: 2
+        x: 2187
+        y: 31
+        width: 47
+        height: 61
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9f27ca4acd51dcd50800000000000000
+      internalID: 6759082653152735993
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MainChar_DrinkPurificationPotion_12
+      rect:
+        serializedVersion: 2
+        x: 2376
+        y: 31
+        width: 49
+        height: 60
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3ee0f621038744090800000000000000
+      internalID: -8051178085968572701
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MainChar_DrinkPurificationPotion_13
+      rect:
+        serializedVersion: 2
+        x: 2572
+        y: 31
+        width: 45
+        height: 60
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a12a29d26a90d25b0800000000000000
+      internalID: -5391642569558810086
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MainChar_DrinkPurificationPotion_14
+      rect:
+        serializedVersion: 2
+        x: 2760
+        y: 31
+        width: 49
+        height: 60
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e99f1b288c68d6f90800000000000000
+      internalID: -6958757653473265250
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MainChar_DrinkPurificationPotion_15
+      rect:
+        serializedVersion: 2
+        x: 2956
+        y: 31
+        width: 45
+        height: 60
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e112e27da729a2350800000000000000
+      internalID: 5992763310463656222
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MainChar_DrinkPurificationPotion_16
+      rect:
+        serializedVersion: 2
+        x: 3144
+        y: 31
+        width: 49
+        height: 60
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d4980249763e7f5f0800000000000000
+      internalID: -722859181163378355
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MainChar_DrinkPurificationPotion_17
+      rect:
+        serializedVersion: 2
+        x: 3340
+        y: 31
+        width: 45
+        height: 60
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b9ea8fb6c2d0dd060800000000000000
+      internalID: 6979749481935318683
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      MainChar_DrinkPurificationPotion_0: -1143310371212288133
+      MainChar_DrinkPurificationPotion_1: 4614351435325698061
+      MainChar_DrinkPurificationPotion_10: 4682858168064833177
+      MainChar_DrinkPurificationPotion_11: 6759082653152735993
+      MainChar_DrinkPurificationPotion_12: -8051178085968572701
+      MainChar_DrinkPurificationPotion_13: -5391642569558810086
+      MainChar_DrinkPurificationPotion_14: -6958757653473265250
+      MainChar_DrinkPurificationPotion_15: 5992763310463656222
+      MainChar_DrinkPurificationPotion_16: -722859181163378355
+      MainChar_DrinkPurificationPotion_17: 6979749481935318683
+      MainChar_DrinkPurificationPotion_2: -3502201430337072588
+      MainChar_DrinkPurificationPotion_3: -130113143127271271
+      MainChar_DrinkPurificationPotion_4: 4734031686970339885
+      MainChar_DrinkPurificationPotion_5: 187549239516953988
+      MainChar_DrinkPurificationPotion_6: -7944481747340878481
+      MainChar_DrinkPurificationPotion_7: 4021283477139245627
+      MainChar_DrinkPurificationPotion_8: 6765896277365395844
+      MainChar_DrinkPurificationPotion_9: 3695092846226811953
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

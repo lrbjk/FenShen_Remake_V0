@@ -1,0 +1,429 @@
+fileFormatVersion: 2
+guid: 5ee8a3ef8c148624995237b35e66b597
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: 6762770630817555403
+    second: MainChar_RunAttack_0
+  - first:
+      213: 508323476966101203
+    second: MainChar_RunAttack_1
+  - first:
+      213: -6861462285219221218
+    second: MainChar_RunAttack_2
+  - first:
+      213: -1562943581149804713
+    second: MainChar_RunAttack_3
+  - first:
+      213: 823643775160241784
+    second: MainChar_RunAttack_4
+  - first:
+      213: -1791840548629233199
+    second: MainChar_RunAttack_5
+  - first:
+      213: 5104140874724248363
+    second: MainChar_RunAttack_6
+  - first:
+      213: 620487196998388473
+    second: MainChar_RunAttack_7
+  - first:
+      213: -6133493512514784722
+    second: MainChar_RunAttack_8
+  - first:
+      213: -9169018133691580621
+    second: MainChar_RunAttack_9
+  - first:
+      213: -760980914133050468
+    second: MainChar_RunAttack_10
+  - first:
+      213: -6532984250155390023
+    second: MainChar_RunAttack_11
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: MainChar_RunAttack_0
+      rect:
+        serializedVersion: 2
+        x: 69
+        y: 35
+        width: 50
+        height: 54
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: bc3235bde003add50800000000000000
+      internalID: 6762770630817555403
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MainChar_RunAttack_1
+      rect:
+        serializedVersion: 2
+        x: 256
+        y: 38
+        width: 63
+        height: 78
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3d05e83528ded0700800000000000000
+      internalID: 508323476966101203
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MainChar_RunAttack_2
+      rect:
+        serializedVersion: 2
+        x: 449
+        y: 37
+        width: 63
+        height: 80
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e11b4c9b76037c0a0800000000000000
+      internalID: -6861462285219221218
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MainChar_RunAttack_3
+      rect:
+        serializedVersion: 2
+        x: 647
+        y: 31
+        width: 57
+        height: 85
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 757c691081f4f4ae0800000000000000
+      internalID: -1562943581149804713
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MainChar_RunAttack_4
+      rect:
+        serializedVersion: 2
+        x: 839
+        y: 31
+        width: 74
+        height: 51
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 87e43ef46ab2e6b00800000000000000
+      internalID: 823643775160241784
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MainChar_RunAttack_5
+      rect:
+        serializedVersion: 2
+        x: 1029
+        y: 31
+        width: 46
+        height: 51
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1d140dcb38a1227e0800000000000000
+      internalID: -1791840548629233199
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MainChar_RunAttack_6
+      rect:
+        serializedVersion: 2
+        x: 1221
+        y: 31
+        width: 46
+        height: 51
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b2b8d79251d85d640800000000000000
+      internalID: 5104140874724248363
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MainChar_RunAttack_7
+      rect:
+        serializedVersion: 2
+        x: 1415
+        y: 31
+        width: 45
+        height: 51
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9fa44c471d96c9800800000000000000
+      internalID: 620487196998388473
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MainChar_RunAttack_8
+      rect:
+        serializedVersion: 2
+        x: 1623
+        y: 31
+        width: 50
+        height: 60
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e22b462a52471eaa0800000000000000
+      internalID: -6133493512514784722
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MainChar_RunAttack_9
+      rect:
+        serializedVersion: 2
+        x: 1811
+        y: 31
+        width: 49
+        height: 60
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 33fb232469a11c080800000000000000
+      internalID: -9169018133691580621
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MainChar_RunAttack_10
+      rect:
+        serializedVersion: 2
+        x: 1996
+        y: 31
+        width: 47
+        height: 60
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c9b5f34f3e37075f0800000000000000
+      internalID: -760980914133050468
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MainChar_RunAttack_11
+      rect:
+        serializedVersion: 2
+        x: 2187
+        y: 31
+        width: 44
+        height: 60
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9bb244e007d2655a0800000000000000
+      internalID: -6532984250155390023
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      MainChar_RunAttack_0: 6762770630817555403
+      MainChar_RunAttack_1: 508323476966101203
+      MainChar_RunAttack_10: -760980914133050468
+      MainChar_RunAttack_11: -6532984250155390023
+      MainChar_RunAttack_2: -6861462285219221218
+      MainChar_RunAttack_3: -1562943581149804713
+      MainChar_RunAttack_4: 823643775160241784
+      MainChar_RunAttack_5: -1791840548629233199
+      MainChar_RunAttack_6: 5104140874724248363
+      MainChar_RunAttack_7: 620487196998388473
+      MainChar_RunAttack_8: -6133493512514784722
+      MainChar_RunAttack_9: -9169018133691580621
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

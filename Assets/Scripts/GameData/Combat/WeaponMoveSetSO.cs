@@ -51,19 +51,31 @@ namespace FenShen.GameData
         public FenShen.Combat.CombatSkillDefinitionSO landingChaseSkillAsset;
         [InspectorName("落地追击技能ID")]
         public string landingChaseSkill;
+        [InspectorName("特殊中立技能")]
+        public FenShen.Combat.CombatSkillDefinitionSO specialNeutralSkillAsset;
+        [InspectorName("特殊中立技能ID")]
+        public string specialNeutralSkill;
+        [InspectorName("特殊上方向技能")]
+        public FenShen.Combat.CombatSkillDefinitionSO specialUpSkillAsset;
+        [InspectorName("特殊上方向技能ID")]
+        public string specialUpSkill;
+        [InspectorName("特殊下方向技能")]
+        public FenShen.Combat.CombatSkillDefinitionSO specialDownSkillAsset;
+        [InspectorName("特殊下方向技能ID")]
+        public string specialDownSkill;
 
         [Header("入口技能")]
         [InspectorName("入口技能列表")]
         public List<WeaponSkillEntry> entrySkills = new List<WeaponSkillEntry>();
 
-        [Header("派生")]
-        [InspectorName("连段分支")]
-        public List<WeaponComboBranch> comboBranches = new List<WeaponComboBranch>();
-        [InspectorName("特殊派生窗口")]
-        public List<WeaponSpecialDerivationWindow> specialWindows = new List<WeaponSpecialDerivationWindow>();
-
         public FenShen.Combat.CombatSkillDefinitionSO GetEntrySkillAsset(WeaponAttackSlot slot)
         {
+            FenShen.Combat.CombatSkillDefinitionSO builtInSkill = GetBuiltInEntrySkillAsset(slot);
+            if (builtInSkill != null)
+            {
+                return builtInSkill;
+            }
+
             for (int i = 0; i < entrySkills.Count; i++)
             {
                 WeaponSkillEntry entry = entrySkills[i];
@@ -78,6 +90,12 @@ namespace FenShen.GameData
 
         public string GetEntrySkillId(WeaponAttackSlot slot)
         {
+            string builtInSkill = GetBuiltInEntrySkillId(slot);
+            if (!string.IsNullOrWhiteSpace(builtInSkill))
+            {
+                return builtInSkill;
+            }
+
             for (int i = 0; i < entrySkills.Count; i++)
             {
                 WeaponSkillEntry entry = entrySkills[i];
@@ -88,6 +106,44 @@ namespace FenShen.GameData
             }
 
             return string.Empty;
+        }
+
+        private FenShen.Combat.CombatSkillDefinitionSO GetBuiltInEntrySkillAsset(WeaponAttackSlot slot)
+        {
+            switch (slot)
+            {
+                case WeaponAttackSlot.Launcher:
+                    return launcherSkillAsset;
+                case WeaponAttackSlot.Slam:
+                    return slamSkillAsset;
+                case WeaponAttackSlot.SpecialNeutral:
+                    return specialNeutralSkillAsset;
+                case WeaponAttackSlot.SpecialUp:
+                    return specialUpSkillAsset;
+                case WeaponAttackSlot.SpecialDown:
+                    return specialDownSkillAsset;
+                default:
+                    return null;
+            }
+        }
+
+        private string GetBuiltInEntrySkillId(WeaponAttackSlot slot)
+        {
+            switch (slot)
+            {
+                case WeaponAttackSlot.Launcher:
+                    return launcherSkill;
+                case WeaponAttackSlot.Slam:
+                    return slamSkill;
+                case WeaponAttackSlot.SpecialNeutral:
+                    return specialNeutralSkill;
+                case WeaponAttackSlot.SpecialUp:
+                    return specialUpSkill;
+                case WeaponAttackSlot.SpecialDown:
+                    return specialDownSkill;
+                default:
+                    return string.Empty;
+            }
         }
 
         public FenShen.Combat.CombatSkillDefinitionSO GetPrimaryComboSkillAsset(int comboIndex, bool grounded)

@@ -1,0 +1,377 @@
+fileFormatVersion: 2
+guid: b0de7ddc88c012742844c3f64830657d
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: 3260138021624521051
+    second: LadderClimb_UpwardClimb_0
+  - first:
+      213: -7062023432131812219
+    second: LadderClimb_UpwardClimb_1
+  - first:
+      213: -4462216720867963208
+    second: LadderClimb_UpwardClimb_2
+  - first:
+      213: -4694124564221028914
+    second: LadderClimb_UpwardClimb_3
+  - first:
+      213: -2314189318110750221
+    second: LadderClimb_UpwardClimb_4
+  - first:
+      213: -4328981835282530292
+    second: LadderClimb_UpwardClimb_5
+  - first:
+      213: -493066592641908958
+    second: LadderClimb_UpwardClimb_6
+  - first:
+      213: -7617798870740902949
+    second: LadderClimb_UpwardClimb_7
+  - first:
+      213: 1477814784490493614
+    second: LadderClimb_UpwardClimb_8
+  - first:
+      213: -1178286109170193073
+    second: LadderClimb_UpwardClimb_9
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 0
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 32
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: LadderClimb_UpwardClimb_0
+      rect:
+        serializedVersion: 2
+        x: 82
+        y: 31
+        width: 28
+        height: 70
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b51aca9f1465e3d20800000000000000
+      internalID: 3260138021624521051
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: LadderClimb_UpwardClimb_1
+      rect:
+        serializedVersion: 2
+        x: 274
+        y: 31
+        width: 28
+        height: 70
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5846c4cca17aefd90800000000000000
+      internalID: -7062023432131812219
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: LadderClimb_UpwardClimb_2
+      rect:
+        serializedVersion: 2
+        x: 466
+        y: 31
+        width: 28
+        height: 70
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8be4bd1c8850312c0800000000000000
+      internalID: -4462216720867963208
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: LadderClimb_UpwardClimb_3
+      rect:
+        serializedVersion: 2
+        x: 658
+        y: 32
+        width: 28
+        height: 65
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ec59b22549e1bdeb0800000000000000
+      internalID: -4694124564221028914
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: LadderClimb_UpwardClimb_4
+      rect:
+        serializedVersion: 2
+        x: 849
+        y: 42
+        width: 27
+        height: 55
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3f95107831952efd0800000000000000
+      internalID: -2314189318110750221
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: LadderClimb_UpwardClimb_5
+      rect:
+        serializedVersion: 2
+        x: 1045
+        y: 37
+        width: 25
+        height: 70
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c00cddce4fd5ce3c0800000000000000
+      internalID: -4328981835282530292
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: LadderClimb_UpwardClimb_6
+      rect:
+        serializedVersion: 2
+        x: 1237
+        y: 36
+        width: 25
+        height: 68
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 22f77fedb864829f0800000000000000
+      internalID: -493066592641908958
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: LadderClimb_UpwardClimb_7
+      rect:
+        serializedVersion: 2
+        x: 1429
+        y: 36
+        width: 25
+        height: 68
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: bdbdd13b944284690800000000000000
+      internalID: -7617798870740902949
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: LadderClimb_UpwardClimb_8
+      rect:
+        serializedVersion: 2
+        x: 1619
+        y: 42
+        width: 25
+        height: 57
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ea6506977b0428410800000000000000
+      internalID: 1477814784490493614
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: LadderClimb_UpwardClimb_9
+      rect:
+        serializedVersion: 2
+        x: 1812
+        y: 32
+        width: 26
+        height: 68
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f4d222bc603e5afe0800000000000000
+      internalID: -1178286109170193073
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      LadderClimb_UpwardClimb_0: 3260138021624521051
+      LadderClimb_UpwardClimb_1: -7062023432131812219
+      LadderClimb_UpwardClimb_2: -4462216720867963208
+      LadderClimb_UpwardClimb_3: -4694124564221028914
+      LadderClimb_UpwardClimb_4: -2314189318110750221
+      LadderClimb_UpwardClimb_5: -4328981835282530292
+      LadderClimb_UpwardClimb_6: -493066592641908958
+      LadderClimb_UpwardClimb_7: -7617798870740902949
+      LadderClimb_UpwardClimb_8: 1477814784490493614
+      LadderClimb_UpwardClimb_9: -1178286109170193073
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

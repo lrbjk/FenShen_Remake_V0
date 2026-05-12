@@ -12,19 +12,19 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0dd22fc87d42a7f4fabaf223f9883f33, type: 3}
   m_Name: 91002_Timeline
   m_EditorClassIdentifier: Assembly-CSharp::FenShen.Combat.SkillTimelineSO
-  length: 0.3
+  length: 0.35
   animationClips: []
   movementClips: []
   hitClips:
   - clipId: 
     displayName: Hit 1
     note: 
-    startTime: 0.071428575
-    duration: 0.07
+    startTime: 0.06666667
+    duration: 0.015
     enabled: 1
     hitShape: 0
-    offset: {x: 0.69, y: -0.34, z: 0}
-    size: {x: 1.58, y: 1, z: 1}
+    offset: {x: 0.13, y: 0.4, z: 0}
+    size: {x: 2.42, y: 2.18, z: 1}
     targetLayers:
       serializedVersion: 2
       m_Bits: 1
@@ -38,20 +38,22 @@ MonoBehaviour:
   vfxClips: []
   sfxClips: []
   cameraClips: []
+  selfBuffClips: []
+  coreResourceClips: []
   cancelWindowClips:
   - clipId: 
     displayName: Cancel 1
     note: 
-    startTime: 0.14285715
-    duration: 0.2
+    startTime: 0.1
+    duration: 0.48
     enabled: 1
     cancelPermission: 3
   derivationWindowClips:
   - clipId: 
     displayName: Derivation 1
     note: 
-    startTime: 0.14285715
-    duration: 0.2
+    startTime: 0.083333336
+    duration: 0.5
     enabled: 1
     nextSkills:
     - {fileID: 11400000, guid: f8247105ffcc702459a5c1a8d2a96cdc, type: 2}

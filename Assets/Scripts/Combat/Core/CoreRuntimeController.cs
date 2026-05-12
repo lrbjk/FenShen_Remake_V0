@@ -21,6 +21,7 @@ namespace FenShen.Combat
         private string _appliedModifierSourceId;
         private int _aerialDodgeCount;
         private int _empoweredAttackCharges;
+        private readonly List<CoreEquippedSkill> _equippedSkills = new List<CoreEquippedSkill>();
 
         public CoreStyleDefinitionSO CurrentCore
         {
@@ -35,6 +36,11 @@ namespace FenShen.Combat
         public float MaxResource
         {
             get { return currentCore != null && currentCore.resource != null ? Mathf.Max(0f, currentCore.resource.maxResource) : 0f; }
+        }
+
+        public int SkillSlotCount
+        {
+            get { return currentCore != null && currentCore.skillSlots != null ? currentCore.skillSlots.Count : 0; }
         }
 
         void Awake()
@@ -112,6 +118,89 @@ namespace FenShen.Combat
 
             _currentResource = Mathf.Max(0f, _currentResource - cost);
             return true;
+        }
+
+        public bool TryModifyResource(float amount, bool requireEnoughResource = false)
+        {
+            if (Mathf.Approximately(amount, 0f))
+            {
+                return true;
+            }
+
+            if (amount < 0f)
+            {
+                float cost = -amount;
+                if (requireEnoughResource && _currentResource < cost)
+                {
+                    return false;
+                }
+
+                _currentResource = Mathf.Max(0f, _currentResource - cost);
+                return true;
+            }
+
+            GainResource(amount);
+            return true;
+        }
+
+        public bool TryGetEquippedSkill(int slotIndex, out CombatSkillDefinitionSO skill)
+        {
+            skill = null;
+            CoreSkillSlotDefinition slot = GetSkillSlot(slotIndex);
+            if (slot == null)
+            {
+                return false;
+            }
+
+            skill = ResolveEquippedSkill(slot, slotIndex);
+            return skill != null;
+        }
+
+        public bool TryGetSkillSlotInput(int slotIndex, out CoreSkillSlotInput input)
+        {
+            input = CoreSkillSlotInput.Skill1;
+            CoreSkillSlotDefinition slot = GetSkillSlot(slotIndex);
+            if (slot == null)
+            {
+                return false;
+            }
+
+            input = slot.input;
+            return true;
+        }
+
+        public bool TrySetEquippedSkill(int slotIndex, CombatSkillDefinitionSO skill)
+        {
+            CoreSkillSlotDefinition slot = GetSkillSlot(slotIndex);
+            if (slot == null || !CanEquipSkill(slot, skill))
+            {
+                return false;
+            }
+
+            CoreEquippedSkill equippedSkill = GetOrCreateEquippedSkill(slot, slotIndex);
+            equippedSkill.skill = skill;
+            return true;
+        }
+
+        public bool CanEquipSkill(CoreSkillSlotDefinition slot, CombatSkillDefinitionSO skill)
+        {
+            if (slot == null)
+            {
+                return false;
+            }
+
+            if (skill == null)
+            {
+                return slot.allowEmpty;
+            }
+
+            if (slot.allowedKind != CombatSkillKind.Any && skill.skillKind != slot.allowedKind)
+            {
+                return false;
+            }
+
+            return slot.allowedRoleTags == CombatSkillRoleTag.None
+                || (skill.roleTags & slot.allowedRoleTags) != 0;
         }
 
         public WeaponCancelPermission ModifyCancelPermission(WeaponCancelPermission basePermission)
@@ -276,6 +365,7 @@ namespace FenShen.Combat
                 _currentResource = 0f;
                 _aerialDodgeCount = 0;
                 _empoweredAttackCharges = 0;
+                _equippedSkills.Clear();
                 return;
             }
 
@@ -284,8 +374,121 @@ namespace FenShen.Combat
                 : 0f;
             _aerialDodgeCount = 0;
             _empoweredAttackCharges = 0;
+            RebuildDefaultEquippedSkills();
 
             ApplyPassiveModifiers();
+        }
+
+        private CoreSkillSlotDefinition GetSkillSlot(int slotIndex)
+        {
+            if (currentCore == null || currentCore.skillSlots == null || slotIndex < 0 || slotIndex >= currentCore.skillSlots.Count)
+            {
+                return null;
+            }
+
+            return currentCore.skillSlots[slotIndex];
+        }
+
+        private CombatSkillDefinitionSO ResolveEquippedSkill(CoreSkillSlotDefinition slot, int slotIndex)
+        {
+            if (slot == null)
+            {
+                return null;
+            }
+
+            string slotKey = ResolveSlotKey(slot, slotIndex);
+            for (int i = 0; i < _equippedSkills.Count; i++)
+            {
+                CoreEquippedSkill equippedSkill = _equippedSkills[i];
+                if (equippedSkill != null && equippedSkill.slotId == slotKey)
+                {
+                    return equippedSkill.skill != null ? equippedSkill.skill : slot.defaultSkill;
+                }
+            }
+
+            return slot.defaultSkill;
+        }
+
+        private CoreEquippedSkill GetOrCreateEquippedSkill(CoreSkillSlotDefinition slot, int slotIndex)
+        {
+            string slotKey = ResolveSlotKey(slot, slotIndex);
+            for (int i = 0; i < _equippedSkills.Count; i++)
+            {
+                CoreEquippedSkill equippedSkill = _equippedSkills[i];
+                if (equippedSkill != null && equippedSkill.slotId == slotKey)
+                {
+                    return equippedSkill;
+                }
+            }
+
+            CoreEquippedSkill newEntry = new CoreEquippedSkill { slotId = slotKey };
+            _equippedSkills.Add(newEntry);
+            return newEntry;
+        }
+
+        private void RebuildDefaultEquippedSkills()
+        {
+            _equippedSkills.Clear();
+            if (currentCore == null || currentCore.skillSlots == null)
+            {
+                return;
+            }
+
+            for (int i = 0; i < currentCore.skillSlots.Count; i++)
+            {
+                CoreSkillSlotDefinition slot = currentCore.skillSlots[i];
+                if (slot == null)
+                {
+                    continue;
+                }
+
+                CombatSkillDefinitionSO skill = ResolveDefaultEquippedSkill(slot, i);
+                if (skill == null && !slot.allowEmpty)
+                {
+                    skill = slot.defaultSkill;
+                }
+
+                if (skill != null && !CanEquipSkill(slot, skill))
+                {
+                    skill = slot.defaultSkill;
+                }
+
+                _equippedSkills.Add(new CoreEquippedSkill
+                {
+                    slotId = ResolveSlotKey(slot, i),
+                    skill = skill
+                });
+            }
+        }
+
+        private CombatSkillDefinitionSO ResolveDefaultEquippedSkill(CoreSkillSlotDefinition slot, int slotIndex)
+        {
+            if (slot == null || currentCore == null || currentCore.defaultEquippedSkills == null)
+            {
+                return null;
+            }
+
+            string slotKey = ResolveSlotKey(slot, slotIndex);
+            for (int i = 0; i < currentCore.defaultEquippedSkills.Count; i++)
+            {
+                CoreEquippedSkill equippedSkill = currentCore.defaultEquippedSkills[i];
+                if (equippedSkill != null && equippedSkill.slotId == slotKey)
+                {
+                    return equippedSkill.skill;
+                }
+            }
+
+            return slot.defaultSkill;
+        }
+
+        private string ResolveSlotKey(CoreSkillSlotDefinition slot, int slotIndex)
+        {
+            if (slot != null && !string.IsNullOrWhiteSpace(slot.slotId))
+            {
+                return slot.slotId;
+            }
+
+            return "slot-" + slotIndex;
         }
 
         private void ApplyDodgeCombatRules(bool perfect)

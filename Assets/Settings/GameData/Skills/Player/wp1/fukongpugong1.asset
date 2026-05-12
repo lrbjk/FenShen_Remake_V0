@@ -17,12 +17,14 @@ MonoBehaviour:
   description: 
   icon: {fileID: 0}
   usageSide: 0
+  skillKind: 0
+  roleTags: 0
   tags: []
   animationStateName: AirAttack
   animationLayer: 0
   crossFade: 1
   transitionDuration: 0
-  previewAnimationClip: {fileID: 7400000, guid: b6f5c07c9b2a1cb4caf3c1f406257a4a, type: 2}
+  previewAnimationClip: {fileID: 7400000, guid: 01e857fc5d50b0e42835f28ed6716722, type: 2}
   timeline: {fileID: 11400000, guid: 17272155e8937654b8a3c7b48dbc1903, type: 2}
   motion:
     motionSource: 1

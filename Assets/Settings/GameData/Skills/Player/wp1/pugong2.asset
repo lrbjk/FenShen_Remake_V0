@@ -17,12 +17,14 @@ MonoBehaviour:
   description: 
   icon: {fileID: 0}
   usageSide: 0
+  skillKind: 0
+  roleTags: 0
   tags: []
   animationStateName: Attack2
   animationLayer: 0
   crossFade: 1
   transitionDuration: 0
-  previewAnimationClip: {fileID: 7400000, guid: a24c3e96304104947962228b5ba5c7c3, type: 2}
+  previewAnimationClip: {fileID: 7400000, guid: b307831c114bc4446b9141d1989794b8, type: 2}
   timeline: {fileID: 11400000, guid: 0184dcab2918dff4590165f67ef8a826, type: 2}
   motion:
     motionSource: 2

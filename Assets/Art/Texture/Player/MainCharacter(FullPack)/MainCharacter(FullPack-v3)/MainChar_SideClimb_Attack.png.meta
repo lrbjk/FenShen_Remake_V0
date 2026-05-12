@@ -1,0 +1,429 @@
+fileFormatVersion: 2
+guid: 2dfd8a772b7ee014ca1a6dad6fb5819e
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: 6207786643807445907
+    second: MainChar_SideClimb_Attack_0
+  - first:
+      213: -8341665319551427503
+    second: MainChar_SideClimb_Attack_1
+  - first:
+      213: -5510926010019236108
+    second: MainChar_SideClimb_Attack_2
+  - first:
+      213: 5571886864990765634
+    second: MainChar_SideClimb_Attack_3
+  - first:
+      213: -5577108150224487062
+    second: MainChar_SideClimb_Attack_4
+  - first:
+      213: -6230462421626537100
+    second: MainChar_SideClimb_Attack_5
+  - first:
+      213: -6100989884001145520
+    second: MainChar_SideClimb_Attack_6
+  - first:
+      213: -7366291218438819369
+    second: MainChar_SideClimb_Attack_7
+  - first:
+      213: 8537535974862749831
+    second: MainChar_SideClimb_Attack_8
+  - first:
+      213: 4891892889046888474
+    second: MainChar_SideClimb_Attack_9
+  - first:
+      213: 7839274049357837883
+    second: MainChar_SideClimb_Attack_10
+  - first:
+      213: 1803126361510776327
+    second: MainChar_SideClimb_Attack_11
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: MainChar_SideClimb_Attack_0
+      rect:
+        serializedVersion: 2
+        x: 80
+        y: 28
+        width: 29
+        height: 75
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 393ae81ff0d762650800000000000000
+      internalID: 6207786643807445907
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MainChar_SideClimb_Attack_1
+      rect:
+        serializedVersion: 2
+        x: 272
+        y: 28
+        width: 29
+        height: 75
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 15c11f086937c3c80800000000000000
+      internalID: -8341665319551427503
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MainChar_SideClimb_Attack_2
+      rect:
+        serializedVersion: 2
+        x: 464
+        y: 28
+        width: 28
+        height: 75
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4f6b755fdf14583b0800000000000000
+      internalID: -5510926010019236108
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MainChar_SideClimb_Attack_3
+      rect:
+        serializedVersion: 2
+        x: 651
+        y: 28
+        width: 42
+        height: 81
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 24280742591535d40800000000000000
+      internalID: 5571886864990765634
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MainChar_SideClimb_Attack_4
+      rect:
+        serializedVersion: 2
+        x: 848
+        y: 28
+        width: 73
+        height: 75
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a6dfee7afa12a92b0800000000000000
+      internalID: -5577108150224487062
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MainChar_SideClimb_Attack_5
+      rect:
+        serializedVersion: 2
+        x: 1040
+        y: 19
+        width: 43
+        height: 84
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 47bb78c1073f889a0800000000000000
+      internalID: -6230462421626537100
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MainChar_SideClimb_Attack_6
+      rect:
+        serializedVersion: 2
+        x: 1232
+        y: 19
+        width: 33
+        height: 84
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 05d2cd1660ee45ba0800000000000000
+      internalID: -6100989884001145520
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MainChar_SideClimb_Attack_7
+      rect:
+        serializedVersion: 2
+        x: 1424
+        y: 28
+        width: 62
+        height: 75
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7d1ffd44a2da5c990800000000000000
+      internalID: -7366291218438819369
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MainChar_SideClimb_Attack_8
+      rect:
+        serializedVersion: 2
+        x: 1616
+        y: 28
+        width: 44
+        height: 88
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 78000de3cbb6b7670800000000000000
+      internalID: 8537535974862749831
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MainChar_SideClimb_Attack_9
+      rect:
+        serializedVersion: 2
+        x: 1808
+        y: 28
+        width: 33
+        height: 75
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a1036ea0aae73e340800000000000000
+      internalID: 4891892889046888474
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MainChar_SideClimb_Attack_10
+      rect:
+        serializedVersion: 2
+        x: 2000
+        y: 28
+        width: 32
+        height: 75
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b3679e0b632bacc60800000000000000
+      internalID: 7839274049357837883
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MainChar_SideClimb_Attack_11
+      rect:
+        serializedVersion: 2
+        x: 2192
+        y: 28
+        width: 28
+        height: 75
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 70e0ef65fddf50910800000000000000
+      internalID: 1803126361510776327
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      MainChar_SideClimb_Attack_0: 6207786643807445907
+      MainChar_SideClimb_Attack_1: -8341665319551427503
+      MainChar_SideClimb_Attack_10: 7839274049357837883
+      MainChar_SideClimb_Attack_11: 1803126361510776327
+      MainChar_SideClimb_Attack_2: -5510926010019236108
+      MainChar_SideClimb_Attack_3: 5571886864990765634
+      MainChar_SideClimb_Attack_4: -5577108150224487062
+      MainChar_SideClimb_Attack_5: -6230462421626537100
+      MainChar_SideClimb_Attack_6: -6100989884001145520
+      MainChar_SideClimb_Attack_7: -7366291218438819369
+      MainChar_SideClimb_Attack_8: 8537535974862749831
+      MainChar_SideClimb_Attack_9: 4891892889046888474
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

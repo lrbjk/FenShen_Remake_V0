@@ -17,12 +17,14 @@ MonoBehaviour:
   description: 
   icon: {fileID: 0}
   usageSide: 0
+  skillKind: 0
+  roleTags: 0
   tags: []
-  animationStateName: AttackAirLanding
+  animationStateName: AirAttack3
   animationLayer: 0
   crossFade: 1
   transitionDuration: 0
-  previewAnimationClip: {fileID: 7400000, guid: 0330815a733f0ea47872b18530d50f7d, type: 2}
+  previewAnimationClip: {fileID: 7400000, guid: 89c635f79f237e440a838ebc1603cf6a, type: 2}
   timeline: {fileID: 11400000, guid: 7a8ebf1e39973bb469d5d33d1af74835, type: 2}
   motion:
     motionSource: 1
@@ -90,7 +92,8 @@ MonoBehaviour:
   requiredWeaponTraits: 0
   enterConditions:
     logic: 0
-    conditions: []
+    conditions:
+    - {fileID: 11400000, guid: 14eb37d84fc850d4aba7483592b109e7, type: 2}
   previousSkills:
   - {fileID: 11400000, guid: f8247105ffcc702459a5c1a8d2a96cdc, type: 2}
   derivationRules: []

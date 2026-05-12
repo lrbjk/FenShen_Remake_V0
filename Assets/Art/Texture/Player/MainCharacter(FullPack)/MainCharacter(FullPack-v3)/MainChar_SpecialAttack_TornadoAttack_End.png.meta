@@ -1,0 +1,377 @@
+fileFormatVersion: 2
+guid: 24706c4ac1aac1546bdf7bbd67e9fd87
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: 3472867981335131529
+    second: MainChar_SpecialAttack_TornadoAttack_End_0
+  - first:
+      213: 8237284452946845154
+    second: MainChar_SpecialAttack_TornadoAttack_End_1
+  - first:
+      213: -1646691975117180521
+    second: MainChar_SpecialAttack_TornadoAttack_End_2
+  - first:
+      213: 7314107704972032563
+    second: MainChar_SpecialAttack_TornadoAttack_End_3
+  - first:
+      213: 1928247068472252133
+    second: MainChar_SpecialAttack_TornadoAttack_End_4
+  - first:
+      213: 4431624302519959919
+    second: MainChar_SpecialAttack_TornadoAttack_End_5
+  - first:
+      213: -5650548828107035658
+    second: MainChar_SpecialAttack_TornadoAttack_End_6
+  - first:
+      213: 8603710216491857626
+    second: MainChar_SpecialAttack_TornadoAttack_End_7
+  - first:
+      213: 4191842187916508886
+    second: MainChar_SpecialAttack_TornadoAttack_End_8
+  - first:
+      213: 669191665355895779
+    second: MainChar_SpecialAttack_TornadoAttack_End_9
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: MainChar_SpecialAttack_TornadoAttack_End_0
+      rect:
+        serializedVersion: 2
+        x: 37
+        y: 31
+        width: 81
+        height: 56
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 985fe4b670b123030800000000000000
+      internalID: 3472867981335131529
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MainChar_SpecialAttack_TornadoAttack_End_1
+      rect:
+        serializedVersion: 2
+        x: 218
+        y: 31
+        width: 96
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2ed9eb32196b05270800000000000000
+      internalID: 8237284452946845154
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MainChar_SpecialAttack_TornadoAttack_End_2
+      rect:
+        serializedVersion: 2
+        x: 412
+        y: 31
+        width: 94
+        height: 46
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 79177a88f56c529e0800000000000000
+      internalID: -1646691975117180521
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MainChar_SpecialAttack_TornadoAttack_End_3
+      rect:
+        serializedVersion: 2
+        x: 604
+        y: 31
+        width: 94
+        height: 47
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 33a3ec3b43ee08560800000000000000
+      internalID: 7314107704972032563
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MainChar_SpecialAttack_TornadoAttack_End_4
+      rect:
+        serializedVersion: 2
+        x: 796
+        y: 31
+        width: 94
+        height: 47
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5e61a731e7282ca10800000000000000
+      internalID: 1928247068472252133
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MainChar_SpecialAttack_TornadoAttack_End_5
+      rect:
+        serializedVersion: 2
+        x: 989
+        y: 31
+        width: 93
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f61c0b9c2da408d30800000000000000
+      internalID: 4431624302519959919
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MainChar_SpecialAttack_TornadoAttack_End_6
+      rect:
+        serializedVersion: 2
+        x: 1196
+        y: 31
+        width: 78
+        height: 50
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6fb2eaa57c73591b0800000000000000
+      internalID: -5650548828107035658
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MainChar_SpecialAttack_TornadoAttack_End_7
+      rect:
+        serializedVersion: 2
+        x: 1418
+        y: 31
+        width: 47
+        height: 54
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ad675648bd4866770800000000000000
+      internalID: 8603710216491857626
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MainChar_SpecialAttack_TornadoAttack_End_8
+      rect:
+        serializedVersion: 2
+        x: 1613
+        y: 31
+        width: 41
+        height: 59
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6de7245b24a6c2a30800000000000000
+      internalID: 4191842187916508886
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MainChar_SpecialAttack_TornadoAttack_End_9
+      rect:
+        serializedVersion: 2
+        x: 1804
+        y: 31
+        width: 45
+        height: 60
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3e3b03c2642794900800000000000000
+      internalID: 669191665355895779
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      MainChar_SpecialAttack_TornadoAttack_End_0: 3472867981335131529
+      MainChar_SpecialAttack_TornadoAttack_End_1: 8237284452946845154
+      MainChar_SpecialAttack_TornadoAttack_End_2: -1646691975117180521
+      MainChar_SpecialAttack_TornadoAttack_End_3: 7314107704972032563
+      MainChar_SpecialAttack_TornadoAttack_End_4: 1928247068472252133
+      MainChar_SpecialAttack_TornadoAttack_End_5: 4431624302519959919
+      MainChar_SpecialAttack_TornadoAttack_End_6: -5650548828107035658
+      MainChar_SpecialAttack_TornadoAttack_End_7: 8603710216491857626
+      MainChar_SpecialAttack_TornadoAttack_End_8: 4191842187916508886
+      MainChar_SpecialAttack_TornadoAttack_End_9: 669191665355895779
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

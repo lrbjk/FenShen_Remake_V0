@@ -1,0 +1,1079 @@
+fileFormatVersion: 2
+guid: 52227f9a4a7e5b848962fbb13a1e9345
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: -119062485191884179
+    second: MainChar_ExecuteGround_0
+  - first:
+      213: 9029045421712271451
+    second: MainChar_ExecuteGround_1
+  - first:
+      213: -1031768663832211016
+    second: MainChar_ExecuteGround_2
+  - first:
+      213: -9196842282205229582
+    second: MainChar_ExecuteGround_3
+  - first:
+      213: 233858328875037881
+    second: MainChar_ExecuteGround_4
+  - first:
+      213: -2227200547895746383
+    second: MainChar_ExecuteGround_5
+  - first:
+      213: -5111949021904585309
+    second: MainChar_ExecuteGround_6
+  - first:
+      213: -7753861230054231793
+    second: MainChar_ExecuteGround_7
+  - first:
+      213: -3926609908612800320
+    second: MainChar_ExecuteGround_8
+  - first:
+      213: -5541306309638968861
+    second: MainChar_ExecuteGround_9
+  - first:
+      213: 2696059139047589470
+    second: MainChar_ExecuteGround_10
+  - first:
+      213: 3591857757851886525
+    second: MainChar_ExecuteGround_11
+  - first:
+      213: -930432140993930168
+    second: MainChar_ExecuteGround_12
+  - first:
+      213: 3152091931935513720
+    second: MainChar_ExecuteGround_13
+  - first:
+      213: 4846827809520812948
+    second: MainChar_ExecuteGround_14
+  - first:
+      213: 1928167929025507050
+    second: MainChar_ExecuteGround_15
+  - first:
+      213: 9119842365379933310
+    second: MainChar_ExecuteGround_16
+  - first:
+      213: -4593647459013320127
+    second: MainChar_ExecuteGround_17
+  - first:
+      213: -5738834753701277934
+    second: MainChar_ExecuteGround_18
+  - first:
+      213: -2293975136282316129
+    second: MainChar_ExecuteGround_19
+  - first:
+      213: 508362064959955382
+    second: MainChar_ExecuteGround_20
+  - first:
+      213: 1833245829049267058
+    second: MainChar_ExecuteGround_21
+  - first:
+      213: 5672228839232423603
+    second: MainChar_ExecuteGround_22
+  - first:
+      213: -7206578980503617240
+    second: MainChar_ExecuteGround_23
+  - first:
+      213: 2335459281596006835
+    second: MainChar_ExecuteGround_24
+  - first:
+      213: 3081259462847829079
+    second: MainChar_ExecuteGround_25
+  - first:
+      213: -6512362220233143035
+    second: MainChar_ExecuteGround_26
+  - first:
+      213: 4131909124927086687
+    second: MainChar_ExecuteGround_27
+  - first:
+      213: 4678929248190593886
+    second: MainChar_ExecuteGround_28
+  - first:
+      213: 3283602379807191145
+    second: MainChar_ExecuteGround_29
+  - first:
+      213: 95602415118633894
+    second: MainChar_ExecuteGround_30
+  - first:
+      213: 4940710173545549507
+    second: MainChar_ExecuteGround_31
+  - first:
+      213: -7839945219727533297
+    second: MainChar_ExecuteGround_32
+  - first:
+      213: -3958246128787229294
+    second: MainChar_ExecuteGround_33
+  - first:
+      213: 3435770379098431960
+    second: MainChar_ExecuteGround_34
+  - first:
+      213: 611832379170219775
+    second: MainChar_ExecuteGround_35
+  - first:
+      213: 6804108559083097298
+    second: MainChar_ExecuteGround_36
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: MainChar_ExecuteGround_0
+      rect:
+        serializedVersion: 2
+        x: 77
+        y: 31
+        width: 45
+        height: 60
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d620010fc41095ef0800000000000000
+      internalID: -119062485191884179
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MainChar_ExecuteGround_1
+      rect:
+        serializedVersion: 2
+        x: 274
+        y: 31
+        width: 36
+        height: 66
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b58e60e19fc9d4d70800000000000000
+      internalID: 9029045421712271451
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MainChar_ExecuteGround_2
+      rect:
+        serializedVersion: 2
+        x: 466
+        y: 31
+        width: 31
+        height: 70
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8b1d6e5eddb6ea1f0800000000000000
+      internalID: -1031768663832211016
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MainChar_ExecuteGround_3
+      rect:
+        serializedVersion: 2
+        x: 658
+        y: 31
+        width: 31
+        height: 70
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2fd4dd9dba04e5080800000000000000
+      internalID: -9196842282205229582
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MainChar_ExecuteGround_4
+      rect:
+        serializedVersion: 2
+        x: 850
+        y: 31
+        width: 31
+        height: 70
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9b4fc5c39e4de3300800000000000000
+      internalID: 233858328875037881
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MainChar_ExecuteGround_5
+      rect:
+        serializedVersion: 2
+        x: 1041
+        y: 31
+        width: 49
+        height: 45
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1b06e13e6e46711e0800000000000000
+      internalID: -2227200547895746383
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MainChar_ExecuteGround_6
+      rect:
+        serializedVersion: 2
+        x: 1233
+        y: 31
+        width: 42
+        height: 42
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3adb877e275be09b0800000000000000
+      internalID: -5111949021904585309
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MainChar_ExecuteGround_7
+      rect:
+        serializedVersion: 2
+        x: 1266
+        y: 34
+        width: 9
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f01b1f00b40c46490800000000000000
+      internalID: -7753861230054231793
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MainChar_ExecuteGround_8
+      rect:
+        serializedVersion: 2
+        x: 1272
+        y: 39
+        width: 11
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0c0ea999711e189c0800000000000000
+      internalID: -3926609908612800320
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MainChar_ExecuteGround_9
+      rect:
+        serializedVersion: 2
+        x: 1425
+        y: 31
+        width: 43
+        height: 43
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3e9a65e35435913b0800000000000000
+      internalID: -5541306309638968861
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MainChar_ExecuteGround_10
+      rect:
+        serializedVersion: 2
+        x: 1461
+        y: 43
+        width: 10
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e56806ca0835a6520800000000000000
+      internalID: 2696059139047589470
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MainChar_ExecuteGround_11
+      rect:
+        serializedVersion: 2
+        x: 1461
+        y: 39
+        width: 7
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: db32e7ca997d8d130800000000000000
+      internalID: 3591857757851886525
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MainChar_ExecuteGround_12
+      rect:
+        serializedVersion: 2
+        x: 1470
+        y: 40
+        width: 6
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 84c537cb5e07613f0800000000000000
+      internalID: -930432140993930168
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MainChar_ExecuteGround_13
+      rect:
+        serializedVersion: 2
+        x: 1617
+        y: 31
+        width: 53
+        height: 43
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 87c146e59ea7ebb20800000000000000
+      internalID: 3152091931935513720
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MainChar_ExecuteGround_14
+      rect:
+        serializedVersion: 2
+        x: 1809
+        y: 31
+        width: 54
+        height: 43
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 49309f19634634340800000000000000
+      internalID: 4846827809520812948
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MainChar_ExecuteGround_15
+      rect:
+        serializedVersion: 2
+        x: 2001
+        y: 31
+        width: 54
+        height: 43
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: aeeaddcf38a32ca10800000000000000
+      internalID: 1928167929025507050
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MainChar_ExecuteGround_16
+      rect:
+        serializedVersion: 2
+        x: 2193
+        y: 31
+        width: 54
+        height: 43
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e747704ff40309e70800000000000000
+      internalID: 9119842365379933310
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MainChar_ExecuteGround_17
+      rect:
+        serializedVersion: 2
+        x: 2385
+        y: 31
+        width: 36
+        height: 44
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 142a22669f51040c0800000000000000
+      internalID: -4593647459013320127
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MainChar_ExecuteGround_18
+      rect:
+        serializedVersion: 2
+        x: 2577
+        y: 31
+        width: 35
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 21f08f872309b50b0800000000000000
+      internalID: -5738834753701277934
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MainChar_ExecuteGround_19
+      rect:
+        serializedVersion: 2
+        x: 2768
+        y: 31
+        width: 35
+        height: 53
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f92705e74c92a20e0800000000000000
+      internalID: -2293975136282316129
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MainChar_ExecuteGround_20
+      rect:
+        serializedVersion: 2
+        x: 2960
+        y: 31
+        width: 35
+        height: 54
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6b1e83bca901e0700800000000000000
+      internalID: 508362064959955382
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MainChar_ExecuteGround_21
+      rect:
+        serializedVersion: 2
+        x: 3154
+        y: 31
+        width: 48
+        height: 61
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 273b27a5e5ff07910800000000000000
+      internalID: 1833245829049267058
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MainChar_ExecuteGround_22
+      rect:
+        serializedVersion: 2
+        x: 3346
+        y: 31
+        width: 35
+        height: 61
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3b6cc27931ec7be40800000000000000
+      internalID: 5672228839232423603
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MainChar_ExecuteGround_23
+      rect:
+        serializedVersion: 2
+        x: 3378
+        y: 33
+        width: 9
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 821094d69961dfb90800000000000000
+      internalID: -7206578980503617240
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MainChar_ExecuteGround_24
+      rect:
+        serializedVersion: 2
+        x: 3380
+        y: 39
+        width: 15
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3b14be2c7d7396020800000000000000
+      internalID: 2335459281596006835
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MainChar_ExecuteGround_25
+      rect:
+        serializedVersion: 2
+        x: 3538
+        y: 31
+        width: 42
+        height: 61
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7541bdff725d2ca20800000000000000
+      internalID: 3081259462847829079
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MainChar_ExecuteGround_26
+      rect:
+        serializedVersion: 2
+        x: 3573
+        y: 43
+        width: 10
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 50d445e80117f95a0800000000000000
+      internalID: -6512362220233143035
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MainChar_ExecuteGround_27
+      rect:
+        serializedVersion: 2
+        x: 3573
+        y: 39
+        width: 7
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f506973157d775930800000000000000
+      internalID: 4131909124927086687
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MainChar_ExecuteGround_28
+      rect:
+        serializedVersion: 2
+        x: 3582
+        y: 40
+        width: 6
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e5bf5977c55eee040800000000000000
+      internalID: 4678929248190593886
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MainChar_ExecuteGround_29
+      rect:
+        serializedVersion: 2
+        x: 3729
+        y: 31
+        width: 53
+        height: 60
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 960f80897f2b19d20800000000000000
+      internalID: 3283602379807191145
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MainChar_ExecuteGround_30
+      rect:
+        serializedVersion: 2
+        x: 3917
+        y: 31
+        width: 58
+        height: 60
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6abc0d8d3e5a35100800000000000000
+      internalID: 95602415118633894
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MainChar_ExecuteGround_31
+      rect:
+        serializedVersion: 2
+        x: 4108
+        y: 31
+        width: 59
+        height: 60
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3ce4750d9bde09440800000000000000
+      internalID: 4940710173545549507
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MainChar_ExecuteGround_32
+      rect:
+        serializedVersion: 2
+        x: 4300
+        y: 31
+        width: 59
+        height: 60
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f0b5e974c5be23390800000000000000
+      internalID: -7839945219727533297
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MainChar_ExecuteGround_33
+      rect:
+        serializedVersion: 2
+        x: 1276
+        y: 33
+        width: 8
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 29572181e1c7119c0800000000000000
+      internalID: -3958246128787229294
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MainChar_ExecuteGround_34
+      rect:
+        serializedVersion: 2
+        x: 1470
+        y: 32
+        width: 7
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8d1a8ffc4fe4eaf20800000000000000
+      internalID: 3435770379098431960
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MainChar_ExecuteGround_35
+      rect:
+        serializedVersion: 2
+        x: 3388
+        y: 33
+        width: 8
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ff6e586ae4aad7800800000000000000
+      internalID: 611832379170219775
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MainChar_ExecuteGround_36
+      rect:
+        serializedVersion: 2
+        x: 3582
+        y: 32
+        width: 7
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2dcc75d4fac0d6e50800000000000000
+      internalID: 6804108559083097298
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      MainChar_ExecuteGround_0: -119062485191884179
+      MainChar_ExecuteGround_1: 9029045421712271451
+      MainChar_ExecuteGround_10: 2696059139047589470
+      MainChar_ExecuteGround_11: 3591857757851886525
+      MainChar_ExecuteGround_12: -930432140993930168
+      MainChar_ExecuteGround_13: 3152091931935513720
+      MainChar_ExecuteGround_14: 4846827809520812948
+      MainChar_ExecuteGround_15: 1928167929025507050
+      MainChar_ExecuteGround_16: 9119842365379933310
+      MainChar_ExecuteGround_17: -4593647459013320127
+      MainChar_ExecuteGround_18: -5738834753701277934
+      MainChar_ExecuteGround_19: -2293975136282316129
+      MainChar_ExecuteGround_2: -1031768663832211016
+      MainChar_ExecuteGround_20: 508362064959955382
+      MainChar_ExecuteGround_21: 1833245829049267058
+      MainChar_ExecuteGround_22: 5672228839232423603
+      MainChar_ExecuteGround_23: -7206578980503617240
+      MainChar_ExecuteGround_24: 2335459281596006835
+      MainChar_ExecuteGround_25: 3081259462847829079
+      MainChar_ExecuteGround_26: -6512362220233143035
+      MainChar_ExecuteGround_27: 4131909124927086687
+      MainChar_ExecuteGround_28: 4678929248190593886
+      MainChar_ExecuteGround_29: 3283602379807191145
+      MainChar_ExecuteGround_3: -9196842282205229582
+      MainChar_ExecuteGround_30: 95602415118633894
+      MainChar_ExecuteGround_31: 4940710173545549507
+      MainChar_ExecuteGround_32: -7839945219727533297
+      MainChar_ExecuteGround_33: -3958246128787229294
+      MainChar_ExecuteGround_34: 3435770379098431960
+      MainChar_ExecuteGround_35: 611832379170219775
+      MainChar_ExecuteGround_36: 6804108559083097298
+      MainChar_ExecuteGround_4: 233858328875037881
+      MainChar_ExecuteGround_5: -2227200547895746383
+      MainChar_ExecuteGround_6: -5111949021904585309
+      MainChar_ExecuteGround_7: -7753861230054231793
+      MainChar_ExecuteGround_8: -3926609908612800320
+      MainChar_ExecuteGround_9: -5541306309638968861
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

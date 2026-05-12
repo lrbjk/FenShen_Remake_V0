@@ -23,6 +23,8 @@ namespace FenShen.Combat
         private readonly HashSet<int> _triggeredVfxClips = new HashSet<int>();
         private readonly HashSet<int> _triggeredSfxClips = new HashSet<int>();
         private readonly HashSet<int> _triggeredCameraClips = new HashSet<int>();
+        private readonly HashSet<int> _triggeredSelfBuffClips = new HashSet<int>();
+        private readonly HashSet<int> _triggeredCoreResourceClips = new HashSet<int>();
         private readonly Dictionary<int, Vector2> _movementClipPreviousSamples = new Dictionary<int, Vector2>();
         private readonly Dictionary<int, HashSet<int>> _hitTargetsByClip = new Dictionary<int, HashSet<int>>();
 
@@ -143,6 +145,8 @@ namespace FenShen.Combat
                 ProcessVfxClips(coordinator, previousTime);
                 ProcessSfxClips(coordinator, previousTime);
                 ProcessCameraClips(coordinator, previousTime);
+                ProcessSelfBuffClips(coordinator, previousTime);
+                ProcessCoreResourceClips(coordinator, previousTime);
                 return _elapsed >= _skill.ResolveDuration();
             }
 
@@ -514,8 +518,58 @@ namespace FenShen.Combat
             _triggeredVfxClips.Clear();
             _triggeredSfxClips.Clear();
             _triggeredCameraClips.Clear();
+            _triggeredSelfBuffClips.Clear();
+            _triggeredCoreResourceClips.Clear();
             _movementClipPreviousSamples.Clear();
             _hitTargetsByClip.Clear();
+        }
+
+        private void ProcessSelfBuffClips(CombatCoordinator coordinator, float previousTime)
+        {
+            List<SelfBuffSkillClip> clips = _skill.timeline.selfBuffClips;
+            if (clips == null)
+            {
+                return;
+            }
+
+            for (int i = 0; i < clips.Count; i++)
+            {
+                SelfBuffSkillClip clip = clips[i];
+                if (clip == null || !clip.enabled || _triggeredSelfBuffClips.Contains(i))
+                {
+                    continue;
+                }
+
+                if (previousTime <= clip.startTime && _elapsed >= clip.startTime)
+                {
+                    _triggeredSelfBuffClips.Add(i);
+                    coordinator.ApplySelfBuffClip(clip);
+                }
+            }
+        }
+
+        private void ProcessCoreResourceClips(CombatCoordinator coordinator, float previousTime)
+        {
+            List<CoreResourceSkillClip> clips = _skill.timeline.coreResourceClips;
+            if (clips == null)
+            {
+                return;
+            }
+
+            for (int i = 0; i < clips.Count; i++)
+            {
+                CoreResourceSkillClip clip = clips[i];
+                if (clip == null || !clip.enabled || _triggeredCoreResourceClips.Contains(i))
+                {
+                    continue;
+                }
+
+                if (previousTime <= clip.startTime && _elapsed >= clip.startTime)
+                {
+                    _triggeredCoreResourceClips.Add(i);
+                    coordinator.ApplyCoreResourceClip(clip);
+                }
+            }
         }
 
         private void ProcessHitClipImpact(CombatCoordinator coordinator, HitSkillClip clip, int clipIndex)

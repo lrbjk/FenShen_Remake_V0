@@ -1,0 +1,481 @@
+fileFormatVersion: 2
+guid: 409dd221fb47a484cbe07e8d923c97ab
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: -2222338708668672398
+    second: MainChar_Throwing_Stuffs_Bomb_HitWall_0
+  - first:
+      213: 2226949498803554069
+    second: MainChar_Throwing_Stuffs_Bomb_HitWall_1
+  - first:
+      213: 6788125260561249407
+    second: MainChar_Throwing_Stuffs_Bomb_HitWall_2
+  - first:
+      213: 4543612302961683377
+    second: MainChar_Throwing_Stuffs_Bomb_HitWall_3
+  - first:
+      213: -5173923059249061826
+    second: MainChar_Throwing_Stuffs_Bomb_HitWall_4
+  - first:
+      213: -3476908250611535494
+    second: MainChar_Throwing_Stuffs_Bomb_HitWall_5
+  - first:
+      213: -3519870043209730065
+    second: MainChar_Throwing_Stuffs_Bomb_HitWall_6
+  - first:
+      213: -3768049679198352395
+    second: MainChar_Throwing_Stuffs_Bomb_HitWall_7
+  - first:
+      213: -4535018091174121084
+    second: MainChar_Throwing_Stuffs_Bomb_HitWall_8
+  - first:
+      213: 6931127467232599884
+    second: MainChar_Throwing_Stuffs_Bomb_HitWall_9
+  - first:
+      213: -4348828124925133276
+    second: MainChar_Throwing_Stuffs_Bomb_HitWall_10
+  - first:
+      213: -659435972444021065
+    second: MainChar_Throwing_Stuffs_Bomb_HitWall_11
+  - first:
+      213: 6610675987347062435
+    second: MainChar_Throwing_Stuffs_Bomb_HitWall_12
+  - first:
+      213: 2929378922691975684
+    second: MainChar_Throwing_Stuffs_Bomb_HitWall_13
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: MainChar_Throwing_Stuffs_Bomb_HitWall_0
+      rect:
+        serializedVersion: 2
+        x: 58
+        y: 27
+        width: 7
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 276143b08baa821e0800000000000000
+      internalID: -2222338708668672398
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MainChar_Throwing_Stuffs_Bomb_HitWall_1
+      rect:
+        serializedVersion: 2
+        x: 105
+        y: 16
+        width: 24
+        height: 36
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5178be035c6b7ee10800000000000000
+      internalID: 2226949498803554069
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MainChar_Throwing_Stuffs_Bomb_HitWall_2
+      rect:
+        serializedVersion: 2
+        x: 171
+        y: 17
+        width: 22
+        height: 30
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f74fb9e95f3443e50800000000000000
+      internalID: 6788125260561249407
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MainChar_Throwing_Stuffs_Bomb_HitWall_3
+      rect:
+        serializedVersion: 2
+        x: 235
+        y: 31
+        width: 10
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1bb202301572e0f30800000000000000
+      internalID: 4543612302961683377
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MainChar_Throwing_Stuffs_Bomb_HitWall_4
+      rect:
+        serializedVersion: 2
+        x: 243
+        y: 36
+        width: 14
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e30e146e3688238b0800000000000000
+      internalID: -5173923059249061826
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MainChar_Throwing_Stuffs_Bomb_HitWall_5
+      rect:
+        serializedVersion: 2
+        x: 245
+        y: 30
+        width: 7
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a71bca51e5a8fbfc0800000000000000
+      internalID: -3476908250611535494
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MainChar_Throwing_Stuffs_Bomb_HitWall_6
+      rect:
+        serializedVersion: 2
+        x: 298
+        y: 15
+        width: 86
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: fe7f1f248d8e62fc0800000000000000
+      internalID: -3519870043209730065
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MainChar_Throwing_Stuffs_Bomb_HitWall_7
+      rect:
+        serializedVersion: 2
+        x: 234
+        y: 25
+        width: 6
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5fb8b5fd7c235bbc0800000000000000
+      internalID: -3768049679198352395
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MainChar_Throwing_Stuffs_Bomb_HitWall_8
+      rect:
+        serializedVersion: 2
+        x: 237
+        y: 18
+        width: 13
+        height: 17
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 481b899d2116011c0800000000000000
+      internalID: -4535018091174121084
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MainChar_Throwing_Stuffs_Bomb_HitWall_9
+      rect:
+        serializedVersion: 2
+        x: 249
+        y: 21
+        width: 8
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c4f1a5175bf403060800000000000000
+      internalID: 6931127467232599884
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MainChar_Throwing_Stuffs_Bomb_HitWall_10
+      rect:
+        serializedVersion: 2
+        x: 297
+        y: 25
+        width: 6
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 42efb988cdbd5a3c0800000000000000
+      internalID: -4348828124925133276
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MainChar_Throwing_Stuffs_Bomb_HitWall_11
+      rect:
+        serializedVersion: 2
+        x: 303
+        y: 21
+        width: 8
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7be1c561a7639d6f0800000000000000
+      internalID: -659435972444021065
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MainChar_Throwing_Stuffs_Bomb_HitWall_12
+      rect:
+        serializedVersion: 2
+        x: 245
+        y: 16
+        width: 10
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3aeb60f19c6ddbb50800000000000000
+      internalID: 6610675987347062435
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MainChar_Throwing_Stuffs_Bomb_HitWall_13
+      rect:
+        serializedVersion: 2
+        x: 300
+        y: 17
+        width: 7
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 40a52931c9e37a820800000000000000
+      internalID: 2929378922691975684
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      MainChar_Throwing_Stuffs_Bomb_HitWall_0: -2222338708668672398
+      MainChar_Throwing_Stuffs_Bomb_HitWall_1: 2226949498803554069
+      MainChar_Throwing_Stuffs_Bomb_HitWall_10: -4348828124925133276
+      MainChar_Throwing_Stuffs_Bomb_HitWall_11: -659435972444021065
+      MainChar_Throwing_Stuffs_Bomb_HitWall_12: 6610675987347062435
+      MainChar_Throwing_Stuffs_Bomb_HitWall_13: 2929378922691975684
+      MainChar_Throwing_Stuffs_Bomb_HitWall_2: 6788125260561249407
+      MainChar_Throwing_Stuffs_Bomb_HitWall_3: 4543612302961683377
+      MainChar_Throwing_Stuffs_Bomb_HitWall_4: -5173923059249061826
+      MainChar_Throwing_Stuffs_Bomb_HitWall_5: -3476908250611535494
+      MainChar_Throwing_Stuffs_Bomb_HitWall_6: -3519870043209730065
+      MainChar_Throwing_Stuffs_Bomb_HitWall_7: -3768049679198352395
+      MainChar_Throwing_Stuffs_Bomb_HitWall_8: -4535018091174121084
+      MainChar_Throwing_Stuffs_Bomb_HitWall_9: 6931127467232599884
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

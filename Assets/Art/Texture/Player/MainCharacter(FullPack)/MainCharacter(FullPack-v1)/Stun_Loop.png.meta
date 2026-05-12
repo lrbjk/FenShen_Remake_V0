@@ -1,0 +1,533 @@
+fileFormatVersion: 2
+guid: 599b9b9d5d4c9ae40853ef32309f85b2
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: 5898966470615436073
+    second: Stun_Loop_0
+  - first:
+      213: 4012818921004363597
+    second: Stun_Loop_1
+  - first:
+      213: -5412092914306894477
+    second: Stun_Loop_2
+  - first:
+      213: -6596891025439680966
+    second: Stun_Loop_3
+  - first:
+      213: 3300628705406620881
+    second: Stun_Loop_4
+  - first:
+      213: -6575294092977050396
+    second: Stun_Loop_5
+  - first:
+      213: -4582384145347649366
+    second: Stun_Loop_6
+  - first:
+      213: 7042384384236071001
+    second: Stun_Loop_7
+  - first:
+      213: 3382285793098336587
+    second: Stun_Loop_8
+  - first:
+      213: 8288627094878747192
+    second: Stun_Loop_9
+  - first:
+      213: 3535325952386864190
+    second: Stun_Loop_10
+  - first:
+      213: -1049146593850051819
+    second: Stun_Loop_11
+  - first:
+      213: -9007146935381567202
+    second: Stun_Loop_12
+  - first:
+      213: -5999022696456737775
+    second: Stun_Loop_13
+  - first:
+      213: -6136915471737226694
+    second: Stun_Loop_14
+  - first:
+      213: -6765680622900837514
+    second: Stun_Loop_15
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 0
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 32
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: Stun_Loop_0
+      rect:
+        serializedVersion: 2
+        x: 79
+        y: 31
+        width: 45
+        height: 51
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 92b09fe30c65dd150800000000000000
+      internalID: 5898966470615436073
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Stun_Loop_1
+      rect:
+        serializedVersion: 2
+        x: 97
+        y: 80
+        width: 7
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d4f6e6e3c8560b730800000000000000
+      internalID: 4012818921004363597
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Stun_Loop_2
+      rect:
+        serializedVersion: 2
+        x: 271
+        y: 31
+        width: 45
+        height: 57
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 375345f3b2264e4b0800000000000000
+      internalID: -5412092914306894477
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Stun_Loop_3
+      rect:
+        serializedVersion: 2
+        x: 464
+        y: 31
+        width: 45
+        height: 54
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a3694be60922374a0800000000000000
+      internalID: -6596891025439680966
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Stun_Loop_4
+      rect:
+        serializedVersion: 2
+        x: 656
+        y: 31
+        width: 45
+        height: 53
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1d41831f1503ecd20800000000000000
+      internalID: 3300628705406620881
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Stun_Loop_5
+      rect:
+        serializedVersion: 2
+        x: 680
+        y: 79
+        width: 8
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4ece06e1cdcdfb4a0800000000000000
+      internalID: -6575294092977050396
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Stun_Loop_6
+      rect:
+        serializedVersion: 2
+        x: 848
+        y: 31
+        width: 45
+        height: 52
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: aa0eb28f5e91860c0800000000000000
+      internalID: -4582384145347649366
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Stun_Loop_7
+      rect:
+        serializedVersion: 2
+        x: 868
+        y: 81
+        width: 9
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 958262a09439bb160800000000000000
+      internalID: 7042384384236071001
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Stun_Loop_8
+      rect:
+        serializedVersion: 2
+        x: 1039
+        y: 31
+        width: 45
+        height: 51
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b490a7a320b40fe20800000000000000
+      internalID: 3382285793098336587
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Stun_Loop_9
+      rect:
+        serializedVersion: 2
+        x: 1057
+        y: 80
+        width: 7
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 83afce18d6e170370800000000000000
+      internalID: 8288627094878747192
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Stun_Loop_10
+      rect:
+        serializedVersion: 2
+        x: 1231
+        y: 31
+        width: 45
+        height: 57
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e341d350930001130800000000000000
+      internalID: 3535325952386864190
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Stun_Loop_11
+      rect:
+        serializedVersion: 2
+        x: 1422
+        y: 31
+        width: 45
+        height: 54
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 513b1444bbea071f0800000000000000
+      internalID: -1049146593850051819
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Stun_Loop_12
+      rect:
+        serializedVersion: 2
+        x: 1614
+        y: 31
+        width: 45
+        height: 53
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e1955dc859f200380800000000000000
+      internalID: -9007146935381567202
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Stun_Loop_13
+      rect:
+        serializedVersion: 2
+        x: 1638
+        y: 79
+        width: 8
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 11ca03a44a03fbca0800000000000000
+      internalID: -5999022696456737775
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Stun_Loop_14
+      rect:
+        serializedVersion: 2
+        x: 1806
+        y: 31
+        width: 45
+        height: 52
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a3af08aa4eb45daa0800000000000000
+      internalID: -6136915471737226694
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Stun_Loop_15
+      rect:
+        serializedVersion: 2
+        x: 1826
+        y: 81
+        width: 9
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6738040d1597b12a0800000000000000
+      internalID: -6765680622900837514
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      Stun_Loop_0: 5898966470615436073
+      Stun_Loop_1: 4012818921004363597
+      Stun_Loop_10: 3535325952386864190
+      Stun_Loop_11: -1049146593850051819
+      Stun_Loop_12: -9007146935381567202
+      Stun_Loop_13: -5999022696456737775
+      Stun_Loop_14: -6136915471737226694
+      Stun_Loop_15: -6765680622900837514
+      Stun_Loop_2: -5412092914306894477
+      Stun_Loop_3: -6596891025439680966
+      Stun_Loop_4: 3300628705406620881
+      Stun_Loop_5: -6575294092977050396
+      Stun_Loop_6: -4582384145347649366
+      Stun_Loop_7: 7042384384236071001
+      Stun_Loop_8: 3382285793098336587
+      Stun_Loop_9: 8288627094878747192
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

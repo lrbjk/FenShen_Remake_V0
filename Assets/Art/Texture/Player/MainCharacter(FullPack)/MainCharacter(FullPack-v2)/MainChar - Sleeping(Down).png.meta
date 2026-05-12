@@ -1,0 +1,455 @@
+fileFormatVersion: 2
+guid: 0108759e673ab3846a16f09bbcf09532
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: 1735753323583865535
+    second: MainChar - Sleeping(Down)_0
+  - first:
+      213: 5872355323608773338
+    second: MainChar - Sleeping(Down)_1
+  - first:
+      213: -443731535226921627
+    second: MainChar - Sleeping(Down)_2
+  - first:
+      213: 7697219863137699759
+    second: MainChar - Sleeping(Down)_3
+  - first:
+      213: -7936853092810328163
+    second: MainChar - Sleeping(Down)_4
+  - first:
+      213: -522497821291649812
+    second: MainChar - Sleeping(Down)_5
+  - first:
+      213: -7789459422064240812
+    second: MainChar - Sleeping(Down)_6
+  - first:
+      213: 1162294546305958418
+    second: MainChar - Sleeping(Down)_7
+  - first:
+      213: 4169470980718741813
+    second: MainChar - Sleeping(Down)_8
+  - first:
+      213: 915037701852474856
+    second: MainChar - Sleeping(Down)_9
+  - first:
+      213: -2953228223580989721
+    second: MainChar - Sleeping(Down)_10
+  - first:
+      213: 7711607457898798020
+    second: MainChar - Sleeping(Down)_11
+  - first:
+      213: 2697612207279555055
+    second: MainChar - Sleeping(Down)_12
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: MainChar - Sleeping(Down)_0
+      rect:
+        serializedVersion: 2
+        x: 76
+        y: 31
+        width: 45
+        height: 59
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: fb28bed8372a61810800000000000000
+      internalID: 1735753323583865535
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MainChar - Sleeping(Down)_1
+      rect:
+        serializedVersion: 2
+        x: 266
+        y: 31
+        width: 47
+        height: 54
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ad23392cd0cce7150800000000000000
+      internalID: 5872355323608773338
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MainChar - Sleeping(Down)_2
+      rect:
+        serializedVersion: 2
+        x: 459
+        y: 31
+        width: 48
+        height: 42
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 56d192b058c87d9f0800000000000000
+      internalID: -443731535226921627
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MainChar - Sleeping(Down)_3
+      rect:
+        serializedVersion: 2
+        x: 651
+        y: 31
+        width: 48
+        height: 41
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: fa747641fa402da60800000000000000
+      internalID: 7697219863137699759
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MainChar - Sleeping(Down)_4
+      rect:
+        serializedVersion: 2
+        x: 839
+        y: 31
+        width: 51
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d977490d922aad190800000000000000
+      internalID: -7936853092810328163
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MainChar - Sleeping(Down)_5
+      rect:
+        serializedVersion: 2
+        x: 1028
+        y: 31
+        width: 54
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ce4eef5fff6bfb8f0800000000000000
+      internalID: -522497821291649812
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MainChar - Sleeping(Down)_6
+      rect:
+        serializedVersion: 2
+        x: 1217
+        y: 31
+        width: 57
+        height: 27
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4579a8b0de746e390800000000000000
+      internalID: -7789459422064240812
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MainChar - Sleeping(Down)_7
+      rect:
+        serializedVersion: 2
+        x: 1405
+        y: 31
+        width: 61
+        height: 19
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 212c0f45bbc412010800000000000000
+      internalID: 1162294546305958418
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MainChar - Sleeping(Down)_8
+      rect:
+        serializedVersion: 2
+        x: 1597
+        y: 31
+        width: 61
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5394a0324cfecd930800000000000000
+      internalID: 4169470980718741813
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MainChar - Sleeping(Down)_9
+      rect:
+        serializedVersion: 2
+        x: 1789
+        y: 31
+        width: 61
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8eda10711fdd2bc00800000000000000
+      internalID: 915037701852474856
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MainChar - Sleeping(Down)_10
+      rect:
+        serializedVersion: 2
+        x: 1981
+        y: 31
+        width: 61
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7e61cc8d3960407d0800000000000000
+      internalID: -2953228223580989721
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MainChar - Sleeping(Down)_11
+      rect:
+        serializedVersion: 2
+        x: 2173
+        y: 31
+        width: 61
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4cb9f470022250b60800000000000000
+      internalID: 7711607457898798020
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MainChar - Sleeping(Down)_12
+      rect:
+        serializedVersion: 2
+        x: 2365
+        y: 31
+        width: 61
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: fe1c7ac8208df6520800000000000000
+      internalID: 2697612207279555055
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      MainChar - Sleeping(Down)_0: 1735753323583865535
+      MainChar - Sleeping(Down)_1: 5872355323608773338
+      MainChar - Sleeping(Down)_10: -2953228223580989721
+      MainChar - Sleeping(Down)_11: 7711607457898798020
+      MainChar - Sleeping(Down)_12: 2697612207279555055
+      MainChar - Sleeping(Down)_2: -443731535226921627
+      MainChar - Sleeping(Down)_3: 7697219863137699759
+      MainChar - Sleeping(Down)_4: -7936853092810328163
+      MainChar - Sleeping(Down)_5: -522497821291649812
+      MainChar - Sleeping(Down)_6: -7789459422064240812
+      MainChar - Sleeping(Down)_7: 1162294546305958418
+      MainChar - Sleeping(Down)_8: 4169470980718741813
+      MainChar - Sleeping(Down)_9: 915037701852474856
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

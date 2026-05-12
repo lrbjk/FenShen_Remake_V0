@@ -1,0 +1,194 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0dd22fc87d42a7f4fabaf223f9883f33, type: 3}
+  m_Name: 91007_Timeline
+  m_EditorClassIdentifier: Assembly-CSharp::FenShen.Combat.SkillTimelineSO
+  length: 0.68
+  animationClips: []
+  movementClips:
+  - clipId: 
+    displayName: Movement 1
+    note: 
+    startTime: 0
+    duration: 0.38
+    enabled: 1
+    motionSource: 2
+    curveXName: MoveX
+    curveYName: MoveY
+    mirrorByFacing: 1
+    customCurveX:
+      serializedVersion: 2
+      m_Curve:
+      - serializedVersion: 3
+        time: 0
+        value: 0
+        inSlope: 0.5
+        outSlope: 0.5
+        tangentMode: 34
+        weightedMode: 0
+        inWeight: 0
+        outWeight: 0.33333334
+      - serializedVersion: 3
+        time: 1
+        value: 0.5
+        inSlope: 0.5
+        outSlope: 0.5
+        tangentMode: 34
+        weightedMode: 0
+        inWeight: 0.33333334
+        outWeight: 0
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+      m_RotationOrder: 0
+    customCurveY:
+      serializedVersion: 2
+      m_Curve:
+      - serializedVersion: 3
+        time: 0
+        value: 0
+        inSlope: 0
+        outSlope: 0
+        tangentMode: 34
+        weightedMode: 0
+        inWeight: 0
+        outWeight: 0.33333334
+      - serializedVersion: 3
+        time: 1
+        value: 0
+        inSlope: 0
+        outSlope: 0
+        tangentMode: 34
+        weightedMode: 0
+        inWeight: 0.33333334
+        outWeight: 0
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+      m_RotationOrder: 0
+  - clipId: 
+    displayName: Movement 2
+    note: 
+    startTime: 0.26666668
+    duration: 0.4
+    enabled: 1
+    motionSource: 2
+    curveXName: MoveX
+    curveYName: MoveY
+    mirrorByFacing: 1
+    customCurveX:
+      serializedVersion: 2
+      m_Curve:
+      - serializedVersion: 3
+        time: 0
+        value: 0
+        inSlope: 0
+        outSlope: 0
+        tangentMode: 34
+        weightedMode: 0
+        inWeight: 0
+        outWeight: 0.33333334
+      - serializedVersion: 3
+        time: 1
+        value: 0
+        inSlope: 0
+        outSlope: 0
+        tangentMode: 34
+        weightedMode: 0
+        inWeight: 0.33333334
+        outWeight: 0
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+      m_RotationOrder: 0
+    customCurveY:
+      serializedVersion: 2
+      m_Curve:
+      - serializedVersion: 3
+        time: 0
+        value: 0
+        inSlope: 19.344433
+        outSlope: 19.344433
+        tangentMode: 34
+        weightedMode: 0
+        inWeight: 0
+        outWeight: 0.33333334
+      - serializedVersion: 3
+        time: 0.09130931
+        value: 1.7663268
+        inSlope: 10.6631775
+        outSlope: 10.6631775
+        tangentMode: 34
+        weightedMode: 0
+        inWeight: 0.33333334
+        outWeight: 0.33333334
+      - serializedVersion: 3
+        time: 0.19240798
+        value: 1.9666965
+        inSlope: 0.98944944
+        outSlope: 0.98944944
+        tangentMode: 34
+        weightedMode: 0
+        inWeight: 0.33333334
+        outWeight: 0.33333334
+      - serializedVersion: 3
+        time: 0.37219703
+        value: 1.9661529
+        inSlope: 0.025445024
+        outSlope: 0.025445024
+        tangentMode: 34
+        weightedMode: 0
+        inWeight: 0.33333334
+        outWeight: 0.33333334
+      - serializedVersion: 3
+        time: 1
+        value: 2
+        inSlope: 0.05391356
+        outSlope: 0.05391356
+        tangentMode: 34
+        weightedMode: 0
+        inWeight: 0.33333334
+        outWeight: 0
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+      m_RotationOrder: 0
+  hitClips:
+  - clipId: 
+    displayName: Hit 1
+    note: 
+    startTime: 0.25
+    duration: 0.015
+    enabled: 1
+    hitShape: 0
+    offset: {x: 0.3, y: 0.58, z: 0}
+    size: {x: 2.1, y: 3.11, z: 1}
+    targetLayers:
+      serializedVersion: 2
+      m_Bits: 1
+    followsCaster: 0
+    allowRepeatHitsOnSameTarget: 0
+    isContinuous: 0
+    tickInterval: 0
+    damageMultiplier: 0
+    poiseDamage: 0
+  projectileClips: []
+  vfxClips: []
+  sfxClips: []
+  cameraClips: []
+  selfBuffClips: []
+  coreResourceClips: []
+  cancelWindowClips:
+  - clipId: 
+    displayName: Cancel 1
+    note: 
+    startTime: 0.33333334
+    duration: 0.35
+    enabled: 1
+    cancelPermission: 4
+  derivationWindowClips: []

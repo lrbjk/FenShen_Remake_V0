@@ -1,0 +1,585 @@
+fileFormatVersion: 2
+guid: c1a83d7f1fe222c478cce8d79f9d29ef
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: 2433666763244894588
+    second: EnergyBuff_0
+  - first:
+      213: -1497654936713955496
+    second: EnergyBuff_1
+  - first:
+      213: 6118478284177404301
+    second: EnergyBuff_2
+  - first:
+      213: -3559052952084265873
+    second: EnergyBuff_3
+  - first:
+      213: -4449081751107312828
+    second: EnergyBuff_4
+  - first:
+      213: -1507383990484186650
+    second: EnergyBuff_5
+  - first:
+      213: -170415104052301170
+    second: EnergyBuff_6
+  - first:
+      213: -4862724667668218819
+    second: EnergyBuff_7
+  - first:
+      213: -6016862768608384066
+    second: EnergyBuff_8
+  - first:
+      213: -7784557503916236520
+    second: EnergyBuff_9
+  - first:
+      213: 560569438135927153
+    second: EnergyBuff_10
+  - first:
+      213: 5198910343598198659
+    second: EnergyBuff_11
+  - first:
+      213: 7780340803520142865
+    second: EnergyBuff_12
+  - first:
+      213: -7683359114276095094
+    second: EnergyBuff_13
+  - first:
+      213: -4577296368749627437
+    second: EnergyBuff_14
+  - first:
+      213: -3102356565308693581
+    second: EnergyBuff_15
+  - first:
+      213: 7715914833800591049
+    second: EnergyBuff_16
+  - first:
+      213: -7171130897381440470
+    second: EnergyBuff_17
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 0
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 32
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: EnergyBuff_0
+      rect:
+        serializedVersion: 2
+        x: 76
+        y: 31
+        width: 46
+        height: 60
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c79f2ece60f16c120800000000000000
+      internalID: 2433666763244894588
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: EnergyBuff_1
+      rect:
+        serializedVersion: 2
+        x: 274
+        y: 31
+        width: 39
+        height: 60
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 857fd0d15c2473be0800000000000000
+      internalID: -1497654936713955496
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: EnergyBuff_2
+      rect:
+        serializedVersion: 2
+        x: 466
+        y: 31
+        width: 25
+        height: 80
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d81f556159339e450800000000000000
+      internalID: 6118478284177404301
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: EnergyBuff_3
+      rect:
+        serializedVersion: 2
+        x: 658
+        y: 31
+        width: 25
+        height: 81
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f64463e5234bb9ec0800000000000000
+      internalID: -3559052952084265873
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: EnergyBuff_4
+      rect:
+        serializedVersion: 2
+        x: 850
+        y: 31
+        width: 25
+        height: 82
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 443639838bfa142c0800000000000000
+      internalID: -4449081751107312828
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: EnergyBuff_5
+      rect:
+        serializedVersion: 2
+        x: 1042
+        y: 31
+        width: 25
+        height: 82
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6e944134f32b41be0800000000000000
+      internalID: -1507383990484186650
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: EnergyBuff_6
+      rect:
+        serializedVersion: 2
+        x: 1234
+        y: 31
+        width: 25
+        height: 82
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e82f992ad5092adf0800000000000000
+      internalID: -170415104052301170
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: EnergyBuff_7
+      rect:
+        serializedVersion: 2
+        x: 1426
+        y: 31
+        width: 25
+        height: 82
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d3c3b17bda1248cb0800000000000000
+      internalID: -4862724667668218819
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: EnergyBuff_8
+      rect:
+        serializedVersion: 2
+        x: 1584
+        y: 43
+        width: 6
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ebbe2dec03fcf7ca0800000000000000
+      internalID: -6016862768608384066
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: EnergyBuff_9
+      rect:
+        serializedVersion: 2
+        x: 1587
+        y: 31
+        width: 99
+        height: 83
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 811a87dc132b7f390800000000000000
+      internalID: -7784557503916236520
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: EnergyBuff_10
+      rect:
+        serializedVersion: 2
+        x: 1775
+        y: 31
+        width: 103
+        height: 70
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 17148081fea87c700800000000000000
+      internalID: 560569438135927153
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: EnergyBuff_11
+      rect:
+        serializedVersion: 2
+        x: 1966
+        y: 31
+        width: 122
+        height: 92
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 38f4649996d362840800000000000000
+      internalID: 5198910343598198659
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: EnergyBuff_12
+      rect:
+        serializedVersion: 2
+        x: 2158
+        y: 31
+        width: 122
+        height: 92
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 11e9b412db259fb60800000000000000
+      internalID: 7780340803520142865
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: EnergyBuff_13
+      rect:
+        serializedVersion: 2
+        x: 2350
+        y: 31
+        width: 119
+        height: 89
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a8b30dff7993f5590800000000000000
+      internalID: -7683359114276095094
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: EnergyBuff_14
+      rect:
+        serializedVersion: 2
+        x: 2544
+        y: 31
+        width: 117
+        height: 89
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3d73ef4443d2a70c0800000000000000
+      internalID: -4577296368749627437
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: EnergyBuff_15
+      rect:
+        serializedVersion: 2
+        x: 2737
+        y: 31
+        width: 116
+        height: 89
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3b3ac2e042732f4d0800000000000000
+      internalID: -3102356565308693581
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: EnergyBuff_16
+      rect:
+        serializedVersion: 2
+        x: 2955
+        y: 31
+        width: 45
+        height: 61
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9c6f9d129af641b60800000000000000
+      internalID: 7715914833800591049
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: EnergyBuff_17
+      rect:
+        serializedVersion: 2
+        x: 1777
+        y: 32
+        width: 6
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a2440cf61760b7c90800000000000000
+      internalID: -7171130897381440470
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      EnergyBuff_0: 2433666763244894588
+      EnergyBuff_1: -1497654936713955496
+      EnergyBuff_10: 560569438135927153
+      EnergyBuff_11: 5198910343598198659
+      EnergyBuff_12: 7780340803520142865
+      EnergyBuff_13: -7683359114276095094
+      EnergyBuff_14: -4577296368749627437
+      EnergyBuff_15: -3102356565308693581
+      EnergyBuff_16: 7715914833800591049
+      EnergyBuff_17: -7171130897381440470
+      EnergyBuff_2: 6118478284177404301
+      EnergyBuff_3: -3559052952084265873
+      EnergyBuff_4: -4449081751107312828
+      EnergyBuff_5: -1507383990484186650
+      EnergyBuff_6: -170415104052301170
+      EnergyBuff_7: -4862724667668218819
+      EnergyBuff_8: -6016862768608384066
+      EnergyBuff_9: -7784557503916236520
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

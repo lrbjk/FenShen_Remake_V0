@@ -12,14 +12,14 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0dd22fc87d42a7f4fabaf223f9883f33, type: 3}
   m_Name: 91003_Timeline
   m_EditorClassIdentifier: Assembly-CSharp::FenShen.Combat.SkillTimelineSO
-  length: 0.3
+  length: 0.35
   animationClips: []
   movementClips:
   - clipId: 
     displayName: Movement 1
     note: 
     startTime: 0
-    duration: 0.4
+    duration: 0.2
     enabled: 1
     motionSource: 2
     curveXName: MoveX
@@ -27,27 +27,21 @@ MonoBehaviour:
     mirrorByFacing: 1
     customCurveX:
       serializedVersion: 2
-      m_Curve: []
-      m_PreInfinity: 0
-      m_PostInfinity: 0
-      m_RotationOrder: 0
-    customCurveY:
-      serializedVersion: 2
       m_Curve:
       - serializedVersion: 3
-        time: 0.06985474
-        value: -0.019924164
-        inSlope: -4.0526342
-        outSlope: -4.0526342
+        time: 0
+        value: 0
+        inSlope: 0.5
+        outSlope: 0.5
         tangentMode: 34
         weightedMode: 0
         inWeight: 0
         outWeight: 0.33333334
       - serializedVersion: 3
-        time: 5
-        value: -20
-        inSlope: -4.0526342
-        outSlope: -4.0526342
+        time: 1
+        value: 0.5
+        inSlope: 0.5
+        outSlope: 0.5
         tangentMode: 34
         weightedMode: 0
         inWeight: 0.33333334
@@ -55,16 +49,22 @@ MonoBehaviour:
       m_PreInfinity: 2
       m_PostInfinity: 2
       m_RotationOrder: 0
+    customCurveY:
+      serializedVersion: 2
+      m_Curve: []
+      m_PreInfinity: 0
+      m_PostInfinity: 0
+      m_RotationOrder: 0
   hitClips:
   - clipId: 
     displayName: Hit 1
     note: 
-    startTime: 0.09090909
-    duration: 0.3
+    startTime: 0.06666667
+    duration: 0.015
     enabled: 1
     hitShape: 0
-    offset: {x: -0.11, y: -0.41, z: 0}
-    size: {x: 1.67, y: 2.12, z: 1}
+    offset: {x: -0.38, y: -0.13, z: 0}
+    size: {x: 3.08, y: 1.23, z: 1}
     targetLayers:
       serializedVersion: 2
       m_Bits: 1
@@ -78,12 +78,25 @@ MonoBehaviour:
   vfxClips: []
   sfxClips: []
   cameraClips: []
+  selfBuffClips: []
+  coreResourceClips: []
   cancelWindowClips:
   - clipId: 
     displayName: Cancel 1
     note: 
-    startTime: 0.14285715
-    duration: 0.2
+    startTime: 0.11666667
+    duration: 0.45
     enabled: 1
     cancelPermission: 3
-  derivationWindowClips: []
+  derivationWindowClips:
+  - clipId: 
+    displayName: Derivation 1
+    note: 
+    startTime: 0.083333336
+    duration: 0.48
+    enabled: 1
+    nextSkills:
+    - {fileID: 11400000, guid: bbfcb616a365a84429f43b2923e5732a, type: 2}
+    requiresHitConfirm: 0
+    requiresGrounded: 0
+    requiresAerial: 0

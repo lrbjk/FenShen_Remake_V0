@@ -12,19 +12,59 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0dd22fc87d42a7f4fabaf223f9883f33, type: 3}
   m_Name: 91004_Timeline
   m_EditorClassIdentifier: Assembly-CSharp::FenShen.Combat.SkillTimelineSO
-  length: 0.3
+  length: 0.35
   animationClips: []
-  movementClips: []
+  movementClips:
+  - clipId: 
+    displayName: Movement 1
+    note: 
+    startTime: 0
+    duration: 0.23
+    enabled: 1
+    motionSource: 2
+    curveXName: MoveX
+    curveYName: MoveY
+    mirrorByFacing: 1
+    customCurveX:
+      serializedVersion: 2
+      m_Curve:
+      - serializedVersion: 3
+        time: 0
+        value: 0
+        inSlope: 0.5
+        outSlope: 0.5
+        tangentMode: 34
+        weightedMode: 0
+        inWeight: 0
+        outWeight: 0.33333334
+      - serializedVersion: 3
+        time: 1
+        value: 0.5
+        inSlope: 0.5
+        outSlope: 0.5
+        tangentMode: 34
+        weightedMode: 0
+        inWeight: 0.33333334
+        outWeight: 0
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+      m_RotationOrder: 0
+    customCurveY:
+      serializedVersion: 2
+      m_Curve: []
+      m_PreInfinity: 0
+      m_PostInfinity: 0
+      m_RotationOrder: 0
   hitClips:
   - clipId: 
     displayName: Hit 1
     note: 
-    startTime: 0
-    duration: 0.1
+    startTime: 0.1
+    duration: 0.015
     enabled: 1
     hitShape: 0
-    offset: {x: -0.11, y: -0.66, z: 0}
-    size: {x: 2, y: 1, z: 1}
+    offset: {x: 0.6, y: 0.23, z: 0}
+    size: {x: 2, y: 1.95, z: 1}
     targetLayers:
       serializedVersion: 2
       m_Bits: 1
@@ -38,12 +78,24 @@ MonoBehaviour:
   vfxClips: []
   sfxClips: []
   cameraClips: []
+  selfBuffClips: []
+  coreResourceClips: []
   cancelWindowClips:
   - clipId: 
     displayName: Cancel 1
     note: 
-    startTime: 0.09090909
-    duration: 0.3
+    startTime: 0.13333334
+    duration: 0.45
     enabled: 1
     cancelPermission: 3
-  derivationWindowClips: []
+  derivationWindowClips:
+  - clipId: 
+    displayName: Derivation 1
+    note: 
+    startTime: 0.11666667
+    duration: 0.47
+    enabled: 1
+    nextSkills: []
+    requiresHitConfirm: 0
+    requiresGrounded: 0
+    requiresAerial: 0

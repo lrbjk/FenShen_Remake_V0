@@ -1,0 +1,585 @@
+fileFormatVersion: 2
+guid: 4681149434031b246a50e51e1259f031
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: -9075220766153646685
+    second: Heal_GoldenApple_0
+  - first:
+      213: -8622620382968441308
+    second: Heal_GoldenApple_1
+  - first:
+      213: 3093165970834749393
+    second: Heal_GoldenApple_2
+  - first:
+      213: 2827142980306302426
+    second: Heal_GoldenApple_3
+  - first:
+      213: -819181667751672240
+    second: Heal_GoldenApple_4
+  - first:
+      213: 183745652991453282
+    second: Heal_GoldenApple_5
+  - first:
+      213: -1916679834027567636
+    second: Heal_GoldenApple_6
+  - first:
+      213: -566633645086868449
+    second: Heal_GoldenApple_7
+  - first:
+      213: 2490454126969146635
+    second: Heal_GoldenApple_8
+  - first:
+      213: 8918188776811302274
+    second: Heal_GoldenApple_9
+  - first:
+      213: 781150755329270135
+    second: Heal_GoldenApple_10
+  - first:
+      213: -434660635588578021
+    second: Heal_GoldenApple_11
+  - first:
+      213: -4727277311568038574
+    second: Heal_GoldenApple_12
+  - first:
+      213: 4513511010322803108
+    second: Heal_GoldenApple_13
+  - first:
+      213: 7377052372481909134
+    second: Heal_GoldenApple_14
+  - first:
+      213: -6602125082320651654
+    second: Heal_GoldenApple_15
+  - first:
+      213: -4756835620286960603
+    second: Heal_GoldenApple_16
+  - first:
+      213: -8221045189713804863
+    second: Heal_GoldenApple_17
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 0
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 32
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: Heal_GoldenApple_0
+      rect:
+        serializedVersion: 2
+        x: 1036
+        y: 31
+        width: 46
+        height: 67
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3add927bbc65e0280800000000000000
+      internalID: -9075220766153646685
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Heal_GoldenApple_1
+      rect:
+        serializedVersion: 2
+        x: 1214
+        y: 31
+        width: 64
+        height: 69
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4269f10427c465880800000000000000
+      internalID: -8622620382968441308
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Heal_GoldenApple_2
+      rect:
+        serializedVersion: 2
+        x: 1434
+        y: 92
+        width: 12
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1d77eeaef022dea20800000000000000
+      internalID: 3093165970834749393
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Heal_GoldenApple_3
+      rect:
+        serializedVersion: 2
+        x: 1447
+        y: 85
+        width: 12
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ad5756ecf870c3720800000000000000
+      internalID: 2827142980306302426
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Heal_GoldenApple_4
+      rect:
+        serializedVersion: 2
+        x: 1596
+        y: 31
+        width: 68
+        height: 71
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 05646270d9ea1a4f0800000000000000
+      internalID: -819181667751672240
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Heal_GoldenApple_5
+      rect:
+        serializedVersion: 2
+        x: 1788
+        y: 31
+        width: 68
+        height: 72
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 268e397a2bbcc8200800000000000000
+      internalID: 183745652991453282
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Heal_GoldenApple_6
+      rect:
+        serializedVersion: 2
+        x: 75
+        y: 31
+        width: 45
+        height: 60
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ce5d1a098d59665e0800000000000000
+      internalID: -1916679834027567636
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Heal_GoldenApple_7
+      rect:
+        serializedVersion: 2
+        x: 266
+        y: 31
+        width: 44
+        height: 60
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f1cffc2b3b9e228f0800000000000000
+      internalID: -566633645086868449
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Heal_GoldenApple_8
+      rect:
+        serializedVersion: 2
+        x: 458
+        y: 31
+        width: 44
+        height: 60
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b0dc66f55dedf8220800000000000000
+      internalID: 2490454126969146635
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Heal_GoldenApple_9
+      rect:
+        serializedVersion: 2
+        x: 650
+        y: 31
+        width: 44
+        height: 60
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 28d86b12175c3cb70800000000000000
+      internalID: 8918188776811302274
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Heal_GoldenApple_10
+      rect:
+        serializedVersion: 2
+        x: 833
+        y: 31
+        width: 56
+        height: 60
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 771ed67297437da00800000000000000
+      internalID: 781150755329270135
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Heal_GoldenApple_11
+      rect:
+        serializedVersion: 2
+        x: 874
+        y: 31
+        width: 17
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b15b5e17476c7f9f0800000000000000
+      internalID: -434660635588578021
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Heal_GoldenApple_12
+      rect:
+        serializedVersion: 2
+        x: 1023
+        y: 31
+        width: 13
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2553931d456556eb0800000000000000
+      internalID: -4727277311568038574
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Heal_GoldenApple_13
+      rect:
+        serializedVersion: 2
+        x: 1029
+        y: 37
+        width: 8
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4a9ea1ca95633ae30800000000000000
+      internalID: 4513511010322803108
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Heal_GoldenApple_14
+      rect:
+        serializedVersion: 2
+        x: 1072
+        y: 31
+        width: 13
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e81ac372c0e806660800000000000000
+      internalID: 7377052372481909134
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Heal_GoldenApple_15
+      rect:
+        serializedVersion: 2
+        x: 1405
+        y: 31
+        width: 66
+        height: 60
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a7ab499973a8064a0800000000000000
+      internalID: -6602125082320651654
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Heal_GoldenApple_16
+      rect:
+        serializedVersion: 2
+        x: 1980
+        y: 31
+        width: 68
+        height: 60
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 52ceed5c4335cfdb0800000000000000
+      internalID: -4756835620286960603
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Heal_GoldenApple_17
+      rect:
+        serializedVersion: 2
+        x: 2172
+        y: 31
+        width: 68
+        height: 60
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1c1cca8f4faf8ed80800000000000000
+      internalID: -8221045189713804863
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      Heal_GoldenApple_0: -9075220766153646685
+      Heal_GoldenApple_1: -8622620382968441308
+      Heal_GoldenApple_10: 781150755329270135
+      Heal_GoldenApple_11: -434660635588578021
+      Heal_GoldenApple_12: -4727277311568038574
+      Heal_GoldenApple_13: 4513511010322803108
+      Heal_GoldenApple_14: 7377052372481909134
+      Heal_GoldenApple_15: -6602125082320651654
+      Heal_GoldenApple_16: -4756835620286960603
+      Heal_GoldenApple_17: -8221045189713804863
+      Heal_GoldenApple_2: 3093165970834749393
+      Heal_GoldenApple_3: 2827142980306302426
+      Heal_GoldenApple_4: -819181667751672240
+      Heal_GoldenApple_5: 183745652991453282
+      Heal_GoldenApple_6: -1916679834027567636
+      Heal_GoldenApple_7: -566633645086868449
+      Heal_GoldenApple_8: 2490454126969146635
+      Heal_GoldenApple_9: 8918188776811302274
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

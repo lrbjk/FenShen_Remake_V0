@@ -26,19 +26,11 @@ namespace FenShen.GameData
         DodgeFollowUp = 3,
         GuardCounter = 4,
         ChargedAttack = 5,
-        SkillTrigger = 6,
-    }
-
-    public enum WeaponDerivationTrigger
-    {
-        ManualInput = 0,
-        OnHit = 1,
-        OnBlock = 2,
-        OnPerfectDodge = 3,
-        OnGuardSuccess = 4,
-        OnResourceFull = 5,
-        OnAerial = 6,
-        OnGrounded = 7,
+        Launcher = 7,
+        Slam = 8,
+        SpecialNeutral = 9,
+        SpecialUp = 10,
+        SpecialDown = 11,
     }
 
     public enum WeaponResourceType
@@ -111,62 +103,6 @@ namespace FenShen.GameData
         [Min(0f)] public float guardGain = 0f;
         [InspectorName("每秒自然恢复")]
         [Min(0f)] public float passiveRegenPerSecond = 0f;
-    }
-
-    [Serializable]
-    public class WeaponComboBranch
-    {
-        [InspectorName("分支ID")]
-        public string branchId;
-        [InspectorName("来源技能")]
-        public FenShen.Combat.CombatSkillDefinitionSO fromSkill;
-        [InspectorName("来源技能ID")]
-        public string fromSkillId;
-        [InspectorName("目标技能")]
-        public FenShen.Combat.CombatSkillDefinitionSO toSkill;
-        [InspectorName("目标技能ID")]
-        public string toSkillId;
-        [InspectorName("触发方式")]
-        public WeaponDerivationTrigger trigger = WeaponDerivationTrigger.ManualInput;
-        [InspectorName("需要命中确认")]
-        public bool requiresHitConfirm;
-        [InspectorName("需要在地面")]
-        public bool requiresGrounded;
-        [InspectorName("需要在空中")]
-        public bool requiresAerial;
-        [InspectorName("进入时消耗资源")]
-        public bool consumeResourceOnEnter;
-        [InspectorName("窗口开始归一化时间")]
-        [Min(0f)] public float windowStartNormalizedTime = 0.2f;
-        [InspectorName("窗口结束归一化时间")]
-        [Min(0f)] public float windowEndNormalizedTime = 0.8f;
-        [InspectorName("取消权限")]
-        public WeaponCancelPermission cancelPermission = WeaponCancelPermission.SkillOnly;
-    }
-
-    [Serializable]
-    public class WeaponSpecialDerivationWindow
-    {
-        [InspectorName("窗口ID")]
-        public string windowId;
-        [InspectorName("来源技能")]
-        public FenShen.Combat.CombatSkillDefinitionSO sourceSkill;
-        [InspectorName("来源技能ID")]
-        public string sourceSkillId;
-        [InspectorName("描述")]
-        [TextArea] public string description;
-        [InspectorName("触发方式")]
-        public WeaponDerivationTrigger trigger = WeaponDerivationTrigger.ManualInput;
-        [InspectorName("窗口开始归一化时间")]
-        [Min(0f)] public float windowStartNormalizedTime = 0.1f;
-        [InspectorName("窗口结束归一化时间")]
-        [Min(0f)] public float windowEndNormalizedTime = 0.3f;
-        [InspectorName("可派生技能")]
-        public List<FenShen.Combat.CombatSkillDefinitionSO> nextSkills = new List<FenShen.Combat.CombatSkillDefinitionSO>();
-        [InspectorName("可派生技能ID")]
-        public List<string> nextSkillIds = new List<string>();
-        [InspectorName("取消权限")]
-        public WeaponCancelPermission cancelPermission = WeaponCancelPermission.SkillOnly;
     }
 
     [Serializable]

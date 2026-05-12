@@ -17,6 +17,23 @@ namespace FenShen.GameData
         Guard = 7,
     }
 
+    public enum CoreSkillSlotInput
+    {
+        Skill1 = 0,
+        Skill2 = 1,
+        Skill3 = 2,
+        Skill4 = 3,
+        FaceY = 10,
+        FaceYNeutral = 11,
+        FaceYUp = 12,
+        FaceYDown = 13,
+        Finisher = 20,
+        Utility = 21,
+        ModifierRightShoulder = 30,
+        ModifierFaceX = 31,
+        ModifierFaceY = 32,
+    }
+
     [Serializable]
     public class CoreResourceSettings
     {
@@ -65,6 +82,34 @@ namespace FenShen.GameData
         [Min(0f)] public float flatResourceCost;
         [InspectorName("资源不足时禁止释放")]
         public bool requireEnoughResource = true;
+    }
+
+    [Serializable]
+    public class CoreSkillSlotDefinition
+    {
+        [InspectorName("槽位ID")]
+        public string slotId;
+        [InspectorName("显示名称")]
+        public string displayName;
+        [InspectorName("输入槽位")]
+        public CoreSkillSlotInput input = CoreSkillSlotInput.Skill1;
+        [InspectorName("允许的技能类型")]
+        public CombatSkillKind allowedKind = CombatSkillKind.Any;
+        [InspectorName("允许的战斗定位")]
+        public CombatSkillRoleTag allowedRoleTags = CombatSkillRoleTag.None;
+        [InspectorName("默认技能")]
+        public CombatSkillDefinitionSO defaultSkill;
+        [InspectorName("允许空槽")]
+        public bool allowEmpty;
+    }
+
+    [Serializable]
+    public class CoreEquippedSkill
+    {
+        [InspectorName("槽位ID")]
+        public string slotId;
+        [InspectorName("装备技能")]
+        public CombatSkillDefinitionSO skill;
     }
 
     [Serializable]

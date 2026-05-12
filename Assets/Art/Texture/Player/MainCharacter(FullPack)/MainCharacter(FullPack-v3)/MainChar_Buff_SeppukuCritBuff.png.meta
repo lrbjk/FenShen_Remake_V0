@@ -1,0 +1,975 @@
+fileFormatVersion: 2
+guid: 52f052dd7056eea459de834733cbe60c
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: 4966397334985175234
+    second: MainChar_Buff_SeppukuCritBuff_0
+  - first:
+      213: -7017960972369749927
+    second: MainChar_Buff_SeppukuCritBuff_1
+  - first:
+      213: 3580941462861287546
+    second: MainChar_Buff_SeppukuCritBuff_2
+  - first:
+      213: -4499833369496285452
+    second: MainChar_Buff_SeppukuCritBuff_3
+  - first:
+      213: 2467545061022456093
+    second: MainChar_Buff_SeppukuCritBuff_4
+  - first:
+      213: -6369353933812409774
+    second: MainChar_Buff_SeppukuCritBuff_5
+  - first:
+      213: 4710775514742068579
+    second: MainChar_Buff_SeppukuCritBuff_6
+  - first:
+      213: -4099311082488063034
+    second: MainChar_Buff_SeppukuCritBuff_7
+  - first:
+      213: 9037011677831398356
+    second: MainChar_Buff_SeppukuCritBuff_8
+  - first:
+      213: -8256531259176519913
+    second: MainChar_Buff_SeppukuCritBuff_9
+  - first:
+      213: -7373067643490512157
+    second: MainChar_Buff_SeppukuCritBuff_10
+  - first:
+      213: -3037186409155585733
+    second: MainChar_Buff_SeppukuCritBuff_11
+  - first:
+      213: 1026343749535069893
+    second: MainChar_Buff_SeppukuCritBuff_12
+  - first:
+      213: -6764142133122773690
+    second: MainChar_Buff_SeppukuCritBuff_13
+  - first:
+      213: 5196737869605021330
+    second: MainChar_Buff_SeppukuCritBuff_14
+  - first:
+      213: -2570681560523165402
+    second: MainChar_Buff_SeppukuCritBuff_15
+  - first:
+      213: 2916066938631005500
+    second: MainChar_Buff_SeppukuCritBuff_16
+  - first:
+      213: 4790445252398503100
+    second: MainChar_Buff_SeppukuCritBuff_17
+  - first:
+      213: -7318933703554652998
+    second: MainChar_Buff_SeppukuCritBuff_18
+  - first:
+      213: -4098621204420408333
+    second: MainChar_Buff_SeppukuCritBuff_19
+  - first:
+      213: -7370057874460416918
+    second: MainChar_Buff_SeppukuCritBuff_20
+  - first:
+      213: -361172249133406695
+    second: MainChar_Buff_SeppukuCritBuff_21
+  - first:
+      213: 230038493070907177
+    second: MainChar_Buff_SeppukuCritBuff_22
+  - first:
+      213: -2660204449147883027
+    second: MainChar_Buff_SeppukuCritBuff_23
+  - first:
+      213: -3409252863601285442
+    second: MainChar_Buff_SeppukuCritBuff_24
+  - first:
+      213: 838467402232071383
+    second: MainChar_Buff_SeppukuCritBuff_25
+  - first:
+      213: -3755761205486611092
+    second: MainChar_Buff_SeppukuCritBuff_26
+  - first:
+      213: -2617074437034854087
+    second: MainChar_Buff_SeppukuCritBuff_27
+  - first:
+      213: 7689726156786514990
+    second: MainChar_Buff_SeppukuCritBuff_28
+  - first:
+      213: 2142015264820648265
+    second: MainChar_Buff_SeppukuCritBuff_29
+  - first:
+      213: 648784271792353479
+    second: MainChar_Buff_SeppukuCritBuff_30
+  - first:
+      213: -6713734930109574305
+    second: MainChar_Buff_SeppukuCritBuff_31
+  - first:
+      213: 5038007217084999069
+    second: MainChar_Buff_SeppukuCritBuff_32
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: MainChar_Buff_SeppukuCritBuff_0
+      rect:
+        serializedVersion: 2
+        x: 77
+        y: 31
+        width: 44
+        height: 60
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2c0fc3520103ce440800000000000000
+      internalID: 4966397334985175234
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MainChar_Buff_SeppukuCritBuff_1
+      rect:
+        serializedVersion: 2
+        x: 274
+        y: 31
+        width: 35
+        height: 60
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 958985aada13b9e90800000000000000
+      internalID: -7017960972369749927
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MainChar_Buff_SeppukuCritBuff_2
+      rect:
+        serializedVersion: 2
+        x: 466
+        y: 31
+        width: 44
+        height: 73
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a70905fa94f02b130800000000000000
+      internalID: 3580941462861287546
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MainChar_Buff_SeppukuCritBuff_3
+      rect:
+        serializedVersion: 2
+        x: 658
+        y: 31
+        width: 43
+        height: 74
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4fe89be34616d81c0800000000000000
+      internalID: -4499833369496285452
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MainChar_Buff_SeppukuCritBuff_4
+      rect:
+        serializedVersion: 2
+        x: 848
+        y: 31
+        width: 35
+        height: 51
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d19538dc82b7e3220800000000000000
+      internalID: 2467545061022456093
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MainChar_Buff_SeppukuCritBuff_5
+      rect:
+        serializedVersion: 2
+        x: 1029
+        y: 31
+        width: 65
+        height: 58
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 25adf5ee7528b97a0800000000000000
+      internalID: -6369353933812409774
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MainChar_Buff_SeppukuCritBuff_6
+      rect:
+        serializedVersion: 2
+        x: 1224
+        y: 74
+        width: 8
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3651fc43f59006140800000000000000
+      internalID: 4710775514742068579
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MainChar_Buff_SeppukuCritBuff_7
+      rect:
+        serializedVersion: 2
+        x: 1228
+        y: 31
+        width: 51
+        height: 57
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6cb1a702a425c17c0800000000000000
+      internalID: -4099311082488063034
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MainChar_Buff_SeppukuCritBuff_8
+      rect:
+        serializedVersion: 2
+        x: 1240
+        y: 81
+        width: 8
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4d38238ad3ae96d70800000000000000
+      internalID: 9037011677831398356
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MainChar_Buff_SeppukuCritBuff_9
+      rect:
+        serializedVersion: 2
+        x: 1273
+        y: 69
+        width: 14
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 717ffd39098ea6d80800000000000000
+      internalID: -8256531259176519913
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MainChar_Buff_SeppukuCritBuff_10
+      rect:
+        serializedVersion: 2
+        x: 1419
+        y: 31
+        width: 49
+        height: 57
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3e252dcda0a9da990800000000000000
+      internalID: -7373067643490512157
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MainChar_Buff_SeppukuCritBuff_11
+      rect:
+        serializedVersion: 2
+        x: 1432
+        y: 80
+        width: 6
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b3913a57d0fb9d5d0800000000000000
+      internalID: -3037186409155585733
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MainChar_Buff_SeppukuCritBuff_12
+      rect:
+        serializedVersion: 2
+        x: 1607
+        y: 31
+        width: 66
+        height: 58
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5c6fa70d33e4e3e00800000000000000
+      internalID: 1026343749535069893
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MainChar_Buff_SeppukuCritBuff_13
+      rect:
+        serializedVersion: 2
+        x: 1792
+        y: 31
+        width: 73
+        height: 57
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 64dc6f06190f022a0800000000000000
+      internalID: -6764142133122773690
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MainChar_Buff_SeppukuCritBuff_14
+      rect:
+        serializedVersion: 2
+        x: 1999
+        y: 31
+        width: 58
+        height: 52
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 296a0a41f858e1840800000000000000
+      internalID: 5196737869605021330
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MainChar_Buff_SeppukuCritBuff_15
+      rect:
+        serializedVersion: 2
+        x: 2194
+        y: 31
+        width: 35
+        height: 52
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 621be52adba135cd0800000000000000
+      internalID: -2570681560523165402
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MainChar_Buff_SeppukuCritBuff_16
+      rect:
+        serializedVersion: 2
+        x: 2386
+        y: 31
+        width: 35
+        height: 52
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c35ac524e63f77820800000000000000
+      internalID: 2916066938631005500
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MainChar_Buff_SeppukuCritBuff_17
+      rect:
+        serializedVersion: 2
+        x: 2578
+        y: 31
+        width: 35
+        height: 52
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: cb45b2183941b7240800000000000000
+      internalID: 4790445252398503100
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MainChar_Buff_SeppukuCritBuff_18
+      rect:
+        serializedVersion: 2
+        x: 2770
+        y: 31
+        width: 35
+        height: 52
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ab4adf0f29ced6a90800000000000000
+      internalID: -7318933703554652998
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MainChar_Buff_SeppukuCritBuff_19
+      rect:
+        serializedVersion: 2
+        x: 2962
+        y: 31
+        width: 35
+        height: 52
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3fb43a1eab5ce17c0800000000000000
+      internalID: -4098621204420408333
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MainChar_Buff_SeppukuCritBuff_20
+      rect:
+        serializedVersion: 2
+        x: 3154
+        y: 31
+        width: 35
+        height: 52
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a6467b2596b48b990800000000000000
+      internalID: -7370057874460416918
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MainChar_Buff_SeppukuCritBuff_21
+      rect:
+        serializedVersion: 2
+        x: 3346
+        y: 31
+        width: 35
+        height: 52
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 916aca3c0cbdcfaf0800000000000000
+      internalID: -361172249133406695
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MainChar_Buff_SeppukuCritBuff_22
+      rect:
+        serializedVersion: 2
+        x: 3536
+        y: 31
+        width: 35
+        height: 51
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 92758286ac2413300800000000000000
+      internalID: 230038493070907177
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MainChar_Buff_SeppukuCritBuff_23
+      rect:
+        serializedVersion: 2
+        x: 3729
+        y: 31
+        width: 47
+        height: 54
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: de170aad52e051bd0800000000000000
+      internalID: -2660204449147883027
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MainChar_Buff_SeppukuCritBuff_24
+      rect:
+        serializedVersion: 2
+        x: 3916
+        y: 31
+        width: 46
+        height: 59
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: eb6ef836596efa0d0800000000000000
+      internalID: -3409252863601285442
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MainChar_Buff_SeppukuCritBuff_25
+      rect:
+        serializedVersion: 2
+        x: 4108
+        y: 31
+        width: 45
+        height: 60
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7d489c1f8a5d2ab00800000000000000
+      internalID: 838467402232071383
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MainChar_Buff_SeppukuCritBuff_26
+      rect:
+        serializedVersion: 2
+        x: 1415
+        y: 74
+        width: 6
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c6517cd151bd0ebc0800000000000000
+      internalID: -3755761205486611092
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MainChar_Buff_SeppukuCritBuff_27
+      rect:
+        serializedVersion: 2
+        x: 1460
+        y: 61
+        width: 8
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 93938c55aa84eabd0800000000000000
+      internalID: -2617074437034854087
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MainChar_Buff_SeppukuCritBuff_28
+      rect:
+        serializedVersion: 2
+        x: 1468
+        y: 65
+        width: 13
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e2c3a4b923567ba60800000000000000
+      internalID: 7689726156786514990
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MainChar_Buff_SeppukuCritBuff_29
+      rect:
+        serializedVersion: 2
+        x: 1218
+        y: 41
+        width: 11
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9495913d887f9bd10800000000000000
+      internalID: 2142015264820648265
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MainChar_Buff_SeppukuCritBuff_30
+      rect:
+        serializedVersion: 2
+        x: 1228
+        y: 49
+        width: 6
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7c03b089bd1f00900800000000000000
+      internalID: 648784271792353479
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MainChar_Buff_SeppukuCritBuff_31
+      rect:
+        serializedVersion: 2
+        x: 1408
+        y: 40
+        width: 12
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f53dfa6e6a504d2a0800000000000000
+      internalID: -6713734930109574305
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MainChar_Buff_SeppukuCritBuff_32
+      rect:
+        serializedVersion: 2
+        x: 1600
+        y: 39
+        width: 9
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d95a4361fd89ae540800000000000000
+      internalID: 5038007217084999069
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      MainChar_Buff_SeppukuCritBuff_0: 4966397334985175234
+      MainChar_Buff_SeppukuCritBuff_1: -7017960972369749927
+      MainChar_Buff_SeppukuCritBuff_10: -7373067643490512157
+      MainChar_Buff_SeppukuCritBuff_11: -3037186409155585733
+      MainChar_Buff_SeppukuCritBuff_12: 1026343749535069893
+      MainChar_Buff_SeppukuCritBuff_13: -6764142133122773690
+      MainChar_Buff_SeppukuCritBuff_14: 5196737869605021330
+      MainChar_Buff_SeppukuCritBuff_15: -2570681560523165402
+      MainChar_Buff_SeppukuCritBuff_16: 2916066938631005500
+      MainChar_Buff_SeppukuCritBuff_17: 4790445252398503100
+      MainChar_Buff_SeppukuCritBuff_18: -7318933703554652998
+      MainChar_Buff_SeppukuCritBuff_19: -4098621204420408333
+      MainChar_Buff_SeppukuCritBuff_2: 3580941462861287546
+      MainChar_Buff_SeppukuCritBuff_20: -7370057874460416918
+      MainChar_Buff_SeppukuCritBuff_21: -361172249133406695
+      MainChar_Buff_SeppukuCritBuff_22: 230038493070907177
+      MainChar_Buff_SeppukuCritBuff_23: -2660204449147883027
+      MainChar_Buff_SeppukuCritBuff_24: -3409252863601285442
+      MainChar_Buff_SeppukuCritBuff_25: 838467402232071383
+      MainChar_Buff_SeppukuCritBuff_26: -3755761205486611092
+      MainChar_Buff_SeppukuCritBuff_27: -2617074437034854087
+      MainChar_Buff_SeppukuCritBuff_28: 7689726156786514990
+      MainChar_Buff_SeppukuCritBuff_29: 2142015264820648265
+      MainChar_Buff_SeppukuCritBuff_3: -4499833369496285452
+      MainChar_Buff_SeppukuCritBuff_30: 648784271792353479
+      MainChar_Buff_SeppukuCritBuff_31: -6713734930109574305
+      MainChar_Buff_SeppukuCritBuff_32: 5038007217084999069
+      MainChar_Buff_SeppukuCritBuff_4: 2467545061022456093
+      MainChar_Buff_SeppukuCritBuff_5: -6369353933812409774
+      MainChar_Buff_SeppukuCritBuff_6: 4710775514742068579
+      MainChar_Buff_SeppukuCritBuff_7: -4099311082488063034
+      MainChar_Buff_SeppukuCritBuff_8: 9037011677831398356
+      MainChar_Buff_SeppukuCritBuff_9: -8256531259176519913
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

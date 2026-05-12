@@ -1,0 +1,481 @@
+fileFormatVersion: 2
+guid: 5cb4c3e1152c9314c94a6f4f47f64e91
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: 6070691806294454734
+    second: MainChar - Torch(Idle)_0
+  - first:
+      213: 4038435772281229167
+    second: MainChar - Torch(Idle)_1
+  - first:
+      213: -8483265637899220498
+    second: MainChar - Torch(Idle)_2
+  - first:
+      213: -4940560113571428329
+    second: MainChar - Torch(Idle)_3
+  - first:
+      213: 6560975407940379838
+    second: MainChar - Torch(Idle)_4
+  - first:
+      213: -225890529858006710
+    second: MainChar - Torch(Idle)_5
+  - first:
+      213: 7395287232486322040
+    second: MainChar - Torch(Idle)_6
+  - first:
+      213: 4896963568415851781
+    second: MainChar - Torch(Idle)_7
+  - first:
+      213: 6723451015682462771
+    second: MainChar - Torch(Idle)_8
+  - first:
+      213: 3175539236775044099
+    second: MainChar - Torch(Idle)_9
+  - first:
+      213: -7732655805362521312
+    second: MainChar - Torch(Idle)_10
+  - first:
+      213: 5710873656856062589
+    second: MainChar - Torch(Idle)_11
+  - first:
+      213: 5867318915680436997
+    second: MainChar - Torch(Idle)_12
+  - first:
+      213: 9148100688993068707
+    second: MainChar - Torch(Idle)_13
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: MainChar - Torch(Idle)_0
+      rect:
+        serializedVersion: 2
+        x: 77
+        y: 31
+        width: 46
+        height: 71
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ec13e0fa80e6f3450800000000000000
+      internalID: 6070691806294454734
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MainChar - Torch(Idle)_1
+      rect:
+        serializedVersion: 2
+        x: 270
+        y: 31
+        width: 46
+        height: 68
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f6f8d0730f76b0830800000000000000
+      internalID: 4038435772281229167
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MainChar - Torch(Idle)_2
+      rect:
+        serializedVersion: 2
+        x: 463
+        y: 31
+        width: 46
+        height: 69
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ee94dbd39d2654a80800000000000000
+      internalID: -8483265637899220498
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MainChar - Torch(Idle)_3
+      rect:
+        serializedVersion: 2
+        x: 654
+        y: 31
+        width: 46
+        height: 71
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7188c1fb0ca9f6bb0800000000000000
+      internalID: -4940560113571428329
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MainChar - Torch(Idle)_4
+      rect:
+        serializedVersion: 2
+        x: 845
+        y: 31
+        width: 45
+        height: 69
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: eb42c5a3f544d0b50800000000000000
+      internalID: 6560975407940379838
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MainChar - Torch(Idle)_5
+      rect:
+        serializedVersion: 2
+        x: 1036
+        y: 31
+        width: 44
+        height: 68
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a4150b982c97ddcf0800000000000000
+      internalID: -225890529858006710
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MainChar - Torch(Idle)_6
+      rect:
+        serializedVersion: 2
+        x: 1227
+        y: 31
+        width: 46
+        height: 68
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 87f24585e8651a660800000000000000
+      internalID: 7395287232486322040
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MainChar - Torch(Idle)_7
+      rect:
+        serializedVersion: 2
+        x: 1420
+        y: 31
+        width: 45
+        height: 69
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 505c4759b6285f340800000000000000
+      internalID: 4896963568415851781
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MainChar - Torch(Idle)_8
+      rect:
+        serializedVersion: 2
+        x: 1612
+        y: 31
+        width: 44
+        height: 67
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3341e7e831f7e4d50800000000000000
+      internalID: 6723451015682462771
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MainChar - Torch(Idle)_9
+      rect:
+        serializedVersion: 2
+        x: 1804
+        y: 31
+        width: 45
+        height: 69
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 304aa427c18c11c20800000000000000
+      internalID: 3175539236775044099
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MainChar - Torch(Idle)_10
+      rect:
+        serializedVersion: 2
+        x: 1996
+        y: 31
+        width: 45
+        height: 70
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 02b310fa38610b490800000000000000
+      internalID: -7732655805362521312
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MainChar - Torch(Idle)_11
+      rect:
+        serializedVersion: 2
+        x: 2188
+        y: 31
+        width: 45
+        height: 68
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d7aaa0a5559114f40800000000000000
+      internalID: 5710873656856062589
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MainChar - Torch(Idle)_12
+      rect:
+        serializedVersion: 2
+        x: 2380
+        y: 31
+        width: 45
+        height: 69
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5030019a777ec6150800000000000000
+      internalID: 5867318915680436997
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MainChar - Torch(Idle)_13
+      rect:
+        serializedVersion: 2
+        x: 2572
+        y: 31
+        width: 45
+        height: 70
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3a620f0ab1594fe70800000000000000
+      internalID: 9148100688993068707
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      MainChar - Torch(Idle)_0: 6070691806294454734
+      MainChar - Torch(Idle)_1: 4038435772281229167
+      MainChar - Torch(Idle)_10: -7732655805362521312
+      MainChar - Torch(Idle)_11: 5710873656856062589
+      MainChar - Torch(Idle)_12: 5867318915680436997
+      MainChar - Torch(Idle)_13: 9148100688993068707
+      MainChar - Torch(Idle)_2: -8483265637899220498
+      MainChar - Torch(Idle)_3: -4940560113571428329
+      MainChar - Torch(Idle)_4: 6560975407940379838
+      MainChar - Torch(Idle)_5: -225890529858006710
+      MainChar - Torch(Idle)_6: 7395287232486322040
+      MainChar - Torch(Idle)_7: 4896963568415851781
+      MainChar - Torch(Idle)_8: 6723451015682462771
+      MainChar - Torch(Idle)_9: 3175539236775044099
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

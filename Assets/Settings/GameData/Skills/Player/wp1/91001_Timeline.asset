@@ -12,14 +12,14 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0dd22fc87d42a7f4fabaf223f9883f33, type: 3}
   m_Name: 91001_Timeline
   m_EditorClassIdentifier: Assembly-CSharp::FenShen.Combat.SkillTimelineSO
-  length: 0.3
+  length: 0.51
   animationClips: []
   movementClips:
   - clipId: 
     displayName: Movement 1
     note: 
     startTime: 0
-    duration: 0.3
+    duration: 0.25
     enabled: 1
     motionSource: 2
     curveXName: MoveX
@@ -59,12 +59,12 @@ MonoBehaviour:
   - clipId: 
     displayName: Hit 1
     note: 
-    startTime: 0.071428575
-    duration: 0.07
+    startTime: 0.23333333
+    duration: 0.015
     enabled: 1
     hitShape: 0
-    offset: {x: 0.29, y: -0.5, z: 0}
-    size: {x: 2.4, y: 1, z: 1}
+    offset: {x: -0.35, y: -0.07, z: 0}
+    size: {x: 3.19, y: 1.91, z: 1}
     targetLayers:
       serializedVersion: 2
       m_Bits: 1
@@ -74,16 +74,36 @@ MonoBehaviour:
     tickInterval: 0
     damageMultiplier: 1
     poiseDamage: 0
+    hitStopDuration: 0.1
+    hitStopScale: 0.05
+    cameraShakeAmplitude: 0
+    hitSfx: {fileID: 0}
+    hitVfxPrefab: {fileID: 0}
+    knockbackDistance: 1
+    knockbackUpwardDistance: 0
   projectileClips: []
   vfxClips: []
   sfxClips: []
   cameraClips: []
+  selfBuffClips: []
+  coreResourceClips: []
   cancelWindowClips:
   - clipId: 
     displayName: Cancel 1
     note: 
-    startTime: 0.2142857
-    duration: 0.1
+    startTime: 0.26666668
+    duration: 0.32
     enabled: 1
     cancelPermission: 4
-  derivationWindowClips: []
+  derivationWindowClips:
+  - clipId: 
+    displayName: Derivation 1
+    note: 
+    startTime: 0.25
+    duration: 0.35
+    enabled: 1
+    nextSkills:
+    - {fileID: 11400000, guid: bbd8eadf48009b74d8e1432ab2148864, type: 2}
+    requiresHitConfirm: 0
+    requiresGrounded: 0
+    requiresAerial: 0

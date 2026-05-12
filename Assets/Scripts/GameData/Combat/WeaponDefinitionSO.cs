@@ -82,6 +82,26 @@ namespace FenShen.GameData
         public FenShen.Combat.CombatSkillDefinitionSO chargedAttackSkill;
         [InspectorName("蓄力攻击技能ID")]
         public string chargedAttackSkillId;
+        [InspectorName("上挑攻击技能")]
+        public FenShen.Combat.CombatSkillDefinitionSO launcherSkill;
+        [InspectorName("上挑攻击技能ID")]
+        public string launcherSkillId;
+        [InspectorName("下砸攻击技能")]
+        public FenShen.Combat.CombatSkillDefinitionSO slamSkill;
+        [InspectorName("下砸攻击技能ID")]
+        public string slamSkillId;
+        [InspectorName("特殊中立攻击技能")]
+        public FenShen.Combat.CombatSkillDefinitionSO specialNeutralSkill;
+        [InspectorName("特殊中立攻击技能ID")]
+        public string specialNeutralSkillId;
+        [InspectorName("特殊上方向攻击技能")]
+        public FenShen.Combat.CombatSkillDefinitionSO specialUpSkill;
+        [InspectorName("特殊上方向攻击技能ID")]
+        public string specialUpSkillId;
+        [InspectorName("特殊下方向攻击技能")]
+        public FenShen.Combat.CombatSkillDefinitionSO specialDownSkill;
+        [InspectorName("特殊下方向攻击技能ID")]
+        public string specialDownSkillId;
 
         [Header("资源")]
         [InspectorName("资源交互")]
@@ -140,6 +160,16 @@ namespace FenShen.GameData
                     return guardCounterSkill;
                 case WeaponAttackSlot.ChargedAttack:
                     return chargedAttackSkill;
+                case WeaponAttackSlot.Launcher:
+                    return launcherSkill;
+                case WeaponAttackSlot.Slam:
+                    return slamSkill;
+                case WeaponAttackSlot.SpecialNeutral:
+                    return specialNeutralSkill;
+                case WeaponAttackSlot.SpecialUp:
+                    return specialUpSkill;
+                case WeaponAttackSlot.SpecialDown:
+                    return specialDownSkill;
                 default:
                     return primaryAttackSkill;
             }
@@ -188,6 +218,16 @@ namespace FenShen.GameData
                     return guardCounterSkillId;
                 case WeaponAttackSlot.ChargedAttack:
                     return chargedAttackSkillId;
+                case WeaponAttackSlot.Launcher:
+                    return launcherSkillId;
+                case WeaponAttackSlot.Slam:
+                    return slamSkillId;
+                case WeaponAttackSlot.SpecialNeutral:
+                    return specialNeutralSkillId;
+                case WeaponAttackSlot.SpecialUp:
+                    return specialUpSkillId;
+                case WeaponAttackSlot.SpecialDown:
+                    return specialDownSkillId;
                 default:
                     return primaryAttackSkillId;
             }

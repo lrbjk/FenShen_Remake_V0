@@ -1,0 +1,507 @@
+fileFormatVersion: 2
+guid: 31df48c2b6f352f4a95bb7efa934cfcf
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: -3811517296280785046
+    second: MainChar - Drink_0
+  - first:
+      213: 6054569563478371229
+    second: MainChar - Drink_1
+  - first:
+      213: 7010488629718121755
+    second: MainChar - Drink_2
+  - first:
+      213: 4300365018538303618
+    second: MainChar - Drink_3
+  - first:
+      213: -2089605471006829186
+    second: MainChar - Drink_4
+  - first:
+      213: -6761398593674965662
+    second: MainChar - Drink_5
+  - first:
+      213: -1476051696454275533
+    second: MainChar - Drink_6
+  - first:
+      213: 6282201424880022588
+    second: MainChar - Drink_7
+  - first:
+      213: 8969146803277898177
+    second: MainChar - Drink_8
+  - first:
+      213: 4511335993192999406
+    second: MainChar - Drink_9
+  - first:
+      213: 9050303388005140146
+    second: MainChar - Drink_10
+  - first:
+      213: -9027061037031028178
+    second: MainChar - Drink_11
+  - first:
+      213: 5797090291777999399
+    second: MainChar - Drink_12
+  - first:
+      213: 2789418429994125361
+    second: MainChar - Drink_13
+  - first:
+      213: -4737301191818933385
+    second: MainChar - Drink_14
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: MainChar - Drink_0
+      rect:
+        serializedVersion: 2
+        x: 75
+        y: 31
+        width: 54
+        height: 44
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a6f2deb9635ca1bc0800000000000000
+      internalID: -3811517296280785046
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MainChar - Drink_1
+      rect:
+        serializedVersion: 2
+        x: 267
+        y: 31
+        width: 54
+        height: 43
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d9b250380f6260450800000000000000
+      internalID: 6054569563478371229
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MainChar - Drink_2
+      rect:
+        serializedVersion: 2
+        x: 462
+        y: 31
+        width: 55
+        height: 39
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b1d734cf3424a4160800000000000000
+      internalID: 7010488629718121755
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MainChar - Drink_3
+      rect:
+        serializedVersion: 2
+        x: 654
+        y: 31
+        width: 56
+        height: 39
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 280ed763337fdab30800000000000000
+      internalID: 4300365018538303618
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MainChar - Drink_4
+      rect:
+        serializedVersion: 2
+        x: 846
+        y: 31
+        width: 56
+        height: 39
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e75dce335ea3003e0800000000000000
+      internalID: -2089605471006829186
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MainChar - Drink_5
+      rect:
+        serializedVersion: 2
+        x: 1038
+        y: 31
+        width: 55
+        height: 42
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 26d8d2f6dcfaa22a0800000000000000
+      internalID: -6761398593674965662
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MainChar - Drink_6
+      rect:
+        serializedVersion: 2
+        x: 1228
+        y: 31
+        width: 54
+        height: 44
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 33eeab27dc2048be0800000000000000
+      internalID: -1476051696454275533
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MainChar - Drink_7
+      rect:
+        serializedVersion: 2
+        x: 1418
+        y: 31
+        width: 54
+        height: 44
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c343d6159ecde2750800000000000000
+      internalID: 6282201424880022588
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MainChar - Drink_8
+      rect:
+        serializedVersion: 2
+        x: 1610
+        y: 31
+        width: 54
+        height: 44
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1c1a5bb3f7fc87c70800000000000000
+      internalID: 8969146803277898177
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MainChar - Drink_9
+      rect:
+        serializedVersion: 2
+        x: 1802
+        y: 31
+        width: 54
+        height: 44
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ee9e3b80f2c7b9e30800000000000000
+      internalID: 4511335993192999406
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MainChar - Drink_10
+      rect:
+        serializedVersion: 2
+        x: 1995
+        y: 31
+        width: 54
+        height: 44
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2b68f871bf2299d70800000000000000
+      internalID: 9050303388005140146
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MainChar - Drink_11
+      rect:
+        serializedVersion: 2
+        x: 2187
+        y: 31
+        width: 54
+        height: 44
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e2a0ff170df69b280800000000000000
+      internalID: -9027061037031028178
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MainChar - Drink_12
+      rect:
+        serializedVersion: 2
+        x: 2379
+        y: 31
+        width: 54
+        height: 44
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7221b44f7e6637050800000000000000
+      internalID: 5797090291777999399
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MainChar - Drink_13
+      rect:
+        serializedVersion: 2
+        x: 2571
+        y: 31
+        width: 54
+        height: 44
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1384ab9784106b620800000000000000
+      internalID: 2789418429994125361
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MainChar - Drink_14
+      rect:
+        serializedVersion: 2
+        x: 2763
+        y: 31
+        width: 54
+        height: 44
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 77b09935aa9b14eb0800000000000000
+      internalID: -4737301191818933385
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      MainChar - Drink_0: -3811517296280785046
+      MainChar - Drink_1: 6054569563478371229
+      MainChar - Drink_10: 9050303388005140146
+      MainChar - Drink_11: -9027061037031028178
+      MainChar - Drink_12: 5797090291777999399
+      MainChar - Drink_13: 2789418429994125361
+      MainChar - Drink_14: -4737301191818933385
+      MainChar - Drink_2: 7010488629718121755
+      MainChar - Drink_3: 4300365018538303618
+      MainChar - Drink_4: -2089605471006829186
+      MainChar - Drink_5: -6761398593674965662
+      MainChar - Drink_6: -1476051696454275533
+      MainChar - Drink_7: 6282201424880022588
+      MainChar - Drink_8: 8969146803277898177
+      MainChar - Drink_9: 4511335993192999406
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
