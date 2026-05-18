@@ -829,6 +829,7 @@ public class CombatSkillEditorWindow : EditorWindow
             EditorGUILayout.PropertyField(clipProperty.FindPropertyRelative("hitVfxPrefab"));
             EditorGUILayout.PropertyField(clipProperty.FindPropertyRelative("knockbackDistance"));
             EditorGUILayout.PropertyField(clipProperty.FindPropertyRelative("knockbackUpwardDistance"));
+            EditorGUILayout.PropertyField(clipProperty.FindPropertyRelative("knockbackDuration"));
             EditorGUILayout.EndVertical();
         }
 

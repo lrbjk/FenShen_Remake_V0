@@ -79,8 +79,9 @@ MonoBehaviour:
     cameraShakeAmplitude: 0
     hitSfx: {fileID: 0}
     hitVfxPrefab: {fileID: 0}
-    knockbackDistance: 1
+    knockbackDistance: 0.35
     knockbackUpwardDistance: 0
+    knockbackDuration: 0.08
   projectileClips: []
   vfxClips: []
   sfxClips: []

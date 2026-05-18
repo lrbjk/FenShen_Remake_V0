@@ -112,6 +112,8 @@ namespace FenShen.Combat
         [Min(0f)] public float knockbackDistance;
         [InspectorName("击退上抛距离")]
         [Min(0f)] public float knockbackUpwardDistance;
+        [InspectorName("击退持续时间")]
+        [Min(0f)] public float knockbackDuration = 0.08f;
     }
 
     [Serializable]

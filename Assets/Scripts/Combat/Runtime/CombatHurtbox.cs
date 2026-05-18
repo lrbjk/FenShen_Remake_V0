@@ -36,6 +36,17 @@ namespace FenShen.Combat
             get { return rootTransform != null ? rootTransform : transform.root; }
         }
 
+        public void Configure(CombatTeam combatTeam, RuntimeStatsComponent stats, Transform root)
+        {
+            team = combatTeam;
+            runtimeStats = stats;
+            rootTransform = root;
+            if (_buffController == null)
+            {
+                _buffController = GetComponentInParent<BuffController>();
+            }
+        }
+
         void Awake()
         {
             if (runtimeStats == null)

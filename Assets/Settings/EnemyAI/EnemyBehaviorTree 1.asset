@@ -1,0 +1,25 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f936e089c616b954a9f641864b5e0ad8, type: 3}
+  m_Name: EnemyBehaviorTree 1
+  m_EditorClassIdentifier: Assembly-CSharp::FenShen.EnemyAI.BehaviorTree.BehaviorTreeGraphSO
+  rootNode: {fileID: 11400000, guid: bf759e84bad370847aa57d5c066d06df, type: 2}
+  nodes:
+  - {fileID: 11400000, guid: bf759e84bad370847aa57d5c066d06df, type: 2}
+  - {fileID: 11400000, guid: c81f59fb69e8b634f9d4854ec56aaae8, type: 2}
+  - {fileID: 11400000, guid: cba52479f7ca82948aa28fbeec6a4077, type: 2}
+  - {fileID: 11400000, guid: 2c0b5fc8c4960cd439d5e8e906254117, type: 2}
+  - {fileID: 11400000, guid: 419c527b18f75e04281cdc484c17b1be, type: 2}
+  - {fileID: 11400000, guid: c5f36188bef08c6479ae306436668df1, type: 2}
+  - {fileID: 11400000, guid: 8d260737926ff664dbb8178a492bd26f, type: 2}
+  - {fileID: 11400000, guid: 9238e3d0adb1af941bda642e355d3321, type: 2}
+  - {fileID: 11400000, guid: 779f4a32dd8b73a499b9babe33d827a0, type: 2}

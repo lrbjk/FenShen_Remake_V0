@@ -1,0 +1,21 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 0}
+  m_Name: Root Selector
+  m_EditorClassIdentifier: Assembly-CSharp:FenShen.EnemyAI.BehaviorTree:SelectorNodeSO
+  displayName: Root Selector
+  description: 
+  editorPosition: {x: 360, y: 80}
+  children:
+  - {fileID: 11400000, guid: c81f59fb69e8b634f9d4854ec56aaae8, type: 2}
+  - {fileID: 11400000, guid: c5f36188bef08c6479ae306436668df1, type: 2}
+  - {fileID: 11400000, guid: 779f4a32dd8b73a499b9babe33d827a0, type: 2}

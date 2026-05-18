@@ -1,0 +1,21 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 0}
+  m_Name: Attack Sequence
+  m_EditorClassIdentifier: Assembly-CSharp:FenShen.EnemyAI.BehaviorTree:SequenceNodeSO
+  displayName: Attack Sequence
+  description: 
+  editorPosition: {x: 120, y: 260}
+  children:
+  - {fileID: 11400000, guid: cba52479f7ca82948aa28fbeec6a4077, type: 2}
+  - {fileID: 11400000, guid: 2c0b5fc8c4960cd439d5e8e906254117, type: 2}
+  - {fileID: 11400000, guid: 419c527b18f75e04281cdc484c17b1be, type: 2}

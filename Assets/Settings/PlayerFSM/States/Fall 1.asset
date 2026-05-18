@@ -13,7 +13,7 @@ MonoBehaviour:
   m_Name: Fall 1
   m_EditorClassIdentifier: Assembly-CSharp::FenShen.PlayerFSM.FallStateSO
   displayName: Fall
-  editorPosition: {x: 849.3333, y: 427.33334}
+  editorPosition: {x: 915, y: 429}
   animStateName: JumpToFall
   animLayer: 0
   crossFade: 1

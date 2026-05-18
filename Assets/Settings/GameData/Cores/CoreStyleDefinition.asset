@@ -12,8 +12,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 86ee89825f003834c877dac2d21009f4, type: 3}
   m_Name: CoreStyleDefinition
   m_EditorClassIdentifier: Assembly-CSharp::FenShen.GameData.CoreStyleDefinitionSO
-  coreId: 
-  displayName: 
+  coreId: 81000
+  displayName: "\u6B66\u58EB\u9053\u6838\u5FC3"
   description: 
   icon: {fileID: 0}
   resource:
@@ -25,6 +25,8 @@ MonoBehaviour:
     useSkillResourceCost: 1
     flatResourceCost: 0
     requireEnoughResource: 1
+  skillSlots: []
+  defaultEquippedSkills: []
   cancelRule:
     overrideCancelPermission: 0
     cancelPermission: 0
@@ -35,7 +37,7 @@ MonoBehaviour:
     aerialResourceGainMultiplier: 1
     allowRepeatedAerialAttackBeforeLanding: 0
   dodgeRule:
-    allowAerialDodge: 0
+    allowAerialDodge: 1
     maxAerialDodgesBeforeLanding: 1
     refreshPrimaryAttackOnDodge: 0
     refreshAerialAttackLockOnDodge: 0

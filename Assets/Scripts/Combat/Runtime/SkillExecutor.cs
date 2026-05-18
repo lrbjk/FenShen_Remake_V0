@@ -89,7 +89,7 @@ namespace FenShen.Combat
         }
 
         public void Begin(
-            CombatCoordinator coordinator,
+            ICombatSkillRuntime runtime,
             CombatSkillDefinitionSO skill,
             string fallbackSkillId,
             float fallbackDuration,
@@ -110,15 +110,15 @@ namespace FenShen.Combat
 
             if (_skill == null || _skill.timeline == null)
             {
-                coordinator.PlayCombatAnimation(_fallbackAnimationStateName, _fallbackAnimationLayer, _fallbackCrossFade, _fallbackTransitionDuration);
-                coordinator.ExecuteAttack(_skill, ResolveSkillId());
+                runtime.PlayCombatAnimation(_fallbackAnimationStateName, _fallbackAnimationLayer, _fallbackCrossFade, _fallbackTransitionDuration);
+                runtime.ExecuteAttack(_skill, ResolveSkillId());
                 _fallbackAttackTriggered = true;
                 return;
             }
 
             if (_skill.timeline.animationClips == null || _skill.timeline.animationClips.Count == 0)
             {
-                coordinator.PlayCombatAnimation(
+                runtime.PlayCombatAnimation(
                     _skill.animationStateName,
                     _skill.animationLayer,
                     _skill.crossFade,
@@ -126,7 +126,7 @@ namespace FenShen.Combat
             }
         }
 
-        public bool Tick(CombatCoordinator coordinator, float deltaTime)
+        public bool Tick(ICombatSkillRuntime runtime, float deltaTime)
         {
             if (!IsActive)
             {
@@ -138,21 +138,21 @@ namespace FenShen.Combat
 
             if (_skill != null && _skill.timeline != null)
             {
-                ProcessAnimationClips(coordinator, previousTime);
-                ProcessMovementClips(coordinator);
-                ProcessHitClips(coordinator, previousTime);
-                ProcessProjectileClips(coordinator, previousTime);
-                ProcessVfxClips(coordinator, previousTime);
-                ProcessSfxClips(coordinator, previousTime);
-                ProcessCameraClips(coordinator, previousTime);
-                ProcessSelfBuffClips(coordinator, previousTime);
-                ProcessCoreResourceClips(coordinator, previousTime);
+                ProcessAnimationClips(runtime, previousTime);
+                ProcessMovementClips(runtime);
+                ProcessHitClips(runtime, previousTime);
+                ProcessProjectileClips(runtime, previousTime);
+                ProcessVfxClips(runtime, previousTime);
+                ProcessSfxClips(runtime, previousTime);
+                ProcessCameraClips(runtime, previousTime);
+                ProcessSelfBuffClips(runtime, previousTime);
+                ProcessCoreResourceClips(runtime, previousTime);
                 return _elapsed >= _skill.ResolveDuration();
             }
 
             if (!_fallbackAttackTriggered)
             {
-                coordinator.ExecuteAttack(null, ResolveSkillId());
+                runtime.ExecuteAttack(null, ResolveSkillId());
                 _fallbackAttackTriggered = true;
             }
 
@@ -256,7 +256,7 @@ namespace FenShen.Combat
             return results;
         }
 
-        private void ProcessAnimationClips(CombatCoordinator coordinator, float previousTime)
+        private void ProcessAnimationClips(ICombatSkillRuntime runtime, float previousTime)
         {
             List<AnimationSkillClip> clips = _skill.timeline.animationClips;
             if (clips == null)
@@ -275,12 +275,12 @@ namespace FenShen.Combat
                 if (previousTime <= clip.startTime && _elapsed >= clip.startTime)
                 {
                     _triggeredAnimationClips.Add(i);
-                    coordinator.PlayCombatAnimation(clip.animationStateName, clip.layer, clip.crossFade, clip.transitionDuration);
+                    runtime.PlayCombatAnimation(clip.animationStateName, clip.layer, clip.crossFade, clip.transitionDuration);
                 }
             }
         }
 
-        private void ProcessMovementClips(CombatCoordinator coordinator)
+        private void ProcessMovementClips(ICombatSkillRuntime runtime)
         {
             List<MovementSkillClip> clips = _skill.timeline.movementClips;
             if (clips == null)
@@ -298,18 +298,18 @@ namespace FenShen.Combat
 
                 float clipTime = _elapsed - clip.startTime;
                 float normalizedTime = clip.duration > 0.0001f ? Mathf.Clamp01(clipTime / clip.duration) : 1f;
-                Vector2 sample = SampleMovement(clip, normalizedTime, coordinator);
+                Vector2 sample = SampleMovement(clip, normalizedTime, runtime);
                 _movementClipPreviousSamples.TryGetValue(i, out Vector2 previousSample);
                 Vector2 delta = sample - previousSample;
                 _movementClipPreviousSamples[i] = sample;
                 if (delta.sqrMagnitude > 0.000001f)
                 {
-                    coordinator.ApplySkillMotion(delta);
+                    runtime.ApplySkillMotion(delta);
                 }
             }
         }
 
-        private void ProcessHitClips(CombatCoordinator coordinator, float previousTime)
+        private void ProcessHitClips(ICombatSkillRuntime runtime, float previousTime)
         {
             List<HitSkillClip> clips = _skill.timeline.hitClips;
             if (clips == null)
@@ -335,7 +335,7 @@ namespace FenShen.Combat
                     if (previousTime <= clip.startTime && _elapsed >= clip.startTime)
                     {
                         _triggeredHitClips.Add(i);
-                        ProcessHitClipImpact(coordinator, clip, i);
+                        ProcessHitClipImpact(runtime, clip, i);
                     }
 
                     continue;
@@ -353,7 +353,7 @@ namespace FenShen.Combat
 
                 while (_elapsed >= nextTickTime && nextTickTime <= clip.startTime + clip.duration + 0.0001f)
                 {
-                    ProcessHitClipImpact(coordinator, clip, i);
+                    ProcessHitClipImpact(runtime, clip, i);
                     float interval = Mathf.Max(0.01f, clip.tickInterval);
                     nextTickTime += interval;
                 }
@@ -362,7 +362,7 @@ namespace FenShen.Combat
             }
         }
 
-        private void ProcessProjectileClips(CombatCoordinator coordinator, float previousTime)
+        private void ProcessProjectileClips(ICombatSkillRuntime runtime, float previousTime)
         {
             List<ProjectileSkillClip> clips = _skill.timeline.projectileClips;
             if (clips == null)
@@ -381,12 +381,12 @@ namespace FenShen.Combat
                 if (previousTime <= clip.startTime && _elapsed >= clip.startTime)
                 {
                     _triggeredProjectileClips.Add(i);
-                    coordinator.SpawnProjectile(clip);
+                    runtime.SpawnProjectile(clip);
                 }
             }
         }
 
-        private void ProcessVfxClips(CombatCoordinator coordinator, float previousTime)
+        private void ProcessVfxClips(ICombatSkillRuntime runtime, float previousTime)
         {
             List<VfxSkillClip> clips = _skill.timeline.vfxClips;
             if (clips == null)
@@ -405,12 +405,12 @@ namespace FenShen.Combat
                 if (previousTime <= clip.startTime && _elapsed >= clip.startTime)
                 {
                     _triggeredVfxClips.Add(i);
-                    coordinator.SpawnVfx(clip);
+                    runtime.SpawnVfx(clip);
                 }
             }
         }
 
-        private void ProcessSfxClips(CombatCoordinator coordinator, float previousTime)
+        private void ProcessSfxClips(ICombatSkillRuntime runtime, float previousTime)
         {
             List<SfxSkillClip> clips = _skill.timeline.sfxClips;
             if (clips == null)
@@ -429,12 +429,12 @@ namespace FenShen.Combat
                 if (previousTime <= clip.startTime && _elapsed >= clip.startTime)
                 {
                     _triggeredSfxClips.Add(i);
-                    coordinator.PlaySfx(clip);
+                    runtime.PlaySfx(clip);
                 }
             }
         }
 
-        private void ProcessCameraClips(CombatCoordinator coordinator, float previousTime)
+        private void ProcessCameraClips(ICombatSkillRuntime runtime, float previousTime)
         {
             List<CameraShakeSkillClip> clips = _skill.timeline.cameraClips;
             if (clips == null)
@@ -453,16 +453,16 @@ namespace FenShen.Combat
                 if (previousTime <= clip.startTime && _elapsed >= clip.startTime)
                 {
                     _triggeredCameraClips.Add(i);
-                    coordinator.TriggerCameraShake(clip);
+                    runtime.TriggerCameraShake(clip);
                 }
             }
         }
 
-        private Vector2 SampleMovement(MovementSkillClip clip, float normalizedTime, CombatCoordinator coordinator)
+        private Vector2 SampleMovement(MovementSkillClip clip, float normalizedTime, ICombatSkillRuntime runtime)
         {
             if (clip.motionSource == SkillMotionSource.AnimatorCurve)
             {
-                return coordinator.SampleAnimatorMotion(
+                return runtime.SampleAnimatorMotion(
                     clip.curveXName,
                     clip.curveYName,
                     clip.mirrorByFacing);
@@ -472,7 +472,7 @@ namespace FenShen.Combat
             {
                 float x = clip.customCurveX != null ? clip.customCurveX.Evaluate(normalizedTime) : 0f;
                 float y = clip.customCurveY != null ? clip.customCurveY.Evaluate(normalizedTime) : 0f;
-                if (clip.mirrorByFacing && coordinator.IsFacingLeft())
+                if (clip.mirrorByFacing && runtime.IsFacingLeft())
                 {
                     x = -x;
                 }
@@ -524,7 +524,7 @@ namespace FenShen.Combat
             _hitTargetsByClip.Clear();
         }
 
-        private void ProcessSelfBuffClips(CombatCoordinator coordinator, float previousTime)
+        private void ProcessSelfBuffClips(ICombatSkillRuntime runtime, float previousTime)
         {
             List<SelfBuffSkillClip> clips = _skill.timeline.selfBuffClips;
             if (clips == null)
@@ -543,12 +543,12 @@ namespace FenShen.Combat
                 if (previousTime <= clip.startTime && _elapsed >= clip.startTime)
                 {
                     _triggeredSelfBuffClips.Add(i);
-                    coordinator.ApplySelfBuffClip(clip);
+                    runtime.ApplySelfBuffClip(clip);
                 }
             }
         }
 
-        private void ProcessCoreResourceClips(CombatCoordinator coordinator, float previousTime)
+        private void ProcessCoreResourceClips(ICombatSkillRuntime runtime, float previousTime)
         {
             List<CoreResourceSkillClip> clips = _skill.timeline.coreResourceClips;
             if (clips == null)
@@ -567,17 +567,17 @@ namespace FenShen.Combat
                 if (previousTime <= clip.startTime && _elapsed >= clip.startTime)
                 {
                     _triggeredCoreResourceClips.Add(i);
-                    coordinator.ApplyCoreResourceClip(clip);
+                    runtime.ApplyCoreResourceClip(clip);
                 }
             }
         }
 
-        private void ProcessHitClipImpact(CombatCoordinator coordinator, HitSkillClip clip, int clipIndex)
+        private void ProcessHitClipImpact(ICombatSkillRuntime runtime, HitSkillClip clip, int clipIndex)
         {
-            bool confirmed = coordinator.TryApplyHitClip(_skill, ResolveSkillId(), clip, GetOrCreateHitTargets(clipIndex));
+            bool confirmed = runtime.TryApplyHitClip(_skill, ResolveSkillId(), clip, GetOrCreateHitTargets(clipIndex));
             if (confirmed)
             {
-                coordinator.NotifySkillHitConfirmed(_skill);
+                runtime.NotifySkillHitConfirmed(_skill);
             }
         }
 

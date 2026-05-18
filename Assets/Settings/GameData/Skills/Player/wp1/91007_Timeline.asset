@@ -175,8 +175,16 @@ MonoBehaviour:
     allowRepeatHitsOnSameTarget: 0
     isContinuous: 0
     tickInterval: 0
-    damageMultiplier: 0
+    damageMultiplier: 1
     poiseDamage: 0
+    hitStopDuration: 0
+    hitStopScale: 0.05
+    cameraShakeAmplitude: 0
+    hitSfx: {fileID: 0}
+    hitVfxPrefab: {fileID: 0}
+    knockbackDistance: 0
+    knockbackUpwardDistance: 10
+    knockbackDuration: 0.16
   projectileClips: []
   vfxClips: []
   sfxClips: []
@@ -187,8 +195,8 @@ MonoBehaviour:
   - clipId: 
     displayName: Cancel 1
     note: 
-    startTime: 0.33333334
-    duration: 0.35
+    startTime: 0.28333333
+    duration: 0.4
     enabled: 1
     cancelPermission: 4
   derivationWindowClips: []

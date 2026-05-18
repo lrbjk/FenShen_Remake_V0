@@ -72,8 +72,16 @@ MonoBehaviour:
     allowRepeatHitsOnSameTarget: 0
     isContinuous: 0
     tickInterval: 0
-    damageMultiplier: 0
+    damageMultiplier: 1
     poiseDamage: 0
+    hitStopDuration: 0
+    hitStopScale: 0.05
+    cameraShakeAmplitude: 0
+    hitSfx: {fileID: 0}
+    hitVfxPrefab: {fileID: 0}
+    knockbackDistance: 0
+    knockbackUpwardDistance: 0
+    knockbackDuration: 0.08
   projectileClips: []
   vfxClips: []
   sfxClips: []

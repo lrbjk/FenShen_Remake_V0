@@ -7,7 +7,7 @@ using UnityEngine;
 
 namespace FenShen.Combat
 {
-    public class CombatCoordinator : MonoBehaviour
+    public class CombatCoordinator : MonoBehaviour, ICombatSkillRuntime
     {
         private struct ResolvedCombatSkill
         {
@@ -71,8 +71,6 @@ namespace FenShen.Combat
         [SerializeField] private bool suppressFaceYWhenModifierHeld = true;
         [InspectorName("武器特殊攻击方向阈值")]
         [SerializeField, Range(0.1f, 1f)] private float weaponSpecialDirectionThreshold = 0.45f;
-        [InspectorName("冲刺攻击需要按住冲刺")]
-        [SerializeField] private bool dashAttackRequiresSprintHeld = true;
 
         [Header("运行时生成")]
         [InspectorName("生成根节点")]
@@ -103,6 +101,7 @@ namespace FenShen.Combat
         private bool _aerialAttackLockedUntilGrounded;
         private Coroutine _hitStopRoutine;
         private float _hitStopRestoreTimeScale = 1f;
+        private readonly Dictionary<Transform, Coroutine> _knockbackRoutines = new Dictionary<Transform, Coroutine>();
 
         public bool IsActive
         {
@@ -156,6 +155,7 @@ namespace FenShen.Combat
         void OnDisable()
         {
             RestoreHitStopTimeScale();
+            StopActiveKnockbacks();
         }
 
         public void ManualUpdate(float deltaTime)
@@ -863,6 +863,60 @@ namespace FenShen.Combat
                 return;
             }
 
+            StartSmoothKnockback(hurtbox, targetRoot, delta, clip.knockbackDuration);
+        }
+
+        private void StartSmoothKnockback(CombatHurtbox hurtbox, Transform targetRoot, Vector3 delta, float duration)
+        {
+            if (hurtbox == null || targetRoot == null || delta.sqrMagnitude <= 0.000001f)
+            {
+                return;
+            }
+
+            if (_knockbackRoutines.TryGetValue(targetRoot, out Coroutine runningRoutine) && runningRoutine != null)
+            {
+                StopCoroutine(runningRoutine);
+            }
+
+            float safeDuration = Mathf.Max(0.01f, duration);
+            _knockbackRoutines[targetRoot] = StartCoroutine(SmoothKnockbackRoutine(hurtbox, targetRoot, delta, safeDuration));
+        }
+
+        private IEnumerator SmoothKnockbackRoutine(CombatHurtbox hurtbox, Transform targetRoot, Vector3 totalDelta, float duration)
+        {
+            float elapsed = 0f;
+            Vector3 applied = Vector3.zero;
+            while (elapsed < duration && hurtbox != null && targetRoot != null && targetRoot.gameObject.activeInHierarchy)
+            {
+                elapsed += Time.deltaTime;
+                float normalizedTime = Mathf.Clamp01(elapsed / duration);
+                float easedTime = 1f - Mathf.Pow(1f - normalizedTime, 2f);
+                Vector3 targetApplied = totalDelta * easedTime;
+                Vector3 frameDelta = targetApplied - applied;
+                ApplyKnockbackDelta(hurtbox, targetRoot, frameDelta);
+                applied = targetApplied;
+                yield return null;
+            }
+
+            if (hurtbox != null && targetRoot != null)
+            {
+                Vector3 remaining = totalDelta - applied;
+                ApplyKnockbackDelta(hurtbox, targetRoot, remaining);
+            }
+
+            if (targetRoot != null)
+            {
+                _knockbackRoutines.Remove(targetRoot);
+            }
+        }
+
+        private void ApplyKnockbackDelta(CombatHurtbox hurtbox, Transform targetRoot, Vector3 delta)
+        {
+            if (hurtbox == null || targetRoot == null || delta.sqrMagnitude <= 0.000001f)
+            {
+                return;
+            }
+
             Rigidbody rigidbody = targetRoot.GetComponent<Rigidbody>();
             if (rigidbody == null)
             {
@@ -900,6 +954,19 @@ namespace FenShen.Combat
             }
 
             targetRoot.position += delta;
+        }
+
+        private void StopActiveKnockbacks()
+        {
+            foreach (KeyValuePair<Transform, Coroutine> pair in _knockbackRoutines)
+            {
+                if (pair.Value != null)
+                {
+                    StopCoroutine(pair.Value);
+                }
+            }
+
+            _knockbackRoutines.Clear();
         }
 
         public void ApplySelfBuffClip(SelfBuffSkillClip clip)
@@ -1144,7 +1211,7 @@ namespace FenShen.Combat
                 return false;
             }
 
-            return dashAttackRequiresSprintHeld ? playerFsm.IsSprinting : playerFsm.SprintHeldFor(0.01f);
+            return playerFsm.CurrentState is DodgeStateSO;
         }
 
         private bool IsSpecialUpInputHeld()

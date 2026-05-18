@@ -74,6 +74,14 @@ MonoBehaviour:
     tickInterval: 0
     damageMultiplier: 1
     poiseDamage: 0
+    hitStopDuration: 0
+    hitStopScale: 0.05
+    cameraShakeAmplitude: 0
+    hitSfx: {fileID: 0}
+    hitVfxPrefab: {fileID: 0}
+    knockbackDistance: 0.35
+    knockbackUpwardDistance: 5
+    knockbackDuration: 0.08
   projectileClips: []
   vfxClips: []
   sfxClips: []
